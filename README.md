@@ -1,10 +1,10 @@
 <div align="center">
   
-![Logotipo da CIPA]()
-![Logotipo da FATEC - JAHU]()
+![Logotipo da CIPA](https://github.com/Evelyn-Cass/fatec-jahu-cipa/blob/main/images/cipa-fatec-jahu.png)
 </div>
 
 - - -
+[Portuguese](https://github.com/Evelyn-Cass/fatec-jahu-cipa?tab=readme-ov-file#cipa---fatec-jahu) - [English](https://github.com/Evelyn-Cass/fatec-jahu-cipa/edit/main/README.md#cipa---fatec-jahu-1)<br>
 # CIPA - FATEC JAHU
 
 O Projeto CIPA - FATEC JAHU foi criado como objetivo do Projeto interdisciplinar, no qual foi desenvolvido uma aplicação web para a Comissão Interna de Prevenção de Acidentes (CIPA) da Fatec Jahu, visando a digitalização, organização e disponibilização eficiente das atas de reuniões e demais documentos relacionados às atividades da comissão. Essa iniciativa busca substituir os métodos tradicionais de armazenamento físico, proporcionando um acesso mais ágil, seguro e sustentável às informações.
@@ -42,7 +42,31 @@ Estamos aqui para ajudar e ouvir suas opiniões para melhorar continuamente o pr
 [Evelyn Cassinotte](mailto:evelyn.cassinotte@fatec.sp.gov.br)
 
 
-
 - - -
+# CIPA - FATEC JAHU
+The CIPA - FATEC JAHU Project is part of an interdisciplinary initiative aimed at developing a web application for the Internal Commission for Accident Prevention (CIPA) at Fatec Jahu. The project focuses on digitizing, organizing, and providing efficient access to meeting minutes and other important documents related to the commission’s activities. By replacing traditional physical storage methods, this initiative ensures faster, more secure, and environmentally friendly access to information.
 
-Agradecemos a todos os envolvidos na realização deste projeto e esperamos que ele sirva como uma base sólida para futuros desenvolvimentos e aprendizados.
+## Interdisciplinary Project
+The Interdisciplinary Project serves as an evaluative initiative within the Multiplatform Software Development course at FATEC - JAHU. In the third semester, it covered three key subjects: Web Development II, Agile Software Project Management, and Non-Relational Databases. The main objectives include:
+
+- **Knowledge Integration**: Bridging theoretical concepts with practical applications across multiple disciplines.
+- **Practical Application**: Enabling students to apply classroom learning to real-world projects.
+- **Teamwork**: Promoting collaboration and communication among students to develop essential job market skills.
+- **Innovative Solutions**: Encouraging creativity and innovation in solving real challenges.
+- **Market Preparation**: Providing hands-on experience to better prepare students for careers in software development.
+
+## Documentation
+The complete project documentation, including details on the development process, features, technologies used, and instructions for use, can be accessed through the link below:
+
+ - [Project Documentation]()
+
+## Application
+The development of the web application followed a structured process to ensure efficiency and effectiveness. The application can be accessed through the following links:
+
+- [Website]()
+- [Project Repository](https://github.com/Evelyn-Cass/cipa-fatec-jahu).
+
+## Contact Us
+If you have any questions, suggestions, or feedback about the application, feel free to reach out. We’re here to help and value your input in improving the project!
+
+[Evelyn Cassinotte](mailto:evelyn.cassinotte@fatec.sp.gov.br)
