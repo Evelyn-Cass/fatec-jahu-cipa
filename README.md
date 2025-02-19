@@ -4,7 +4,7 @@
 </div>
 
 - - -
-[Portuguese](https://github.com/Evelyn-Cass/fatec-jahu-cipa?tab=readme-ov-file#cipa---fatec-jahu) - [English](https://github.com/Evelyn-Cass/fatec-jahu-cipa/edit/main/README.md#cipa---fatec-jahu-1)<br>
+[Portuguese](https://github.com/Evelyn-Cass/fatec-jahu-cipa?tab=readme-ov-file#cipa---fatec-jahu) - [English](https://github.com/Evelyn-Cass/fatec-jahu-cipa?tab=readme-ov-file#cipa---fatec-jahu-1)<br>
 # CIPA - FATEC JAHU
 
 O Projeto CIPA - FATEC JAHU foi criado como objetivo do Projeto interdisciplinar, no qual foi desenvolvido uma aplicação web para a Comissão Interna de Prevenção de Acidentes (CIPA) da Fatec Jahu, visando a digitalização, organização e disponibilização eficiente das atas de reuniões e demais documentos relacionados às atividades da comissão. Essa iniciativa busca substituir os métodos tradicionais de armazenamento físico, proporcionando um acesso mais ágil, seguro e sustentável às informações.
