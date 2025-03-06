@@ -1,0 +1,32 @@
+:root{
+    --base-vermelho: #b20000;
+    --base-cinza: #666;
+    --base-branco: #f8f8f8;
+    --base-preto: #252525;
+    --base-verde: #009059;
+
+    --feedback-verde: #3ACF1F;
+    --feedback-verdeclaro: #80E96D;
+    --feedback-vermelho: #D32719;
+    --feedback-vermelhoclaro: #F95B4D;
+    --feedback-marrom: #B78718;
+    --feedback-marromclaro: #DFB77B;
+
+    --background: var(--base-branco);
+    --texto-color: var(--base-preto);
+}
+
+/* .dark-mode{
+    --background: var(--preto-base);
+    --texto-color: var(--branco-base);
+}
+
+.dark-mode h1{
+    color: var(--azul-destaque-base);
+}
+
+.dark-mode .btn{
+    background-color: var(--verde-base);
+    color: var(--preto-base);
+} */
+
