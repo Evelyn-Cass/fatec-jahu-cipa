@@ -1,0 +1,23 @@
+.underline-white {
+    text-decoration: none;
+    position: relative; 
+    text-decoration: none;
+    color: var(--base-branco);  
+}
+
+.underline-white::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--base-branco);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.underline-white:hover::before {
+    transform: scaleX(1);
+}

@@ -1,12 +1,61 @@
-@import url('color.css');
 @import url('theme.css');
 
-footer{
+footer {
     margin-top: auto;
     background-color: var(--base-vermelho);
     width: 100vw;
-    height: 200px;
-
+    height: 160px;
     box-shadow: 0em -0.3em 1em rgb(76 68 82 / 60%);
 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 200px;
+    margin-right: 20px;
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 30px
+
+}
+
+.footer-contact-logo {
+    width: 30px;
+    margin-right: 4px;
+}
+
+
+.footer-contact-a:first-child,
+.footer-contact-a:last-child {
+    border: none;
+}
+
+
+
+
+.footer-rights {
+    margin-top: 24px;
+    color: var(--base-branco);
 }

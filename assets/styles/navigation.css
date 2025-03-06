@@ -1,0 +1,21 @@
+@import url('theme.css');
+
+nav{
+    width: 100vw;
+    height: 80px;
+    background: var(--base-cinza-gradient90);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 52px;
+    background-color: var(--base-cinzaclaro);
+    border-radius: 4px;
+    margin-left: 8px;
+}

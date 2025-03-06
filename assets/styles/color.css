@@ -1,6 +1,7 @@
 :root{
     --base-vermelho: #b20000;
     --base-cinza: #666;
+    --base-cinzaclaro: #D9D9D9;
     --base-branco: #f8f8f8;
     --base-preto: #252525;
     --base-verde: #009059;
@@ -14,6 +15,8 @@
 
     --background: var(--base-branco);
     --texto-color: var(--base-preto);
+
+    --base-cinza-gradient90: linear-gradient(90deg, rgba(102,102,102,1) 20%, rgba(248,248,248,1) 89%);
 }
 
 /* .dark-mode{
