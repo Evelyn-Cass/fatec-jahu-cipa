@@ -15,7 +15,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 480px;
+    width: 400px;
     height: 52px;
     background-color: var(--base-cinzaclaro);
     border-radius: 4px;
@@ -32,5 +32,16 @@ nav{
 
 .button-submit{
     margin: 4px;
+    background-image: url('../images/icon-search-white.png');
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center;
 }
 
+.button-submit:hover{
+    background-image: url('../images/icon-search-green.png');
+}
+
+.select2-results__option--highlighted[aria-selected]{
+    background-color: var(--base-cinzaclaro) !important;
+}

@@ -6,6 +6,8 @@
     color: var(--base-branco);
     font-weight: 500;
     border-radius: 4px;
+    width: 50px;
+    height: 30px;
 }
 
 .button-submit:hover{
@@ -15,4 +17,5 @@
     color: var(--base-verde);
     border: 2px solid var(--base-verde);
     font-weight: 500;
+    transition: 0.5s;
 }
