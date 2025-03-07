@@ -1,9 +1,9 @@
 .button-submit{
-    border: 2px solid var(--base-verde);
+    border: 2px solid var(--base-green);
     font-size: 16px;
     padding: 0px 10px;
-    background-color: var(--base-verde);
-    color: var(--base-branco);
+    background-color: var(--base-green);
+    color: var(--base-white);
     font-weight: 500;
     border-radius: 4px;
     width: 50px;
@@ -14,8 +14,8 @@
     box-sizing: border-box;
     cursor: pointer;
     background-color: transparent;
-    color: var(--base-verde);
-    border: 2px solid var(--base-verde);
+    color: var(--base-green);
+    border: 2px solid var(--base-green);
     font-weight: 500;
     transition: 0.5s;
 }

@@ -5,7 +5,7 @@
 nav{
     width: 100vw;
     height: 70px;
-    background: var(--base-cinza-gradient90);
+    background: var(--base-gray-gradient90);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -17,7 +17,7 @@ nav{
     align-items: center;
     width: 400px;
     height: 52px;
-    background-color: var(--base-cinzaclaro);
+    background-color: var(--base-lightgray);
     border-radius: 4px;
     margin-left: 8px;
 }
@@ -26,7 +26,7 @@ nav{
 .select2-selection--single{
     border: none !important; 
     border-radius: 0 !important;
-    background-color: var(--base-branco) !important;
+    background-color: var(--base-white) !important;
     border-bottom: 2px solid #9E9E9E !important;
 }
 

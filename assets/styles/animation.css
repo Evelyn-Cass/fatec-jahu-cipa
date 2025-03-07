@@ -2,7 +2,7 @@
     text-decoration: none;
     position: relative; 
     text-decoration: none;
-    color: var(--base-branco);  
+    color: var(--base-white);  
 }
 
 .underline-white::before {
@@ -13,7 +13,7 @@
     height: 1px;
     bottom: 0;
     left: 0;
-    background-color: var(--base-branco);
+    background-color: var(--base-white);
     transform: scaleX(0);
     transition: transform 0.3s ease;
 }
