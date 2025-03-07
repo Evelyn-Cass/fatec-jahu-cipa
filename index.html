@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIPA - FATEC JAHU</title>
+    <link rel="shortcut icon" type="imagex/png" href="assets/images/icon-cipa.png">
+
+    <!-- header -->
+    <link rel="stylesheet" href="assets/styles/header.css">
+
+    <!-- nav -->
+    <link rel="stylesheet" href="assets/styles/navigation.css">
+    <script src="assets/scripts/select2.js" defer></script>
+    <script src="assets/scripts/navigation.js" defer></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <!-- footer -->
+    <link rel="stylesheet" href="assets/styles/footer.css">
+
+</head>
+<body>
+    
+
+<header>
+    <div class="header-container">
+        <div class="header-cipa">
+            <a href="#">
+                <img class="header-cipa-logo" src="assets/images/logo-cipa.png" alt="Logotipo da CIPA">
+            </a>
+        </div>
+        <div class="header-fatec">
+            <a href="#">
+                <img class="header-fatec-logo" src="assets/images/logo-fatec-jahu-branco.png" alt="Logotipo da FATEC JAHU">
+            </a>
+        </div>
+        <div class="header-back">
+            <a href="https://fatecjahu.edu.br/">
+                <img class="header-arrow" src="assets/images/icon-arrow.png" alt="Voltar">
+                Voltar
+            </a>
+        </div>
+    </div>
+</header>
+
+<nav>
+    <form class="nav-search" action="#">
+
+        <select class="nav-select" style="width: 38%" name="management" id="search-management">
+            <option value="0" disabled selected>Gestão</option>
+            <option value="1">2025/2026</option>
+            <option value="2">2024/2025</option>
+            <option value="3">2023/2024</option>
+            <option value="4">2022/2023</option>
+        </select>
+
+        <select class="nav-select" style="width: 38%" name="material" id="search-material">
+            <option value="0" disabled selected>Material</option>
+            <option value="1">ATAS</option>
+            <option value="2">Curso CIPA</option>
+            <option value="3">Documentos</option>
+            <option value="4">Eleição</option>
+            <option value="4">Mapa de Risco</option>
+        </select>
+        <div class="nav-search-button">
+            <button class="button-submit" type="submit" id="search-submit"></button>
+            <span class="search-alert" id="search-alert">Selecione ambos os campos para continuar!</span>
+        </div>
+    </form>
+    <div class="nav-link">
+        <a class="underline-white" href="#">Legislação</a>
+    </div>
+    <div class="nav-link">
+        <a class="underline-white" href="#">Estudos</a>
+    </div>
+    <div class="nav-link">
+        <a class="underline-white" href="#">Login</a>
+    </div>
+</nav>
+
+<footer>
+    <div class="footer-div">
+        <div class="footer-container">
+            <img class="footer-logo" src="assets/images/logo_cps_brasao.png" alt="Logotipo CPS e São Paulo">
+            <div class="footer-contacts">
+                <div class="footer-contact">
+                    <img class="footer-contact-logo" src="assets/images/icon-quem-somos.png" alt="Quem Somos">
+                    <a class="underline-white" href="#">Quem Somos</a>
+                </div>
+                <div class="footer-contact">
+                    <img class="footer-contact-logo" src="assets/images/icon-fale-conosco.png" alt="Fale Conosco">
+                    <a class="underline-white" href="#">Fale Conosco</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-rights">
+            © 2025 Fatec Jahu. Todos os direitos reservados.
+        </div>
+    </div>
+
+</footer>
+</body>
+
+</html>
