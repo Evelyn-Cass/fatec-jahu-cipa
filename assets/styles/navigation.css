@@ -1,8 +1,10 @@
 @import url('theme.css');
+@import url('select.css');
+@import url('button.css');
 
 nav{
     width: 100vw;
-    height: 80px;
+    height: 70px;
     background: var(--base-cinza-gradient90);
     display: flex;
     flex-direction: row;
@@ -13,10 +15,22 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 500px;
+    width: 480px;
     height: 52px;
     background-color: var(--base-cinzaclaro);
     border-radius: 4px;
     margin-left: 8px;
+}
+
+
+.select2-selection--single{
+    border: none !important; 
+    border-radius: 0 !important;
+    background-color: var(--base-branco) !important;
+    border-bottom: 2px solid #9E9E9E !important;
+}
+
+.button-submit{
+    margin: 4px;
 }
 

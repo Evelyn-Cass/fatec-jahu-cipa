@@ -1,0 +1,18 @@
+.button-submit{
+    border: 2px solid var(--base-verde);
+    font-size: 16px;
+    padding: 0px 10px;
+    background-color: var(--base-verde);
+    color: var(--base-branco);
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+.button-submit:hover{
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--base-verde);
+    border: 2px solid var(--base-verde);
+    font-weight: 500;
+}
