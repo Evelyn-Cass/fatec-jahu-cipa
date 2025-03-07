@@ -14,3 +14,7 @@
     left: -4px !important;
     top: -4px !important;
 }
+
+.select2-results__option--highlighted[aria-selected]{
+    background-color: var(--base-green) !important;
+}

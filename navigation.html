@@ -1,37 +1,46 @@
 <head>
 
     <link rel="stylesheet" href="assets/styles/navigation.css">
+    <script src="assets/scripts/select2.js" defer></script>
+    <script src="assets/scripts/navigation.js" defer></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
-    <script src="assets/scripts/select2.js" defer></script>
+
 </head>
 <nav>
     <form class="nav-search" action="#">
 
-        <select class="nav-select" style="width: 38%" name="management" id="management">
-            <option value="" disabled selected>Gestões</option>
+        <select class="nav-select" style="width: 38%" name="management" id="search-management">
+            <option value="0" disabled selected>Gestão</option>
             <option value="1">2025/2026</option>
             <option value="2">2024/2025</option>
             <option value="3">2023/2024</option>
             <option value="4">2022/2023</option>
         </select>
 
-        <select class="nav-select" style="width: 38%" name="material" id="material">
-            <option value="" disabled selected>Material</option>
+        <select class="nav-select" style="width: 38%" name="material" id="search-material">
+            <option value="0" disabled selected>Material</option>
             <option value="1">ATAS</option>
             <option value="2">Curso CIPA</option>
             <option value="3">Documentos</option>
             <option value="4">Eleição</option>
             <option value="4">Mapa de Risco</option>
         </select>
-
-        <button class="button-submit" type="submit">
-            <!-- <img class="icon-search" src="assets/images/icon-search-white.png" alt=""> -->
-        </button>
-
-
+        <div class="nav-search-button">
+            <button class="button-submit" type="submit" id="search-submit"></button>
+            <span class="search-alert" id="search-alert">Selecione ambos os campos para continuar!</span>
+        </div>
     </form>
+    <div class="nav-link">
+        <a class="underline-white" href="#">Legislação</a>
+    </div>
+    <div class="nav-link">
+        <a class="underline-white" href="#">Estudos</a>
+    </div>
+    <div class="nav-link">
+        <a class="underline-white" href="#">Login</a>
+    </div>
 </nav>

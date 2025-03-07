@@ -1,10 +1,11 @@
 @import url('theme.css');
 @import url('select.css');
 @import url('button.css');
+@import url('animation.css');
 
 nav{
     width: 100vw;
-    height: 70px;
+    height: 60px;
     background: var(--base-gray-gradient90);
     display: flex;
     flex-direction: row;
@@ -16,7 +17,7 @@ nav{
     justify-content: center;
     align-items: center;
     width: 400px;
-    height: 52px;
+    height: 45px;
     background-color: var(--base-lightgray);
     border-radius: 4px;
     margin-left: 8px;
@@ -38,10 +39,42 @@ nav{
     background-position: center;
 }
 
+.nav-search-button{
+    position: relative;
+}
+
+.search-alert{
+    display: none;
+    position: absolute;
+    bottom: -30;
+    left: -300px;
+    z-index: 1;
+    background-color: var(--feedback-lightred);
+    color: white;
+    padding: 3px 6px;
+}
+
+
 .button-submit:hover{
     background-image: url('../images/icon-search-green.png');
 }
 
-.select2-results__option--highlighted[aria-selected]{
-    background-color: var(--base-cinzaclaro) !important;
+.nav-link{
+    padding: 16px;
+    font-size: 16px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-image: linear-gradient(180deg, rgba(169, 133, 194, 0) 25%, rgb(255, 255, 255) 50%, rgba(76, 68, 82, 0) 75%) 1;
+    border-width: 1px;
+    border-style: solid;
+    border-top: 0;
+    border-left: 0;
+    border-bottom: 0;
+}
+
+.nav-link:last-child{
+    border: none; 
 }
