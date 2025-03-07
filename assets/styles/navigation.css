@@ -75,6 +75,17 @@ nav{
     border-bottom: 0;
 }
 
+.nav-link a{
+    font-weight: 400;
+  
+}
+
+.underline-white{
+    text-shadow: 1px 2px 2px var(--base-gray);
+}
+
 .nav-link:last-child{
     border: none; 
 }
+
+
