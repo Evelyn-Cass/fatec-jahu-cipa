@@ -13,7 +13,7 @@ search.addEventListener('click', function (event) {
 });
 
 function alertTimer() {
-    searchAlert.style.display = 'block';
+    searchAlert.style.display = 'flex';
     setTimeout(function () {
         searchAlert.style.display = 'none';
     }, 3000);

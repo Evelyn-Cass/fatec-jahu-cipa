@@ -47,11 +47,27 @@ nav{
     display: none;
     position: absolute;
     bottom: -30;
-    left: -300px;
+    left: -290px;
     z-index: 1;
     background-color: var(--feedback-lightred);
-    color: white;
-    padding: 3px 6px;
+    color: var(--feedback-red);
+    font-weight: 500;
+    padding: 4px 12px;
+    border: 2px solid var(--feedback-red);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    min-width: max-content;
+}
+
+.search-alert img{
+    width: 23px;
+    padding-right: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
