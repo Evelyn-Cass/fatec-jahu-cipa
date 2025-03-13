@@ -1,4 +1,4 @@
-.button-submit{
+.button-green{
     border: 2px solid var(--base-green);
     font-size: 16px;
     padding: 0px 10px;
@@ -6,11 +6,10 @@
     color: var(--base-white);
     font-weight: 500;
     border-radius: 4px;
-    width: 50px;
-    height: 30px;
+
 }
 
-.button-submit:hover{
+.button-green:hover{
     box-sizing: border-box;
     cursor: pointer;
     background-color: transparent;
