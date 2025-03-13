@@ -7,6 +7,8 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: row;
+    background: rgb(76,0,0);
+    background: linear-gradient(180deg, rgba(76,0,0,1) 39%, rgba(0,0,0,1) 100%);
 }
 
 /* Auto complete */
@@ -95,7 +97,7 @@ span {
     position: relative;
 }
 
-.back-home{
+.back-home {
     position: absolute;
     right: 0;
     top: 0;
@@ -109,13 +111,13 @@ span {
     flex-direction: column;
 }
 
-.back-home:hover{
+.back-home:hover {
     text-decoration: none;
     color: var(--base-red);
     scale: 1.2;
 }
 
-.back-home img{
+.back-home img {
     width: 50px;
 }
 
@@ -123,16 +125,27 @@ span {
 
 .wellcome {
     color: var(--base-red);
-    font-weight: 300;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.form-control {
+    width: 100%;
+    margin-top: 12px;
+}
+
+.form-control:focus {
+    outline: none;
 }
 
 .div-remember {
     width: 90%;
     display: flex;
     align-items: center;
+    margin-top: 12px;
 }
 
-.label-remember{
+.label-remember {
     padding-left: 8px;
     margin: 0;
     font-weight: 400;
@@ -166,7 +179,44 @@ input[type="checkbox"]:checked::before {
     font-weight: 800;
 }
 
-.button-red{
+.text-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.button-red {
     margin-top: 12px;
     padding: 4px 20px;
+    font-size: 1.3rem;
+    border: 3px solid var(--base-red);
+    border-radius: 10px;
+}
+
+.water-mark{
+    position: absolute;
+    width: 250px;
+    padding: 24px;
+    bottom: 0;
+    right: 0;
+    font-size: 1.2rem;
+    filter: grayscale(100%);
+    opacity: 0.2;
+}
+
+.button-red:hover {
+    border: 3px solid var(--base-red);
+}
+
+@media (min-width: 1500px) {
+    .left-painel {
+        max-width: 30%;
+        min-height: 80vh;
+    }
+
+    .right-painel {
+        max-width: 30%;
+        min-height: 80vh;
+    }
 }
