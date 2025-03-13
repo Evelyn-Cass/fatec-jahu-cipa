@@ -52,7 +52,6 @@ nav{
 }
 
 .search-alert{
-    display: none;
     position: absolute;
     bottom: -30;
     left: -290px;
@@ -68,6 +67,8 @@ nav{
     justify-content: center;
     flex-direction: row;
     min-width: max-content;
+    display: none;
+
 }
 
 .search-alert img{
