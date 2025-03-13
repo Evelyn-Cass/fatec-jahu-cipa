@@ -92,7 +92,34 @@ span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
+
+.back-home{
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-decoration: none;
+    color: var(--base-red);
+    margin: 12px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.back-home:hover{
+    text-decoration: none;
+    color: var(--base-red);
+    scale: 1.2;
+}
+
+.back-home img{
+    width: 50px;
+}
+
+
 
 .wellcome {
     color: var(--base-red);
