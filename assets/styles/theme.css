@@ -9,7 +9,7 @@
     line-height: 1.5;
     color: var(--text-color);
 
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif !important;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;

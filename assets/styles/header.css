@@ -27,7 +27,7 @@ header {
     border-radius: 100%;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
-    box-shadow: 0em 0em 1em rgb(76 68 82 / 100%);
+    box-shadow: 0em 0em 1em rgb(0, 0, 0);
     padding: 12px;
 }
 
