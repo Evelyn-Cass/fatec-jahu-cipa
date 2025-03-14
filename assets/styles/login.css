@@ -7,8 +7,8 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: row;
-    background: rgb(76,0,0);
-    background: linear-gradient(180deg, rgba(76,0,0,1) 39%, rgba(0,0,0,1) 100%);
+    background: rgb(76, 0, 0);
+    background: linear-gradient(180deg, rgba(76, 0, 0, 1) 39%, rgba(0, 0, 0, 1) 100%);
 }
 
 /* Auto complete */
@@ -51,6 +51,12 @@ input:-webkit-autofill {
     border-bottom-left-radius: 0;
     box-shadow: 1em 0em 2em 0em rgb(0, 0, 0, 50%);
     margin-bottom: 42px;
+}
+.container-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .logo-cipa {
@@ -194,7 +200,7 @@ input[type="checkbox"]:checked::before {
     border-radius: 10px;
 }
 
-.water-mark{
+.water-mark {
     position: absolute;
     width: 250px;
     padding: 24px;
@@ -211,12 +217,49 @@ input[type="checkbox"]:checked::before {
 
 @media (min-width: 1500px) {
     .left-painel {
-        max-width: 30%;
-        min-height: 80vh;
+        max-width: 500px;
+        max-height: 800px;
+        min-height: 800px;
+        height: auto;
     }
 
     .right-painel {
-        max-width: 30%;
-        min-height: 80vh;
+        max-width: 500px;
+        max-height: 800px;
+        min-height: 800px;
+        height: auto;
     }
+}
+
+@media (max-width: 800px) {
+    body {
+        flex-direction: column-reverse;
+    }
+
+    .right-painel {
+        width: 100%;
+    }
+
+    .left-painel {
+        width: 0;
+        min-height: 0;
+        height: 0;
+    }
+
+    .left-content {
+        width: 0;
+        height: 0;
+    }
+
+    .container-logo {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        z-index: 2;
+    }
+
+    .container-text {
+        display: none;
+    }
+
 }
