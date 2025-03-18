@@ -24,6 +24,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
 }
 
 p {
@@ -64,8 +65,7 @@ h6 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 64.2vh;
-    width: 80%;
+    min-height: 63vh;
     background-color: var(--background);
 }
 
