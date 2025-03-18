@@ -1,6 +1,7 @@
+@import url('select.css');
 
 nav{
-    width: 100vw;
+    width: 100%;
     height: 60px;
     background: var(--base-gray-gradient90);
     display: flex;
@@ -16,9 +17,9 @@ nav{
     height: 45px;
     background-color: var(--base-lightgray);
     border-radius: 4px;
-    margin-left: 8px;
+    margin-left: 12px;
 }
-
+    
 
 .select2-selection--single{
     border: none !important; 

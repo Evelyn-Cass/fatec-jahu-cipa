@@ -30,13 +30,12 @@
 }
 
 .background-image {
-    height: 100%;
     opacity: 0.5;
     filter: grayscale(50%);
 }
 
 .background-image img {
-    width: 100%;
+    width: 500px;
     padding: 40px 0 40px 40px
 }
 

@@ -3,6 +3,10 @@
 @import url('animation.css');
 @import url('button.css');
 
+@import url('navigation.css');
+@import url('footer.css');
+@import url('header.css');
+
 * {
     margin: 0;
     padding: 0;
@@ -24,7 +28,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
+    min-height: 100vh;
+    width: 100%;
 }
 
 p {
@@ -62,11 +68,10 @@ h6 {
 
 .mainbody{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    min-height: 63vh;
-    background-color: var(--background);
+    width: 80%;
 }
 
 .error404{
