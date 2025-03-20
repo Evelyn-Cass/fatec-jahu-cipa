@@ -95,16 +95,39 @@ nav{
 }
 
 .nav-link a{
-    font-weight: 400;
-  
+    font-weight: 400; 
 }
 
 .underline-white{
     text-shadow: 1px 2px 2px var(--base-gray);
 }
 
-.nav-link:last-child{
+.last{
     border: none; 
 }
 
+.user-info{
+    margin-left: auto;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center}
 
+.user-info span{
+    font-weight: 500;
+    color: var(--base-red);
+}
+
+.user-info a{
+    width: 40px;
+    height: 40px;
+    margin:0 24px 0 16px;
+    background-image:url('../images/icon-logout-gray.png'); ;
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: center;
+}
+
+.user-info a:hover{
+    background-image: url('../images/icon-logout-gray-filled.png');
+}
