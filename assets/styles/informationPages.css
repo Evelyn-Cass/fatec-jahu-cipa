@@ -60,6 +60,7 @@
 
     .container-text h1 {
         font-size: 1.5rem;
+        width: 100%;
     }
 
     .container-text p {
