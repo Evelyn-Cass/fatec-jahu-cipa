@@ -1,5 +1,5 @@
 <head>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/styles/theme.css">
     <script src="assets/scripts/select2.js" defer></script>
     <script src="assets/scripts/navigation.js" defer></script>
@@ -12,23 +12,24 @@
 </head>
 <nav>
     <form class="nav-search" action="#">
+        <div class="nav-selects">
+            <select class="nav-select" style="width: 45%" name="management" id="search-management">
+                <option value="0" disabled selected>Gestão</option>
+                <option value="1">2025/2026</option>
+                <option value="2">2024/2025</option>
+                <option value="3">2023/2024</option>
+                <option value="4">2022/2023</option>
+            </select>
 
-        <select class="nav-select" style="width: 38%" name="management" id="search-management">
-            <option value="0" disabled selected>Gestão</option>
-            <option value="1">2025/2026</option>
-            <option value="2">2024/2025</option>
-            <option value="3">2023/2024</option>
-            <option value="4">2022/2023</option>
-        </select>
-
-        <select class="nav-select" style="width: 38%" name="material" id="search-material">
-            <option value="0" disabled selected>Material</option>
-            <option value="1">ATAS</option>
-            <option value="2">Curso CIPA</option>
-            <option value="3">Documentos</option>
-            <option value="4">Eleição</option>
-            <option value="4">Mapa de Risco</option>
-        </select>
+            <select class="nav-select" style="width: 45%" name="material" id="search-material">
+                <option value="0" disabled selected>Material</option>
+                <option value="1">ATAS</option>
+                <option value="2">Curso CIPA</option>
+                <option value="3">Documentos</option>
+                <option value="4">Eleição</option>
+                <option value="4">Mapa de Risco</option>
+            </select>
+        </div>
         <div class="nav-search-button">
             <button class="button-green" type="submit" id="search-submit"></button>
             <span class="search-alert" id="search-alert">
@@ -37,30 +38,34 @@
             </span>
         </div>
     </form>
-    <div class="nav-link">
-        <a class="underline-white" href="#">Legislação</a>
-    </div>
-    <div class="nav-link">
-        <a class="underline-white" href="#">Estudos</a>
-    </div>
-    <!-- <div class="nav-link last">
+    <div class="nav-links">
+        <img src="assets/images/icon-menu.png" id="nav-menu" alt="">
+        <div class="nav-container" id="nav-container">
+        <div class="nav-link">
+            <a class="underline-white" href="#">Legislação</a>
+        </div>
+        <div class="nav-link">
+            <a class="underline-white" href="#">Estudos</a>
+        </div>
+        <!-- <div class="nav-link last">
         <a class="underline-white" href="login.html">Login</a>
     </div> -->
-    <div class="nav-dropdown add-content">
-        <div class="nav-link">
-            <a class="underline-white" href="#">Adicionar</a>
-            <div class="nav-dropdown-content">
-                <a href="#">Documentos</a>
-                <a href="#">Gestão</a>
-                <a href="#">Membros da Gestão</a>
-                <a href="#">Secretários</a>
+        <div class="nav-dropdown add-content">
+            <div class="nav-link">
+                <a class="underline-white" href="#">Adicionar</a>
+                <div class="nav-dropdown-content">
+                    <a href="#">Documentos</a>
+                    <a href="#">Gestão</a>
+                    <a href="#">Membros da Gestão</a>
+                    <a href="#">Secretários</a>
+                </div>
             </div>
         </div>
+        <div class="nav-link last">
+            <a class="underline-white" href="#">Histórico</a>
+        </div>
     </div>
-    <div class="nav-link last">
-        <a class="underline-white" href="#">Histórico</a>
-    </div>
-
+</div>
     <div class="user-info">
         Olá,&nbsp<span>Evelyn</span>!
         <a href="#"></a>

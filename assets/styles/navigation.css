@@ -20,7 +20,7 @@ nav {
     margin-left: 12px;
 }
 
-.nav-selects{
+.nav-selects {
     width: 80% !important;
 }
 
@@ -41,7 +41,7 @@ nav {
     background-repeat: no-repeat;
     background-size: 20px;
     background-position: center;
-        }
+}
 
 
 .button-green:hover {
@@ -83,19 +83,20 @@ nav {
 }
 
 
-.nav-links{
+.nav-links {
     width: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
-.nav-links img{
+
+.nav-links img {
     width: 50px;
     display: none;
 }
 
-.nav-links img:hover{
+.nav-links img:hover {
     cursor: pointer;
     scale: 1.1;
     transition: 0.3s;
@@ -122,7 +123,8 @@ nav {
 }
 
 .underline-white {
-    text-shadow: 0px 00px 5px var(--base-gray);;
+    text-shadow: 0px 00px 5px var(--base-gray);
+    ;
 }
 
 .last {
@@ -173,8 +175,8 @@ nav {
     z-index: 1;
 }
 
-.add-content{
-    background: linear-gradient(180deg, rgba(178,0,0,0) 0%, rgba(0,144,89,1) 100%);
+.add-content {
+    background: linear-gradient(180deg, rgba(178, 0, 0, 0) 0%, rgba(0, 144, 89, 1) 100%);
 
 }
 
@@ -194,80 +196,142 @@ nav {
     display: block;
 }
 
-@media (max-width: 800px) {
+.nav-container {
+    display: flex;
+    flex-direction: row;
+}
 
-    
-    .nav-links img{
-        display: flex;
+@media (max-width: 1100px) {
+
+    .add-content {
+        background: linear-gradient(0deg, rgba(178, 0, 0, 0) 0%, rgba(0, 144, 89, 1) 100%);
+    }
+
+    .nav-links {
+        position: relative;
+        margin-left: auto;
+    }
+
+    .nav-container {
+        height: auto;
+        width: 300px;
         position: absolute;
+        top: 55px;
         right: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--base-gray);
+        z-index: 2;
+        display: none;
+    }
+
+    .nav-dropdown .nav-link {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-dropdown-content {
+        position: unset;
+        width: 100%;
+        display: block;
+    }
+
+    .nav-links img {
+        display: block;
+        margin-left: auto;
         margin-right: 12px;
     }
-    .nav-link{
+
+    .user-info {
         display: none;
-    }    
+    }
+
 }
 
 @media (max-width:500px) {
     nav {
         background: var(--base-gray);
     }
-    .nav-links img{
+
+    .nav-links img {
         filter: brightness(0) invert(1);
     }
 }
 
 @media (max-width:460px) {
-    nav{
+    nav {
         flex-direction: column;
         height: 120px;
         background: var(--base-gray-gradient90);
     }
-    .nav-search{
-        margin: 12px 0 0 0 ;
+
+    .nav-search {
+        margin: 12px 0 0 0;
     }
-    .nav-links{
+
+    .nav-links {
         position: relative;
         width: 100%;
-        height:60px;
+        height: 60px;
     }
-    .nav-links img{
+
+    .nav-links img {
         filter: none;
     }
-}
 
-@media(max-width: 400px){
-    nav{
+    .nav-container {
+        height: auto;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--base-gray);
+        z-index: 2;
+        display: none;
+    }
+}
+/* 
+@media(max-width: 400px) {
+    nav {
         flex-direction: row;
         height: 100px;
     }
-    .nav-search{
+
+    .nav-search {
         flex-direction: row;
         height: 80px;
         margin: 0 0 0 12px;
         border: 1px solid var(--base-gray);
     }
-    .nav.selects{
+
+    .nav.selects {
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    .nav-selects{
+
+    .nav-selects {
         width: 70% !important;
     }
-    .select2-container{
+
+    .select2-container {
         width: 90% !important;
-        
+
     }
-    .nav-search-button .button-green{
+
+    .nav-search-button .button-green {
         height: 60%;
     }
 
-    .nav-select{
-        width: 100% !important; 
+    .nav-select {
+        width: 100% !important;
     }
-    .nav-links{
+
+    .nav-links {
         width: 30%;
         height: auto;
     }
 }
+
+*/ 

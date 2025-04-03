@@ -27,6 +27,7 @@
     text-align: justify;
     width: 500px;
     margin: 12px;
+    font-weight: 400;
 }
 
 .background-image {
@@ -41,11 +42,19 @@
     filter: grayscale(50%);
     position: sticky;
     top: calc(50% - 250px);
+    z-index: -2;
 }
 
-@media (max-width: 768px) {
-    .container-text {
+@media (max-width: 850px) {
+    .mainbody{
         width: 100%;
+        overflow: hidden;
+    }
+    .containers{
+        position: relative;
+    }
+    .container-text {
+        width: 80%;
         margin-right: 0;
     }
 
@@ -58,8 +67,18 @@
     }
 
     .background-image img {
-        width: 100%;
+        width: 100vw;
+        position: absolute;
+        top: calc(50% - 250px);
+        right: calc(50% - 250px);
+        z-index: -2;
     }       
+    
+}
+@media (max-width:500px) {
+    .container-text h1{
+        width: 100%;
+    }
     
 }
 
@@ -68,3 +87,5 @@
         width: 600px;
     }    
 }
+
+
