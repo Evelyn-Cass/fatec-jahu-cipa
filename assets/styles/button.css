@@ -1,19 +1,19 @@
 .button-green{
+    background-color: transparent;
+    color: var(--base-green);
     border: 2px solid var(--base-green);
     font-size: 16px;
     padding: 0px 10px;
-    background-color: var(--base-green);
-    color: var(--base-white);
     font-weight: 500;
     border-radius: 4px;
 
 }
 
 .button-green:hover{
+    background-color: var(--base-green);
+    color: var(--base-white);
     box-sizing: border-box;
     cursor: pointer;
-    background-color: transparent;
-    color: var(--base-green);
     border: 2px solid var(--base-green);
     font-weight: 500;
     transition: 0.5s;

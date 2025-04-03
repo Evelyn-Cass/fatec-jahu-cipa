@@ -1,19 +1,37 @@
-<link rel="stylesheet" href="assets/styles/theme.css">
-<link rel="stylesheet" href="assets/styles/form.css">
-<article class="mainbody">
-    <form class="form-base" action="">
-        <div class="form-header">
-            <h1>Cadastrar Gestão</h1>
-        </div>
-        <div class="form-body form-body-mandate">
-            <div class="form-group">
-                <label class="label-month" for="startYear">Início do Mandato</label>
-                <input class="input-month" type="month" id="startYear" name="startYear" required>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Removed duplicate viewport meta tag -->
+    <title>CIPA - FATEC JAHU</title>
+    <link rel="shortcut icon" type="imagex/png" href="assets/images/icon-cipa.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/theme.css">
+    <link rel="stylesheet" href="assets/styles/form.css">
+    <link rel="stylesheet" href="assets/styles/formMandate.css">
+</head>
+
+<body>
+
+    <article class="mainbody">
+        <form class="form-base" action="">
+            <div class="form-header">
+                <h1>Cadastrar Gestão</h1>
             </div>
-            <div class="form-group">
-                <label class="label-month" for="endYear">Fim do Mandato</label>
-                <input class="input-month" type="month" id="endYear" name="endYear" required>
+            <div class="form-body form-body-mandate">
+                <div class="form-group">
+                    <label class="label-month" for="startYear">Início do Mandato</label>
+                    <input class="input-month" type="month" id="startYear" name="startYear" required>
+                </div>
+                <div class="form-group">
+                    <label class="label-month" for="endYear">Fim do Mandato</label>
+                    <input class="input-month" type="month" id="endYear" name="endYear" required>
+                </div>
+
+                <button type="submit" class="button-green">Cadastrar</button>
             </div>
-        </div>
-    </form>
-</article>
+        </form>
+    </article>
+</body>

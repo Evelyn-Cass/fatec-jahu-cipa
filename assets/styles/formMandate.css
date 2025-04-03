@@ -1,0 +1,45 @@
+.form-body-mandate {
+    height: 300px;
+}
+
+.label-month {
+    font-weight: 400;
+    margin-right: auto;
+    margin-left: 10%;
+}
+
+.input-month{
+    padding: 4px;
+    width: 80%;
+    font-weight: 400;
+}
+
+.form-body .button-green{
+    padding: 6px 40px;
+    margin-top: 16px;
+}
+
+@media (max-width:600px) {
+    .form-base {
+        min-width: 100%;
+        border-radius: 0;
+    }
+
+    .mainbody {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .form-body-mandate {
+        border-radius: 0;
+    }
+    .label-month{
+      margin-left: 5%;
+    }
+    .input-month{
+        width: 90%;
+    }
+    body{
+        align-items: normal;
+    }
+}

@@ -31,7 +31,7 @@ nav {
     border-bottom: 2px solid #9E9E9E !important;
 }
 
-.button-green {
+.nav-search-button .button-green {
     width: 50px;
     height: 30px;
     margin: 4px;
@@ -44,7 +44,7 @@ nav {
 }
 
 
-.button-green:hover {
+.nav-search-button .button-green:hover {
     background-image: url('../images/icon-search-white.png');
     background-color: var(--base-green);
 }
