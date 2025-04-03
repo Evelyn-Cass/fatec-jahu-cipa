@@ -235,6 +235,9 @@ nav {
         width: 100%;
         display: block;
     }
+    .nav-link{
+        border: none;
+    }
 
     .nav-links img {
         display: block;
