@@ -17,61 +17,61 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CipaFatecJahu
 build_property.RootNamespace = CipaFatecJahu
-build_property.ProjectDir = C:\Projetos\Fatec\fatec-jahu-cipa\CipaFatecJahu\CipaFatecJahu\
+build_property.ProjectDir = C:\Projetos\Fatec\fatec-jahu-cipa\CipaFatecJahu\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Projetos\Fatec\fatec-jahu-cipa\CipaFatecJahu\CipaFatecJahu
+build_property.MSBuildProjectDirectory = C:\Projetos\Fatec\fatec-jahu-cipa\CipaFatecJahu
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Projetos/Fatec/fatec-jahu-cipa/CipaFatecJahu/CipaFatecJahu/Views/Documents/Create.cshtml]
+[C:/Projetos/Fatec/fatec-jahu-cipa/CipaFatecJahu/Views/Documents/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdW1lbnRzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/Fatec/fatec-jahu-cipa/CipaFatecJahu/CipaFatecJahu/Views/Documents/Delete.cshtml]
+[C:/Projetos/Fatec/fatec-jahu-cipa/CipaFatecJahu/Views/Documents/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdW1lbnRzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/Fatec/fatec-jahu-cipa/CipaFatecJahu/CipaFatecJahu/Views/Documents/Details.cshtml]
+[C:/Projetos/Fatec/fatec-jahu-cipa/CipaFatecJahu/Views/Documents/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdW1lbnRzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/Fatec/fatec-jahu-cipa/CipaFatecJahu/CipaFatecJahu/Views/Documents/Edit.cshtml]
+[C:/Projetos/Fatec/fatec-jahu-cipa/CipaFatecJahu/Views/Documents/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdW1lbnRzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/Fatec/fatec-jahu-cipa/CipaFatecJahu/CipaFatecJahu/Views/Documents/Index.cshtml]
+[C:/Projetos/Fatec/fatec-jahu-cipa/CipaFatecJahu/Views/Documents/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdW1lbnRzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/Fatec/fatec-jahu-cipa/CipaFatecJahu/CipaFatecJahu/Views/Home/Index.cshtml]
+[C:/Projetos/Fatec/fatec-jahu-cipa/CipaFatecJahu/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/Fatec/fatec-jahu-cipa/CipaFatecJahu/CipaFatecJahu/Views/Home/Privacy.cshtml]
+[C:/Projetos/Fatec/fatec-jahu-cipa/CipaFatecJahu/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/Fatec/fatec-jahu-cipa/CipaFatecJahu/CipaFatecJahu/Views/Shared/Error.cshtml]
+[C:/Projetos/Fatec/fatec-jahu-cipa/CipaFatecJahu/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/Fatec/fatec-jahu-cipa/CipaFatecJahu/CipaFatecJahu/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Projetos/Fatec/fatec-jahu-cipa/CipaFatecJahu/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/Fatec/fatec-jahu-cipa/CipaFatecJahu/CipaFatecJahu/Views/_ViewImports.cshtml]
+[C:/Projetos/Fatec/fatec-jahu-cipa/CipaFatecJahu/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/Fatec/fatec-jahu-cipa/CipaFatecJahu/CipaFatecJahu/Views/_ViewStart.cshtml]
+[C:/Projetos/Fatec/fatec-jahu-cipa/CipaFatecJahu/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projetos/Fatec/fatec-jahu-cipa/CipaFatecJahu/CipaFatecJahu/Views/Shared/_Layout.cshtml]
+[C:/Projetos/Fatec/fatec-jahu-cipa/CipaFatecJahu/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-5t7hjg84fp
