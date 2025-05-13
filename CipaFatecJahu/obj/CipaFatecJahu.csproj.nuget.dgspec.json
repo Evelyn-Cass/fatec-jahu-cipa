@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\CipaFatecJahu\\CipaFatecJahu.csproj": {}
+    "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\CipaFatecJahu.csproj": {}
   },
   "projects": {
-    "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\CipaFatecJahu\\CipaFatecJahu.csproj": {
+    "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\CipaFatecJahu.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\CipaFatecJahu\\CipaFatecJahu.csproj",
+        "projectUniqueName": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\CipaFatecJahu.csproj",
         "projectName": "CipaFatecJahu",
-        "projectPath": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\CipaFatecJahu\\CipaFatecJahu.csproj",
+        "projectPath": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\CipaFatecJahu.csproj",
         "packagesPath": "C:\\Users\\Avell\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\CipaFatecJahu\\obj\\",
+        "outputPath": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

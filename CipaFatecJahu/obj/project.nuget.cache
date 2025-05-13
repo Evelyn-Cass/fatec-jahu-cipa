@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DKu2yGN3Exg=",
+  "dgSpecHash": "sPnosk7V1E4=",
   "success": true,
-  "projectFilePath": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\CipaFatecJahu\\CipaFatecJahu.csproj",
+  "projectFilePath": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\CipaFatecJahu.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Avell\\.nuget\\packages\\aspnetcore.identity.mongodbcore\\3.1.2\\aspnetcore.identity.mongodbcore.3.1.2.nupkg.sha512",
     "C:\\Users\\Avell\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
