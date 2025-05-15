@@ -1,0 +1,43 @@
+﻿@model CipaFatecJahu.Models.UserRole;
+@{
+    ViewData["Title"] = "Perfil";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="meu-container">
+    <div class="row">
+        <div class="col-md-4">
+            @{
+                if (ViewBag.Message != null)
+                {
+                    <div class="p-1 mb-2 bg-success text-white">
+                        @ViewBag.Message
+                    </div>
+                }
+            }
+        </div>
+    </div>
+    <div class="form-geral">
+        <h1>Perfil</h1>
+        <hr />
+        <form method="post" asp-action="CreateRole">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="RoleName" class="control-label fw-bold fs-4"></label>
+                <input asp-for="RoleName" class="form-control" />
+                <span asp-validation-for="RoleName" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="btn-container">
+                <input type="submit" class="btn-meu" />
+            </div>
+        </form>
+       
+    </div>
+
+</section>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

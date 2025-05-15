@@ -14,15 +14,13 @@ namespace CipaFatecJahu.Models
         public DateTime DocumentCreationDate { get; set; }
         [Display(Name = "Data da Reunião")]
         public DateOnly MeetingDate { get; set; }
-        [Display(Name = "Publicaçao")]
+        [Display(Name = "Publicaçao da Lei")]
         [Required]
         public DateOnly LawPublication { get; set; }
         [Display(Name = "Anexo")]
-        public bool Situation { get; set; }
-        [Display(Name = "Comentário")]
-        public string? Attachement { get; set; }
+        public string? Attachment { get; set; }
         [Display(Name = "Situação")]
-
+        public string? Situation { get; set; }
         public string? UserId { get; set; }
         public string? MandateId { get; set; }
         public string? MaterialId { get; set; }
