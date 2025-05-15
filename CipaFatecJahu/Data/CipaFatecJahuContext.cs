@@ -15,5 +15,6 @@ namespace CipaFatecJahu.Data
         }
 
         public DbSet<CipaFatecJahu.Models.Document> Document { get; set; } = default!;
+        public DbSet<CipaFatecJahu.Models.Mandate> Mandate { get; set; } = default!;
     }
 }
