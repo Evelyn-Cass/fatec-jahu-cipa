@@ -1,0 +1,26 @@
+
+.select2-container{
+    margin: 4px !important;
+}
+
+.select2-selection--single{
+    border: none !important; 
+    border-radius: 0 !important;
+    background-color: var(--base-white) !important;
+    border-bottom: 2px solid #9E9E9E !important;
+    
+}
+
+.select2-selection__rendered {
+    font-weight: 400;
+}
+
+.select2-container--open .select2-dropdown{
+    left: -4px !important;
+    top: -4px !important;
+}
+
+.select2-results__option--highlighted[aria-selected]{
+    background-color: var(--base-green) !important;
+}
+

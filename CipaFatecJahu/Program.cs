@@ -70,6 +70,7 @@ using (var scope = app.Services.CreateScope())
            new Material { Id = new Guid("2a7d3f2e-9b4e-4b8d-8b7e-2c3d3a5f6d9c"), Description = "Estudos" },
            new Material { Id = new Guid("1a6d3f2e-8b4e-4b8d-8b7e-2c3d3a5f6d9c"), Description = "Legislação" },
            new Material { Id = new Guid("0a5d3f2e-7b4e-4b8d-8b7e-2c3d3a5f6d9c"), Description = "Mapas de Risco" },
+           new Material { Id = new Guid("8c5d3f2e-5b4e-4b8d-8b7e-2c3d3a5f6d9c"), Description = "Membros" },
            new Material { Id = new Guid("9a4d3f2e-6b4e-4b8d-8b7e-2c3d3a5f6d9c"), Description = "SIPAT" }
            };
 
