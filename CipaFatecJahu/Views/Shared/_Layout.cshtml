@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - CipaFatecJahu</title>
+    <title>@ViewData["Title"] - CIPA - Fatec Jahu</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />  
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js" defer></script>
@@ -34,10 +34,10 @@
         </div>
     </header>
     <nav>
-        <form class="nav-search" action="#">
+        <form class="nav-search" asp-controller="Documents" asp-action="Search">
 
             <div class="nav-selects">
-                <select class="nav-select" style="width: 45%" name="management" id="search-mandate">
+                <select class="nav-select" style="width: 45%" name="mandate" id="search-mandate">
                     <option value="0" disabled selected>Gestão</option>
                     <option value="1">2025/2026</option>
                     <option value="2">2024/2025</option>
@@ -68,13 +68,16 @@
             <img src="~/img/icon-menu.png" id="nav-menu" alt="">
             <div class="nav-container" id="nav-container">
                 <div class="nav-link">
-                    <a class="underline-white" href="#">Legislação</a>
+                    <a class="underline-white" asp-area="" asp-controller="Documents" asp-action="Legislation">Legislação</a>
                 </div>
                 <div class="nav-link">
-                    <a class="underline-white" href="#">Estudos</a>
+                    <a class="underline-white" asp-area="" asp-controller="Documents" asp-action="Studies">Estudos</a>
                 </div>
                 <div class="nav-link last">
-                    <a class="underline-white" href="login.html">Login</a>
+                    <a class="underline-white" asp-area="" asp-controller="Account" asp-action="Login">Login</a>
+                </div>
+                <div class="nav-link last">
+                    <a class="underline-white" asp-area="" asp-controller="Account" asp-action="Logout">Logout</a>
                 </div>
             </div>
         </div>

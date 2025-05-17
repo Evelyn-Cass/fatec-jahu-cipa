@@ -9,7 +9,7 @@ body {
 
 /* Auto complete */
 input:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0 30px var(--base-lightgray) inset !important;
+    -webkit-box-shadow: 0 0 0 30px var(--base-white) inset !important;
 }
 
 input:-webkit-autofill {
@@ -32,7 +32,7 @@ input:-webkit-autofill {
     justify-content: center;
     flex-direction: row;
     min-width: max-content;
-    display: none;
+    
 }
 
 .alert img {
@@ -152,7 +152,7 @@ span {
     width: 50px;
 }
 
-.wellcome {
+.welcome {
     color: var(--base-red);
     font-weight: 500;
     font-size: 2rem;

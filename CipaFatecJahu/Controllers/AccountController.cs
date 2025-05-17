@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using CipaFatecJahu.Models;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.Identity.Client;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CipaFatecJahu.Controllers
@@ -10,17 +11,21 @@ namespace CipaFatecJahu.Controllers
         private UserManager<ApplicationUser>? _userManager;
         private SignInManager<ApplicationUser>? _signInManager;
 
-        public AccountController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager)
+        public AccountController(UserManager<ApplicationUser> userManager,
+                                 SignInManager<ApplicationUser> signInManager)
         {
             this._userManager = userManager;
             this._signInManager = signInManager;
         }
+
         public IActionResult Login()
         {
             return View();
         }
+
         [HttpPost]
-        public async Task<IActionResult> Login([Required][EmailAddress] string email, [Required] string password)
+        public async Task<IActionResult> Login([Required][EmailAddress] string email,
+                                               [Required] string password)
         {
             if (ModelState.IsValid)
             {
@@ -33,17 +38,24 @@ namespace CipaFatecJahu.Controllers
                     {
                         return RedirectToAction("Index", "Home");
                     }
-                    ModelState.AddModelError(nameof(email), "Verifique suas credenciais");
+                    else
+                    {
+                        ModelState.AddModelError(string.Empty, "Verifique suas credenciais");
+                    }
+                }
+                else
+                {
+                    ModelState.AddModelError(string.Empty, "Verifique suas credenciais");
                 }
             }
             return View();
-
-
         }
+
         public async Task<IActionResult> Logout()
         {
             await _signInManager.SignOutAsync();
             return RedirectToAction("Index", "Home");
         }
     }
+
 }

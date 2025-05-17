@@ -1,6 +1,6 @@
 const search = document.getElementById('search-submit');
 const material = document.getElementById('search-material');
-const management = document.getElementById('search-management');
+const management = document.getElementById('search-mandate');
 const searchAlert = document.getElementById('search-alert');
 const navMenu = document.getElementById('nav-menu');
 const navContainer = document.getElementById('nav-container')

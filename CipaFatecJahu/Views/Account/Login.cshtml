@@ -1,27 +1,76 @@
 ﻿@{
-    ViewData["Title"] = "Login";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = null;
 }
-<section class="meu-container">
-    <div class="form-geral">
-        <h1>Login</h1>
-        <div class="text-danger" asp-validation-summary="All"></div>
-        <form method="post">
-            <div>
-                <label class="form-label fw-bold fs-4">E-mail</label>
-                <input name="email" class="form-control" />
-            </div>
-            <div>
-                <label for="password" class="form-label fw-bold fs-4">Senha</label>
-                <input type="password" name="password" class="form-control" />
-            </div><br />
-            <div class="btn-container">
-                <button class="btn-meu" type="submit">Enviar</button>
-            </div>
-        </form>
-        <p>
-            Não tem conta? <a asp-area="" asp-controller="User" asp-action="Create">Clique aqui!</a>
-        </p>
-    </div>
-</section>
+<!DOCTYPE html>
+<html lang="pt-br">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIPA - FATEC JAHU</title>
+    <link rel="shortcut icon" type="imagex/png" href="~/img/icon-cipa.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.13/jquery.validate.unobtrusive.min.js"></script>
+
+    <script type="importmap"></script>
+    <link rel="stylesheet" href="~/css/theme.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/login.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/input-material.css" asp-append-version="true" />
+    <script src="~/js/materialize-inputs.jquery.js" defer></script>
+    <script src="~/js/login.js" defer></script>
+</head>
+
+<body>
+
+<div class="left-painel">
+    <div class="left-content">
+        <div class="container-logo">
+            <img class="logo-cipa" src="~/img/logo-cipa.png" alt="CIPA">
+            <img class="logo-fatec" src="~/img/logo-fatec-jahu-preto.png" alt="FATEC JAHU">
+        </div>
+        <div class="container-text">
+            <p>Este é o portal da CIPA (Comissão Interna de Prevenção de Acidentes) da FATEC-JAHU</p>
+            <b>Problemas ao acessar?</b>
+            <p>Se você tiver dificuldades para realizar o login, entre em contato com a CIPA para obter suporte.</p>
+            <span> Acesso ao portal é exclusivo para colaboradores autorizados.</span>
+        </div>
+    </div>
+</div>
+<div class="right-painel">
+        <a asp-area="" asp-controller="Home" asp-action="Index" class="back-home"><img src="~/img/icon-back-red.png" alt="Voltar para Home"></a>
+    <h3 class="welcome">Bem Vindo!</h3>
+        <form id="contact-form" asp-controller="Account" asp-action="Login" method="post">
+            @{  
+               var hasErrors = ViewData.ModelState?.Values.Any(v => v.Errors.Count > 0) ?? false;  
+            }  
+            <div class="alert" style="display: @(hasErrors ? "flex" : "none");">  
+               <img src="~/img/icon-alert.png" alt="ALERTA!" />  
+               @foreach (var modelState in ViewData.ModelState.Values)  
+               {  
+                   foreach (var error in modelState.Errors)  
+                   {  
+                      @error.ErrorMessage
+                   }  
+               }  
+            </div>
+        <div class="form-group input-material">
+            <input type="email" class="form-control" id="email-field" name="email" required>
+            <label for="email-field">Email</label>
+        </div>
+        <div class="form-group input-material">
+            <input type="password" class="form-control" id="password-field" name="password" required>
+            <label for="password-field">Senha</label>
+        </div>
+        <div class="div-remember">
+            <input type="checkbox" name="remember" class="input-remember" id="remember">
+            <label class="label-remember" for="remember">Lembrar de mim</label>
+        </div>
+        <div class="text-center">
+            <button type="submit" class="button-red">Login</button>
+        </div>
+    </form>
+    <img class="water-mark" src="~/img/logo-cipa.png" alt="">
+</div>
+</body>
+</html>
