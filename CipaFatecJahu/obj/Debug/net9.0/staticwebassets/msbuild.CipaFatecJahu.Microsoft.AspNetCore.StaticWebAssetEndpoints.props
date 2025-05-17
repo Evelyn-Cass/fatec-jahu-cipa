@@ -4,13 +4,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\CipaFatecJahu.ra07slrjgh.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-vYLkHxDSHZzR07PmMw59yY7u\u002B4o/pentgOQYw9DOp/M="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"69"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022vYLkHxDSHZzR07PmMw59yY7u\u002B4o/pentgOQYw9DOp/M=\u0022"},{"Name":"Last-Modified","Value":"Thu, 15 May 2025 22:47:47 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"69"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022vYLkHxDSHZzR07PmMw59yY7u\u002B4o/pentgOQYw9DOp/M=\u0022"},{"Name":"Last-Modified","Value":"Sat, 17 May 2025 16:55:41 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/CipaFatecJahu/CipaFatecJahu.ra07slrjgh.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\CipaFatecJahu.ra07slrjgh.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ra07slrjgh"},{"Name":"integrity","Value":"sha256-vYLkHxDSHZzR07PmMw59yY7u\u002B4o/pentgOQYw9DOp/M="},{"Name":"label","Value":"_content/CipaFatecJahu/CipaFatecJahu.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"69"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022vYLkHxDSHZzR07PmMw59yY7u\u002B4o/pentgOQYw9DOp/M=\u0022"},{"Name":"Last-Modified","Value":"Thu, 15 May 2025 22:47:47 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"69"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022vYLkHxDSHZzR07PmMw59yY7u\u002B4o/pentgOQYw9DOp/M=\u0022"},{"Name":"Last-Modified","Value":"Sat, 17 May 2025 16:55:41 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/CipaFatecJahu/css/animation.8qtacn6i4g.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\animation.css'))</AssetFile>

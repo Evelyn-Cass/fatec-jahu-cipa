@@ -1046,8 +1046,6 @@ D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\obj\Debug\net9.0\compressed\knes
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\obj\Debug\net9.0\compressed\6vg6x6h6bz-9vr69e8ynj.gz
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\obj\Debug\net9.0\compressed\kq9q268zmu-87fc7y1x7t.gz
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\obj\Debug\net9.0\compressed\mlhhcwg497-mlv21k5csn.gz
-D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\obj\Debug\net9.0\compressed\zjkkgoa3oh-ra07slrjgh.gz
-D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\obj\Debug\net9.0\compressed\m2ol1t9bzs-ra07slrjgh.gz
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\obj\Debug\net9.0\staticwebassets.build.json
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\obj\Debug\net9.0\staticwebassets.development.json
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\obj\Debug\net9.0\staticwebassets.build.endpoints.json
@@ -1066,3 +1064,5 @@ D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\obj\Debug\net9.0\CipaFatecJahu.g
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\obj\Debug\net9.0\ref\CipaFatecJahu.dll
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\obj\Debug\net9.0\compressed\uun6h7q7ps-0qhtnxso31.gz
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\obj\Debug\net9.0\compressed\mr32d6yn2f-8enrug8wg3.gz
+D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\obj\Debug\net9.0\compressed\zjkkgoa3oh-ra07slrjgh.gz
+D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\obj\Debug\net9.0\compressed\m2ol1t9bzs-ra07slrjgh.gz

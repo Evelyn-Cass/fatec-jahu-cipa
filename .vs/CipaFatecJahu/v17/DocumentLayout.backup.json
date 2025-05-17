@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1992EF97-580E-4F46-A865-1D4FFAC04616}|CipaFatecJahu\\CipaFatecJahu.csproj|d:\\projetos\\fatec\\cipa-fatec-jahu\\cipafatecjahu\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1992EF97-580E-4F46-A865-1D4FFAC04616}|CipaFatecJahu\\CipaFatecJahu.csproj|solutionrelative:cipafatecjahu\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1992EF97-580E-4F46-A865-1D4FFAC04616}|CipaFatecJahu\\CipaFatecJahu.csproj|d:\\projetos\\fatec\\cipa-fatec-jahu\\cipafatecjahu\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{1992EF97-580E-4F46-A865-1D4FFAC04616}|CipaFatecJahu\\CipaFatecJahu.csproj|solutionrelative:cipafatecjahu\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1992EF97-580E-4F46-A865-1D4FFAC04616}|CipaFatecJahu\\CipaFatecJahu.csproj|d:\\projetos\\fatec\\cipa-fatec-jahu\\cipafatecjahu\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1992EF97-580E-4F46-A865-1D4FFAC04616}|CipaFatecJahu\\CipaFatecJahu.csproj|solutionrelative:cipafatecjahu\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1992EF97-580E-4F46-A865-1D4FFAC04616}|CipaFatecJahu\\CipaFatecJahu.csproj|d:\\projetos\\fatec\\cipa-fatec-jahu\\cipafatecjahu\\wwwroot\\css\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{1992EF97-580E-4F46-A865-1D4FFAC04616}|CipaFatecJahu\\CipaFatecJahu.csproj|solutionrelative:cipafatecjahu\\wwwroot\\css\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{1992EF97-580E-4F46-A865-1D4FFAC04616}|CipaFatecJahu\\CipaFatecJahu.csproj|d:\\projetos\\fatec\\cipa-fatec-jahu\\cipafatecjahu\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1992EF97-580E-4F46-A865-1D4FFAC04616}|CipaFatecJahu\\CipaFatecJahu.csproj|solutionrelative:cipafatecjahu\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -29,60 +21,34 @@
           "SelectedChildIndex": 1,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "CipaFatecJahu\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "CipaFatecJahu\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAAE8AAABnAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACkAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-05-17T15:54:10.723Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Login.cshtml",
               "DocumentMoniker": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "CipaFatecJahu\\Views\\Account\\Login.cshtml",
               "ToolTip": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\Views\\Account\\Login.cshtml",
               "RelativeToolTip": "CipaFatecJahu\\Views\\Account\\Login.cshtml",
-              "ViewState": "AgIAAB8AAAAAAAAAAADwvzsAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAC4AAAAAAAAAAADwvzsAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-05-17T15:07:23.356Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "CipaFatecJahu\\Controllers\\AccountController.cs",
-              "ToolTip": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "CipaFatecJahu\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAmwDEAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T15:41:07.412Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "login.css",
-              "DocumentMoniker": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\css\\login.css",
-              "RelativeDocumentMoniker": "CipaFatecJahu\\wwwroot\\css\\login.css",
-              "ToolTip": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\css\\login.css",
-              "RelativeToolTip": "CipaFatecJahu\\wwwroot\\css\\login.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-05-17T15:28:13.756Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             }
           ]
         }

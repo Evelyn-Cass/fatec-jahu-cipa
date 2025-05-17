@@ -4,11 +4,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CipaFatecJahu.Controllers
 {
-    public class HomeController : Controller
+    public class AboutController : Controller
     {
         private readonly ILogger<AboutController> _logger;
 
-        public HomeController(ILogger<AboutController> logger)
+        public AboutController(ILogger<AboutController> logger)
         {
             _logger = logger;
         }
