@@ -25,10 +25,16 @@ namespace CipaFatecJahu.Controllers
         {
             if (ModelState.IsValid)
             {
+                if (user.Password != user.ConfirmPassword)
+                {
+                    ModelState.AddModelError("ConfirmPassword", "As senhas não conferem");
+                    return View();
+                }
                 ApplicationUser appuser = new ApplicationUser();
                 appuser.Name = user.Name;
                 appuser.UserName = user.Email;
                 appuser.Email = user.Email;
+                appuser.Status = "Ativo";
                 IdentityResult result = await _userManager.CreateAsync(appuser, user.Password);
                 if (result.Succeeded)
                 {

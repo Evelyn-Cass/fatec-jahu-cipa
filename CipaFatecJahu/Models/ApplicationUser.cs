@@ -7,5 +7,6 @@ namespace CipaFatecJahu.Models
     public class ApplicationUser : MongoIdentityUser
     {
         public string? Name { get; set; }
+        public string? Status { get; internal set; }
     }
 }

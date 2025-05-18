@@ -1,7 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using CipaFatecJahu.Models;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.Identity.Client;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CipaFatecJahu.Controllers
@@ -30,8 +29,14 @@ namespace CipaFatecJahu.Controllers
             if (ModelState.IsValid)
             {
                 ApplicationUser user = await _userManager.FindByEmailAsync(email);
+
                 if (user != null)
                 {
+                    if (user.Status == "Inativo")
+                    {
+                        ModelState.AddModelError(string.Empty, "Login não Autorizado");
+                        return View();
+                    }
                     Microsoft.AspNetCore.Identity.SignInResult result = await _signInManager.PasswordSignInAsync(user, password, false, false);
 
                     if (result.Succeeded)
