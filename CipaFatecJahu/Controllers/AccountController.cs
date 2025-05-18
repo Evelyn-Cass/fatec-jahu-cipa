@@ -24,7 +24,8 @@ namespace CipaFatecJahu.Controllers
 
         [HttpPost]
         public async Task<IActionResult> Login([Required][EmailAddress] string email,
-                                               [Required] string password)
+                                               [Required] string password,
+                                               bool remember)
         {
             if (ModelState.IsValid)
             {
@@ -37,7 +38,7 @@ namespace CipaFatecJahu.Controllers
                         ModelState.AddModelError(string.Empty, "Login não Autorizado");
                         return View();
                     }
-                    Microsoft.AspNetCore.Identity.SignInResult result = await _signInManager.PasswordSignInAsync(user, password, false, false);
+                    Microsoft.AspNetCore.Identity.SignInResult result = await _signInManager.PasswordSignInAsync(user, password, remember, true);
 
                     if (result.Succeeded)
                     {
