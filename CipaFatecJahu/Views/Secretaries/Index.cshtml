@@ -34,7 +34,7 @@
             <th>
                 @Html.DisplayNameFor(model => model.Status)
             </th>
-            <th></th>
+            <th>Ações</th>
         </tr>
     </thead>
     <tbody>
@@ -61,8 +61,7 @@
                     </label>
                 </td>
                 <td>
-                    <a asp-action="Edit" asp-route-id="@item.Email">Edit</a> |
-                    <a asp-action="Delete" asp-route-id="@item.Email">Delete</a>
+                    <a asp-action="ChangePassword" asp-route-email="@item.Email">Alterar Senha</a> 
                 </td>
             </tr>
         }

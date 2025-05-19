@@ -3,6 +3,7 @@ using CipaFatecJahu.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace CipaFatecJahu.Controllers
 {
@@ -132,9 +133,69 @@ namespace CipaFatecJahu.Controllers
 
             return RedirectToAction("Index");
         }
-        private bool DocumentExists(string email)
+
+        public IActionResult ChangePassword(string email)
         {
-            return _userManager.Users.Any(u => u.Email == email);
+            if (email == null)
+            {
+                return NotFound();
+            }
+
+            // Corrigido para buscar o usuário de forma síncrona, pois _userManager.Users não suporta operações assíncronas
+            var appuser = _userManager.Users.FirstOrDefault(u => u.Email == email);
+
+            if (appuser == null)
+            {
+                return NotFound();
+            }
+
+            var user = new User
+            {
+                Name = appuser.Name,
+                Email = appuser.Email
+            };
+
+            return View(user);
         }
+        [HttpPost]
+        public async Task<IActionResult> ChangePassword(User user)
+        {
+            if (ModelState.IsValid)
+            {
+                if (user.Password != user.ConfirmPassword)
+                {
+                    ModelState.AddModelError("ConfirmPassword", "As senhas não conferem");
+                    return View(user);
+                }
+
+                // Buscar usuário pelo e-mail
+                var appuser = await _userManager.FindByEmailAsync(user.Email);
+                if (appuser == null)
+                {
+                    ModelState.AddModelError("", "Usuário não encontrado.");
+                    return View(user);
+                }
+
+                // Gerar token de redefinição de senha
+                var resetToken = await _userManager.GeneratePasswordResetTokenAsync(appuser);
+                // Alterar a senha
+                var result = await _userManager.ResetPasswordAsync(appuser, resetToken, user.Password);
+
+                if (result.Succeeded)
+                {
+                    ViewBag.Message = "Senha alterada com sucesso";
+                }
+                else
+                {
+                    foreach (IdentityError error in result.Errors)
+                    {
+                        ModelState.AddModelError("", error.Description);
+                    }
+                }
+            }
+            return View(user);
+        }
+
+
     }//fim da classe
 }//fim namespace

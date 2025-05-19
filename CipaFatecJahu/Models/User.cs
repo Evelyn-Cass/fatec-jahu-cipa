@@ -10,15 +10,20 @@ namespace CipaFatecJahu.Models
 
         [Required(ErrorMessage = "O e-mail é obrigatório.")]
         [EmailAddress(ErrorMessage = "E-mail inválido.")]
+               
+        [Display(Name = "E-mail")]
         public string? Email { get; set; }
 
         [Required(ErrorMessage = "A senha é obrigatória.")]
         [Display(Name = "Senha")]
+        
         public string? Password { get; set; }
+
         [Display(Name = "Confirme a senha")]
         [Required(ErrorMessage = "O campo confirme a senha é obrigatório.")]
         public string? ConfirmPassword { get; set; }
+
         public string? Status { get; set; }
-       
     }
+
 }

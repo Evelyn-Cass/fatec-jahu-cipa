@@ -1,7 +1,9 @@
+using System.Globalization;
 using CipaFatecJahu.Data;
 using CipaFatecJahu.Models;
 using CipaFatecJahu.Services;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Localization;
 using Microsoft.EntityFrameworkCore;
 using MongoDB.Driver;
 
