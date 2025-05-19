@@ -1,4 +1,5 @@
-﻿using CipaFatecJahu.Models;
+﻿using System.Security.Claims;
+using CipaFatecJahu.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
@@ -40,6 +41,8 @@ namespace CipaFatecJahu.Controllers
                 {
                     //add role
                     await _userManager.AddToRoleAsync(appuser, "Secretário");
+                    var firstName = user.Name?.Split(' ', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries).FirstOrDefault() ?? string.Empty;
+                    await _userManager.AddClaimAsync(appuser, new Claim("firstName", firstName));
                     ViewBag.Message = "Secretário Cadastrado com sucesso";
                 }
                 else

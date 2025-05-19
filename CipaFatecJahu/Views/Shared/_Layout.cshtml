@@ -115,8 +115,11 @@
         {
             <div class="user-info">
                 Olá,&nbsp;<span>
-                    @User.FindFirst(System.Security.Claims.ClaimTypes.Name)?.Value
-                    
+                    @{
+                        var firstNameClaim = User.Claims.FirstOrDefault(c => c.Type == "firstName");
+                        var firstName = firstNameClaim != null ? firstNameClaim.Value : User.Identity.Name;
+                    }
+                    @firstName
                 </span>!
                 <a asp-area="" asp-controller="Account" asp-action="Logout"></a>
             </div>
