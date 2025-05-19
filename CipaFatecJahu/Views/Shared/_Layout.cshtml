@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Authorization
+
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="utf-8" />
@@ -22,13 +24,13 @@
             </div>
             <div class="header-fatec">
                 <a asp-area="" asp-controller="Home" asp-action="Index">
-                        <img class="header-fatec-logo" src="~/img/logo-fatec-jahu-branco.png" alt="Logotipo da FATEC JAHU">
-                    </a>
+                    <img class="header-fatec-logo" src="~/img/logo-fatec-jahu-branco.png" alt="Logotipo da FATEC JAHU">
+                </a>
             </div>
             <div class="header-back">
                 <a href="https://fatecjahu.edu.br/">
                     <img class="header-arrow" src="~/img/icon-arrow.png" alt="Voltar">
-                        Voltar
+                    Voltar
                 </a>
             </div>
         </div>
@@ -73,14 +75,52 @@
                 <div class="nav-link">
                     <a class="underline-white" asp-area="" asp-controller="Documents" asp-action="Studies">Estudos</a>
                 </div>
-                <div class="nav-link last">
-                    <a class="underline-white" asp-area="" asp-controller="Account" asp-action="Login">Login</a>
-                </div>
-                <div class="nav-link last">
-                    <a class="underline-white" asp-area="" asp-controller="Account" asp-action="Logout">Logout</a>
-                </div>
+
+                @if (!User.Identity.IsAuthenticated)
+                {
+                    <div class="nav-link last">
+                        <a class="underline-white" asp-area="" asp-controller="Account" asp-action="Login">Login</a>
+                    </div>
+                }
+                else
+                {
+                    <div class="nav-dropdown add-content">
+                        <div class="nav-link">
+                            <a class="underline-white" href="#">Adicionar</a>
+                            <div class="nav-dropdown-content">
+                                <a href="#">Documentos</a>
+                                <a href="#">Gestão</a>
+                                <a href="#">Membros da Gestão</a>
+                            </div>
+                        </div>
+                    </div>
+
+                     var navLinkClass = "nav-link" + (User.IsInRole("Secretário") ? " last" : "");
+                    
+
+                    <div class="@navLinkClass">
+                        <a class="underline-white" href="#">Histórico</a>
+                    </div>
+                    @if (User.IsInRole("Administrador"))
+                    {
+                        <div class="nav-link last">
+                            <a class="underline-white" asp-area="" asp-controller="Secretaries" asp-action="Index">Secretários</a>
+                        </div>
+                    }
+                }
+
             </div>
         </div>
+        @if (User.Identity.IsAuthenticated)
+        {
+            <div class="user-info">
+                Olá,&nbsp;<span>
+                    @User.FindFirst(System.Security.Claims.ClaimTypes.Name)?.Value
+                    
+                </span>!
+                <a asp-area="" asp-controller="Account" asp-action="Logout"></a>
+            </div>
+        }
     </nav>
     <div class="container">
         <main role="main" class="pb-3">

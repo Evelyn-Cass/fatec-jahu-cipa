@@ -39,7 +39,7 @@ namespace CipaFatecJahu.Controllers
                 if (result.Succeeded)
                 {
                     //add role
-                    await _userManager.AddToRoleAsync(appuser, "Administrador");
+                    await _userManager.AddToRoleAsync(appuser, "Secretário");
                     ViewBag.Message = "Secretário Cadastrado com sucesso";
                 }
                 else

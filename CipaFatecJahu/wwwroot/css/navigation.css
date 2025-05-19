@@ -168,7 +168,7 @@ nav {
     display: none;
     position: absolute;
     background-color: var(--base-green);
-    top: 60px;
+    top: 59px;
     left: 0px;
     min-width: 200px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -177,8 +177,7 @@ nav {
 
 .add-content {
     background: linear-gradient(180deg, rgba(178, 0, 0, 0) 2%, rgba(0, 144, 89, 1) 100%);
-    padding-top: 3px;
-
+    height: 59px;
 }
 
 .nav-dropdown-content a {
