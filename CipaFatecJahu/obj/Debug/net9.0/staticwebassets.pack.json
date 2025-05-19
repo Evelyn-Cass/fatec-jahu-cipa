@@ -53,6 +53,14 @@
       "PackagePath": "staticwebassets\\css\\select.css"
     },
     {
+      "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\css\\switch.css",
+      "PackagePath": "staticwebassets\\css\\switch.css"
+    },
+    {
+      "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\css\\table.css",
+      "PackagePath": "staticwebassets\\css\\table.css"
+    },
+    {
       "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\css\\theme.css",
       "PackagePath": "staticwebassets\\css\\theme.css"
     },

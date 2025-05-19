@@ -1,0 +1,25 @@
+﻿.title {
+    text-align: center;
+}
+
+.table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    border-radius: 4px;
+    border-style: hidden; 
+    box-shadow: 0 0 0 1px var(--base-lightgray); 
+}
+
+
+tr {
+    border: 1px solid var(--base-lightgray);
+    text-align: center;
+    height: 50px;
+}
+
+/* Removido border-radius e width do seletor tr, pois não são aplicáveis a tr */
+
+th {
+    font-weight: 600;
+}

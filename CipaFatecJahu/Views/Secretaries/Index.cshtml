@@ -1,0 +1,84 @@
+﻿@model IEnumerable<CipaFatecJahu.Models.User>
+
+@{
+    ViewData["Title"] = "Secretários";
+}
+
+<h1 class="title">Secretários</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+@{
+    var hasErrors = ViewData.ModelState?.Values.Any(v => v.Errors.Count > 0) ?? false;
+}
+<div class="alert" style="display: @(hasErrors ? "flex" : "none");">
+    <img src="~/img/icon-alert.png" alt="ALERTA!" />
+    @foreach (var modelState in ViewData.ModelState.Values)
+    {
+        foreach (var error in modelState.Errors)
+        {
+            @error.ErrorMessage
+        }
+    }
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    <label class="switch">
+                        <input type="checkbox"
+                            data-email="@item.Email"
+                            data-status="@item.Status"
+                            @if (item.Status == "Ativo")
+                            {
+                                <text>checked</text>
+                            }
+                            onchange="onStatusChange(this)" />
+                        <span class="slider round"></span>
+                    </label>
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Email">Edit</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Email">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section Scripts {
+    <script>
+        function onStatusChange(checkbox) {
+            var email = checkbox.getAttribute('data-email');
+            var currentStatus = checkbox.getAttribute('data-status');
+            var newStatus = checkbox.checked ? 'Ativo' : 'Inativo';
+            if (currentStatus !== newStatus) {
+                var url = '@Url.Action("ChangeStatus", "Secretaries")' + '?email=' + encodeURIComponent(email) + '&status=' + encodeURIComponent(newStatus);
+                window.location.href = url;
+            }
+        }
+    </script>
+}
