@@ -37,17 +37,17 @@ nav {
     margin: 4px;
     background-color: transparent;
     border-color: var(--base-green);
-    background-image: url('../img/icon-search-green.png');
+    background-image: url('../../img/icon-search-green.png');
     background-repeat: no-repeat;
     background-size: 20px;
     background-position: center;
 }
 
 
-.nav-search-button .button-green:hover {
-    background-image: url('../img/icon-search-white.png');
-    background-color: var(--base-green);
-}
+    .nav-search-button .button-green:hover {
+        background-image: url('../../img/icon-search-white.png');
+        background-color: var(--base-green);
+    }
 
 
 .nav-search-button {
@@ -148,16 +148,16 @@ nav {
     width: 40px;
     height: 40px;
     margin: 0 24px 0 16px;
-    background-image: url('../img/icon-logout-gray.png');
+    background-image: url('../../img/icon-logout-gray.png');
     ;
     background-repeat: no-repeat;
     background-size: 40px;
     background-position: center;
 }
 
-.user-info a:hover {
-    background-image: url('../img/icon-logout-gray-filled.png');
-}
+    .user-info a:hover {
+        background-image: url('../../img/icon-logout-gray-filled.png');
+    }
 
 .nav-dropdown {
     position: relative;

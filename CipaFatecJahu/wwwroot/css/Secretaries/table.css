@@ -18,7 +18,6 @@ tr {
     height: 50px;
 }
 
-/* Removido border-radius e width do seletor tr, pois não são aplicáveis a tr */
 
 th {
     font-weight: 600;

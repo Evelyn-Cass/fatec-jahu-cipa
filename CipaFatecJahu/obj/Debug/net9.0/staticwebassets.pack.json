@@ -5,64 +5,68 @@
       "PackagePath": "staticwebassets\\CipaFatecJahu.ra07slrjgh.bundle.scp.css"
     },
     {
-      "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\css\\animation.css",
-      "PackagePath": "staticwebassets\\css\\animation.css"
+      "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\css\\Account\\input-material.css",
+      "PackagePath": "staticwebassets\\css\\Account\\input-material.css"
     },
     {
-      "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\css\\button.css",
-      "PackagePath": "staticwebassets\\css\\button.css"
+      "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\css\\Account\\login.css",
+      "PackagePath": "staticwebassets\\css\\Account\\login.css"
     },
     {
-      "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\css\\color.css",
-      "PackagePath": "staticwebassets\\css\\color.css"
+      "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\css\\Secretaries\\Index.css",
+      "PackagePath": "staticwebassets\\css\\Secretaries\\Index.css"
     },
     {
-      "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\css\\footer.css",
-      "PackagePath": "staticwebassets\\css\\footer.css"
+      "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\css\\Secretaries\\switch.css",
+      "PackagePath": "staticwebassets\\css\\Secretaries\\switch.css"
     },
     {
-      "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\css\\form.css",
-      "PackagePath": "staticwebassets\\css\\form.css"
+      "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\css\\Secretaries\\table.css",
+      "PackagePath": "staticwebassets\\css\\Secretaries\\table.css"
+    },
+    {
+      "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\css\\Shared\\animation.css",
+      "PackagePath": "staticwebassets\\css\\Shared\\animation.css"
+    },
+    {
+      "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\css\\Shared\\button.css",
+      "PackagePath": "staticwebassets\\css\\Shared\\button.css"
+    },
+    {
+      "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\css\\Shared\\color.css",
+      "PackagePath": "staticwebassets\\css\\Shared\\color.css"
+    },
+    {
+      "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\css\\Shared\\footer.css",
+      "PackagePath": "staticwebassets\\css\\Shared\\footer.css"
+    },
+    {
+      "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\css\\Shared\\form.css",
+      "PackagePath": "staticwebassets\\css\\Shared\\form.css"
+    },
+    {
+      "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\css\\Shared\\header.css",
+      "PackagePath": "staticwebassets\\css\\Shared\\header.css"
+    },
+    {
+      "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\css\\Shared\\informationPages.css",
+      "PackagePath": "staticwebassets\\css\\Shared\\informationPages.css"
+    },
+    {
+      "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\css\\Shared\\navigation.css",
+      "PackagePath": "staticwebassets\\css\\Shared\\navigation.css"
+    },
+    {
+      "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\css\\Shared\\select.css",
+      "PackagePath": "staticwebassets\\css\\Shared\\select.css"
+    },
+    {
+      "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\css\\Shared\\theme.css",
+      "PackagePath": "staticwebassets\\css\\Shared\\theme.css"
     },
     {
       "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\css\\formMandate.css",
       "PackagePath": "staticwebassets\\css\\formMandate.css"
-    },
-    {
-      "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\css\\header.css",
-      "PackagePath": "staticwebassets\\css\\header.css"
-    },
-    {
-      "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\css\\informationPages.css",
-      "PackagePath": "staticwebassets\\css\\informationPages.css"
-    },
-    {
-      "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\css\\input-material.css",
-      "PackagePath": "staticwebassets\\css\\input-material.css"
-    },
-    {
-      "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\css\\login.css",
-      "PackagePath": "staticwebassets\\css\\login.css"
-    },
-    {
-      "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\css\\navigation.css",
-      "PackagePath": "staticwebassets\\css\\navigation.css"
-    },
-    {
-      "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\css\\select.css",
-      "PackagePath": "staticwebassets\\css\\select.css"
-    },
-    {
-      "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\css\\switch.css",
-      "PackagePath": "staticwebassets\\css\\switch.css"
-    },
-    {
-      "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\css\\table.css",
-      "PackagePath": "staticwebassets\\css\\table.css"
-    },
-    {
-      "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\css\\theme.css",
-      "PackagePath": "staticwebassets\\css\\theme.css"
     },
     {
       "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\favicon.ico",
@@ -149,24 +153,24 @@
       "PackagePath": "staticwebassets\\img\\logo_cps_brasao.png"
     },
     {
+      "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\js\\Account\\login.js",
+      "PackagePath": "staticwebassets\\js\\Account\\login.js"
+    },
+    {
+      "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\js\\Account\\materialize-inputs.jquery.js",
+      "PackagePath": "staticwebassets\\js\\Account\\materialize-inputs.jquery.js"
+    },
+    {
+      "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\js\\Shared\\navigation.js",
+      "PackagePath": "staticwebassets\\js\\Shared\\navigation.js"
+    },
+    {
+      "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\js\\Shared\\select2.js",
+      "PackagePath": "staticwebassets\\js\\Shared\\select2.js"
+    },
+    {
       "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\js\\form.js",
       "PackagePath": "staticwebassets\\js\\form.js"
-    },
-    {
-      "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\js\\login.js",
-      "PackagePath": "staticwebassets\\js\\login.js"
-    },
-    {
-      "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\js\\materialize-inputs.jquery.js",
-      "PackagePath": "staticwebassets\\js\\materialize-inputs.jquery.js"
-    },
-    {
-      "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\js\\navigation.js",
-      "PackagePath": "staticwebassets\\js\\navigation.js"
-    },
-    {
-      "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\js\\select2.js",
-      "PackagePath": "staticwebassets\\js\\select2.js"
     },
     {
       "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\js\\site.js",
