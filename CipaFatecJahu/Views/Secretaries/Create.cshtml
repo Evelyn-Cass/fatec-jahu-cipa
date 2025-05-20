@@ -3,10 +3,14 @@
     ViewData["Title"] = "Usuário";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+@section Styles {
+	<link rel="stylesheet" href="~/css/Shared/form.css" />
+    <link rel="stylesheet" href="~/css/Secretaries/create.css" />
+}
 
-<section class="meu-container">
-    <div class="row">
-        <div class="col-md-4">
+<section class="mainbody">
+    <div class="">
+        <div class="">
             @{
                 if (ViewBag.Message != null)
                 {
@@ -18,34 +22,36 @@
         </div>
     </div>
     <div class="form-geral">
-        <h1>Novo Secretário</h1>
-        <hr />
-        <form method="post" asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Name" class="control-label fw-bold fs-4"></label>
-                <input asp-for="Name" class="form-control" />
-                <span asp-validation-for="Name" class="text-danger"></span>
+        <form class="form-base" method="post" asp-action="Create">
+            <div class="form-header">
+                <h1>Novo Secretário</h1>
             </div>
-            <div class="form-group">
-                <label asp-for="Email" class="control-label fw-bold fs-4"></label>
-                <input asp-for="Email" class="form-control" />
-                <span asp-validation-for="Email" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Password" class="control-label fw-bold fs-4"></label>
-                <input asp-for="Password" class="form-control" type="password" />
-                <span asp-validation-for="Password" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="ConfirmPassword" class="control-label fw-bold fs-4"></label>
-                <input asp-for="ConfirmPassword" name="ConfirmPassword" class="form-control" type="password" />
-                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
-            </div>
-            <br />
-            <div class="btn-container">
-                <input type="submit" class="btn-meu" />
-            </div>
+            <div class="form-body secretary">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Name" class="control-label"></label>
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="control-danger" style=" color: aliceblue !important; "></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Email" class="control-label"></label>
+                    <input asp-for="Email" class="form-control" />
+                    <span asp-validation-for="Email" class="control-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Password" class="control-label"></label>
+                    <input asp-for="Password" class="form-control" type="password" />
+                    <span asp-validation-for="Password" class="control-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ConfirmPassword" class="control-label fw-bold fs-4"></label>
+                    <input asp-for="ConfirmPassword" name="ConfirmPassword" class="form-control" type="password" />
+                    <span asp-validation-for="ConfirmPassword" class="control-danger"></span>
+                </div>
+                <div class="btn-container">
+                    <input type="submit" class="button-green button-create">
+                </div>
+			</div>
         </form>
     </div>
 

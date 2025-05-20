@@ -12,6 +12,7 @@ D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\lib\bootstrap\dist\js\bo
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\js\Shared\navigation.js
+D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\js\Secretaries\index.js
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\css\Shared\navigation.css
@@ -38,6 +39,7 @@ D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\lib\bootstrap\dist\js\bo
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\js\Account\login.js
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\js\Shared\select2.js
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\css\Secretaries\create.css
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\js\site.js
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\lib\bootstrap\dist\css\bootstrap.css
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
@@ -83,6 +85,7 @@ D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\lib\bootstrap\dist\js\bo
 wwwroot\css\Account\input-material.css
 wwwroot\css\Account\login.css
 wwwroot\css\formMandate.css
+wwwroot\css\Secretaries\create.css
 wwwroot\css\Secretaries\index.css
 wwwroot\css\Secretaries\switch.css
 wwwroot\css\Secretaries\table.css
@@ -120,6 +123,7 @@ wwwroot\img\logo-fatec-jahu-preto.png
 wwwroot\js\Account\login.js
 wwwroot\js\Account\materialize-inputs.jquery.js
 wwwroot\js\form.js
+wwwroot\js\Secretaries\index.js
 wwwroot\js\Shared\navigation.js
 wwwroot\js\Shared\select2.js
 wwwroot\js\site.js

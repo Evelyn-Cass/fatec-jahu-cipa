@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\css\\Account\\login.css"
     },
     {
+      "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\css\\Secretaries\\create.css",
+      "PackagePath": "staticwebassets\\css\\Secretaries\\create.css"
+    },
+    {
       "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\css\\Secretaries\\index.css",
       "PackagePath": "staticwebassets\\css\\Secretaries\\index.css"
     },
@@ -159,6 +163,10 @@
     {
       "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\js\\Account\\materialize-inputs.jquery.js",
       "PackagePath": "staticwebassets\\js\\Account\\materialize-inputs.jquery.js"
+    },
+    {
+      "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\js\\Secretaries\\index.js",
+      "PackagePath": "staticwebassets\\js\\Secretaries\\index.js"
     },
     {
       "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\js\\Shared\\navigation.js",
