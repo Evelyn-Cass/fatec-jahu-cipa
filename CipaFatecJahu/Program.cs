@@ -14,6 +14,8 @@ builder.Services.AddDbContext<CipaFatecJahuContext>(options =>
 // Add services to the container.  
 builder.Services.AddControllersWithViews();
 
+
+
 ContextMongodb.ConnectionString = builder.Configuration.GetSection("MongoConnection:ConnectionString").Value;
 ContextMongodb.Database = builder.Configuration.GetSection("MongoConnection:Database").Value;
 ContextMongodb.IsSSL = Convert.ToBoolean(builder.Configuration.GetSection("MongoConnection:IsSSL").Value);
@@ -24,12 +26,10 @@ builder.Services.AddIdentity<ApplicationUser, ApplicationRole>(options =>
 })
 .AddMongoDbStores<ApplicationUser, ApplicationRole, Guid>(
    ContextMongodb.ConnectionString, ContextMongodb.Database)
-.AddDefaultTokenProviders();
-
+.AddDefaultTokenProviders().AddErrorDescriber<PortugueseIdentityErrorDescriber>();
 
 builder.Services.AddSingleton<MongoDbService>();
-
-
+;
 
 var app = builder.Build();
 

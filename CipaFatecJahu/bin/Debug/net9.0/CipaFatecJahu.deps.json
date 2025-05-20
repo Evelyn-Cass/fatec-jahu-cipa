@@ -17,11 +17,6 @@
         },
         "runtime": {
           "CipaFatecJahu.dll": {}
-        },
-        "resources": {
-          "pt-BR/CipaFatecJahu.resources.dll": {
-            "locale": "pt-BR"
-          }
         }
       },
       "AspNetCore.Identity.MongoDbCore/3.1.2": {

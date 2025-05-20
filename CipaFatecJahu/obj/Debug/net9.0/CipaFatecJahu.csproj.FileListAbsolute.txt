@@ -1068,11 +1068,9 @@ D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\obj\Debug\net9.0\compressed\qz0o
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\obj\Debug\net9.0\compressed\qpmd05i8h1-rzk93rm0ac.gz
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\obj\Debug\net9.0\compressed\mr32d6yn2f-4n4ms6jm74.gz
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\obj\Debug\net9.0\compressed\uzhuy7udo3-5c72vby1x0.gz
-D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\bin\Debug\net9.0\pt-BR\CipaFatecJahu.resources.dll
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\bin\Debug\net9.0\Microsoft.Extensions.Localization.dll
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\bin\Debug\net9.0\Microsoft.Extensions.Localization.Abstractions.dll
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\bin\Debug\net9.0\Microsoft.Extensions.Options.dll
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll
-D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\obj\Debug\net9.0\pt-BR\CipaFatecJahu.resources.dll
