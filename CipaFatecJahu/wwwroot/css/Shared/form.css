@@ -47,7 +47,6 @@
     flex-direction: column;
     width: 100%;
     align-items: center;
-    justify-content: center;
 }
 
 .form-control {
@@ -69,12 +68,15 @@
 
 .control-danger {
     color: var(--base-red);
-    height: 20px;
-    max-height: 20px;
+/*    height: 20px;*/
+    min-height: 20px;
 }
     .control-danger span {
+        display: block;
         color: var(--base-red);
-        font-weight: 400;   
+        font-weight: 400;
+        text-align: center;
+        width: 100%;
     }
 
 .field-validation-error {

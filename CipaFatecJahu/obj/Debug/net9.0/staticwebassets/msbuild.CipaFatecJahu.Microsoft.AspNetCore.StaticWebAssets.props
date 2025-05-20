@@ -84,8 +84,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>a8mjz8yu7x</Fingerprint>
-      <Integrity>SrqKjJoGcC4wKTRLq9uz6kUA8NR6148FW6fdjf4smRU=</Integrity>
+      <Fingerprint>xo189090u2</Fingerprint>
+      <Integrity>kfO51WVlmwhJBrsfAyx11vn2guNht5+iG/qVkhThc+Q=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Secretaries\create.css'))</OriginalItemSpec>
@@ -228,8 +228,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>fzb8avf7t2</Fingerprint>
-      <Integrity>VTsFIWJ6gg7K1oPsogpYCuVvdfhY2Xfphz/6oH6lOng=</Integrity>
+      <Fingerprint>ku342ufzez</Fingerprint>
+      <Integrity>hOlLbrMQf+asVg6d2AZg5E1hV7xAL2i471H82wcXWA4=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Shared\form.css'))</OriginalItemSpec>

@@ -38,6 +38,7 @@
                     <input asp-for="Email" class="form-control" />
                     <span asp-validation-for="Email" class="control-danger"></span>
                 </div>
+                <div class="password-group">
                 <div class="form-group">
                     <label asp-for="Password" class="control-label"></label>
                     <input asp-for="Password" class="form-control" type="password" />
@@ -47,6 +48,7 @@
                     <label asp-for="ConfirmPassword" class="control-label fw-bold fs-4"></label>
                     <input asp-for="ConfirmPassword" name="ConfirmPassword" class="form-control" type="password" />
                     <span asp-validation-for="ConfirmPassword" class="control-danger"></span>
+                </div>
                 </div>
                 <div class="btn-container">
                     <input type="submit" class="button-green button-create">

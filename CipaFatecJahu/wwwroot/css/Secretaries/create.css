@@ -1,4 +1,19 @@
 ﻿.form-geral{
-    width: 60%
+    width: 50%
 }
 
+.password-group {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+
+    .password-group .control-label{
+        width: 100%;
+    }
+    .password-group .form-group {
+        width: 49%;
+    }
+    .password-group .form-control {
+        width: 100%;
+    }
