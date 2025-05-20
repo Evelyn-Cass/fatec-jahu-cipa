@@ -64,6 +64,7 @@ D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\js\form.js
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\lib\jquery-validation\LICENSE.md
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\css\Secretaries\index.css
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\css\Shared\form.css
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\lib\jquery\dist\jquery.min.map
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
@@ -72,7 +73,6 @@ D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\css\Account\input-materi
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\lib\jquery-validation\dist\jquery.validate.js
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
-D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\css\Secretaries\Index.css
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\css\Shared\button.css
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
@@ -83,7 +83,7 @@ D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\lib\bootstrap\dist\js\bo
 wwwroot\css\Account\input-material.css
 wwwroot\css\Account\login.css
 wwwroot\css\formMandate.css
-wwwroot\css\Secretaries\Index.css
+wwwroot\css\Secretaries\index.css
 wwwroot\css\Secretaries\switch.css
 wwwroot\css\Secretaries\table.css
 wwwroot\css\Shared\animation.css

@@ -1,2 +1,0 @@
-D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\js\select2.js
-D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\js\navigation.js
