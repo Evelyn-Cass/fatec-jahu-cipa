@@ -282,8 +282,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>dg0l0nqy10</Fingerprint>
-      <Integrity>jdGg1UgQ4bgdZYBkYc8TZrSW1q0r5RlXGW5I2VnAX7k=</Integrity>
+      <Fingerprint>83carkhxwd</Fingerprint>
+      <Integrity>TIllxZ45FqGwBOmS9rUdyARGuAGeMgrQUNg1Kt9POLA=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Shared\navigation.css'))</OriginalItemSpec>

@@ -96,8 +96,8 @@
                         </div>
                     </div>
 
-                     var navLinkClass = "nav-link" + (User.IsInRole("Secretário") ? " last" : "");
-                    
+                    var navLinkClass = "nav-link" + (User.IsInRole("Secretário") ? " last" : "");
+
 
                     <div class="@navLinkClass">
                         <a class="underline-white" href="#">Histórico</a>
@@ -108,6 +108,9 @@
                             <a class="underline-white" asp-area="" asp-controller="Secretaries" asp-action="Index">Secretários</a>
                         </div>
                     }
+                    <div class="nav-link mobile-logout">
+                        <a asp-area="" asp-controller="Account" asp-action="Logout" class="underline-white">Logout</a>
+                    </div>
                 }
 
             </div>
