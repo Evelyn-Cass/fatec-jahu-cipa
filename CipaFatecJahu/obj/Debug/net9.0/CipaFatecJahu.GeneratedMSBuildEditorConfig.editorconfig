@@ -60,16 +60,60 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdW1lbnRzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Projetos/Fatec/fatec-jahu-cipa/CipaFatecJahu/Views/Documents/Legislation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdW1lbnRzXExlZ2lzbGF0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projetos/Fatec/fatec-jahu-cipa/CipaFatecJahu/Views/Documents/Material.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdW1lbnRzXE1hdGVyaWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projetos/Fatec/fatec-jahu-cipa/CipaFatecJahu/Views/Documents/Studies.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdW1lbnRzXFN0dWRpZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projetos/Fatec/fatec-jahu-cipa/CipaFatecJahu/Views/Documents/_formAtas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdW1lbnRzXF9mb3JtQXRhcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projetos/Fatec/fatec-jahu-cipa/CipaFatecJahu/Views/Documents/_formCursoCipa.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdW1lbnRzXF9mb3JtQ3Vyc29DaXBhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projetos/Fatec/fatec-jahu-cipa/CipaFatecJahu/Views/Documents/_formEleicao.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdW1lbnRzXF9mb3JtRWxlaWNhby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projetos/Fatec/fatec-jahu-cipa/CipaFatecJahu/Views/Documents/_formEstudos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdW1lbnRzXF9mb3JtRXN0dWRvcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projetos/Fatec/fatec-jahu-cipa/CipaFatecJahu/Views/Documents/_formLegislacao.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdW1lbnRzXF9mb3JtTGVnaXNsYWNhby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projetos/Fatec/fatec-jahu-cipa/CipaFatecJahu/Views/Documents/_formMapaDeRisco.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdW1lbnRzXF9mb3JtTWFwYURlUmlzY28uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projetos/Fatec/fatec-jahu-cipa/CipaFatecJahu/Views/Documents/_formMembros.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdW1lbnRzXF9mb3JtTWVtYnJvcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projetos/Fatec/fatec-jahu-cipa/CipaFatecJahu/Views/Documents/_formOutros.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdW1lbnRzXF9mb3JtT3V0cm9zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projetos/Fatec/fatec-jahu-cipa/CipaFatecJahu/Views/Documents/_formSIPAT.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdW1lbnRzXF9mb3JtU0lQQVQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Projetos/Fatec/fatec-jahu-cipa/CipaFatecJahu/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Projetos/Fatec/fatec-jahu-cipa/CipaFatecJahu/Views/Mandates/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuZGF0ZXNcQ3JlYXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Projetos/Fatec/fatec-jahu-cipa/CipaFatecJahu/Views/Mandates/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuZGF0ZXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Projetos/Fatec/fatec-jahu-cipa/CipaFatecJahu/Views/Mandates/Details.cshtml]

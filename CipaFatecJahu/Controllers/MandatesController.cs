@@ -1,28 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using CipaFatecJahu.Models;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using CipaFatecJahu.Data;
-using CipaFatecJahu.Models;
+using MongoDB.Driver;
 
 namespace CipaFatecJahu.Controllers
 {
     public class MandatesController : Controller
     {
-        private readonly CipaFatecJahuContext _context;
 
-        public MandatesController(CipaFatecJahuContext context)
-        {
-            _context = context;
-        }
+        ContextMongodb _context = new ContextMongodb();
 
         // GET: Mandates
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Mandate.ToListAsync());
+            return View(await _context.Mandates.Find(u => true).ToListAsync());
         }
 
         // GET: Mandates/Details/5
@@ -32,9 +23,7 @@ namespace CipaFatecJahu.Controllers
             {
                 return NotFound();
             }
-
-            var mandate = await _context.Mandate
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var mandate = await _context.Mandates.Find(m => m.Id == id).FirstOrDefaultAsync();
             if (mandate == null)
             {
                 return NotFound();
@@ -58,10 +47,12 @@ namespace CipaFatecJahu.Controllers
         {
             if (ModelState.IsValid)
             {
+                mandate.DocumentCreationDate = DateTime.Now;
                 mandate.Id = Guid.NewGuid();
-                _context.Add(mandate);
-                await _context.SaveChangesAsync();
+                await _context.Mandates.InsertOneAsync(mandate);
                 return RedirectToAction(nameof(Index));
+
+
             }
             return View(mandate);
         }
@@ -74,7 +65,7 @@ namespace CipaFatecJahu.Controllers
                 return NotFound();
             }
 
-            var mandate = await _context.Mandate.FindAsync(id);
+            var mandate = await _context.Mandates.Find(m => m.Id == id).FirstOrDefaultAsync();
             if (mandate == null)
             {
                 return NotFound();
@@ -98,8 +89,7 @@ namespace CipaFatecJahu.Controllers
             {
                 try
                 {
-                    _context.Update(mandate);
-                    await _context.SaveChangesAsync();
+                    await _context.Mandates.ReplaceOneAsync(m => m.Id == mandate.Id, mandate);
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -116,43 +106,9 @@ namespace CipaFatecJahu.Controllers
             }
             return View(mandate);
         }
-
-        // GET: Mandates/Delete/5
-        public async Task<IActionResult> Delete(Guid? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var mandate = await _context.Mandate
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (mandate == null)
-            {
-                return NotFound();
-            }
-
-            return View(mandate);
-        }
-
-        // POST: Mandates/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(Guid id)
-        {
-            var mandate = await _context.Mandate.FindAsync(id);
-            if (mandate != null)
-            {
-                _context.Mandate.Remove(mandate);
-            }
-
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
-        }
-
         private bool MandateExists(Guid id)
         {
-            return _context.Mandate.Any(e => e.Id == id);
+            return _context.Mandates.Find(e => e.Id == id).Any();
         }
     }
 }

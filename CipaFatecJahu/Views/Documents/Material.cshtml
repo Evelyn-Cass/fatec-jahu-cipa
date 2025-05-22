@@ -1,0 +1,23 @@
+﻿@model CipaFatecJahu.Models.Document
+
+@{
+    ViewData["Title"] = "Materiais";
+}
+
+<h1>Selecione o Tipo de Material</h1>
+
+<a asp-area="" asp-controller="Documents" asp-action="Create" asp-route-material="9b927360-b531-4bb9-9e09-1a3093f8507a">Atas</a>
+<a asp-area="" asp-controller="Documents" asp-action="Create" asp-route-material="d2f6b9f0-3b1a-4e4e-9b8e-1c3d2a4f7c8b">Curso Cipa</a>
+<a asp-area="" asp-controller="Documents" asp-action="Create" asp-route-material="3b8d3f2e-1a1c-4e4e-9b8e-1c3d2a4f7c8b">Eleição</a>
+<a asp-area="" asp-controller="Documents" asp-action="Create" asp-route-material="2a7d3f2e-9b4e-4b8d-8b7e-2c3d3a5f6d9c">Estudos</a>
+<a asp-area="" asp-controller="Documents" asp-action="Create" asp-route-material="1a6d3f2e-8b4e-4b8d-8b7e-2c3d3a5f6d9c">Legislação</a>
+<a asp-area="" asp-controller="Documents" asp-action="Create" asp-route-material="0a5d3f2e-7b4e-4b8d-8b7e-2c3d3a5f6d9c">Mapa de Risco</a>
+<a asp-area="" asp-controller="Documents" asp-action="Create" asp-route-material="8c5d3f2e-5b4e-4b8d-8b7e-2c3d3a5f6d9c">Membros</a>
+<a asp-area="" asp-controller="Documents" asp-action="Create" asp-route-material="7e4c8f2d-9b4e-4b8d-8b7e-2c3d3a5f6d9c">Outros Documentos</a>
+<a asp-area="" asp-controller="Documents" asp-action="Create" asp-route-material="9a4d3f2e-6b4e-4b8d-8b7e-2c3d3a5f6d9c">SIPAT</a>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

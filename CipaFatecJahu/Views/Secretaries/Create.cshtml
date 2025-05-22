@@ -1,6 +1,6 @@
 ﻿@model CipaFatecJahu.Models.User;
 @{
-    ViewData["Title"] = "Usuário";
+    ViewData["Title"] = "Novo Secretário";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 @section Styles {
@@ -9,18 +9,6 @@
 }
 
 <section class="mainbody">
-    <div class="">
-        <div class="">
-            @{
-                if (ViewBag.Message != null)
-                {
-                    <div class="p-1 mb-2 bg-success text-white">
-                        @ViewBag.Message
-                    </div>
-                }
-            }
-        </div>
-    </div>
     <div class="form-geral">
         <form class="form-base" method="post" asp-action="Create">
             <div class="form-header">
@@ -31,7 +19,7 @@
                 <div class="form-group">
                     <label asp-for="Name" class="control-label"></label>
                     <input asp-for="Name" class="form-control" />
-                    <span asp-validation-for="Name" class="control-danger" style=" color: aliceblue !important; "></span>
+                    <span asp-validation-for="Name" class="control-danger"></span>
                 </div>
                 <div class="form-group">
                     <label asp-for="Email" class="control-label"></label>

@@ -52,11 +52,12 @@
                     <option value="0" disabled selected>Material</option>
                     <option value="9b927360-b531-4bb9-9e09-1a3093f8507a">ATAS</option>
                     <option value="d2f6b9f0-3b1a-4e4e-9b8e-1c3d2a4f7c8b">Curso CIPA</option>
-                    <option value="7e4c8f2d-9b4e-4b8d-8b7e-2c3d3a5f6d9c">Documentos</option>
                     <option value="3b8d3f2e-1a1c-4e4e-9b8e-1c3d2a4f7c8b">Eleição</option>
                     <option value="0a5d3f2e-7b4e-4b8d-8b7e-2c3d3a5f6d9c">Mapa de Risco</option>
                     <option value="8c5d3f2e-5b4e-4b8d-8b7e-2c3d3a5f6d9c">Membros</option>
                     <option value="9a4d3f2e-6b4e-4b8d-8b7e-2c3d3a5f6d9c">SIPAT</option>
+                    <option value="7e4c8f2d-9b4e-4b8d-8b7e-2c3d3a5f6d9c">Outros</option>
+
                 </select>
             </div>
             <div class="nav-search-button">
@@ -89,9 +90,9 @@
                         <div class="nav-link">
                             <a class="underline-white" href="#">Adicionar</a>
                             <div class="nav-dropdown-content">
-                                <a href="#">Documentos</a>
-                                <a href="#">Gestão</a>
-                                <a href="#">Membros da Gestão</a>
+                                <a asp-area="" asp-controller="Documents" asp-action="Material">Documentos</a>
+                                <a asp-area="" asp-controller="Mandates" asp-action="Create">Gestão</a>
+                                <a asp-area="" asp-controller="Documents" asp-action="">Membros da Gestão</a>
                             </div>
                         </div>
                     </div>

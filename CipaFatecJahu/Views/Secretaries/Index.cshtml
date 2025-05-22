@@ -8,8 +8,18 @@
     <link rel="stylesheet" href="~/css/Secretaries/table.css" />
     <link rel="stylesheet" href="~/css/Secretaries/switch.css" />
 }
+
 <div class="container-title">
     <h1 class="title">Secretários</h1>
+    @{
+        @if (TempData["message"] != null)
+        {
+            <div class="alert-green">
+                @TempData["message"]
+            </div>
+            TempData.Remove("message");
+        }
+    }
     <div class="btn-create-border">
     <a asp-action="Create" class="btn-create">🞢</a>
     </div>

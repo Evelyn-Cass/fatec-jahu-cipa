@@ -1,9 +1,8 @@
 ﻿using System.Security.Claims;
 using CipaFatecJahu.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace CipaFatecJahu.Controllers
 {
@@ -18,13 +17,14 @@ namespace CipaFatecJahu.Controllers
             this._roleManager = roleManager;
         }
 
-        // Substitua o uso de ToListAsync() por ToList() ao buscar usuários do UserManager
+        [Authorize(Roles = "Administrador")]
         public async Task<IActionResult> Index()
         {
-          // Obtém todos os usuários
+            // Obtém todos os usuários  
             var roleName = "Secretário";
             var appUsers = _userManager.Users.ToList()
                 .Where(u => _userManager.IsInRoleAsync(u, roleName).Result)
+                .OrderBy(u => u.Name) // Ordena alfabeticamente pelo nome  
                 .ToList();
 
             var users = appUsers.Select(u => new User
@@ -36,7 +36,7 @@ namespace CipaFatecJahu.Controllers
 
             return View(users);
         }
-
+        [Authorize(Roles = "Administrador")]
         public IActionResult Create()
         {
             return View();
@@ -63,7 +63,8 @@ namespace CipaFatecJahu.Controllers
                     await _userManager.AddToRoleAsync(appuser, "Secretário");
                     var firstName = user.Name?.Split(' ', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries).FirstOrDefault() ?? string.Empty;
                     await _userManager.AddClaimAsync(appuser, new Claim("firstName", firstName));
-                    ViewBag.Message = "Secretário Cadastrado com sucesso";
+                    TempData["message"] = "Secretário Cadastrado com sucesso!";
+                    return RedirectToAction("Index", "Secretaries");
                 }
                 else
                 {
@@ -76,32 +77,33 @@ namespace CipaFatecJahu.Controllers
             return View();
         }
         //[Authorize(Roles = "Administrador")]
-        public IActionResult CreateRole()
-        {
-            return View();
-        }
-        [HttpPost]
+        //public IActionResult CreateRole()
+        //{
+        //    return View();
+        //}
+        //[HttpPost]
         //[Authorize(Roles = "Administrador")]
-        public async Task<IActionResult> CreateRole(UserRole userRole)
-        {
-            if (ModelState.IsValid)
-            {
-                IdentityResult result = await _roleManager.CreateAsync(new ApplicationRole() { Name = userRole.RoleName });
-                if (result.Succeeded)
-                {
-                    ViewBag.Message = "Perfil Cadastrado com sucesso";
-                }
-                else
-                {
-                    foreach (IdentityError error in result.Errors)
-                    {
-                        ModelState.AddModelError("", error.Description);
-                    }
-                }
-            }
-            return View();
-        }
+        //public async Task<IActionResult> CreateRole(UserRole userRole)
+        //{
+        //    if (ModelState.IsValid)
+        //    {
+        //        IdentityResult result = await _roleManager.CreateAsync(new ApplicationRole() { Name = userRole.RoleName });
+        //        if (result.Succeeded)
+        //        {
+        //            ViewBag.Message = "Perfil Cadastrado com sucesso";
+        //        }
+        //        else
+        //        {
+        //            foreach (IdentityError error in result.Errors)
+        //            {
+        //                ModelState.AddModelError("", error.Description);
+        //            }
+        //        }
+        //    }
+        //    return View();
+        //}
 
+        [Authorize(Roles = "Administrador")]
         public async Task<IActionResult> ChangeStatus(string email, string status)
         {
             if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(status))
@@ -133,7 +135,7 @@ namespace CipaFatecJahu.Controllers
 
             return RedirectToAction("Index");
         }
-
+        [Authorize(Roles = "Administrador")]
         public IActionResult ChangePassword(string email)
         {
             if (email == null)
@@ -158,6 +160,7 @@ namespace CipaFatecJahu.Controllers
             return View(user);
         }
         [HttpPost]
+        [Authorize(Roles = "Administrador")]
         public async Task<IActionResult> ChangePassword(User user)
         {
             if (ModelState.IsValid)
@@ -183,7 +186,8 @@ namespace CipaFatecJahu.Controllers
 
                 if (result.Succeeded)
                 {
-                    ViewBag.Message = "Senha alterada com sucesso";
+                    TempData["message"] = "Senha alterada com sucesso!";
+                    return RedirectToAction("Index", "Secretaries");
                 }
                 else
                 {
@@ -197,5 +201,5 @@ namespace CipaFatecJahu.Controllers
         }
 
 
-    }//fim da classe
-}//fim namespace
+    }
+}

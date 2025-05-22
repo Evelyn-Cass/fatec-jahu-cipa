@@ -16,6 +16,21 @@ namespace CipaFatecJahu.Controllers
             return View(await _context.Documents.Find(u => true).ToListAsync());
         }
 
+        public IActionResult Material()
+        {
+            return View();
+        }
+
+        public async Task<IActionResult> Studies()
+        {
+            return View(await _context.Documents.Find(u => u.MaterialId == "2a7d3f2e-9b4e-4b8d-8b7e-2c3d3a5f6d9c").ToListAsync());
+        }
+        public async Task<IActionResult> Legislation()
+        {
+            return View(await _context.Documents.Find(u => u.MaterialId == "1a6d3f2e-8b4e-4b8d-8b7e-2c3d3a5f6d9c").ToListAsync());
+        }
+
+
         // GET: Documents/Details/5
         public async Task<IActionResult> Details(Guid? id)
         {
@@ -23,9 +38,7 @@ namespace CipaFatecJahu.Controllers
             {
                 return NotFound();
             }
-
-            var document = await _context.Documents.Find(m => m.Id == id)
-                .FirstOrDefaultAsync();
+            var document = await _context.Documents.Find(m => m.Id == id).FirstOrDefaultAsync();
             if (document == null)
             {
                 return NotFound();
@@ -35,9 +48,11 @@ namespace CipaFatecJahu.Controllers
         }
 
         // GET: Documents/Create
-        public IActionResult Create()
+        public IActionResult Create(string material)
         {
-            return View();
+            Document document = new Document();
+            document.MaterialId = material;
+            return View(document);
         }
 
         // POST: Documents/Create
