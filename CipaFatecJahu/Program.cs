@@ -1,6 +1,5 @@
 using CipaFatecJahu.Data;
 using CipaFatecJahu.Models;
-using CipaFatecJahu.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -25,8 +24,6 @@ builder.Services.AddIdentity<ApplicationUser, ApplicationRole>(options =>
    ContextMongodb.ConnectionString, ContextMongodb.Database)
 .AddDefaultTokenProviders().AddErrorDescriber<PortugueseIdentityErrorDescriber>();
 
-builder.Services.AddSingleton<MongoDbService>();
-;
 
 var app = builder.Build();
 
