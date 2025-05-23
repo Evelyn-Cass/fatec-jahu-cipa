@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "q2u2NTWDCWT53TaEy+odmISQ3eh1EYYH8xZGkmzYyp4=",
+  "Hash": "d1n8Y28o0JTnnasDd9f3tgWFckoEyw4ZA5ZALHriXNs=",
   "Source": "CipaFatecJahu",
   "BasePath": "_content/CipaFatecJahu",
   "Mode": "Default",
@@ -2283,6 +2283,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\500.png"
+    },
+    {
+      "Identity": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\img\\error.png",
+      "SourceId": "CipaFatecJahu",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\",
+      "BasePath": "_content/CipaFatecJahu",
+      "RelativePath": "img/error#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "3dm2u47886",
+      "Integrity": "SURXRZew3/7W9q7VXmP7RnEePkTTdTNHkjyWlOxqbSE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\error.png"
     },
     {
       "Identity": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\img\\error.xcf",
@@ -10196,6 +10217,51 @@
       ]
     },
     {
+      "Route": "img/error.3dm2u47886.png",
+      "AssetFile": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\img\\error.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "707082"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SURXRZew3/7W9q7VXmP7RnEePkTTdTNHkjyWlOxqbSE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 22:26:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3dm2u47886"
+        },
+        {
+          "Name": "label",
+          "Value": "img/error.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SURXRZew3/7W9q7VXmP7RnEePkTTdTNHkjyWlOxqbSE="
+        }
+      ]
+    },
+    {
       "Route": "img/error.bd0wz4m2bc.xcf",
       "AssetFile": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\img\\error.xcf",
       "Selectors": [],
@@ -10237,6 +10303,43 @@
         {
           "Name": "integrity",
           "Value": "sha256-IcPaH+ZswE/muMK2YGrpmAfgBd96b8dbiJAnaTC5XC8="
+        }
+      ]
+    },
+    {
+      "Route": "img/error.png",
+      "AssetFile": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\img\\error.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "707082"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SURXRZew3/7W9q7VXmP7RnEePkTTdTNHkjyWlOxqbSE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 22:26:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SURXRZew3/7W9q7VXmP7RnEePkTTdTNHkjyWlOxqbSE="
         }
       ]
     },

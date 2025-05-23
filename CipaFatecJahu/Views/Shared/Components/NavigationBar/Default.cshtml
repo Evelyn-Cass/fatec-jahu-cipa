@@ -1,7 +1,6 @@
 ﻿@model IEnumerable<CipaFatecJahu.Models.Mandate>
 <nav>
     <form class="nav-search" asp-controller="Documents" asp-action="Search">
-
         <div class="nav-selects">
             <select class="nav-select" style="width: 45%" name="mandate" id="search-mandate">
                 <option value="0" disabled selected>Gestão</option>
@@ -12,7 +11,6 @@
                     }
                 }
             </select>
-
             <select class="nav-select" style="width: 45%" name="material" id="search-material">
                 <option value="0" disabled selected>Material</option>
                 <option value="9b927360-b531-4bb9-9e09-1a3093f8507a">ATAS</option>
@@ -22,7 +20,6 @@
                 <option value="8c5d3f2e-5b4e-4b8d-8b7e-2c3d3a5f6d9c">Membros</option>
                 <option value="9a4d3f2e-6b4e-4b8d-8b7e-2c3d3a5f6d9c">SIPAT</option>
                 <option value="7e4c8f2d-9b4e-4b8d-8b7e-2c3d3a5f6d9c">Outros</option>
-
             </select>
         </div>
         <div class="nav-search-button">
@@ -57,14 +54,12 @@
                         <div class="nav-dropdown-content">
                             <a asp-area="" asp-controller="Documents" asp-action="Material">Documentos</a>
                             <a asp-area="" asp-controller="Mandates" asp-action="Create">Gestão</a>
-                            <a asp-area="" asp-controller="Documents" asp-action="">Membros da Gestão</a>
+
+                            <a asp-area="" asp-controller="Documents" asp-action="Create" asp-route-material="8c5d3f2e-5b4e-4b8d-8b7e-2c3d3a5f6d9c">Membros da Gestão</a>
                         </div>
                     </div>
                 </div>
-
                 var navLinkClass = "nav-link" + (User.IsInRole("Secretário") ? " last" : "");
-
-
                 <div class="@navLinkClass">
                     <a class="underline-white" href="#">Histórico</a>
                 </div>
@@ -78,7 +73,6 @@
                     <a asp-area="" asp-controller="Account" asp-action="Logout" class="underline-white">Logout</a>
                 </div>
             }
-
         </div>
     </div>
     @if (User.Identity.IsAuthenticated)

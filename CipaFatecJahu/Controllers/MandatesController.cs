@@ -6,11 +6,12 @@ using MongoDB.Driver;
 
 namespace CipaFatecJahu.Controllers
 {
+    [Authorize(Roles = "Administrador,Secretário")]
     public class MandatesController : Controller
     {
 
         ContextMongodb _context = new ContextMongodb();
-        [Authorize(Roles = "Administrador,Secretário")]
+
         // GET: Mandates
         public async Task<IActionResult> Index()
         {

@@ -102,6 +102,7 @@ wwwroot\css\Shared\theme.css
 wwwroot\favicon.ico
 wwwroot\img\404.png
 wwwroot\img\500.png
+wwwroot\img\error.png
 wwwroot\img\error.xcf
 wwwroot\img\icon-alert.png
 wwwroot\img\icon-arrow.png

@@ -85,6 +85,10 @@
       "PackagePath": "staticwebassets\\img\\500.png"
     },
     {
+      "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\img\\error.png",
+      "PackagePath": "staticwebassets\\img\\error.png"
+    },
+    {
       "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\img\\error.xcf",
       "PackagePath": "staticwebassets\\img\\error.xcf"
     },

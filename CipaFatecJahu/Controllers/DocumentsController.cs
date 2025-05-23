@@ -1,10 +1,12 @@
 ﻿using CipaFatecJahu.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MongoDB.Driver;
 
 namespace CipaFatecJahu.Controllers
 {
+    [Authorize(Roles = "Administrador,Secretário")]
     public class DocumentsController : Controller
     {
 
