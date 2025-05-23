@@ -1,10 +1,12 @@
 ﻿@model CipaFatecJahu.Models.Document
-
+@section Styles {
+    <link rel="stylesheet" href="~/css/Shared/form.css" />
+    <link rel="stylesheet" href="~/css/Documents/create.css" />
+}
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Criar Documento";
 
-
-    @if (Model.MaterialId == "9b927360-b531-4bb9-9e09-1a3093f8507a")
+    if (Model.MaterialId == "9b927360-b531-4bb9-9e09-1a3093f8507a")
     {
         @await Html.PartialAsync("_formAtas");
     }
@@ -39,6 +41,13 @@
     else if (Model.MaterialId == "9a4d3f2e-6b4e-4b8d-8b7e-2c3d3a5f6d9c")
     {
         @await Html.PartialAsync("_formSIPAT");
+    }
+    else
+    {
+        <div class="alert-material">
+            <h1>Material não reconhecido!</h1>
+            <a href="@Url.Action("Material", "Documents")">Voltar</a>
+        </div>
     }
 }
 @section Scripts {

@@ -19,7 +19,7 @@ namespace CipaFatecJahu.Models
         [Display(Name = "Anexo")]
         public string? Attachment { get; set; }
         [Display(Name = "Situação")]
-        public string? Situation { get; set; }
+        public string? Status { get; set; }
         public string? UserId { get; set; }
         public string? MandateId { get; set; }
         public string? MaterialId { get; set; }

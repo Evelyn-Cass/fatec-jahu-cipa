@@ -34,7 +34,7 @@ if (!app.Environment.IsDevelopment())
 }
 else
 {
-    //app.UseDeveloperExceptionPage(); // Add this line to enable detailed error pages in development mode.
+    app.UseDeveloperExceptionPage(); // Add this line to enable detailed error pages in development mode.
     var userManager = app.Services.CreateScope().ServiceProvider.GetRequiredService<UserManager<ApplicationUser>>();
     var roleManager = app.Services.CreateScope().ServiceProvider.GetRequiredService<RoleManager<ApplicationRole>>();
     DatabaseSeeder seeder = new DatabaseSeeder(userManager, roleManager);

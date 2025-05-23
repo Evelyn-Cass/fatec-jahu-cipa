@@ -6,13 +6,13 @@ using MongoDB.Driver;
 
 namespace CipaFatecJahu.Controllers
 {
-    [Authorize(Roles = "Administrador,Secretário")]
     public class DocumentsController : Controller
     {
 
         ContextMongodb _context = new ContextMongodb();
 
         // GET: Documents
+        [Authorize(Roles = "Administrador,Secretário")]
         public async Task<IActionResult> Index()
         {
             return View(await _context.Documents.Find(u => true).ToListAsync());
@@ -32,7 +32,7 @@ namespace CipaFatecJahu.Controllers
             return View(await _context.Documents.Find(u => u.MaterialId == "1a6d3f2e-8b4e-4b8d-8b7e-2c3d3a5f6d9c").ToListAsync());
         }
 
-
+        [Authorize(Roles = "Administrador,Secretário")]
         // GET: Documents/Details/5
         public async Task<IActionResult> Details(Guid? id)
         {
@@ -50,10 +50,16 @@ namespace CipaFatecJahu.Controllers
         }
 
         // GET: Documents/Create
+        [Authorize(Roles = "Administrador,Secretário")]
         public IActionResult Create(string material)
         {
             Document document = new Document();
+            if (string.IsNullOrEmpty(material))
+            {
+               return RedirectToAction("Material");
+            }
             document.MaterialId = material;
+            
             return View(document);
         }
 
@@ -62,7 +68,8 @@ namespace CipaFatecJahu.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Number,DocumentCreationDate,MeetingDate,LawPublication,Situation,Attachement,UserId,MandateId,MaterialId")] Document document)
+        [Authorize(Roles = "Administrador,Secretário")]
+        public async Task<IActionResult> Create([Bind("Id,Name,Number,DocumentCreationDate,MeetingDate,LawPublication,Status,Attachement,UserId,MandateId,MaterialId")] Document document)
         {
             if (ModelState.IsValid)
             {
@@ -72,8 +79,24 @@ namespace CipaFatecJahu.Controllers
             }
             return View(document);
         }
+        [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Administrador,Secretário")]
+        public async Task<IActionResult> CreateAta([Bind("Id,Name,DocumentCreationDate,MeetingDate,Status,Attachement,UserId,MandateId,MaterialId")] Document document)
+        {
+            if (ModelState.IsValid)
+            {
+                document.Id = Guid.NewGuid();
+                document.DocumentCreationDate = DateTime.Now;
+                document.Status = "Ativo";
+                document.UserId = User.Identity.Name;
+                await _context.Documents.InsertOneAsync(document);
+                return RedirectToAction(nameof(Index));
+            }
+            return View();
+        }
 
         // GET: Documents/Edit/5
+        [Authorize(Roles = "Administrador,Secretário")]
         public async Task<IActionResult> Edit(Guid? id)
         {
             if (id == null)
@@ -94,7 +117,8 @@ namespace CipaFatecJahu.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(Guid id, [Bind("Id,Name,Number,DocumentCreationDate,MeetingDate,LawPublication,Situation,Attachement,UserId,MandateId,MaterialId")] Document document)
+        [Authorize(Roles = "Administrador,Secretário")]
+        public async Task<IActionResult> Edit(Guid id, [Bind("Id,Name,Number,DocumentCreationDate,MeetingDate,LawPublication,Status,Attachement,UserId,MandateId,MaterialId")] Document document)
         {
             if (id != document.Id)
             {
@@ -124,6 +148,7 @@ namespace CipaFatecJahu.Controllers
         }
 
         // GET: Documents/Delete/5
+        [Authorize(Roles = "Administrador,Secretário")]
         public async Task<IActionResult> Delete(Guid? id)
         {
             if (id == null)
@@ -143,6 +168,7 @@ namespace CipaFatecJahu.Controllers
         // POST: Documents/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Administrador,Secretário")]
         public async Task<IActionResult> DeleteConfirmed(Guid id)
         {
             await _context.Documents.DeleteOneAsync(m => m.Id == id);

@@ -31,6 +31,7 @@ D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\lib\bootstrap\dist\css\b
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\css\Documents\create.css
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\css\Shared\footer.css
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
@@ -84,6 +85,7 @@ D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\lib\bootstrap\dist\css\b
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
 wwwroot\css\Account\input-material.css
 wwwroot\css\Account\login.css
+wwwroot\css\Documents\create.css
 wwwroot\css\formMandate.css
 wwwroot\css\Secretaries\create.css
 wwwroot\css\Secretaries\Index.css
