@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CipaFatecJahu.Controllers
 {
+    [Authorize(Roles = "Administrador")]
     public class SecretariesController : Controller
     {
         private UserManager<ApplicationUser> _userManager;
@@ -16,8 +17,6 @@ namespace CipaFatecJahu.Controllers
             this._userManager = userManager;
             this._roleManager = roleManager;
         }
-
-        [Authorize(Roles = "Administrador")]
         public async Task<IActionResult> Index()
         {
             // Obtém todos os usuários  
@@ -36,7 +35,6 @@ namespace CipaFatecJahu.Controllers
 
             return View(users);
         }
-        [Authorize(Roles = "Administrador")]
         public IActionResult Create()
         {
             return View();
@@ -102,8 +100,6 @@ namespace CipaFatecJahu.Controllers
         //    }
         //    return View();
         //}
-
-        [Authorize(Roles = "Administrador")]
         public async Task<IActionResult> ChangeStatus(string email, string status)
         {
             if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(status))
@@ -135,7 +131,6 @@ namespace CipaFatecJahu.Controllers
 
             return RedirectToAction("Index");
         }
-        [Authorize(Roles = "Administrador")]
         public IActionResult ChangePassword(string email)
         {
             if (email == null)
@@ -160,7 +155,6 @@ namespace CipaFatecJahu.Controllers
             return View(user);
         }
         [HttpPost]
-        [Authorize(Roles = "Administrador")]
         public async Task<IActionResult> ChangePassword(User user)
         {
             if (ModelState.IsValid)
@@ -199,7 +193,5 @@ namespace CipaFatecJahu.Controllers
             }
             return View(user);
         }
-
-
     }
 }

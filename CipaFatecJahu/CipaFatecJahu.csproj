@@ -7,6 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Services\**" />
+    <Compile Remove="wwwroot\css\Secretaries\NewFolder\**" />
+    <Content Remove="Services\**" />
+    <Content Remove="wwwroot\css\Secretaries\NewFolder\**" />
+    <EmbeddedResource Remove="Services\**" />
+    <EmbeddedResource Remove="wwwroot\css\Secretaries\NewFolder\**" />
+    <None Remove="Services\**" />
+    <None Remove="wwwroot\css\Secretaries\NewFolder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="AspNetCore.Identity.MongoDbCore" Version="3.1.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.0">
@@ -19,8 +30,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Services\" />
-    <Folder Include="wwwroot\css\Secretaries\NewFolder\" />
+    <Folder Include="wwwroot\css\Mandates\" />
   </ItemGroup>
 
 </Project>

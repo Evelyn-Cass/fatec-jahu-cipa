@@ -1,4 +1,5 @@
 ﻿using CipaFatecJahu.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MongoDB.Driver;
@@ -9,7 +10,7 @@ namespace CipaFatecJahu.Controllers
     {
 
         ContextMongodb _context = new ContextMongodb();
-
+        [Authorize(Roles = "Administrador,Secretário")]
         // GET: Mandates
         public async Task<IActionResult> Index()
         {
@@ -47,12 +48,29 @@ namespace CipaFatecJahu.Controllers
         {
             if (ModelState.IsValid)
             {
+                if (mandate.StartYear > mandate.TerminationYear)
+                {
+                    ModelState.AddModelError(string.Empty, "O ano de início não pode ser maior que o ano de término.");
+                    return View(mandate);
+                }
+                var existingMandate = await _context.Mandates
+                    .Find(m => m.StartYear.Year == mandate.StartYear.Year && m.TerminationYear.Year == mandate.TerminationYear.Year)
+                    .FirstOrDefaultAsync();
+                if (existingMandate != null)
+                {
+                    ModelState.AddModelError(string.Empty, "Já existe um mandato cadastrado com esse ano de início e término.");
+                    return View(mandate);
+                }
+                if (mandate.TerminationYear.Year - mandate.StartYear.Year != 1)
+                {
+                    ModelState.AddModelError(string.Empty, "O intervalo entre o ano de início e término deve ser exatamente 1 ano.");
+                    return View(mandate);
+                }
+
                 mandate.DocumentCreationDate = DateTime.Now;
                 mandate.Id = Guid.NewGuid();
                 await _context.Mandates.InsertOneAsync(mandate);
                 return RedirectToAction(nameof(Index));
-
-
             }
             return View(mandate);
         }
