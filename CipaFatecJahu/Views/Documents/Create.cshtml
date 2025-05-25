@@ -3,53 +3,10 @@
     <link rel="stylesheet" href="~/css/Shared/form.css" />
     <link rel="stylesheet" href="~/css/Documents/create.css" />
 }
-@{
-    ViewData["Title"] = "Criar Documento";
-
-    if (Model.MaterialId == "9b927360-b531-4bb9-9e09-1a3093f8507a")
-    {
-        @await Html.PartialAsync("_formAtas");
-    }
-    else if (Model.MaterialId == "d2f6b9f0-3b1a-4e4e-9b8e-1c3d2a4f7c8b")
-    {
-        @await Html.PartialAsync("_formCursoCipa");
-    }
-    else if (Model.MaterialId == "7e4c8f2d-9b4e-4b8d-8b7e-2c3d3a5f6d9c")
-    {
-        @await Html.PartialAsync("_formOutros");
-    }
-    else if (Model.MaterialId == "3b8d3f2e-1a1c-4e4e-9b8e-1c3d2a4f7c8b")
-    {
-        @await Html.PartialAsync("_formEleicao");
-    }
-    else if (Model.MaterialId == "2a7d3f2e-9b4e-4b8d-8b7e-2c3d3a5f6d9c")
-    {
-        @await Html.PartialAsync("_formEstudos");
-    }
-    else if (Model.MaterialId == "1a6d3f2e-8b4e-4b8d-8b7e-2c3d3a5f6d9c")
-    {
-        @await Html.PartialAsync("_formLegislacao");
-    }
-    else if (Model.MaterialId == "0a5d3f2e-7b4e-4b8d-8b7e-2c3d3a5f6d9c")
-    {
-        @await Html.PartialAsync("_formMapaDeRisco");
-    }
-    else if (Model.MaterialId == "8c5d3f2e-5b4e-4b8d-8b7e-2c3d3a5f6d9c")
-    {
-        @await Html.PartialAsync("_formMembros");
-    }
-    else if (Model.MaterialId == "9a4d3f2e-6b4e-4b8d-8b7e-2c3d3a5f6d9c")
-    {
-        @await Html.PartialAsync("_formSIPAT");
-    }
-    else
-    {
-        <div class="alert-material">
-            <h1>Material não reconhecido!</h1>
-            <a href="@Url.Action("Material", "Documents")">Voltar</a>
-        </div>
-    }
-}
+<div class="alert-material">
+    <h1>Material não reconhecido!</h1>
+    <a href="@Url.Action("Material", "Documents")">Voltar</a>
+</div>
 @section Scripts {
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
