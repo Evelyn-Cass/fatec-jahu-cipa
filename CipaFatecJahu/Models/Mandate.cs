@@ -12,5 +12,6 @@ namespace CipaFatecJahu.Models
         public DateOnly TerminationYear { get; set; }
         [Display(Name = "Data de criação")]
         public DateTime DocumentCreationDate { get; set; }
+        public Guid UserId { get; set; }
     }
 }

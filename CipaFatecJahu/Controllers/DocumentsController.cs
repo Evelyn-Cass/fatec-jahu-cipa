@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using MongoDB.Driver;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace CipaFatecJahu.Controllers
 {
@@ -33,12 +34,12 @@ namespace CipaFatecJahu.Controllers
         [AllowAnonymous]
         public async Task<IActionResult> Studies()
         {
-            return View(await _context.Documents.Find(u => u.MaterialId == "2a7d3f2e-9b4e-4b8d-8b7e-2c3d3a5f6d9c").ToListAsync());
+            return View(await _context.Documents.Find(u => u.MaterialId == new Guid("2a7d3f2e-9b4e-4b8d-8b7e-2c3d3a5f6d9c")).ToListAsync());
         }
         [AllowAnonymous]
         public async Task<IActionResult> Legislation()
         {
-            return View(await _context.Documents.Find(u => u.MaterialId == "1a6d3f2e-8b4e-4b8d-8b7e-2c3d3a5f6d9c").ToListAsync());
+            return View(await _context.Documents.Find(u => u.MaterialId == new Guid("1a6d3f2e-8b4e-4b8d-8b7e-2c3d3a5f6d9c")).ToListAsync());
         }
 
         // GET: Documents/Details/5
@@ -67,7 +68,7 @@ namespace CipaFatecJahu.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
 
-        [Route("Documents/Create/Ata")]
+        [Route("Documents/ATA/Create")]
         public IActionResult CreateAta()
         {
             return View();
@@ -76,31 +77,43 @@ namespace CipaFatecJahu.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        [Route("Documents/Create/Ata")]
-        public async Task<IActionResult> CreateAta([Bind("Id,Name,DocumentCreationDate,MeetingDate,Status,Attachement,UserId,MandateId,MaterialId")] Document document)
+        [Route("Documents/ATA/Create")]
+        public async Task<IActionResult> CreateAta([Bind("Id,Name,DocumentCreationDate,MeetingDate,Status,Attachment,UserId,MandateId,MaterialId")] Document document, IFormFile attachment)
         {
             if (ModelState.IsValid)
             {
-                document.Id = Guid.NewGuid();
-                document.MaterialId = "9b927360-b531-4bb9-9e09-1a3093f8507a";
-                document.DocumentCreationDate = DateTime.Now;
-                document.Status = "Ativo";
-
-                if (_userManager == null) {
-                    ModelState.AddModelError(string.Empty, "vazio");
-                    return View(document);
-                }
-                if (User == null)
+                if (document.MeetingDate == null)
                 {
-                    ModelState.AddModelError(string.Empty, "Usuário não autenticado.");
+                    ModelState.AddModelError("MeetingDate", "O campo Data da Reunião é obrigatório");
                     return View(document);
                 }
-                document.UserId = _userManager.GetUserId(User);
-
+                if (attachment == null || attachment.Length == 0)
+                {
+                    ModelState.AddModelError("Attachment", "O campo Anexo é obrigatório!");
+                    return View(document);
+                }
+                var extension = Path.GetExtension(attachment.FileName);
+                if (string.IsNullOrEmpty(extension) || !extension.Equals(".pdf", StringComparison.OrdinalIgnoreCase))
+                {
+                    ModelState.AddModelError("Attachment", "Somente arquivos PDF são permitidos.");
+                    return View(document);
+                }
+                document.Id = Guid.NewGuid();
+                document.MaterialId = new Guid("9b927360-b531-4bb9-9e09-1a3093f8507a");
+                document.DocumentCreationDate = DateTime.Now.AddHours(-3);
+                document.Status = "Ativo";
+                document.Attachment = Path.Combine("docs/", attachment.FileName);
+                document.UserId = new Guid(_userManager.GetUserId(User));
                 await _context.Documents.InsertOneAsync(document);
+                var filePath = Path.Combine(Directory.GetCurrentDirectory(),
+                       "wwwroot", "docs", attachment.FileName);
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    await attachment.CopyToAsync(stream);
+                }
                 return RedirectToAction(nameof(Index));
             }
-            return View();
+            return View(document);
         }
 
         // GET: Documents/Edit/5

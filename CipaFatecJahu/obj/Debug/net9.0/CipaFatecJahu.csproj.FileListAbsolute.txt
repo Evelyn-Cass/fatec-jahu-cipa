@@ -955,7 +955,6 @@ D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\obj\Debug\net9.0\scopedcss\bundl
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\obj\Debug\net9.0\scopedcss\projectbundle\CipaFatecJahu.bundle.scp.css
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\obj\Debug\net9.0\compressed\itbbpq9sue-cg0kd5hrqa.gz
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\obj\Debug\net9.0\compressed\k2q6it5oyb-61n19gt1b8.gz
-D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\obj\Debug\net9.0\compressed\qajuzmsbo1-5ipweew5fc.gz
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\obj\Debug\net9.0\compressed\guzum8aszl-3r8b2a0bt1.gz
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\obj\Debug\net9.0\compressed\48a04bek8o-t1cqhe9u97.gz
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\obj\Debug\net9.0\compressed\7z3l5lujpb-c2jlpeoesf.gz
@@ -1083,9 +1082,10 @@ C:\Projetos\Fatec\fatec-jahu-cipa\CipaFatecJahu\obj\Debug\net9.0\compressed\uwhs
 C:\Projetos\Fatec\fatec-jahu-cipa\CipaFatecJahu\obj\Debug\net9.0\compressed\87fl10075f-ksokdj7p3n.gz
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\obj\Debug\net9.0\compressed\gr4xbzr7q8-7f10o8fof9.gz
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\obj\Debug\net9.0\compressed\uwhs9vyd9a-unasweb5vb.gz
-D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\obj\Debug\net9.0\compressed\sh4n9y0m1z-b76e40m6le.gz
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\obj\Debug\net9.0\compressed\6f9130q8kw-vbvsmohggq.gz
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\obj\Debug\net9.0\compressed\87fl10075f-ksokdj7p3n.gz
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\obj\Debug\net9.0\compressed\7wd6xa73ai-qunz508mft.gz
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\obj\Debug\net9.0\compressed\knesvsm8b8-n8i8bsr9la.gz
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\obj\Debug\net9.0\compressed\bgruthrmxj-av1v0a0ll6.gz
+D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\obj\Debug\net9.0\compressed\lbi93776bi-ztsp7qgwb8.gz
+D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\obj\Debug\net9.0\compressed\sh4n9y0m1z-fnjuly3ryk.gz

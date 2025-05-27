@@ -1,5 +1,6 @@
 ﻿using CipaFatecJahu.Models;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MongoDB.Driver;
@@ -9,8 +10,12 @@ namespace CipaFatecJahu.Controllers
     [Authorize(Roles = "Administrador,Secretário")]
     public class MandatesController : Controller
     {
-
         ContextMongodb _context = new ContextMongodb();
+        private UserManager<ApplicationUser> _userManager;
+        public MandatesController(UserManager<ApplicationUser> userManager)
+        {
+            this._userManager = userManager;
+        }
 
         // GET: Mandates
         public async Task<IActionResult> Index()
@@ -68,8 +73,9 @@ namespace CipaFatecJahu.Controllers
                     return View(mandate);
                 }
 
-                mandate.DocumentCreationDate = DateTime.Now;
+                mandate.DocumentCreationDate = DateTime.Now.AddHours(-3);
                 mandate.Id = Guid.NewGuid();
+                mandate.UserId = new Guid(_userManager.GetUserId(User));
                 await _context.Mandates.InsertOneAsync(mandate);
                 return RedirectToAction(nameof(Index));
             }

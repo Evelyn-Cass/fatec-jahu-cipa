@@ -54,6 +54,7 @@ D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\lib\bootstrap\dist\css\b
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\lib\jquery\dist\jquery.slim.js
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\lib\jquery\dist\jquery.slim.min.map
+D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\js\Shared\form.js
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.min.js
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\lib\jquery\LICENSE.txt
@@ -63,7 +64,6 @@ D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\lib\bootstrap\dist\css\b
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\css\Shared\animation.css
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\lib\jquery-validation\dist\additional-methods.js
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
-D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\js\form.js
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\lib\jquery-validation\LICENSE.md
 D:\Projetos\FATEC\cipa-fatec-jahu\CipaFatecJahu\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
@@ -101,6 +101,8 @@ wwwroot\css\Shared\informationPages.css
 wwwroot\css\Shared\navigation.css
 wwwroot\css\Shared\select.css
 wwwroot\css\Shared\theme.css
+wwwroot\docs\PingPong-WorkShopScratch.pdf
+wwwroot\docs\Scratch - Criar uma conta.pdf
 wwwroot\favicon.ico
 wwwroot\img\404.png
 wwwroot\img\500.png
@@ -108,6 +110,7 @@ wwwroot\img\error.png
 wwwroot\img\error.xcf
 wwwroot\img\icon-alert.png
 wwwroot\img\icon-arrow.png
+wwwroot\img\icon-attachment.png
 wwwroot\img\icon-back-red.png
 wwwroot\img\icon-cipa.png
 wwwroot\img\icon-cross-red.png
@@ -125,8 +128,8 @@ wwwroot\img\logo-fatec-jahu-cinza.png
 wwwroot\img\logo-fatec-jahu-preto.png
 wwwroot\js\Account\login.js
 wwwroot\js\Account\materialize-inputs.jquery.js
-wwwroot\js\form.js
 wwwroot\js\Secretaries\index.js
+wwwroot\js\Shared\form.js
 wwwroot\js\Shared\navigation.js
 wwwroot\js\Shared\select2.js
 wwwroot\js\site.js

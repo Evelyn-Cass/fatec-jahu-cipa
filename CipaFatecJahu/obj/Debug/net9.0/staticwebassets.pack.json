@@ -77,6 +77,14 @@
       "PackagePath": "staticwebassets\\css\\formMandate.css"
     },
     {
+      "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\docs\\PingPong-WorkShopScratch.pdf",
+      "PackagePath": "staticwebassets\\docs\\PingPong-WorkShopScratch.pdf"
+    },
+    {
+      "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\docs\\Scratch - Criar uma conta.pdf",
+      "PackagePath": "staticwebassets\\docs\\Scratch - Criar uma conta.pdf"
+    },
+    {
       "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
@@ -103,6 +111,10 @@
     {
       "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\img\\icon-arrow.png",
       "PackagePath": "staticwebassets\\img\\icon-arrow.png"
+    },
+    {
+      "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\img\\icon-attachment.png",
+      "PackagePath": "staticwebassets\\img\\icon-attachment.png"
     },
     {
       "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\img\\icon-back-red.png",
@@ -177,16 +189,16 @@
       "PackagePath": "staticwebassets\\js\\Secretaries\\index.js"
     },
     {
+      "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\js\\Shared\\form.js",
+      "PackagePath": "staticwebassets\\js\\Shared\\form.js"
+    },
+    {
       "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\js\\Shared\\navigation.js",
       "PackagePath": "staticwebassets\\js\\Shared\\navigation.js"
     },
     {
       "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\js\\Shared\\select2.js",
       "PackagePath": "staticwebassets\\js\\Shared\\select2.js"
-    },
-    {
-      "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\js\\form.js",
-      "PackagePath": "staticwebassets\\js\\form.js"
     },
     {
       "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\js\\site.js",

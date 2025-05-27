@@ -1,19 +1,19 @@
 ﻿@model CipaFatecJahu.Models.Document
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Nova ATA";
 }
 @section Styles {
 	<link rel="stylesheet" href="~/css/Shared/form.css" />
-	<link rel="stylesheet" href="~/css/Documents/createAta.css" />
+	@* <link rel="stylesheet" href="~/css/Documents/createAta.css" /> *@
 }
 <section class="mainbody">
-    <div class="form-geral">
-        <form class="form-base" method="post" asp-action="CreateAta">
+    <div class="form-geral" style="width:60%">
+        <form class="form-base" method="post" asp-action="CreateAta" enctype="multipart/form-data">
             <div class="form-header">
                 <h1>Nova Ata</h1>
             </div>
-            <div class="form-body secretary">
+            <div class="form-body">
                 <div asp-validation-summary="ModelOnly" class="control-danger"></div>
                 <div class="form-group">
                     <label asp-for="Name" class="control-label"></label>
@@ -26,23 +26,29 @@
                     <span asp-validation-for="MeetingDate" class="control-danger"></span>
                 </div>
                 <div class="form-group">
-                    <label asp-for="Attachment" class="control-label"></label>
-                    <input asp-for="Attachment" class="form-control" />
-                    <span asp-validation-for="Attachment" class="control-danger"></span>
-                </div>
-                <div class="form-group">
                     <label asp-for="MandateId" class="control-label"></label>
                     <input asp-for="MandateId" class="form-control" />
                     <span asp-validation-for="MandateId" class="control-danger"></span>
                 </div>
                 <div class="form-group">
-                    <input type="submit" value="Create" class="button button-green" />
+                    <div class="row">
+                        <label for="attachment-input" class="control-label attachment-label">Anexo</label>
+                        <input asp-for="Attachment" id="attachment-input" class="form-control attachment-input" type="file" accept="application/pdf" onchange="document.getElementById('attachment-input-text').value = this.files.length > 0 ? this.files[0].name : '';" hidden />
+                        <input disabled class="form-control" id="attachment-input-text" />
+                        <img src="~/img/icon-attachment.png" class="attachment-icon" alt="Attachment Icon" />
+
+                    </div>
+                    <span asp-validation-for="Attachment" class="control-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Create" class="button button-green button-create " />
                 </div>
             </div>
         </form>
     </div>
 </section>
 
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+@* @section Scripts { *@
+@*     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");} *@
+
+@* } *@
