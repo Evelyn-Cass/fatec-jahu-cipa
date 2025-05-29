@@ -8,12 +8,16 @@
 
   <ItemGroup>
     <Compile Remove="Services\**" />
+    <Compile Remove="wwwroot\css\Mandates\**" />
     <Compile Remove="wwwroot\css\Secretaries\NewFolder\**" />
     <Content Remove="Services\**" />
+    <Content Remove="wwwroot\css\Mandates\**" />
     <Content Remove="wwwroot\css\Secretaries\NewFolder\**" />
     <EmbeddedResource Remove="Services\**" />
+    <EmbeddedResource Remove="wwwroot\css\Mandates\**" />
     <EmbeddedResource Remove="wwwroot\css\Secretaries\NewFolder\**" />
     <None Remove="Services\**" />
+    <None Remove="wwwroot\css\Mandates\**" />
     <None Remove="wwwroot\css\Secretaries\NewFolder\**" />
   </ItemGroup>
 
@@ -30,7 +34,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\css\Mandates\" />
     <Folder Include="wwwroot\docs\" />
   </ItemGroup>
 

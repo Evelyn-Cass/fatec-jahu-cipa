@@ -61,7 +61,7 @@
                 </div>
                 var navLinkClass = "nav-link" + (User.IsInRole("Secretário") ? " last" : "");
                 <div class="@navLinkClass">
-                    <a class="underline-white" href="#">Histórico</a>
+                    <a class="underline-white" asp-area="" asp-controller="Documents" asp-action="History">Histórico</a>
                 </div>
                 @if (User.IsInRole("Administrador"))
                 {

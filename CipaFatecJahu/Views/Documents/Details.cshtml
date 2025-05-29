@@ -1,26 +1,20 @@
 ﻿@model CipaFatecJahu.Models.Document
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Detalhes";
 }
 
-<h1>Details</h1>
+<h1>Detalhes</h1>
 
 <div>
     <h4>Document</h4>
     <hr />
-    <dl class="row">
+    <dl class="row" >
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Name)
+            @Html.DisplayNameFor(model => model.Name):
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Name)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Number)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Number)
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.DocumentCreationDate)
@@ -28,18 +22,23 @@
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.DocumentCreationDate)
         </dd>
+        @if (Model.MeetingDate != null){
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.MeetingDate)
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.MeetingDate)
         </dd>
+        }
+        @if (Model.LawPublication != null){ 
         <dt class = "col-sm-2">
+            
             @Html.DisplayNameFor(model => model.LawPublication)
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.LawPublication)
         </dd>
+        }
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Status)
         </dt>
@@ -49,8 +48,8 @@
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Attachment)
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Attachment)
+        <dd class="col-sm-10">  
+           <a href="@Url.Content($"~/{Model.Attachment}")" target="_blank">Visualizar PDF</a>  
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.UserId)
@@ -58,12 +57,14 @@
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.UserId)
         </dd>
+        @if (Model.MandateId != null){
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.MandateId)
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.MandateId)
         </dd>
+        }
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.MaterialId)
         </dt>
@@ -74,5 +75,5 @@
 </div>
 <div>
     <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="History">Back to List</a>
 </div>

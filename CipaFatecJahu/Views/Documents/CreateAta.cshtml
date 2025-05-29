@@ -1,7 +1,7 @@
 ﻿@model CipaFatecJahu.Models.Document
 
 @{
-    ViewData["Title"] = "Nova ATA";
+    ViewData["Title"] = "Criar ATA";
 }
 @section Styles {
 	<link rel="stylesheet" href="~/css/Shared/form.css" />
@@ -11,7 +11,7 @@
     <div class="form-geral" style="width:60%">
         <form class="form-base" method="post" asp-action="CreateAta" enctype="multipart/form-data">
             <div class="form-header">
-                <h1>Nova Ata</h1>
+                <h1>Criar Ata</h1>
             </div>
             <div class="form-body">
                 <div asp-validation-summary="ModelOnly" class="control-danger"></div>
@@ -26,8 +26,10 @@
                     <span asp-validation-for="MeetingDate" class="control-danger"></span>
                 </div>
                 <div class="form-group">
-                    <label asp-for="MandateId" class="control-label"></label>
-                    <input asp-for="MandateId" class="form-control" />
+                    <label class="control-label">Mandatos</label>
+                    <select asp-for="MandateId" class="form-control" asp-items="@(new SelectList(ViewBag.Mandates, "Value", "Text", null))">
+                       <option value="" disabled selected>Selecione um mandato</option>
+                    </select>
                     <span asp-validation-for="MandateId" class="control-danger"></span>
                 </div>
                 <div class="form-group">

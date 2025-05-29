@@ -1,0 +1,70 @@
+﻿@model IEnumerable<CipaFatecJahu.Models.Document>
+
+@{
+    ViewData["Title"] = "Histórico";
+}
+
+<h1>Histórico</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.MaterialId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MandateId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Attachment)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DocumentCreationDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UserId)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MaterialId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MandateId)
+                </td>
+                <td>
+                    <a href="~/@item.Attachment" target="_blank">Visualizar PDF</a>
+
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DocumentCreationDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UserId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Status)
+                </td>
+                <td>
+                    <a asp-action="EditAta" asp-route-id="@item.Id">Editar</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Detalhes</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
