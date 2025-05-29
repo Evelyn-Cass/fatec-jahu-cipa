@@ -1,5 +1,10 @@
-﻿.mainbody {
-    min-height: 70VH;
+﻿.pb-3 {
+    justify-content: center;
+    min-height: 57.9vh;
+}
+
+.mainbody {
+    min-height: 100%;
 }
 
 .form-base {

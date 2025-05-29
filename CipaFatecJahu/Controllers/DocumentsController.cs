@@ -56,7 +56,7 @@ namespace CipaFatecJahu.Controllers
         }
 
         [Route("Documents/ATA/Create")]
-        public async Task<IActionResult> AtaCreate()
+        public IActionResult AtaCreate()
         {
             var mandates = SearchMandates();
             ViewData["Mandates"] = new SelectList(mandates, "Id", "mandate");
@@ -231,63 +231,126 @@ namespace CipaFatecJahu.Controllers
             return View(document);
         }
 
-
-
-        // GET: Documents/Edit/5
-        public async Task<IActionResult> Edit(Guid? id)
+        [Route("Documents/Course/Create")]
+        public IActionResult CourseCreate()
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var document = await _context.Documents.Find(m => m.Id == id).FirstOrDefaultAsync();
-            if (document == null)
-            {
-                return NotFound();
-            }
-            return View(document);
+            var mandates = SearchMandates();
+            ViewData["Mandates"] = new SelectList(mandates, "Id", "mandate");
+            return View();
         }
-
-        // POST: Documents/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(Guid id, [Bind("Id,Name,Number,DocumentCreationDate,MeetingDate,LawPublication,Status,Attachement,UserId,MandateId,MaterialId")] Document document)
+        [Route("Documents/Course/Create")]
+        public async Task<IActionResult> CourseCreate([Bind("Id,Name,DocumentCreationDate,Status,Attachment,UserId,MandateId,MaterialId")] Document document, IFormFile? attachment)
         {
-            if (id != document.Id)
-            {
-                return NotFound();
-            }
-
+            var mandates = SearchMandates();
+            ViewData["Mandates"] = new SelectList(mandates, "Id", "mandate");
             if (ModelState.IsValid)
             {
-
-
-
-
-
-                //aplicando
-                try
+                if (!document.MandateId.HasValue || document.MandateId == Guid.Empty)
                 {
-                    await _context.Documents.ReplaceOneAsync(m => m.Id == document.Id, document);
+                    ModelState.AddModelError("MandateId", "O campo Mandato é obrigatório!");
+                    return View(document);
                 }
-                catch (DbUpdateConcurrencyException)
+                if (attachment == null || attachment.Length == 0)
                 {
-                    if (!DocumentExists(document.Id))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
+                    ModelState.AddModelError("Attachment", "O campo Anexo é obrigatório!");
+                    return View(document);
                 }
-                return RedirectToAction(nameof(Index));
+                var extension = Path.GetExtension(attachment.FileName);
+                if (string.IsNullOrEmpty(extension) || !extension.Equals(".pdf", StringComparison.OrdinalIgnoreCase))
+                {
+                    ModelState.AddModelError("Attachment", "Somente arquivos PDF são permitidos.");
+                    return View(document);
+                }
+                document.Id = Guid.NewGuid();
+                document.MaterialId = new Guid("d2f6b9f0-3b1a-4e4e-9b8e-1c3d2a4f7c8b");
+                document.DocumentCreationDate = DateTime.Now.AddHours(-3);
+                document.Status = "Ativo";
+                document.UserId = new Guid(_userManager.GetUserId(User));
+
+                string randomFileName;
+                string filePath;
+                do
+                {
+                    randomFileName = $"ATA-{Guid.NewGuid()}.pdf";
+                    filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "docs", randomFileName);
+                } while (System.IO.File.Exists(filePath));
+
+                document.Attachment = Path.Combine("docs/", randomFileName);
+
+                await _context.Documents.InsertOneAsync(document); //Insert
+
+                var docsDirectory = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "docs");
+                if (!Directory.Exists(docsDirectory))
+                {
+                    Directory.CreateDirectory(docsDirectory);
+                }
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    await attachment.CopyToAsync(stream);
+                }
+                return RedirectToAction(nameof(History));
             }
             return View(document);
         }
+
+
+        //// GET: Documents/Edit/5
+        //public async Task<IActionResult> Edit(Guid? id)
+        //{
+        //    if (id == null)
+        //    {
+        //        return NotFound();
+        //    }
+
+        //    var document = await _context.Documents.Find(m => m.Id == id).FirstOrDefaultAsync();
+        //    if (document == null)
+        //    {
+        //        return NotFound();
+        //    }
+        //    return View(document);
+        //}
+
+        //// POST: Documents/Edit/5
+        //// To protect from overposting attacks, enable the specific properties you want to bind to.
+        //// For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public async Task<IActionResult> Edit(Guid id, [Bind("Id,Name,Number,DocumentCreationDate,MeetingDate,LawPublication,Status,Attachement,UserId,MandateId,MaterialId")] Document document)
+        //{
+        //    if (id != document.Id)
+        //    {
+        //        return NotFound();
+        //    }
+
+        //    if (ModelState.IsValid)
+        //    {
+
+
+
+
+
+        //        //aplicando
+        //        try
+        //        {
+        //            await _context.Documents.ReplaceOneAsync(m => m.Id == document.Id, document);
+        //        }
+        //        catch (DbUpdateConcurrencyException)
+        //        {
+        //            if (!DocumentExists(document.Id))
+        //            {
+        //                return NotFound();
+        //            }
+        //            else
+        //            {
+        //                throw;
+        //            }
+        //        }
+        //        return RedirectToAction(nameof(Index));
+        //    }
+        //    return View(document);
+        //}
         public async Task<IActionResult> ChangeStatus(string id, string status)
         {
             if (string.IsNullOrEmpty(id) || string.IsNullOrEmpty(status))

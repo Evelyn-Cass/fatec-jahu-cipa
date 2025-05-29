@@ -13,10 +13,6 @@
       "PackagePath": "staticwebassets\\css\\Account\\login.css"
     },
     {
-      "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\css\\Documents\\create.css",
-      "PackagePath": "staticwebassets\\css\\Documents\\create.css"
-    },
-    {
       "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\css\\Documents\\history.css",
       "PackagePath": "staticwebassets\\css\\Documents\\history.css"
     },
@@ -79,6 +75,10 @@
     {
       "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\css\\table.css",
       "PackagePath": "staticwebassets\\css\\table.css"
+    },
+    {
+      "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\docs\\ATA-956542d9-459d-4c7c-b13f-67cc4f9ef9a3.pdf",
+      "PackagePath": "staticwebassets\\docs\\ATA-956542d9-459d-4c7c-b13f-67cc4f9ef9a3.pdf"
     },
     {
       "Id": "D:\\Projetos\\FATEC\\cipa-fatec-jahu\\CipaFatecJahu\\wwwroot\\favicon.ico",
