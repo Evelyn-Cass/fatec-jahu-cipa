@@ -3,9 +3,26 @@
 @{
     ViewData["Title"] = "Histórico";
 }
-
-<h1>Histórico</h1>
-
+@section Styles {
+    <link rel="stylesheet" href="~/css/Documents/history.css" />
+    <link rel="stylesheet" href="~/css/table.css" />
+    <link rel="stylesheet" href="~/css/switch.css" />
+}
+<div class="container-title">
+    <h1 class="title">Histórico</h1>
+    @{
+        @if (TempData["message"] != null)
+        {
+            <div class="alert-green">
+                @TempData["message"]
+            </div>
+            TempData.Remove("message");
+        }
+    }
+    <div class="btn-create-border">
+        <a asp-action="Create" class="btn-create">🞢</a>
+    </div>
+</div>
 <table class="table">
     <thead>
         <tr>
@@ -58,13 +75,26 @@
                     @Html.DisplayFor(modelItem => item.UserId)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Status)
+                    <label class="switch">
+                        <input type="checkbox"
+                               data-id="@item.Id"
+                               data-status="@item.Status"
+                        @if (item.Status == "Ativo")
+                        {
+                            <text>checked</text>
+                        }
+                        onchange="onStatusChange(this)" />
+                        <span class="slider round"></span>
+                    </label>
                 </td>
                 <td>
-                    <a asp-action="EditAta" asp-route-id="@item.Id">Editar</a> |
+                    <a asp-action="AtaEdit" asp-route-id="@item.Id">Editar</a> |
                     <a asp-action="Details" asp-route-id="@item.Id">Detalhes</a>
                 </td>
             </tr>
         }
     </tbody>
 </table>
+@section Scripts {
+    <script src="~/js/Documents/history.js"></script>
+}
