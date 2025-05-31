@@ -11,31 +11,35 @@ namespace CipaFatecJahu.Controllers
     [Authorize(Roles = "Administrador,Secretário")]
     public class DocumentsController : Controller
     {
-
         ContextMongodb _context = new ContextMongodb();
         private UserManager<ApplicationUser> _userManager;
         public DocumentsController(UserManager<ApplicationUser> userManager)
         {
             this._userManager = userManager;
         }
+
         public async Task<IActionResult> History()
         {
             return View(await _context.Documents.Find(u => true).ToListAsync());
         }
+
         public IActionResult Material()
         {
             return View();
         }
+
         [AllowAnonymous]
         public async Task<IActionResult> Studies()
         {
-            return View(await _context.Documents.Find(u => u.MaterialId == new Guid("2a7d3f2e-9b4e-4b8d-8b7e-2c3d3a5f6d9c")).ToListAsync());
+            return View((await _context.Documents.Find(u => u.MaterialId == new Guid("2a7d3f2e-9b4e-4b8d-8b7e-2c3d3a5f6d9c")).ToListAsync()).OrderByDescending(u => u.DocumentCreationDate));
         }
+
         [AllowAnonymous]
         public async Task<IActionResult> Legislation()
         {
-            return View(await _context.Documents.Find(u => u.MaterialId == new Guid("1a6d3f2e-8b4e-4b8d-8b7e-2c3d3a5f6d9c")).ToListAsync());
+            return View((await _context.Documents.Find(u => u.MaterialId == new Guid("1a6d3f2e-8b4e-4b8d-8b7e-2c3d3a5f6d9c")).ToListAsync()).OrderByDescending(u=> u.LawPublication));
         }
+
         public async Task<IActionResult> Details(Guid? id)
         {
             if (id == null)
@@ -50,6 +54,7 @@ namespace CipaFatecJahu.Controllers
 
             return View(document);
         }
+
         public IActionResult Create()
         {
             return RedirectToAction("Material");
@@ -62,6 +67,7 @@ namespace CipaFatecJahu.Controllers
             ViewData["Mandates"] = new SelectList(mandates, "Id", "mandate");
             return View();
         }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Route("Documents/ATA/Create")]
@@ -142,7 +148,6 @@ namespace CipaFatecJahu.Controllers
             return View(document);
         }
 
-
         [Route("Documents/ATA/Edit")]
         public async Task<IActionResult> AtaEdit(Guid? id)
         {
@@ -200,7 +205,6 @@ namespace CipaFatecJahu.Controllers
                     }
 
                 }
-                //aplicando
                 try
                 {
                     await _context.Documents.ReplaceOneAsync(m => m.Id == document.Id, document);
@@ -238,6 +242,7 @@ namespace CipaFatecJahu.Controllers
             ViewData["Mandates"] = new SelectList(mandates, "Id", "mandate");
             return View();
         }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Route("Documents/Course/Create")]
@@ -302,6 +307,7 @@ namespace CipaFatecJahu.Controllers
             ViewData["Mandates"] = new SelectList(mandates, "Id", "mandate");
             return View();
         }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Route("Documents/Election/Create")]
@@ -382,7 +388,6 @@ namespace CipaFatecJahu.Controllers
             return View(document);
         }
 
-
         [Route("Documents/Studies/Create")]
         public IActionResult StudiesCreate()
         {
@@ -442,6 +447,74 @@ namespace CipaFatecJahu.Controllers
             return View(document);
         }
 
+        [Route("Documents/Legislation/Create")]
+        public IActionResult LegislationCreate()
+        {
+            var mandates = SearchMandates();
+            ViewData["Mandates"] = new SelectList(mandates, "Id", "mandate");
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        [Route("Documents/Legislation/Create")]
+        public async Task<IActionResult> LegislationCreate([Bind("Id,Name,DocumentCreationDate,LawPublication,Status,Attachment,UserId,MandateId,MaterialId")] Document document, IFormFile? attachment)
+        {
+            var mandates = SearchMandates();
+            ViewData["Mandates"] = new SelectList(mandates, "Id", "mandate");
+            if (ModelState.IsValid)
+            {
+                if (document.LawPublication == null || document.LawPublication == DateOnly.MinValue)
+                {
+                    ModelState.AddModelError("LawPublication", "O campo Data da publicação é obrigatório");
+                    return View(document);
+                }
+                if (document.LawPublication > DateOnly.FromDateTime(DateTime.Now.AddHours(-3)))
+                {
+                    ModelState.AddModelError("LawPublication", "A data da publicação não pode ser futura.");
+                    return View(document);
+                }
+                if (attachment == null || attachment.Length == 0)
+                {
+                    ModelState.AddModelError("Attachment", "O campo Anexo é obrigatório!");
+                    return View(document);
+                }
+                var extension = Path.GetExtension(attachment.FileName);
+                if (string.IsNullOrEmpty(extension) || !extension.Equals(".pdf", StringComparison.OrdinalIgnoreCase))
+                {
+                    ModelState.AddModelError("Attachment", "Somente arquivos PDF são permitidos.");
+                    return View(document);
+                }
+                document.Id = Guid.NewGuid();
+                document.MaterialId = new Guid("1a6d3f2e-8b4e-4b8d-8b7e-2c3d3a5f6d9c");
+                document.DocumentCreationDate = DateTime.Now.AddHours(-3);
+                document.Status = "Ativo";
+                document.UserId = new Guid(_userManager.GetUserId(User));
+
+                string randomFileName;
+                string filePath;
+                do
+                {
+                    randomFileName = $"LEGISLATION-{Guid.NewGuid()}.pdf";
+                    filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "docs", randomFileName);
+                } while (System.IO.File.Exists(filePath));
+
+                document.Attachment = Path.Combine("docs/", randomFileName);
+                await _context.Documents.InsertOneAsync(document); //Insert
+
+                var docsDirectory = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "docs");
+                if (!Directory.Exists(docsDirectory))
+                {
+                    Directory.CreateDirectory(docsDirectory);
+                }
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    await attachment.CopyToAsync(stream);
+                }
+                return RedirectToAction(nameof(History));
+            }
+            return View(document);
+        }
 
 
         //// GET: Documents/Edit/5
@@ -465,21 +538,14 @@ namespace CipaFatecJahu.Controllers
         //// For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         //[HttpPost]
         //[ValidateAntiForgeryToken]
-        //public async Task<IActionResult> Edit(Guid id, [Bind("Id,Name,Number,DocumentCreationDate,MeetingDate,LawPublication,Status,Attachement,UserId,MandateId,MaterialId")] Document document)
+        //public async Task<IActionResult> Edit(Guid id, [Bind("Id,Name,Number,DocumentCreationDate,MeetingDate,LawPublication,Status,Attachment,UserId,MandateId,MaterialId")] Document document)
         //{
         //    if (id != document.Id)
         //    {
         //        return NotFound();
         //    }
-
         //    if (ModelState.IsValid)
         //    {
-
-
-
-
-
-        //        //aplicando
         //        try
         //        {
         //            await _context.Documents.ReplaceOneAsync(m => m.Id == document.Id, document);
@@ -499,24 +565,20 @@ namespace CipaFatecJahu.Controllers
         //    }
         //    return View(document);
         //}
+
+        [Authorize(Roles = "Administrador")]
         public async Task<IActionResult> ChangeStatus(Guid id, string status)
         {
-          
             if (id == Guid.Empty || status == "" || status == null)
             {
                 return NotFound();
             }
-
-
-
             var document = await _context.Documents.Find(d => d.Id == id).FirstOrDefaultAsync();
             if (document == null)
             {
                 return NotFound();
             }
-
             document.Status = document.Status == "Ativo" ? "Inativo" : "Ativo";
-
             try
             {
                 await _context.Documents.ReplaceOneAsync(m => m.Id == document.Id, document);
@@ -532,7 +594,6 @@ namespace CipaFatecJahu.Controllers
                     throw;
                 }
             }
-
             return RedirectToAction("History");
         }
 

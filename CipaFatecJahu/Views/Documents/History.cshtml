@@ -4,9 +4,9 @@
     ViewData["Title"] = "Histórico";
 }
 @section Styles {
-    <link rel="stylesheet" href="~/css/Documents/history.css" />
-    <link rel="stylesheet" href="~/css/table.css" />
-    <link rel="stylesheet" href="~/css/switch.css" />
+<link rel="stylesheet" href="~/css/Documents/history.css" />
+<link rel="stylesheet" href="~/css/table.css" />
+<link rel="stylesheet" href="~/css/switch.css" />
 }
 <div class="container-title">
     <h1 class="title">Histórico</h1>
@@ -44,10 +44,12 @@
             <th>
                 @Html.DisplayNameFor(model => model.UserId)
             </th>
-
-            <th>
-                @Html.DisplayNameFor(model => model.Status)
-            </th>
+            @if (User.IsInRole("Administrador"))
+            {
+                <th>
+                    @Html.DisplayNameFor(model => model.Status)
+                </th>
+            }
             <th>Ações</th>
         </tr>
     </thead>
@@ -62,14 +64,14 @@
                     @Html.DisplayFor(modelItem => item.Name)
                 </td>
                 <td>
-					@if (item.MandateId == null)
-					{
-						<text>Nenhum</text>
-					}
-					else
-					{
-						@Html.DisplayFor(modelItem => item.MandateId)
-					}
+                    @if (item.MandateId == null)
+                    {
+                        <text>Nenhum</text>
+                    }
+                    else
+                    {
+                        @Html.DisplayFor(modelItem => item.MandateId)
+                    }
                 </td>
                 <td>
                     <a href="~/@item.Attachment" target="_blank">Visualizar PDF</a>
@@ -81,21 +83,27 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.UserId)
                 </td>
+                @if (User.IsInRole("Administrador")){
+                    <td>
+                        <label class="switch">
+                            <input type="checkbox"
+                            data-id="@item.Id"
+                            data-status="@item.Status"
+                            @if (item.Status == "Ativo")
+                            {
+                                <text>checked</text>
+                            }
+                            onchange="onStatusChange(this)" />
+                            <span class="slider round"></span>
+                        </label>
+                    </td>
+                }
                 <td>
-                    <label class="switch">
-                        <input type="checkbox"
-                               data-id="@item.Id"
-                               data-status="@item.Status"
-                        @if (item.Status == "Ativo")
-                        {
-                            <text>checked</text>
-                        }
-                        onchange="onStatusChange(this)" />
-                        <span class="slider round"></span>
-                    </label>
-                </td>
-                <td>
-                    <a asp-action="AtaEdit" asp-route-id="@item.Id">Editar</a> |
+                    @if (User.IsInRole("Administrador"))
+                    {
+                        <a asp-action="AtaEdit" asp-route-id="@item.Id">Editar</a>
+                        <span>|</span>
+                    }
                     <a asp-action="Details" asp-route-id="@item.Id">Detalhes</a>
                 </td>
             </tr>

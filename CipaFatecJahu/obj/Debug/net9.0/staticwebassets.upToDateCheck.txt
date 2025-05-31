@@ -105,7 +105,10 @@ wwwroot\css\table.css
 wwwroot\docs\ATA-184b97c4-6f17-4d8f-9068-c4520064f9f6.pdf
 wwwroot\docs\COURSE-519606d4-dc3f-47e9-9e09-0e5334214806.pdf
 wwwroot\docs\ELECTION-3535cc8a-795a-4fab-ab65-6042f03ddfb5.pdf
+wwwroot\docs\LEGISLATION-0164e14d-449b-4a0b-9d04-3ec3f74d1d90.pdf
+wwwroot\docs\LEGISLATION-51c6b0c8-e7a2-4142-8fd1-d3b857c9c70a.pdf
 wwwroot\docs\STUDIES-a451c508-832d-49e1-a473-407a001cc2ae.pdf
+wwwroot\docs\STUDIES-fa5f1aaf-a358-42b3-927b-67956a94f762.pdf
 wwwroot\favicon.ico
 wwwroot\img\404.png
 wwwroot\img\500.png
