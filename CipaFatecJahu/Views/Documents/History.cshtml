@@ -62,7 +62,14 @@
                     @Html.DisplayFor(modelItem => item.Name)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.MandateId)
+					@if (item.MandateId == null)
+					{
+						<text>Nenhum</text>
+					}
+					else
+					{
+						@Html.DisplayFor(modelItem => item.MandateId)
+					}
                 </td>
                 <td>
                     <a href="~/@item.Attachment" target="_blank">Visualizar PDF</a>

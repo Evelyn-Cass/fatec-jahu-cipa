@@ -273,7 +273,7 @@ namespace CipaFatecJahu.Controllers
                 string filePath;
                 do
                 {
-                    randomFileName = $"ATA-{Guid.NewGuid()}.pdf";
+                    randomFileName = $"COURSE-{Guid.NewGuid()}.pdf";
                     filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "docs", randomFileName);
                 } while (System.IO.File.Exists(filePath));
 
@@ -361,7 +361,7 @@ namespace CipaFatecJahu.Controllers
                 string filePath;
                 do
                 {
-                    randomFileName = $"ATA-{Guid.NewGuid()}.pdf";
+                    randomFileName = $"ELECTION-{Guid.NewGuid()}.pdf";
                     filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "docs", randomFileName);
                 } while (System.IO.File.Exists(filePath));
 
@@ -381,6 +381,68 @@ namespace CipaFatecJahu.Controllers
             }
             return View(document);
         }
+
+
+        [Route("Documents/Studies/Create")]
+        public IActionResult StudiesCreate()
+        {
+            var mandates = SearchMandates();
+            ViewData["Mandates"] = new SelectList(mandates, "Id", "mandate");
+            return View();
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        [Route("Documents/Studies/Create")]
+        public async Task<IActionResult> StudiesCreate([Bind("Id,Name,DocumentCreationDate,Status,Attachment,UserId,MandateId,MaterialId")] Document document, IFormFile? attachment)
+        {
+            var mandates = SearchMandates();
+            ViewData["Mandates"] = new SelectList(mandates, "Id", "mandate");
+            if (ModelState.IsValid)
+            {
+                if (attachment == null || attachment.Length == 0)
+                {
+                    ModelState.AddModelError("Attachment", "O campo Anexo é obrigatório!");
+                    return View(document);
+                }
+                var extension = Path.GetExtension(attachment.FileName);
+                if (string.IsNullOrEmpty(extension) || !extension.Equals(".pdf", StringComparison.OrdinalIgnoreCase))
+                {
+                    ModelState.AddModelError("Attachment", "Somente arquivos PDF são permitidos.");
+                    return View(document);
+                }
+
+                document.Id = Guid.NewGuid();
+                document.MaterialId = new Guid("2a7d3f2e-9b4e-4b8d-8b7e-2c3d3a5f6d9c");
+                document.DocumentCreationDate = DateTime.Now.AddHours(-3);
+                document.Status = "Ativo";
+                document.UserId = new Guid(_userManager.GetUserId(User));
+
+                string randomFileName;
+                string filePath;
+                do
+                {
+                    randomFileName = $"STUDIES-{Guid.NewGuid()}.pdf";
+                    filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "docs", randomFileName);
+                } while (System.IO.File.Exists(filePath));
+
+                document.Attachment = Path.Combine("docs/", randomFileName);
+                await _context.Documents.InsertOneAsync(document); //Insert
+
+                var docsDirectory = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "docs");
+                if (!Directory.Exists(docsDirectory))
+                {
+                    Directory.CreateDirectory(docsDirectory);
+                }
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    await attachment.CopyToAsync(stream);
+                }
+                return RedirectToAction(nameof(History));
+            }
+            return View(document);
+        }
+
+
 
         //// GET: Documents/Edit/5
         //public async Task<IActionResult> Edit(Guid? id)
