@@ -295,6 +295,92 @@ namespace CipaFatecJahu.Controllers
             return View(document);
         }
 
+        [Route("Documents/Election/Create")]
+        public IActionResult ElectionCreate()
+        {
+            var mandates = SearchMandates();
+            ViewData["Mandates"] = new SelectList(mandates, "Id", "mandate");
+            return View();
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        [Route("Documents/Election/Create")]
+        public async Task<IActionResult> ElectionCreate([Bind("Id,Name,DocumentCreationDate,MeetingDate,Status,Attachment,UserId,MandateId,MaterialId")] Document document, IFormFile? attachment)
+        {
+            var mandates = SearchMandates();
+            ViewData["Mandates"] = new SelectList(mandates, "Id", "mandate");
+            if (ModelState.IsValid)
+            {
+                if (document.MeetingDate == null || document.MeetingDate == DateOnly.MinValue)
+                {
+                    ModelState.AddModelError("MeetingDate", "O campo Data da Reunião é obrigatório");
+                    return View(document);
+                }
+                if (!document.MandateId.HasValue || document.MandateId == Guid.Empty)
+                {
+                    ModelState.AddModelError("MandateId", "O campo Mandato é obrigatório!");
+                    return View(document);
+                }
+                if (document.MeetingDate > DateOnly.FromDateTime(DateTime.Now.AddHours(-3)))
+                {
+                    ModelState.AddModelError("MeetingDate", "A data da reunião não pode ser futura.");
+                    return View(document);
+                }
+                var mandate = _context.Mandates.Find(m => m.Id == document.MandateId.Value).FirstOrDefault();
+                if (mandate != null)
+                {
+                    if (document.MeetingDate < mandate.StartYear || document.MeetingDate > mandate.TerminationYear)
+                    {
+                        ModelState.AddModelError("MeetingDate", $"A data da reunião deve estar dentro do período do mandato selecionado. {mandate.StartYear} - {mandate.TerminationYear}");
+                        return View(document);
+                    }
+                }
+                else
+                {
+                    ModelState.AddModelError("MandateId", "Mandato não encontrado ou inválido.");
+                    return View(document);
+                }
+                if (attachment == null || attachment.Length == 0)
+                {
+                    ModelState.AddModelError("Attachment", "O campo Anexo é obrigatório!");
+                    return View(document);
+                }
+                var extension = Path.GetExtension(attachment.FileName);
+                if (string.IsNullOrEmpty(extension) || !extension.Equals(".pdf", StringComparison.OrdinalIgnoreCase))
+                {
+                    ModelState.AddModelError("Attachment", "Somente arquivos PDF são permitidos.");
+                    return View(document);
+                }
+                document.Id = Guid.NewGuid();
+                document.MaterialId = new Guid("3b8d3f2e-1a1c-4e4e-9b8e-1c3d2a4f7c8b");
+                document.DocumentCreationDate = DateTime.Now.AddHours(-3);
+                document.Status = "Ativo";
+                document.UserId = new Guid(_userManager.GetUserId(User));
+
+                string randomFileName;
+                string filePath;
+                do
+                {
+                    randomFileName = $"ATA-{Guid.NewGuid()}.pdf";
+                    filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "docs", randomFileName);
+                } while (System.IO.File.Exists(filePath));
+
+                document.Attachment = Path.Combine("docs/", randomFileName);
+                await _context.Documents.InsertOneAsync(document); //Insert
+
+                var docsDirectory = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "docs");
+                if (!Directory.Exists(docsDirectory))
+                {
+                    Directory.CreateDirectory(docsDirectory);
+                }
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    await attachment.CopyToAsync(stream);
+                }
+                return RedirectToAction(nameof(History));
+            }
+            return View(document);
+        }
 
         //// GET: Documents/Edit/5
         //public async Task<IActionResult> Edit(Guid? id)
@@ -351,20 +437,17 @@ namespace CipaFatecJahu.Controllers
         //    }
         //    return View(document);
         //}
-        public async Task<IActionResult> ChangeStatus(string id, string status)
+        public async Task<IActionResult> ChangeStatus(Guid id, string status)
         {
-            if (string.IsNullOrEmpty(id) || string.IsNullOrEmpty(status))
+          
+            if (id == Guid.Empty || status == "" || status == null)
             {
                 return NotFound();
             }
 
-            Guid documentId;
-            if (!Guid.TryParse(id, out documentId))
-            {
-                return NotFound();
-            }
 
-            var document = await _context.Documents.Find(d => d.Id == documentId).FirstOrDefaultAsync();
+
+            var document = await _context.Documents.Find(d => d.Id == id).FirstOrDefaultAsync();
             if (document == null)
             {
                 return NotFound();

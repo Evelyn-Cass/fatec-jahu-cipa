@@ -17,7 +17,7 @@ namespace CipaFatecJahu.Controllers
             this._userManager = userManager;
             this._roleManager = roleManager;
         }
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
         {
             // Obtém todos os usuários  
             var roleName = "Secretário";
