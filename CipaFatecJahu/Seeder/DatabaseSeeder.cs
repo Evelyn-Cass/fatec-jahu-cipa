@@ -1,8 +1,9 @@
 ﻿using System.Security.Claims;
+using CipaFatecJahu.Models;
 using Microsoft.AspNetCore.Identity;
 using MongoDB.Driver;
 
-namespace CipaFatecJahu.Models
+namespace CipaFatecJahu.Seeder
 {
     public class DatabaseSeeder
     {
@@ -12,8 +13,8 @@ namespace CipaFatecJahu.Models
 
         public DatabaseSeeder(UserManager<ApplicationUser> userManager, RoleManager<ApplicationRole> roleManager)
         {
-            this._userManager = userManager;
-            this._roleManager = roleManager;
+            _userManager = userManager;
+            _roleManager = roleManager;
         }
 
         public async Task SeedAsync()

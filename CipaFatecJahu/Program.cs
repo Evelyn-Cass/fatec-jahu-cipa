@@ -1,5 +1,6 @@
 using CipaFatecJahu.Data;
 using CipaFatecJahu.Models;
+using CipaFatecJahu.Seeder;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 

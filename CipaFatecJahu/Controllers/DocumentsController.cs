@@ -1,10 +1,13 @@
 ﻿using CipaFatecJahu.Models;
+using CipaFatecJahu.ViewModel;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using MongoDB.Bson;
 using MongoDB.Driver;
+using MongoDB.Driver.Linq;
 
 namespace CipaFatecJahu.Controllers
 {
@@ -20,7 +23,72 @@ namespace CipaFatecJahu.Controllers
 
         public async Task<IActionResult> History()
         {
-            return View(await _context.Documents.Find(u => true).ToListAsync());
+            var pipeline = new[]
+            {
+                new BsonDocument("$lookup", new BsonDocument
+                {
+                    { "from", "Materials" },
+                    { "localField", "MaterialId" },
+                    { "foreignField", "_id" },
+                    { "as", "Material" }
+                }),
+                new BsonDocument("$unwind", "$Material"),
+                new BsonDocument("$lookup", new BsonDocument
+                {
+                    { "from", "Mandates" },
+                    { "localField", "MandateId" },
+                    { "foreignField", "_id" },
+                    { "as", "Mandate" }
+                }),
+                new BsonDocument("$unwind", "$Mandate"),
+                new BsonDocument("$addFields", new BsonDocument
+                {
+                    { "MandateStartYear", new BsonDocument("$year", new BsonDocument("$toDate", new BsonDocument("$dateFromString", new BsonDocument
+                        {
+                            { "dateString", new BsonDocument("$concat", new BsonArray {
+                                new BsonDocument("$toString", "$Mandate.StartYear.Year"),
+                                "-01-01"
+                            })}
+                        })))
+                    },
+                    { "MandateTerminationYear", new BsonDocument("$year", new BsonDocument("$toDate", new BsonDocument("$dateFromString", new BsonDocument
+                        {
+                            { "dateString", new BsonDocument("$concat", new BsonArray {
+                                new BsonDocument("$toString", "$Mandate.TerminationYear.Year"),
+                                "-01-01"
+                            })}
+                        })))
+                    }
+                }),
+                new BsonDocument("$project", new BsonDocument
+                {
+                    { "_id", "$_id" },
+                    { "Name", "$Name" },
+                    { "DocumentCreationDate", "$DocumentCreationDate" },
+                    { "Attachment", "$Attachment" },
+                    { "Status", "$Status" },
+                    { "Mandate", new BsonDocument("$concat", new BsonArray {
+                        new BsonDocument("$toString", "$MandateStartYear"),
+                        "/",
+                        new BsonDocument("$toString", "$MandateTerminationYear")
+                    })},
+                    { "Material", "$Material.Description" },
+                    { "UserId", "$UserId" }
+                })
+            };
+
+            var result = await _context.Documents.Aggregate<DocumentWithUserMandateMaterialViewModel>(pipeline).ToListAsync();
+
+            foreach (var item in result)
+            {
+                var user = _userManager.Users.FirstOrDefault(u => u.Id == item.UserId);
+                if (user != null)
+                {
+                    item.UserName = user.Name;
+                }
+            }
+
+            return View(result);
         }
 
         public IActionResult Material()
@@ -37,7 +105,7 @@ namespace CipaFatecJahu.Controllers
         [AllowAnonymous]
         public async Task<IActionResult> Legislation()
         {
-            return View((await _context.Documents.Find(u => u.MaterialId == new Guid("1a6d3f2e-8b4e-4b8d-8b7e-2c3d3a5f6d9c")).ToListAsync()).OrderByDescending(u=> u.LawPublication));
+            return View((await _context.Documents.Find(u => u.MaterialId == new Guid("1a6d3f2e-8b4e-4b8d-8b7e-2c3d3a5f6d9c")).ToListAsync()).OrderByDescending(u => u.LawPublication));
         }
 
         public async Task<IActionResult> Details(Guid? id)
