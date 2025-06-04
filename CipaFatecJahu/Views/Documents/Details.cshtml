@@ -1,5 +1,5 @@
-﻿@model CipaFatecJahu.Models.Document
-
+﻿@using CipaFatecJahu.ViewModel
+@model DocumentWithUserMandateMaterialViewModel
 @{
     ViewData["Title"] = "Detalhes";
 }
@@ -7,73 +7,54 @@
 <h1>Detalhes</h1>
 
 <div>
-    <h4>Document</h4>
+    <h4>Documento</h4>
     <hr />
-    <dl class="row" >
-        <dt class = "col-sm-2">
+    <div style="display:flex;flex-direction:column" >
+        <div style="display:flex;flex-direction:row">
             @Html.DisplayNameFor(model => model.Name):
-        </dt>
-        <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Name)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.DocumentCreationDate)
-        </dt>
-        <dd class = "col-sm-10">
+        </div>
+        <div style="display:flex;flex-direction:row">
+            @Html.DisplayNameFor(model => model.DocumentCreationDate):
             @Html.DisplayFor(model => model.DocumentCreationDate)
-        </dd>
+        </div>
         @if (Model.MeetingDate != null){
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.MeetingDate)
-        </dt>
-        <dd class = "col-sm-10">
+            <div style="display:flex;flex-direction:row">
+            @Html.DisplayNameFor(model => model.MeetingDate):
             @Html.DisplayFor(model => model.MeetingDate)
-        </dd>
+            </div>
         }
         @if (Model.LawPublication != null){ 
-        <dt class = "col-sm-2">
+            <div style="display:flex;flex-direction:row">
             
-            @Html.DisplayNameFor(model => model.LawPublication)
-        </dt>
-        <dd class = "col-sm-10">
+            @Html.DisplayNameFor(model => model.LawPublication):
             @Html.DisplayFor(model => model.LawPublication)
-        </dd>
+            </div>
         }
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Status)
-        </dt>
-        <dd class = "col-sm-10">
+        <div style="display:flex;flex-direction:row">
+            @Html.DisplayNameFor(model => model.Status):
             @Html.DisplayFor(model => model.Status)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Attachment)
-        </dt>
-        <dd class="col-sm-10">  
-           <a href="@Url.Content($"~/{Model.Attachment}")" target="_blank">Visualizar PDF</a>  
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.UserId)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.UserId)
-        </dd>
-        @if (Model.MandateId != null){
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.MandateId)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.MandateId)
-        </dd>
+        </div>
+        <div style="display:flex;flex-direction:row">
+            @Html.DisplayNameFor(model => model.Attachment): 
+            <a href="@Url.Content($"~/{Model.Attachment}")" target="_blank">Visualizar PDF</a>  
+        </div>
+        <div style="display:flex;flex-direction:row">
+			@Html.DisplayNameFor(model => model.UserName):
+            @Html.DisplayFor(model => model.UserName)
+        </div>
+        @if (Model.Mandate != null){
+            <div style="display:flex;flex-direction:row">
+            @Html.DisplayNameFor(model => model.Mandate):
+            @Html.DisplayFor(model => model.Mandate)
+        </div>
         }
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.MaterialId)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.MaterialId)
-        </dd>
-    </dl>
+        <div style="display:flex;flex-direction:row">
+            @Html.DisplayNameFor(model => model.Material):
+            @Html.DisplayFor(model => model.Material)
+        </div>
+    </div>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
-    <a asp-action="History">Back to List</a>
+    <a asp-action="History">Voltar</a>
 </div>

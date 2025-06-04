@@ -77,7 +77,9 @@ namespace CipaFatecJahu.Controllers
                        new BsonDocument("$toString", "$MandateTerminationYear")
                    })},
                    { "Material", "$Material.Description" },
-                   { "UserId", "$UserId" }
+                   { "UserId", "$UserId" },
+                   { "MeetingDate", "$MeetingDate" },
+                   { "LawPublication", "$LawPublication" }
                }),
                new BsonDocument("$sort", new BsonDocument("DocumentCreationDate", -1))
             };
@@ -119,13 +121,85 @@ namespace CipaFatecJahu.Controllers
             {
                 return NotFound();
             }
-            var document = await _context.Documents.Find(m => m.Id == id).FirstOrDefaultAsync();
-            if (document == null)
+
+            var pipeline = new[]
+{              new BsonDocument("$match", new BsonDocument("_id", id)),
+               new BsonDocument("$lookup", new BsonDocument
+               {
+                   { "from", "Materials" },
+                   { "localField", "MaterialId" },
+                   { "foreignField", "_id" },
+                   { "as", "Material" }
+               }),
+               new BsonDocument("$unwind", "$Material"),
+               new BsonDocument("$lookup", new BsonDocument
+               {
+                   { "from", "Mandates" },
+                   { "localField", "MandateId" },
+                   { "foreignField", "_id" },
+                   { "as", "Mandate" }
+               }),
+               new BsonDocument("$unwind", new BsonDocument
+               {
+                   { "path", "$Mandate" },
+                   { "preserveNullAndEmptyArrays", true }
+               }),
+               new BsonDocument("$addFields", new BsonDocument
+               {
+                   { "MandateStartYear", new BsonDocument("$year", new BsonDocument("$toDate", new BsonDocument("$dateFromString", new BsonDocument
+                       {
+                           { "dateString", new BsonDocument("$concat", new BsonArray {
+                               new BsonDocument("$toString", "$Mandate.StartYear.Year"),
+                               "-01-01"
+                           })}
+                       })))
+                   },
+                   { "MandateTerminationYear", new BsonDocument("$year", new BsonDocument("$toDate", new BsonDocument("$dateFromString", new BsonDocument
+                       {
+                           { "dateString", new BsonDocument("$concat", new BsonArray {
+                               new BsonDocument("$toString", "$Mandate.TerminationYear.Year"),
+                               "-01-01"
+                           })}
+                       })))
+                   }
+               }),
+               new BsonDocument("$project", new BsonDocument
+               {
+                   { "_id", "$_id" },
+                   { "Name", "$Name" },
+                   { "DocumentCreationDate", "$DocumentCreationDate" },
+                   { "Attachment", "$Attachment" },
+                   { "Status", "$Status" },
+                   { "Mandate", new BsonDocument("$concat", new BsonArray {
+                       new BsonDocument("$toString", "$MandateStartYear"),
+                       "/",
+                       new BsonDocument("$toString", "$MandateTerminationYear")
+                   })},
+                   { "Material", "$Material.Description" },
+                   { "UserId", "$UserId" },
+                   { "MeetingDate", "$MeetingDate" },
+                   { "LawPublication", "$LawPublication" }
+               }),
+               new BsonDocument("$sort", new BsonDocument("DocumentCreationDate", -1))
+            };
+
+            var result = await _context.Documents.Aggregate<DocumentWithUserMandateMaterialViewModel>(pipeline).ToListAsync();
+
+            if (result == null)
             {
                 return NotFound();
             }
 
-            return View(document);
+            foreach (var item in result)
+            {
+                var user = _userManager.Users.FirstOrDefault(u => u.Id == item.UserId);
+                if (user != null)
+                {
+                    item.UserName = user.Name;
+                }
+            }
+
+            return View(result.FirstOrDefault());
         }
 
         public IActionResult Create()

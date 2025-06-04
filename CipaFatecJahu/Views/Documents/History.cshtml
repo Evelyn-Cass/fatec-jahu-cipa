@@ -1,16 +1,16 @@
 ﻿@using CipaFatecJahu.ViewModel
 @model List<DocumentWithUserMandateMaterialViewModel>
 @{
-    ViewData["Title"] = "Histórico";
+    ViewData["Title"] = "Histórico de Documentos";
 }
 @section Styles {
-<link rel="stylesheet" href="~/css/Documents/history.css" />
-<link rel="stylesheet" href="~/css/table.css" />
-<link rel="stylesheet" href="~/css/switch.css" />
+    <link rel="stylesheet" href="~/css/Documents/history.css" />
+    <link rel="stylesheet" href="~/css/table.css" />
+    <link rel="stylesheet" href="~/css/switch.css" />
 }
 
 <div class="container-title">
-    <h1 class="title">Histórico</h1>
+    <h1 class="title">Histórico de Documentos</h1>
     @{
         @if (TempData["message"] != null)
         {
@@ -61,60 +61,61 @@
         }
         else
         {
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>
-                    @item.Material
-                </td>
-                <td>
-                    @item.Name
-                </td>
-                <td>
-                    @if (item.Mandate == null)
-                    {
-                        <text>Nenhum</text>
-                    }
-                    else
-                    {
-                        @item.Mandate
-                    }
-                </td>
-                <td>
-                    <a href="~/@item.Attachment" target="_blank">Visualizar PDF</a>
-
-                </td>
-                <td>
-                    @item.DocumentCreationDate
-                </td>
-                <td>
-                    @item.UserName
-                </td>
-                @if (User.IsInRole("Administrador")){
+            @foreach (var item in Model)
+            {
+                <tr>
                     <td>
-                        <label class="switch">
-                            <input type="checkbox"
-                            data-id="@item.Id"
-                            data-status="@item.Status"
-                            @if (item.Status == "Ativo")
-                            {
-                                <text>checked</text>
-                            }
-                            onchange="onStatusChange(this)" />
-                            <span class="slider round"></span>
-                        </label>
+                        @item.Material
                     </td>
-                }
-                <td>
+                    <td>
+                        @item.Name
+                    </td>
+                    <td>
+                        @if (item.Mandate == null)
+                        {
+                            <text>Nenhum</text>
+                        }
+                        else
+                        {
+                            @item.Mandate
+                        }
+                    </td>
+                    <td>
+                        <a href="~/@item.Attachment" target="_blank">Visualizar PDF</a>
+
+                    </td>
+                    <td>
+                        @item.DocumentCreationDate
+                    </td>
+                    <td>
+                        @item.UserName
+                    </td>
                     @if (User.IsInRole("Administrador"))
                     {
-                        <a asp-action="AtaEdit" asp-route-id="@item.Id">Editar</a>
-                        <span>|</span>
+                        <td>
+                            <label class="switch">
+                                <input type="checkbox"
+                                       data-id="@item.Id"
+                                       data-status="@item.Status"
+                                @if (item.Status == "Ativo")
+                                {
+                                    <text>checked</text>
+                                }
+                                onchange="onStatusChange(this)" />
+                                <span class="slider round"></span>
+                            </label>
+                        </td>
                     }
-                    <a asp-action="Details" asp-route-id="@item.Id">Detalhes</a>
-                </td>
-            </tr>
-        }}
+                    <td>
+                        @* @if (User.IsInRole("Administrador")) *@
+                        @* { *@
+                        @*     <a asp-action="AtaEdit" asp-route-id="@item.Id">Editar</a> *@
+                        @*     <span>|</span> *@
+                        @* } *@
+                        <a asp-action="Details" asp-route-id="@item.Id">Detalhes</a>
+                    </td>
+                </tr>
+            }}
     </tbody>
 </table>
 @section Scripts {

@@ -7,18 +7,31 @@
     border-collapse: collapse;
     margin: 20px 0;
     border-radius: 4px;
-    border-style: hidden; 
-    box-shadow: 0 0 0 1px var(--base-lightgray); 
+    border-style: hidden;
+    box-shadow: 0 0 0 2px var(--base-lightgray);
+    box-sizing: border-box;
 }
 
+thead tr {
+    background-color: var(--base-green);
+    box-shadow: 0 -2px 0 2px var(--base-green);
+    border: 4px;
+}
 
 tr {
     border: 1px solid var(--base-lightgray);
     text-align: center;
     height: 50px;
 }
+    tbody tr:hover {
+        background-color: var(--base-lightgray);
+    }
+
+
+
 
 
 th {
-    font-weight: 600;
-}
+    font-weight: 500;
+    color: var(--base-white);
+   }
