@@ -1,34 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\",
+  "WorkspaceRootPath": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1992EF97-580E-4F46-A865-1D4FFAC04616}|CipaFatecJahu\\CipaFatecJahu.csproj|d:\\projetos\\fatec\\fatec-jahu-cipa\\cipafatecjahu\\controllers\\documentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1992EF97-580E-4F46-A865-1D4FFAC04616}|CipaFatecJahu\\CipaFatecJahu.csproj|c:\\projetos\\fatec\\fatec-jahu-cipa\\cipafatecjahu\\controllers\\documentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1992EF97-580E-4F46-A865-1D4FFAC04616}|CipaFatecJahu\\CipaFatecJahu.csproj|solutionrelative:cipafatecjahu\\controllers\\documentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1992EF97-580E-4F46-A865-1D4FFAC04616}|CipaFatecJahu\\CipaFatecJahu.csproj|d:\\projetos\\fatec\\fatec-jahu-cipa\\cipafatecjahu\\viewmodel\\documentwithusermandatematerialviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1992EF97-580E-4F46-A865-1D4FFAC04616}|CipaFatecJahu\\CipaFatecJahu.csproj|solutionrelative:cipafatecjahu\\viewmodel\\documentwithusermandatematerialviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1992EF97-580E-4F46-A865-1D4FFAC04616}|CipaFatecJahu\\CipaFatecJahu.csproj|d:\\projetos\\fatec\\fatec-jahu-cipa\\cipafatecjahu\\models\\document.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1992EF97-580E-4F46-A865-1D4FFAC04616}|CipaFatecJahu\\CipaFatecJahu.csproj|solutionrelative:cipafatecjahu\\models\\document.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1992EF97-580E-4F46-A865-1D4FFAC04616}|CipaFatecJahu\\CipaFatecJahu.csproj|d:\\projetos\\fatec\\fatec-jahu-cipa\\cipafatecjahu\\controllers\\secretariescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1992EF97-580E-4F46-A865-1D4FFAC04616}|CipaFatecJahu\\CipaFatecJahu.csproj|solutionrelative:cipafatecjahu\\controllers\\secretariescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1992EF97-580E-4F46-A865-1D4FFAC04616}|CipaFatecJahu\\CipaFatecJahu.csproj|d:\\projetos\\fatec\\fatec-jahu-cipa\\cipafatecjahu\\views\\documents\\history.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{1992EF97-580E-4F46-A865-1D4FFAC04616}|CipaFatecJahu\\CipaFatecJahu.csproj|c:\\projetos\\fatec\\fatec-jahu-cipa\\cipafatecjahu\\views\\documents\\history.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{1992EF97-580E-4F46-A865-1D4FFAC04616}|CipaFatecJahu\\CipaFatecJahu.csproj|solutionrelative:cipafatecjahu\\views\\documents\\history.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1992EF97-580E-4F46-A865-1D4FFAC04616}|CipaFatecJahu\\CipaFatecJahu.csproj|d:\\projetos\\fatec\\fatec-jahu-cipa\\cipafatecjahu\\models\\mandate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1992EF97-580E-4F46-A865-1D4FFAC04616}|CipaFatecJahu\\CipaFatecJahu.csproj|solutionrelative:cipafatecjahu\\models\\mandate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1992EF97-580E-4F46-A865-1D4FFAC04616}|CipaFatecJahu\\CipaFatecJahu.csproj|d:\\projetos\\fatec\\fatec-jahu-cipa\\cipafatecjahu\\models\\material.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1992EF97-580E-4F46-A865-1D4FFAC04616}|CipaFatecJahu\\CipaFatecJahu.csproj|solutionrelative:cipafatecjahu\\models\\material.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1992EF97-580E-4F46-A865-1D4FFAC04616}|CipaFatecJahu\\CipaFatecJahu.csproj|c:\\projetos\\fatec\\fatec-jahu-cipa\\cipafatecjahu\\views\\documents\\studies.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1992EF97-580E-4F46-A865-1D4FFAC04616}|CipaFatecJahu\\CipaFatecJahu.csproj|solutionrelative:cipafatecjahu\\views\\documents\\studies.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,101 +22,49 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DocumentWithUserMandateMaterialViewModel.cs",
-              "DocumentMoniker": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\ViewModel\\DocumentWithUserMandateMaterialViewModel.cs",
-              "RelativeDocumentMoniker": "CipaFatecJahu\\ViewModel\\DocumentWithUserMandateMaterialViewModel.cs",
-              "ToolTip": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\ViewModel\\DocumentWithUserMandateMaterialViewModel.cs",
-              "RelativeToolTip": "CipaFatecJahu\\ViewModel\\DocumentWithUserMandateMaterialViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T23:06:08.198Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SecretariesController.cs",
-              "DocumentMoniker": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\Controllers\\SecretariesController.cs",
-              "RelativeDocumentMoniker": "CipaFatecJahu\\Controllers\\SecretariesController.cs",
-              "ToolTip": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\Controllers\\SecretariesController.cs",
-              "RelativeToolTip": "CipaFatecJahu\\Controllers\\SecretariesController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAALcAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T23:04:10.913Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "History.cshtml",
-              "DocumentMoniker": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\Views\\Documents\\History.cshtml",
-              "RelativeDocumentMoniker": "CipaFatecJahu\\Views\\Documents\\History.cshtml",
-              "ToolTip": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\Views\\Documents\\History.cshtml",
-              "RelativeToolTip": "CipaFatecJahu\\Views\\Documents\\History.cshtml",
-              "ViewState": "AgIAAFgAAAAAAAAAAAApwEAAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-03T22:08:13.287Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Material.cs",
-              "DocumentMoniker": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\Models\\Material.cs",
-              "RelativeDocumentMoniker": "CipaFatecJahu\\Models\\Material.cs",
-              "ToolTip": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\Models\\Material.cs",
-              "RelativeToolTip": "CipaFatecJahu\\Models\\Material.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T22:01:04.449Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Mandate.cs",
-              "DocumentMoniker": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\Models\\Mandate.cs",
-              "RelativeDocumentMoniker": "CipaFatecJahu\\Models\\Mandate.cs",
-              "ToolTip": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\Models\\Mandate.cs",
-              "RelativeToolTip": "CipaFatecJahu\\Models\\Mandate.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T22:01:05.344Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Document.cs",
-              "DocumentMoniker": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\Models\\Document.cs",
-              "RelativeDocumentMoniker": "CipaFatecJahu\\Models\\Document.cs",
-              "ToolTip": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\Models\\Document.cs",
-              "RelativeToolTip": "CipaFatecJahu\\Models\\Document.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T21:54:59.25Z",
+              "DocumentIndex": 1,
+              "Title": "History.cshtml",
+              "DocumentMoniker": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\Views\\Documents\\History.cshtml",
+              "RelativeDocumentMoniker": "CipaFatecJahu\\Views\\Documents\\History.cshtml",
+              "ToolTip": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\Views\\Documents\\History.cshtml",
+              "RelativeToolTip": "CipaFatecJahu\\Views\\Documents\\History.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABsAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-04T13:56:38.72Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "DocumentsController.cs",
-              "DocumentMoniker": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\Controllers\\DocumentsController.cs",
+              "DocumentMoniker": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\Controllers\\DocumentsController.cs",
               "RelativeDocumentMoniker": "CipaFatecJahu\\Controllers\\DocumentsController.cs",
-              "ToolTip": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\Controllers\\DocumentsController.cs",
+              "ToolTip": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\Controllers\\DocumentsController.cs",
               "RelativeToolTip": "CipaFatecJahu\\Controllers\\DocumentsController.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAQwFYAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAwwHAAAACTAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T21:51:36.977Z",
+              "WhenOpened": "2025-06-04T13:40:32.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Studies.cshtml",
+              "DocumentMoniker": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\Views\\Documents\\Studies.cshtml",
+              "RelativeDocumentMoniker": "CipaFatecJahu\\Views\\Documents\\Studies.cshtml",
+              "ToolTip": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\Views\\Documents\\Studies.cshtml",
+              "RelativeToolTip": "CipaFatecJahu\\Views\\Documents\\Studies.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-04T13:32:52.818Z",
               "EditorCaption": ""
             }
           ]

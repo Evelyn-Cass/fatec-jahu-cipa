@@ -25,56 +25,61 @@ namespace CipaFatecJahu.Controllers
         {
             var pipeline = new[]
             {
-                new BsonDocument("$lookup", new BsonDocument
-                {
-                    { "from", "Materials" },
-                    { "localField", "MaterialId" },
-                    { "foreignField", "_id" },
-                    { "as", "Material" }
-                }),
-                new BsonDocument("$unwind", "$Material"),
-                new BsonDocument("$lookup", new BsonDocument
-                {
-                    { "from", "Mandates" },
-                    { "localField", "MandateId" },
-                    { "foreignField", "_id" },
-                    { "as", "Mandate" }
-                }),
-                new BsonDocument("$unwind", "$Mandate"),
-                new BsonDocument("$addFields", new BsonDocument
-                {
-                    { "MandateStartYear", new BsonDocument("$year", new BsonDocument("$toDate", new BsonDocument("$dateFromString", new BsonDocument
-                        {
-                            { "dateString", new BsonDocument("$concat", new BsonArray {
-                                new BsonDocument("$toString", "$Mandate.StartYear.Year"),
-                                "-01-01"
-                            })}
-                        })))
-                    },
-                    { "MandateTerminationYear", new BsonDocument("$year", new BsonDocument("$toDate", new BsonDocument("$dateFromString", new BsonDocument
-                        {
-                            { "dateString", new BsonDocument("$concat", new BsonArray {
-                                new BsonDocument("$toString", "$Mandate.TerminationYear.Year"),
-                                "-01-01"
-                            })}
-                        })))
-                    }
-                }),
-                new BsonDocument("$project", new BsonDocument
-                {
-                    { "_id", "$_id" },
-                    { "Name", "$Name" },
-                    { "DocumentCreationDate", "$DocumentCreationDate" },
-                    { "Attachment", "$Attachment" },
-                    { "Status", "$Status" },
-                    { "Mandate", new BsonDocument("$concat", new BsonArray {
-                        new BsonDocument("$toString", "$MandateStartYear"),
-                        "/",
-                        new BsonDocument("$toString", "$MandateTerminationYear")
-                    })},
-                    { "Material", "$Material.Description" },
-                    { "UserId", "$UserId" }
-                })
+               new BsonDocument("$lookup", new BsonDocument
+               {
+                   { "from", "Materials" },
+                   { "localField", "MaterialId" },
+                   { "foreignField", "_id" },
+                   { "as", "Material" }
+               }),
+               new BsonDocument("$unwind", "$Material"),
+               new BsonDocument("$lookup", new BsonDocument
+               {
+                   { "from", "Mandates" },
+                   { "localField", "MandateId" },
+                   { "foreignField", "_id" },
+                   { "as", "Mandate" }
+               }),
+               new BsonDocument("$unwind", new BsonDocument
+               {
+                   { "path", "$Mandate" },
+                   { "preserveNullAndEmptyArrays", true }
+               }),
+               new BsonDocument("$addFields", new BsonDocument
+               {
+                   { "MandateStartYear", new BsonDocument("$year", new BsonDocument("$toDate", new BsonDocument("$dateFromString", new BsonDocument
+                       {
+                           { "dateString", new BsonDocument("$concat", new BsonArray {
+                               new BsonDocument("$toString", "$Mandate.StartYear.Year"),
+                               "-01-01"
+                           })}
+                       })))
+                   },
+                   { "MandateTerminationYear", new BsonDocument("$year", new BsonDocument("$toDate", new BsonDocument("$dateFromString", new BsonDocument
+                       {
+                           { "dateString", new BsonDocument("$concat", new BsonArray {
+                               new BsonDocument("$toString", "$Mandate.TerminationYear.Year"),
+                               "-01-01"
+                           })}
+                       })))
+                   }
+               }),
+               new BsonDocument("$project", new BsonDocument
+               {
+                   { "_id", "$_id" },
+                   { "Name", "$Name" },
+                   { "DocumentCreationDate", "$DocumentCreationDate" },
+                   { "Attachment", "$Attachment" },
+                   { "Status", "$Status" },
+                   { "Mandate", new BsonDocument("$concat", new BsonArray {
+                       new BsonDocument("$toString", "$MandateStartYear"),
+                       "/",
+                       new BsonDocument("$toString", "$MandateTerminationYear")
+                   })},
+                   { "Material", "$Material.Description" },
+                   { "UserId", "$UserId" }
+               }),
+               new BsonDocument("$sort", new BsonDocument("DocumentCreationDate", -1))
             };
 
             var result = await _context.Documents.Aggregate<DocumentWithUserMandateMaterialViewModel>(pipeline).ToListAsync();
@@ -99,13 +104,13 @@ namespace CipaFatecJahu.Controllers
         [AllowAnonymous]
         public async Task<IActionResult> Studies()
         {
-            return View((await _context.Documents.Find(u => u.MaterialId == new Guid("2a7d3f2e-9b4e-4b8d-8b7e-2c3d3a5f6d9c")).ToListAsync()).OrderByDescending(u => u.DocumentCreationDate));
+            return View((await _context.Documents.Find(u => u.MaterialId == new Guid("2a7d3f2e-9b4e-4b8d-8b7e-2c3d3a5f6d9c") && u.Status == "Ativo").ToListAsync()).OrderByDescending(u => u.DocumentCreationDate));
         }
 
         [AllowAnonymous]
         public async Task<IActionResult> Legislation()
         {
-            return View((await _context.Documents.Find(u => u.MaterialId == new Guid("1a6d3f2e-8b4e-4b8d-8b7e-2c3d3a5f6d9c")).ToListAsync()).OrderByDescending(u => u.LawPublication));
+            return View((await _context.Documents.Find(u => u.MaterialId == new Guid("1a6d3f2e-8b4e-4b8d-8b7e-2c3d3a5f6d9c") && u.Status == "Ativo").ToListAsync()).OrderByDescending(u => u.LawPublication));
         }
 
         public async Task<IActionResult> Details(Guid? id)
