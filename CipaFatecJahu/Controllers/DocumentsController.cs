@@ -751,7 +751,7 @@ namespace CipaFatecJahu.Controllers
 
         private List<dynamic> SearchMandates()
         {
-            return _context.Mandates.Find(_ => true).ToList().Select(m => new { m.Id, mandate = $"{m.StartYear.Year}/{m.TerminationYear.Year}" }).ToList<dynamic>();
+            return _context.Mandates.AsQueryable().OrderByDescending(m => m.StartYear).ToList().Select(m => new { m.Id, mandate = $"{m.StartYear.Year}/{m.TerminationYear.Year}" }).ToList<dynamic>();
         }
     }
 }
