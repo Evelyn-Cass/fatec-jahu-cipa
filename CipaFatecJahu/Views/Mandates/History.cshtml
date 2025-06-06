@@ -1,4 +1,5 @@
-﻿@model IEnumerable<CipaFatecJahu.Models.Mandate>
+﻿@using CipaFatecJahu.ViewModel
+@model List<MandateWithUser>
 
 @{
     ViewData["Title"] = "Histórico de Gestões";
@@ -29,16 +30,16 @@
     <thead>
         <tr>
             <th style="width:20%">
-                @Html.DisplayNameFor(model => model.StartYear)
+                Ano de Início
             </th>
             <th style="width:20%">
-                @Html.DisplayNameFor(model => model.TerminationYear)
+                Ano de Término
             </th>
             <th style="width:20%">
-                @Html.DisplayNameFor(model => model.DocumentCreationDate)
+                Data de Criação
             </th>
             <th style="width:40%">
-                @Html.DisplayNameFor(model => model.UserId)
+               Secretário
             </th>
         </tr>
     </thead>
@@ -56,7 +57,7 @@
                     @Html.DisplayFor(model => item.DocumentCreationDate)
                 </td>
                 <td>
-                    @Html.DisplayFor(model => item.UserId)
+                    @Html.DisplayFor(model => item.UserName)
                 </td>
             </tr>
         }

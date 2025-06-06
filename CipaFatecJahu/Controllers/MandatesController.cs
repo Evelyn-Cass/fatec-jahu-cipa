@@ -20,7 +20,22 @@ namespace CipaFatecJahu.Controllers
         // GET: Mandates
         public async Task<IActionResult> History()
         {
-            return View(await _context.Mandates.Find(u => true).ToListAsync());
+            var mandates = await _context.Mandates.Find(u => true).ToListAsync();
+            var mandatesWithUsers = mandates.Select(m =>
+            {
+                var user = _userManager.Users.FirstOrDefault(u => u.Id == m.UserId);
+                return new MandateWithUser
+                {
+                    Id = m.Id,
+                    StartYear = m.StartYear,
+                    TerminationYear = m.TerminationYear,
+                    DocumentCreationDate = m.DocumentCreationDate,
+                    UserId = m.UserId,
+                    UserName = user?.Name
+                };
+            }).ToList();
+
+            return View(mandatesWithUsers);
         }
 
         // GET: Mandates/Details/5
