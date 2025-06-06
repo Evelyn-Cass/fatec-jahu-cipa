@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\css\\Documents\\history.css"
     },
     {
+      "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\css\\Documents\\material.css",
+      "PackagePath": "staticwebassets\\css\\Documents\\material.css"
+    },
+    {
       "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\css\\Secretaries\\Index.css",
       "PackagePath": "staticwebassets\\css\\Secretaries\\Index.css"
     },
@@ -77,6 +81,10 @@
       "PackagePath": "staticwebassets\\css\\table.css"
     },
     {
+      "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\ATA-076dc87a-8053-4a9f-83f2-0b82ee0be371.pdf",
+      "PackagePath": "staticwebassets\\docs\\ATA-076dc87a-8053-4a9f-83f2-0b82ee0be371.pdf"
+    },
+    {
       "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\ATA-bbaec511-76d8-4c2a-955f-8d2ca5eca2bd.pdf",
       "PackagePath": "staticwebassets\\docs\\ATA-bbaec511-76d8-4c2a-955f-8d2ca5eca2bd.pdf"
     },
@@ -93,8 +101,16 @@
       "PackagePath": "staticwebassets\\docs\\COURSE-10d66243-0ea4-4d29-92d2-91097f54d39d.pdf"
     },
     {
+      "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\COURSE-79d9216a-22bb-4da6-8979-5ffa37beddc7.pdf",
+      "PackagePath": "staticwebassets\\docs\\COURSE-79d9216a-22bb-4da6-8979-5ffa37beddc7.pdf"
+    },
+    {
       "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\ELECTION-6cf8ae5e-d670-462e-b743-2bd28f9fc55d.pdf",
       "PackagePath": "staticwebassets\\docs\\ELECTION-6cf8ae5e-d670-462e-b743-2bd28f9fc55d.pdf"
+    },
+    {
+      "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\ELECTION-7ac6488f-c2c5-4487-9418-0783c5403539.pdf",
+      "PackagePath": "staticwebassets\\docs\\ELECTION-7ac6488f-c2c5-4487-9418-0783c5403539.pdf"
     },
     {
       "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\LEGISLATION-579d8a71-c6d9-4a75-a159-66e46cd14952.pdf",
@@ -103,6 +119,10 @@
     {
       "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\LEGISLATION-c9c98aff-b339-461f-91ef-9e84c414e80f.pdf",
       "PackagePath": "staticwebassets\\docs\\LEGISLATION-c9c98aff-b339-461f-91ef-9e84c414e80f.pdf"
+    },
+    {
+      "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\LEGISLATION-d91d30d3-d5fb-4e90-b295-b3a11bbee2a9.pdf",
+      "PackagePath": "staticwebassets\\docs\\LEGISLATION-d91d30d3-d5fb-4e90-b295-b3a11bbee2a9.pdf"
     },
     {
       "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\LEGISLATION-e0d6cea3-cdfa-4a17-9cc1-2121a4937375.pdf",
@@ -115,6 +135,10 @@
     {
       "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\STUDIES-56a9f1a3-3859-4a5b-94a8-47c2fc6d5d78.pdf",
       "PackagePath": "staticwebassets\\docs\\STUDIES-56a9f1a3-3859-4a5b-94a8-47c2fc6d5d78.pdf"
+    },
+    {
+      "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\STUDIES-975b95ab-be96-4f31-892a-e0cdbdf99e6e.pdf",
+      "PackagePath": "staticwebassets\\docs\\STUDIES-975b95ab-be96-4f31-892a-e0cdbdf99e6e.pdf"
     },
     {
       "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\STUDIES-bc1a04ca-1fa3-4824-b564-54e747f5f98f.pdf",
@@ -149,8 +173,16 @@
       "PackagePath": "staticwebassets\\img\\icon-alert.png"
     },
     {
+      "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\img\\icon-arrow-down.png",
+      "PackagePath": "staticwebassets\\img\\icon-arrow-down.png"
+    },
+    {
       "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\img\\icon-arrow.png",
       "PackagePath": "staticwebassets\\img\\icon-arrow.png"
+    },
+    {
+      "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\img\\icon-ata.png",
+      "PackagePath": "staticwebassets\\img\\icon-ata.png"
     },
     {
       "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\img\\icon-attachment.png",
@@ -165,12 +197,24 @@
       "PackagePath": "staticwebassets\\img\\icon-cipa.png"
     },
     {
+      "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\img\\icon-course.png",
+      "PackagePath": "staticwebassets\\img\\icon-course.png"
+    },
+    {
       "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\img\\icon-cross-red.png",
       "PackagePath": "staticwebassets\\img\\icon-cross-red.png"
     },
     {
+      "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\img\\icon-election.png",
+      "PackagePath": "staticwebassets\\img\\icon-election.png"
+    },
+    {
       "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\img\\icon-fale-conosco.png",
       "PackagePath": "staticwebassets\\img\\icon-fale-conosco.png"
+    },
+    {
+      "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\img\\icon-legislation.png",
+      "PackagePath": "staticwebassets\\img\\icon-legislation.png"
     },
     {
       "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\img\\icon-logout-gray-filled.png",
@@ -181,8 +225,16 @@
       "PackagePath": "staticwebassets\\img\\icon-logout-gray.png"
     },
     {
+      "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\img\\icon-map.png",
+      "PackagePath": "staticwebassets\\img\\icon-map.png"
+    },
+    {
       "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\img\\icon-menu.png",
       "PackagePath": "staticwebassets\\img\\icon-menu.png"
+    },
+    {
+      "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\img\\icon-other.png",
+      "PackagePath": "staticwebassets\\img\\icon-other.png"
     },
     {
       "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\img\\icon-quem-somos.png",
@@ -195,6 +247,14 @@
     {
       "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\img\\icon-search-white.png",
       "PackagePath": "staticwebassets\\img\\icon-search-white.png"
+    },
+    {
+      "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\img\\icon-sipat.png",
+      "PackagePath": "staticwebassets\\img\\icon-sipat.png"
+    },
+    {
+      "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\img\\icon-study.png",
+      "PackagePath": "staticwebassets\\img\\icon-study.png"
     },
     {
       "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\img\\logo-cipa.png",
