@@ -27,31 +27,27 @@
 <table class="table" style="width:90%">
     <thead>
         <tr>
-            <th>
-                Material
-            </th>
+
             <th>
                 Name
             </th>
             <th>
-                Mandato
+                Material
             </th>
-            <th>
-                Anexo
-            </th>
-            <th>
+            <th style="max-width:160px;">
                 Adicionado
             </th>
             <th>
                 Secretário
             </th>
+            <th style="width:50px;"></th>
+            <th style="width:50px;"></th>
             @if (User.IsInRole("Administrador"))
             {
-                <th>
-                    Status
+                <th style="width:60px;">
+                    
                 </th>
             }
-            <th>Ações</th>
         </tr>
     </thead>
     <tbody>
@@ -64,31 +60,26 @@
             @foreach (var item in Model)
             {
                 <tr>
-                    <td>
-                        @item.Material
-                    </td>
+
                     <td>
                         @item.Name
                     </td>
                     <td>
-                        @if (item.Mandate == null)
-                        {
-                            <text>Nenhum</text>
-                        }
-                        else
-                        {
-                            @item.Mandate
-                        }
+                        @item.Material
                     </td>
-                    <td>
-                        <a href="~/@item.Attachment" target="_blank">Visualizar PDF</a>
 
-                    </td>
                     <td>
                         @item.DocumentCreationDate
                     </td>
                     <td>
                         @item.UserName
+                    </td>
+                    <td>
+                        <a asp-action="Details" class="details" asp-route-id="@item.Id"></a>
+                    </td>
+                    <td>
+                        <a href="~/@item.Attachment" class="document-view" target="_blank"></a>
+
                     </td>
                     @if (User.IsInRole("Administrador"))
                     {
@@ -106,14 +97,6 @@
                             </label>
                         </td>
                     }
-                    <td>
-                        @* @if (User.IsInRole("Administrador")) *@
-                        @* { *@
-                        @*     <a asp-action="AtaEdit" asp-route-id="@item.Id">Editar</a> *@
-                        @*     <span>|</span> *@
-                        @* } *@
-                        <a asp-action="Details" asp-route-id="@item.Id">Detalhes</a>
-                    </td>
                 </tr>
             }}
     </tbody>

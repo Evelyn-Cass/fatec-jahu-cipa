@@ -205,8 +205,24 @@
       "PackagePath": "staticwebassets\\img\\icon-cross-red.png"
     },
     {
+      "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\img\\icon-doc-view-filed.png",
+      "PackagePath": "staticwebassets\\img\\icon-doc-view-filed.png"
+    },
+    {
+      "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\img\\icon-doc-view.png",
+      "PackagePath": "staticwebassets\\img\\icon-doc-view.png"
+    },
+    {
       "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\img\\icon-election.png",
       "PackagePath": "staticwebassets\\img\\icon-election.png"
+    },
+    {
+      "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\img\\icon-eye-filled.png",
+      "PackagePath": "staticwebassets\\img\\icon-eye-filled.png"
+    },
+    {
+      "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\img\\icon-eye.png",
+      "PackagePath": "staticwebassets\\img\\icon-eye.png"
     },
     {
       "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\img\\icon-fale-conosco.png",

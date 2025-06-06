@@ -135,7 +135,11 @@ wwwroot\img\icon-back-red.png
 wwwroot\img\icon-cipa.png
 wwwroot\img\icon-course.png
 wwwroot\img\icon-cross-red.png
+wwwroot\img\icon-doc-view.png
+wwwroot\img\icon-doc-view-filed.png
 wwwroot\img\icon-election.png
+wwwroot\img\icon-eye.png
+wwwroot\img\icon-eye-filled.png
 wwwroot\img\icon-fale-conosco.png
 wwwroot\img\icon-legislation.png
 wwwroot\img\icon-logout-gray.png

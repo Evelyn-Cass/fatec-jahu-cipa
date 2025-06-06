@@ -12,7 +12,6 @@
 }
 
 .btn-create {
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,14 +42,56 @@
         border: 2px solid var(--base-green);
     }
 
-.alert-green{
+.alert-green {
     position: absolute;
     color: var(--base-white);
     background-color: var(--base-green);
     margin-top: 0px;
     padding: 4px 14px;
     font-weight: 400;
-    right:64px;
+    right: 64px;
     bottom: 12px;
     border-radius: 4px;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    margin: 4px;
+    background-color: transparent;
+    background-image: url('../../img/icon-eye.png');
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+    margin-left: 16px;
+}
+
+    .details:hover {
+        background-image: url('../../img/icon-eye-filled.png');
+    }
+
+.document-view {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    margin: 4px;
+    background-color: transparent;
+    background-image: url('../../img/icon-doc-view.png');
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+
+}
+
+.document-view:hover {
+    background-image: url('../../img/icon-doc-view-filed.png');
+}
+
+.switch {
+    margin-right: 16px;
 }
