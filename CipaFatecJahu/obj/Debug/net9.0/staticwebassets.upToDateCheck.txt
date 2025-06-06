@@ -17,7 +17,6 @@ C:\Projetos\Fatec\fatec-jahu-cipa\CipaFatecJahu\wwwroot\js\Secretaries\index.js
 C:\Projetos\Fatec\fatec-jahu-cipa\CipaFatecJahu\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
 C:\Projetos\Fatec\fatec-jahu-cipa\CipaFatecJahu\wwwroot\css\form.css
 C:\Projetos\Fatec\fatec-jahu-cipa\CipaFatecJahu\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
-C:\Projetos\Fatec\fatec-jahu-cipa\CipaFatecJahu\wwwroot\css\Documents\history.css
 C:\Projetos\Fatec\fatec-jahu-cipa\CipaFatecJahu\wwwroot\css\Shared\navigation.css
 C:\Projetos\Fatec\fatec-jahu-cipa\CipaFatecJahu\wwwroot\css\Account\login.css
 C:\Projetos\Fatec\fatec-jahu-cipa\CipaFatecJahu\wwwroot\lib\jquery\dist\jquery.slim.min.js
@@ -44,6 +43,7 @@ C:\Projetos\Fatec\fatec-jahu-cipa\CipaFatecJahu\wwwroot\css\Secretaries\create.c
 C:\Projetos\Fatec\fatec-jahu-cipa\CipaFatecJahu\wwwroot\js\site.js
 C:\Projetos\Fatec\fatec-jahu-cipa\CipaFatecJahu\wwwroot\lib\bootstrap\dist\css\bootstrap.css
 C:\Projetos\Fatec\fatec-jahu-cipa\CipaFatecJahu\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+C:\Projetos\Fatec\fatec-jahu-cipa\CipaFatecJahu\wwwroot\css\history.css
 C:\Projetos\Fatec\fatec-jahu-cipa\CipaFatecJahu\wwwroot\css\formMandate.css
 C:\Projetos\Fatec\fatec-jahu-cipa\CipaFatecJahu\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
 C:\Projetos\Fatec\fatec-jahu-cipa\CipaFatecJahu\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
@@ -87,10 +87,10 @@ C:\Projetos\Fatec\fatec-jahu-cipa\CipaFatecJahu\wwwroot\lib\bootstrap\dist\js\bo
 C:\Projetos\Fatec\fatec-jahu-cipa\CipaFatecJahu\wwwroot\js\Documents\history.js
 wwwroot\css\Account\input-material.css
 wwwroot\css\Account\login.css
-wwwroot\css\Documents\history.css
 wwwroot\css\Documents\material.css
 wwwroot\css\form.css
 wwwroot\css\formMandate.css
+wwwroot\css\history.css
 wwwroot\css\informationPages.css
 wwwroot\css\Secretaries\create.css
 wwwroot\css\Secretaries\Index.css
@@ -141,6 +141,8 @@ wwwroot\img\icon-election.png
 wwwroot\img\icon-eye.png
 wwwroot\img\icon-eye-filled.png
 wwwroot\img\icon-fale-conosco.png
+wwwroot\img\icon-history-gray.png
+wwwroot\img\icon-history-white.png
 wwwroot\img\icon-legislation.png
 wwwroot\img\icon-logout-gray.png
 wwwroot\img\icon-logout-gray-filled.png

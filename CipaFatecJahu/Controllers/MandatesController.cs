@@ -18,7 +18,7 @@ namespace CipaFatecJahu.Controllers
         }
 
         // GET: Mandates
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> History()
         {
             return View(await _context.Mandates.Find(u => true).ToListAsync());
         }
@@ -77,7 +77,7 @@ namespace CipaFatecJahu.Controllers
                 mandate.Id = Guid.NewGuid();
                 mandate.UserId = new Guid(_userManager.GetUserId(User));
                 await _context.Mandates.InsertOneAsync(mandate);
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(History));
             }
             return View(mandate);
         }
@@ -127,7 +127,7 @@ namespace CipaFatecJahu.Controllers
         //                throw;
         //            }
         //        }
-        //        return RedirectToAction(nameof(Index));
+        //        return RedirectToAction(nameof(History));
         //    }
         //    return View(mandate);
         //}

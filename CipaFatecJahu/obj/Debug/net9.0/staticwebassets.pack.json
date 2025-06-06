@@ -13,10 +13,6 @@
       "PackagePath": "staticwebassets\\css\\Account\\login.css"
     },
     {
-      "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\css\\Documents\\history.css",
-      "PackagePath": "staticwebassets\\css\\Documents\\history.css"
-    },
-    {
       "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\css\\Documents\\material.css",
       "PackagePath": "staticwebassets\\css\\Documents\\material.css"
     },
@@ -67,6 +63,10 @@
     {
       "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\css\\formMandate.css",
       "PackagePath": "staticwebassets\\css\\formMandate.css"
+    },
+    {
+      "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\css\\history.css",
+      "PackagePath": "staticwebassets\\css\\history.css"
     },
     {
       "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\css\\informationPages.css",
@@ -227,6 +227,14 @@
     {
       "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\img\\icon-fale-conosco.png",
       "PackagePath": "staticwebassets\\img\\icon-fale-conosco.png"
+    },
+    {
+      "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\img\\icon-history-gray.png",
+      "PackagePath": "staticwebassets\\img\\icon-history-gray.png"
+    },
+    {
+      "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\img\\icon-history-white.png",
+      "PackagePath": "staticwebassets\\img\\icon-history-white.png"
     },
     {
       "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\img\\icon-legislation.png",

@@ -3,10 +3,48 @@
     width: 90%;
 }
 
+.btn-history {
+    position: absolute;
+    right: 0;
+    top: -12px;
+    background-color: var(--base-gray);
+    color: var(--base-white);
+    padding: 6px 8px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin:8px;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+}
+
+.icon-history {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    background-image: url('../../img/icon-history-white.png');
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+    transition:2s;
+    margin: 0 4px;
+}
+
+.btn-history:hover .icon-history {
+        transform:rotate(360deg)
+    }
+
+
 .title {
     font-size: 2.5rem;
     text-align: center;
-    margin-bottom: 30px;
+    margin: 50px 0 30px 0;
     color: var(--base-black);
     font-weight: 500;
 }

@@ -4,12 +4,13 @@
     ViewData["Title"] = "Histórico de Documentos";
 }
 @section Styles {
-    <link rel="stylesheet" href="~/css/Documents/history.css" />
+    <link rel="stylesheet" href="~/css/history.css" />
     <link rel="stylesheet" href="~/css/table.css" />
     <link rel="stylesheet" href="~/css/switch.css" />
 }
 
 <div class="container-title">
+    <a asp-action="History" asp-controller="Mandates" class="btn-history"><div class="icon-history"></div> Histórico de Gestões</a>
     <h1 class="title">Histórico de Documentos</h1>
     @{
         @if (TempData["message"] != null)
@@ -45,7 +46,7 @@
             @if (User.IsInRole("Administrador"))
             {
                 <th style="width:60px;">
-                    
+
                 </th>
             }
         </tr>
