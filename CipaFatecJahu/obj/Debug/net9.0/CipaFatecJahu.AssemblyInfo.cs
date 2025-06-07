@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CipaFatecJahu")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+afa9cff5d1be4b15aa0cbde0ed2fe9249d59306a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+561b692be455102958f8d115b9e8aaa60b40235a")]
 [assembly: System.Reflection.AssemblyProductAttribute("CipaFatecJahu")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CipaFatecJahu")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

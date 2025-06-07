@@ -104,6 +104,7 @@ wwwroot\css\Shared\select.css
 wwwroot\css\Shared\theme.css
 wwwroot\css\switch.css
 wwwroot\css\table.css
+wwwroot\docs\COURSE-871d4a5b-c08f-4954-bd99-e666048e8dac.pdf
 wwwroot\favicon.ico
 wwwroot\img\404.png
 wwwroot\img\500.png

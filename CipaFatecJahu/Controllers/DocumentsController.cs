@@ -295,92 +295,92 @@ namespace CipaFatecJahu.Controllers
             return View(document);
         }
 
-        [Route("Documents/ATA/Edit")]
-        public async Task<IActionResult> AtaEdit(Guid? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
+        //[Route("Documents/ATA/Edit")]
+        //public async Task<IActionResult> AtaEdit(Guid? id)
+        //{
+        //    if (id == null)
+        //    {
+        //        return NotFound();
+        //    }
 
-            var document = await _context.Documents.Find(m => m.Id == id).FirstOrDefaultAsync();
-            if (document == null)
-            {
-                return NotFound();
-            }
-            var mandates = SearchMandates();
-            ViewData["Mandates"] = new SelectList(mandates, "Id", "mandate");
-            return View(document);
-        }
+        //    var document = await _context.Documents.Find(m => m.Id == id).FirstOrDefaultAsync();
+        //    if (document == null)
+        //    {
+        //        return NotFound();
+        //    }
+        //    var mandates = SearchMandates();
+        //    ViewData["Mandates"] = new SelectList(mandates, "Id", "mandate");
+        //    return View(document);
+        //}
 
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        [Route("Documents/ATA/Edit")]
-        public async Task<IActionResult> AtaEdit(Guid id, [Bind("Id,Name,DocumentCreationDate,MeetingDate,Status,Attachment,UserId,MandateId,MaterialId")] Document document, IFormFile? attachment, bool changeAttachment)
-        {
-            if (id != document.Id)
-            {
-                return NotFound();
-            }
-            var mandates = SearchMandates();
-            ViewData["Mandates"] = new SelectList(mandates, "Id", "mandate");
-            if (ModelState.IsValid)
-            {
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //[Route("Documents/ATA/Edit")]
+        //public async Task<IActionResult> AtaEdit(Guid id, [Bind("Id,Name,DocumentCreationDate,MeetingDate,Status,Attachment,UserId,MandateId,MaterialId")] Document document, IFormFile? attachment, bool changeAttachment)
+        //{
+        //    if (id != document.Id)
+        //    {
+        //        return NotFound();
+        //    }
+        //    var mandates = SearchMandates();
+        //    ViewData["Mandates"] = new SelectList(mandates, "Id", "mandate");
+        //    if (ModelState.IsValid)
+        //    {
 
-                if (document.MeetingDate == null || document.MeetingDate == DateOnly.MinValue)
-                {
-                    ModelState.AddModelError("MeetingDate", "O campo Data da Reunião é obrigatório");
-                    return View(document);
-                }
-                if (!document.MandateId.HasValue || document.MandateId == Guid.Empty)
-                {
-                    ModelState.AddModelError("MandateId", "O campo Mandato é obrigatório!");
-                    return View(document);
-                }
-                if (changeAttachment == true)
-                {
-                    if (attachment == null || attachment.Length == 0)
-                    {
-                        ModelState.AddModelError("Attachment", "O campo Anexo é obrigatório!");
-                        return View(document);
-                    }
-                    var extension = Path.GetExtension(attachment.FileName);
-                    if (string.IsNullOrEmpty(extension) || !extension.Equals(".pdf", StringComparison.OrdinalIgnoreCase))
-                    {
-                        ModelState.AddModelError("Attachment", "Somente arquivos PDF são permitidos.");
-                        return View(document);
-                    }
+        //        if (document.MeetingDate == null || document.MeetingDate == DateOnly.MinValue)
+        //        {
+        //            ModelState.AddModelError("MeetingDate", "O campo Data da Reunião é obrigatório");
+        //            return View(document);
+        //        }
+        //        if (!document.MandateId.HasValue || document.MandateId == Guid.Empty)
+        //        {
+        //            ModelState.AddModelError("MandateId", "O campo Mandato é obrigatório!");
+        //            return View(document);
+        //        }
+        //        if (changeAttachment == true)
+        //        {
+        //            if (attachment == null || attachment.Length == 0)
+        //            {
+        //                ModelState.AddModelError("Attachment", "O campo Anexo é obrigatório!");
+        //                return View(document);
+        //            }
+        //            var extension = Path.GetExtension(attachment.FileName);
+        //            if (string.IsNullOrEmpty(extension) || !extension.Equals(".pdf", StringComparison.OrdinalIgnoreCase))
+        //            {
+        //                ModelState.AddModelError("Attachment", "Somente arquivos PDF são permitidos.");
+        //                return View(document);
+        //            }
 
-                }
-                try
-                {
-                    await _context.Documents.ReplaceOneAsync(m => m.Id == document.Id, document);
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!DocumentExists(document.Id))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                if (changeAttachment == true)
-                {
-                    var filePath = Path.Combine(Directory.GetCurrentDirectory(),
-                          "wwwroot", "docs", attachment.FileName);
-                    using (var stream = new FileStream(filePath, FileMode.Create))
-                    {
-                        await attachment.CopyToAsync(stream);
-                    }
-                }
+        //        }
+        //        try
+        //        {
+        //            await _context.Documents.ReplaceOneAsync(m => m.Id == document.Id, document);
+        //        }
+        //        catch (DbUpdateConcurrencyException)
+        //        {
+        //            if (!DocumentExists(document.Id))
+        //            {
+        //                return NotFound();
+        //            }
+        //            else
+        //            {
+        //                throw;
+        //            }
+        //        }
+        //        if (changeAttachment == true)
+        //        {
+        //            var filePath = Path.Combine(Directory.GetCurrentDirectory(),
+        //                  "wwwroot", "docs", attachment.FileName);
+        //            using (var stream = new FileStream(filePath, FileMode.Create))
+        //            {
+        //                await attachment.CopyToAsync(stream);
+        //            }
+        //        }
 
-                return RedirectToAction(nameof(Index));
-            }
-            return View(document);
-        }
+        //        return RedirectToAction(nameof(Index));
+        //    }
+        //    return View(document);
+        //}
 
         [Route("Documents/Course/Create")]
         public IActionResult CourseCreate()
@@ -663,55 +663,70 @@ namespace CipaFatecJahu.Controllers
             return View(document);
         }
 
+        [Route("Documents/Map/Create")]
+        public IActionResult MapCreate()
+        {
+            var mandates = SearchMandates();
+            ViewData["Mandates"] = new SelectList(mandates, "Id", "mandate");
+            return View();
+        }
 
-        //// GET: Documents/Edit/5
-        //public async Task<IActionResult> Edit(Guid? id)
-        //{
-        //    if (id == null)
-        //    {
-        //        return NotFound();
-        //    }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        [Route("Documents/Map/Create")]
+        public async Task<IActionResult> MapCreate([Bind("Id,Name,DocumentCreationDate,Status,Attachment,UserId,MandateId,MaterialId")] Document document, IFormFile? attachment)
+        {
+            var mandates = SearchMandates();
+            ViewData["Mandates"] = new SelectList(mandates, "Id", "mandate");
+            if (ModelState.IsValid)
+            {
+                if (!document.MandateId.HasValue || document.MandateId == Guid.Empty)
+                {
+                    ModelState.AddModelError("MandateId", "O campo Mandato é obrigatório!");
+                    return View(document);
+                }
+                if (attachment == null || attachment.Length == 0)
+                {
+                    ModelState.AddModelError("Attachment", "O campo Anexo é obrigatório!");
+                    return View(document);
+                }
+                var extension = Path.GetExtension(attachment.FileName);
+                if (string.IsNullOrEmpty(extension) || !extension.Equals(".pdf", StringComparison.OrdinalIgnoreCase))
+                {
+                    ModelState.AddModelError("Attachment", "Somente arquivos PDF são permitidos.");
+                    return View(document);
+                }
+                document.Id = Guid.NewGuid();
+                document.MaterialId = new Guid("0a5d3f2e-7b4e-4b8d-8b7e-2c3d3a5f6d9c");
+                document.DocumentCreationDate = DateTime.Now.AddHours(-3);
+                document.Status = "Ativo";
+                document.UserId = new Guid(_userManager.GetUserId(User));
 
-        //    var document = await _context.Documents.Find(m => m.Id == id).FirstOrDefaultAsync();
-        //    if (document == null)
-        //    {
-        //        return NotFound();
-        //    }
-        //    return View(document);
-        //}
+                string randomFileName;
+                string filePath;
+                do
+                {
+                    randomFileName = $"COURSE-{Guid.NewGuid()}.pdf";
+                    filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "docs", randomFileName);
+                } while (System.IO.File.Exists(filePath));
 
-        //// POST: Documents/Edit/5
-        //// To protect from overposting attacks, enable the specific properties you want to bind to.
-        //// For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        //[HttpPost]
-        //[ValidateAntiForgeryToken]
-        //public async Task<IActionResult> Edit(Guid id, [Bind("Id,Name,Number,DocumentCreationDate,MeetingDate,LawPublication,Status,Attachment,UserId,MandateId,MaterialId")] Document document)
-        //{
-        //    if (id != document.Id)
-        //    {
-        //        return NotFound();
-        //    }
-        //    if (ModelState.IsValid)
-        //    {
-        //        try
-        //        {
-        //            await _context.Documents.ReplaceOneAsync(m => m.Id == document.Id, document);
-        //        }
-        //        catch (DbUpdateConcurrencyException)
-        //        {
-        //            if (!DocumentExists(document.Id))
-        //            {
-        //                return NotFound();
-        //            }
-        //            else
-        //            {
-        //                throw;
-        //            }
-        //        }
-        //        return RedirectToAction(nameof(Index));
-        //    }
-        //    return View(document);
-        //}
+                document.Attachment = Path.Combine("docs/", randomFileName);
+
+                await _context.Documents.InsertOneAsync(document); //Insert
+
+                var docsDirectory = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "docs");
+                if (!Directory.Exists(docsDirectory))
+                {
+                    Directory.CreateDirectory(docsDirectory);
+                }
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    await attachment.CopyToAsync(stream);
+                }
+                return RedirectToAction(nameof(History));
+            }
+            return View(document);
+        }
 
         [Authorize(Roles = "Administrador")]
         public async Task<IActionResult> ChangeStatus(Guid id, string status)

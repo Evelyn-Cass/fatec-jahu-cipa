@@ -1,7 +1,7 @@
 ﻿@model CipaFatecJahu.Models.Document
 
 @{
-    ViewData["Title"] = "Novo Curso CIPA";
+    ViewData["Title"] = "Novo Mapa de Riscos";
 }
 @section Styles {
 	<link rel="stylesheet" href="~/css/form.css" />
@@ -9,9 +9,9 @@
 }
 <section class="mainbody">
     <div class="form-geral" style="width:40%">
-        <form class="form-base" method="post" asp-action="CourseCreate" enctype="multipart/form-data">
+        <form class="form-base" method="post" asp-action="MapCreate" enctype="multipart/form-data">
             <div class="form-header">
-                <h1>Novo Curso CIPA</h1>
+                <h1>Novo Mapa de Riscos</h1>
             </div>
             <div class="form-body">
                 <div asp-validation-summary="ModelOnly" class="control-danger"></div>

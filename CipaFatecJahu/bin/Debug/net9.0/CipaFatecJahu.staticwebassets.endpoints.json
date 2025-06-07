@@ -5963,6 +5963,88 @@
       ]
     },
     {
+      "Route": "docs/COURSE-871d4a5b-c08f-4954-bd99-e666048e8dac.6njcw88ts6.pdf",
+      "AssetFile": "docs/COURSE-871d4a5b-c08f-4954-bd99-e666048e8dac.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "687035"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jhE0wbOi5yHth8i5hng95GE2z24F3KbLYwKWg4Vr12I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 07 Jun 2025 19:30:55 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6njcw88ts6"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-jhE0wbOi5yHth8i5hng95GE2z24F3KbLYwKWg4Vr12I="
+        },
+        {
+          "Name": "label",
+          "Value": "docs/COURSE-871d4a5b-c08f-4954-bd99-e666048e8dac.pdf"
+        }
+      ]
+    },
+    {
+      "Route": "docs/COURSE-871d4a5b-c08f-4954-bd99-e666048e8dac.pdf",
+      "AssetFile": "docs/COURSE-871d4a5b-c08f-4954-bd99-e666048e8dac.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "687035"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jhE0wbOi5yHth8i5hng95GE2z24F3KbLYwKWg4Vr12I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 07 Jun 2025 19:30:55 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-jhE0wbOi5yHth8i5hng95GE2z24F3KbLYwKWg4Vr12I="
+        }
+      ]
+    },
+    {
       "Route": "favicon.61n19gt1b8.ico",
       "AssetFile": "favicon.ico.gz",
       "Selectors": [
