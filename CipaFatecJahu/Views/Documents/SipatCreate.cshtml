@@ -1,45 +1,44 @@
 ﻿@model CipaFatecJahu.Models.Document
 
 @{
-    ViewData["Title"] = "Editar ATA";
+    ViewData["Title"] = "Nova SIPAT";
 }
 @section Styles {
 	<link rel="stylesheet" href="~/css/form.css" />
+	@* <link rel="stylesheet" href="~/css/Documents/createAta.css" /> *@
 }
 <section class="mainbody">
     <div class="form-geral" style="width:60%">
-        <form class="form-base" method="post" asp-action="EditAta" enctype="multipart/form-data">
+        <form class="form-base" method="post" asp-action="SipatCreate" enctype="multipart/form-data">
             <div class="form-header">
-                <h1>Editar Ata</h1>
+                <h1>Nova SIPAT</h1>
             </div>
             <div class="form-body">
                 <div asp-validation-summary="ModelOnly" class="control-danger"></div>
-                <input type="hidden" asp-for="Id" />
                 <div class="form-group">
                     <label asp-for="Name" class="control-label"></label>
                     <input asp-for="Name" class="form-control" />
                     <span asp-validation-for="Name" class="control-danger"></span>
                 </div>
                 <div class="form-group">
-                    <label asp-for="MeetingDate" class="control-label"></label>
-                    <input asp-for="MeetingDate" class="form-control" type="date" />
-                    <span asp-validation-for="MeetingDate" class="control-danger"></span>
+                    <label for="ScheduledDate" class="control-label">Data do Evento</label>
+                    <input asp-for="ScheduledDate" id="ScheduledDate" class="form-control" type="date" />
+                    <span asp-validation-for="ScheduledDate" class="control-danger"></span>
                 </div>
                 <div class="form-group">
                     <label class="control-label">Mandatos</label>
-                    <select asp-for="MandateId" class="form-control" asp-items="ViewBag.Mandates"></select>
+                    <select asp-for="MandateId" class="form-control" asp-items="@(new SelectList(ViewBag.Mandates, "Value", "Text", null))">
+                       <option value="" disabled selected>Selecione um mandato</option>
+                    </select>
                     <span asp-validation-for="MandateId" class="control-danger"></span>
                 </div>
                 <div class="form-group">
-                    <div class="div-checkbox">
-                        <input type="checkbox" id="change-attachment" class="input-change" value="false">
-                        <label for="chage-attachment" class="control-label">Alterar Anexo</label>
-                    </div>
-                    <div class="row div-attachment" id="div-attachment" style="display:none;">
-                        <label for="attachment-input" class="control-label attachment-label">Anexo</label>
+                    <div class="row">
+                        <label for="attachment-input" class="control-label attachment-label">Anexar</label>
                         <input asp-for="Attachment" id="attachment-input" class="form-control attachment-input" type="file" accept="application/pdf" onchange="document.getElementById('attachment-input-text').value = this.files.length > 0 ? this.files[0].name : '';" hidden />
                         <input disabled class="form-control" id="attachment-input-text" />
                         <img src="~/img/icon-attachment.png" class="attachment-icon" alt="Attachment Icon" />
+
                     </div>
                     <span asp-validation-for="Attachment" class="control-danger"></span>
                 </div>
@@ -51,6 +50,7 @@
     </div>
 </section>
 
-@section Scripts {
-    <script src="~/js/Shared/form.js" defer></script>
-}
+@* @section Scripts { *@
+@*     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");} *@
+
+@* } *@

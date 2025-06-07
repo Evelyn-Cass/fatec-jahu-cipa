@@ -1332,8 +1332,6 @@ D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\obj\Debug\net9.0\scopedcss\bundl
 D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\obj\Debug\net9.0\scopedcss\projectbundle\CipaFatecJahu.bundle.scp.css
 D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\obj\Debug\net9.0\compressed\u2z2e99p5i-7r59is4djv.gz
 D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\obj\Debug\net9.0\compressed\6pfm788saj-4n4ms6jm74.gz
-D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\obj\Debug\net9.0\compressed\51b1r5j526-ppppmd31sa.gz
-D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\obj\Debug\net9.0\compressed\itbbpq9sue-cg0kd5hrqa.gz
 D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\obj\Debug\net9.0\compressed\s7rccrpiew-pkqlxwow6j.gz
 D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\obj\Debug\net9.0\compressed\gr4xbzr7q8-7f10o8fof9.gz
 D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\obj\Debug\net9.0\compressed\uwhs9vyd9a-unasweb5vb.gz
@@ -1469,3 +1467,4 @@ C:\Projetos\Fatec\fatec-jahu-cipa\CipaFatecJahu\obj\Debug\net9.0\compressed\3va8
 C:\Projetos\Fatec\fatec-jahu-cipa\CipaFatecJahu\obj\Debug\net9.0\compressed\ingn1dqrkn-5gr833ketw.gz
 D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\obj\Debug\net9.0\compressed\3va8h1rhzi-oct22dly18.gz
 D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\obj\Debug\net9.0\compressed\ingn1dqrkn-5gr833ketw.gz
+D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\obj\Debug\net9.0\compressed\51b1r5j526-lvaiuhuxl9.gz

@@ -9,7 +9,7 @@ namespace CipaFatecJahu.ViewModel
         public string? Name { get; set; }
         [Display(Name = "Data da Criação")]
         public DateTime? DocumentCreationDate { get; set; }
-        [Display(Name = "Anexo")]
+        [Display(Name = "Anexar")]
         public string? Attachment { get; set; }
         [Display(Name = "Status")]
         public string? Status { get; set; }
@@ -20,7 +20,7 @@ namespace CipaFatecJahu.ViewModel
         public string? Mandate { get; set; }
         public string? Material { get; set; }
         [Display(Name = "Data da Reunião")]
-        public DateOnly? MeetingDate { get; set; }
+        public DateOnly? ScheduledDate { get; set; }
         [Display(Name = "Publicação da Lei")]
         public DateOnly? LawPublication { get; set; }
     }

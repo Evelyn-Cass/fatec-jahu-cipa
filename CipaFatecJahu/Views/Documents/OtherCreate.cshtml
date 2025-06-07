@@ -1,17 +1,17 @@
 ﻿@model CipaFatecJahu.Models.Document
 
 @{
-    ViewData["Title"] = "Nova ATA";
+    ViewData["Title"] = "Novo Documento";
 }
 @section Styles {
 	<link rel="stylesheet" href="~/css/form.css" />
 	@* <link rel="stylesheet" href="~/css/Documents/createAta.css" /> *@
 }
 <section class="mainbody">
-    <div class="form-geral" style="width:60%">
-        <form class="form-base" method="post" asp-action="AtaCreate" enctype="multipart/form-data">
+    <div class="form-geral" style="width:40%">
+        <form class="form-base" method="post" asp-action="OtherCreate" enctype="multipart/form-data">
             <div class="form-header">
-                <h1>Nova Ata</h1>
+                <h1>Novo Documento</h1>
             </div>
             <div class="form-body">
                 <div asp-validation-summary="ModelOnly" class="control-danger"></div>
@@ -19,11 +19,6 @@
                     <label asp-for="Name" class="control-label"></label>
                     <input asp-for="Name" class="form-control" />
                     <span asp-validation-for="Name" class="control-danger"></span>
-                </div>
-                <div class="form-group">
-                    <label for="ScheduledDate" class="control-label">Data da Reunião</label>
-                    <input asp-for="ScheduledDate" id="ScheduledDate" class="form-control" type="date" />
-                    <span asp-validation-for="ScheduledDate" class="control-danger"></span>
                 </div>
                 <div class="form-group">
                     <label class="control-label">Mandatos</label>
@@ -38,7 +33,6 @@
                         <input asp-for="Attachment" id="attachment-input" class="form-control attachment-input" type="file" accept="application/pdf" onchange="document.getElementById('attachment-input-text').value = this.files.length > 0 ? this.files[0].name : '';" hidden />
                         <input disabled class="form-control" id="attachment-input-text" />
                         <img src="~/img/icon-attachment.png" class="attachment-icon" alt="Attachment Icon" />
-
                     </div>
                     <span asp-validation-for="Attachment" class="control-danger"></span>
                 </div>

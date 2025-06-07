@@ -11,11 +11,10 @@ namespace CipaFatecJahu.Models
         public string? Name { get; set; }
         [Display(Name = "Data de criação")]
         public DateTime? DocumentCreationDate { get; set; }
-        [Display(Name = "Data da Reunião")]
-        public DateOnly? MeetingDate { get; set; }
-        [Display(Name = "Publicaçao da Lei")]
+        public DateOnly? ScheduledDate { get; set; }
+        [Display(Name = "Publicação da Lei")]
         public DateOnly? LawPublication { get; set; }
-        [Display(Name = "Anexo")]
+        [Display(Name = "Anexar")]
         public string? Attachment { get; set; }
         [Display(Name = "Situação")]
         public string? Status { get; set; }

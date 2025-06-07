@@ -18,10 +18,10 @@
             @Html.DisplayNameFor(model => model.DocumentCreationDate):
             @Html.DisplayFor(model => model.DocumentCreationDate)
         </div>
-        @if (Model.MeetingDate != null){
+        @if (Model.ScheduledDate != null){
             <div style="display:flex;flex-direction:row">
-            @Html.DisplayNameFor(model => model.MeetingDate):
-            @Html.DisplayFor(model => model.MeetingDate)
+            @Html.DisplayNameFor(model => model.ScheduledDate):
+            @Html.DisplayFor(model => model.ScheduledDate)
             </div>
         }
         @if (Model.LawPublication != null){ 

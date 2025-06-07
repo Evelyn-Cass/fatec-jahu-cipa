@@ -44,7 +44,6 @@ D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\wwwroot\js\site.js
 D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\wwwroot\lib\bootstrap\dist\css\bootstrap.css
 D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
 D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\wwwroot\css\history.css
-D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\wwwroot\css\formMandate.css
 D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
 D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
 D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\wwwroot\favicon.ico
@@ -89,7 +88,6 @@ wwwroot\css\Account\input-material.css
 wwwroot\css\Account\login.css
 wwwroot\css\Documents\material.css
 wwwroot\css\form.css
-wwwroot\css\formMandate.css
 wwwroot\css\history.css
 wwwroot\css\informationPages.css
 wwwroot\css\Secretaries\create.css
@@ -104,7 +102,10 @@ wwwroot\css\Shared\select.css
 wwwroot\css\Shared\theme.css
 wwwroot\css\switch.css
 wwwroot\css\table.css
+wwwroot\docs\ATA-f4cff9fc-a1b9-462b-b841-3fa03aef1f77.pdf
 wwwroot\docs\COURSE-871d4a5b-c08f-4954-bd99-e666048e8dac.pdf
+wwwroot\docs\OTHER-57352cf5-c006-43b9-9c6f-ec7a4e1258e3.pdf
+wwwroot\docs\SIPAT-ca5885c0-ea38-4cb0-a9d3-84583aa1b43d.pdf
 wwwroot\favicon.ico
 wwwroot\img\404.png
 wwwroot\img\500.png

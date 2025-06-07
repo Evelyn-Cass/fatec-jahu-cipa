@@ -61,10 +61,6 @@
       "PackagePath": "staticwebassets\\css\\form.css"
     },
     {
-      "Id": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\css\\formMandate.css",
-      "PackagePath": "staticwebassets\\css\\formMandate.css"
-    },
-    {
       "Id": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\css\\history.css",
       "PackagePath": "staticwebassets\\css\\history.css"
     },
@@ -81,8 +77,20 @@
       "PackagePath": "staticwebassets\\css\\table.css"
     },
     {
+      "Id": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\ATA-f4cff9fc-a1b9-462b-b841-3fa03aef1f77.pdf",
+      "PackagePath": "staticwebassets\\docs\\ATA-f4cff9fc-a1b9-462b-b841-3fa03aef1f77.pdf"
+    },
+    {
       "Id": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\COURSE-871d4a5b-c08f-4954-bd99-e666048e8dac.pdf",
       "PackagePath": "staticwebassets\\docs\\COURSE-871d4a5b-c08f-4954-bd99-e666048e8dac.pdf"
+    },
+    {
+      "Id": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\OTHER-57352cf5-c006-43b9-9c6f-ec7a4e1258e3.pdf",
+      "PackagePath": "staticwebassets\\docs\\OTHER-57352cf5-c006-43b9-9c6f-ec7a4e1258e3.pdf"
+    },
+    {
+      "Id": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\SIPAT-ca5885c0-ea38-4cb0-a9d3-84583aa1b43d.pdf",
+      "PackagePath": "staticwebassets\\docs\\SIPAT-ca5885c0-ea38-4cb0-a9d3-84583aa1b43d.pdf"
     },
     {
       "Id": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\favicon.ico",

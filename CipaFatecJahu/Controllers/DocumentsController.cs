@@ -20,7 +20,7 @@ namespace CipaFatecJahu.Controllers
         {
             this._userManager = userManager;
         }
-
+        [Route("History/Documents")]
         public async Task<IActionResult> History()
         {
             var pipeline = new[]
@@ -78,7 +78,7 @@ namespace CipaFatecJahu.Controllers
                    })},
                    { "Material", "$Material.Description" },
                    { "UserId", "$UserId" },
-                   { "MeetingDate", "$MeetingDate" },
+                   { "ScheduledDate", "$ScheduledDate" },
                    { "LawPublication", "$LawPublication" }
                }),
                new BsonDocument("$sort", new BsonDocument("DocumentCreationDate", -1))
@@ -177,7 +177,7 @@ namespace CipaFatecJahu.Controllers
                    })},
                    { "Material", "$Material.Description" },
                    { "UserId", "$UserId" },
-                   { "MeetingDate", "$MeetingDate" },
+                   { "ScheduledDate", "$ScheduledDate" },
                    { "LawPublication", "$LawPublication" }
                }),
                new BsonDocument("$sort", new BsonDocument("DocumentCreationDate", -1))
@@ -218,15 +218,15 @@ namespace CipaFatecJahu.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Route("Documents/ATA/Create")]
-        public async Task<IActionResult> AtaCreate([Bind("Id,Name,DocumentCreationDate,MeetingDate,Status,Attachment,UserId,MandateId,MaterialId")] Document document, IFormFile? attachment)
+        public async Task<IActionResult> AtaCreate([Bind("Id,Name,DocumentCreationDate,ScheduledDate,Status,Attachment,UserId,MandateId,MaterialId")] Document document, IFormFile? attachment)
         {
             var mandates = SearchMandates();
             ViewData["Mandates"] = new SelectList(mandates, "Id", "mandate");
             if (ModelState.IsValid)
             {
-                if (document.MeetingDate == null || document.MeetingDate == DateOnly.MinValue)
+                if (document.ScheduledDate == null || document.ScheduledDate == DateOnly.MinValue)
                 {
-                    ModelState.AddModelError("MeetingDate", "O campo Data da Reunião é obrigatório");
+                    ModelState.AddModelError("ScheduledDate", "O campo Data da Reunião é obrigatório");
                     return View(document);
                 }
                 if (!document.MandateId.HasValue || document.MandateId == Guid.Empty)
@@ -234,17 +234,17 @@ namespace CipaFatecJahu.Controllers
                     ModelState.AddModelError("MandateId", "O campo Mandato é obrigatório!");
                     return View(document);
                 }
-                if (document.MeetingDate > DateOnly.FromDateTime(DateTime.Now.AddHours(-3)))
+                if (document.ScheduledDate > DateOnly.FromDateTime(DateTime.Now.AddHours(-3)))
                 {
-                    ModelState.AddModelError("MeetingDate", "A data da reunião não pode ser futura.");
+                    ModelState.AddModelError("ScheduledDate", "A data da reunião não pode ser futura.");
                     return View(document);
                 }
                 var mandate = _context.Mandates.Find(m => m.Id == document.MandateId.Value).FirstOrDefault();
                 if (mandate != null)
                 {
-                    if (document.MeetingDate < mandate.StartYear || document.MeetingDate > mandate.TerminationYear)
+                    if (document.ScheduledDate < mandate.StartYear || document.ScheduledDate > mandate.TerminationYear)
                     {
-                        ModelState.AddModelError("MeetingDate", $"A data da reunião deve estar dentro do período do mandato selecionado. {mandate.StartYear} - {mandate.TerminationYear}");
+                        ModelState.AddModelError("ScheduledDate", $"A data da reunião deve estar dentro do período do mandato selecionado. {mandate.StartYear} - {mandate.TerminationYear}");
                         return View(document);
                     }
                 }
@@ -255,7 +255,7 @@ namespace CipaFatecJahu.Controllers
                 }
                 if (attachment == null || attachment.Length == 0)
                 {
-                    ModelState.AddModelError("Attachment", "O campo Anexo é obrigatório!");
+                    ModelState.AddModelError("Attachment", "O campo Anexar é obrigatório!");
                     return View(document);
                 }
                 var extension = Path.GetExtension(attachment.FileName);
@@ -295,93 +295,6 @@ namespace CipaFatecJahu.Controllers
             return View(document);
         }
 
-        //[Route("Documents/ATA/Edit")]
-        //public async Task<IActionResult> AtaEdit(Guid? id)
-        //{
-        //    if (id == null)
-        //    {
-        //        return NotFound();
-        //    }
-
-        //    var document = await _context.Documents.Find(m => m.Id == id).FirstOrDefaultAsync();
-        //    if (document == null)
-        //    {
-        //        return NotFound();
-        //    }
-        //    var mandates = SearchMandates();
-        //    ViewData["Mandates"] = new SelectList(mandates, "Id", "mandate");
-        //    return View(document);
-        //}
-
-        //[HttpPost]
-        //[ValidateAntiForgeryToken]
-        //[Route("Documents/ATA/Edit")]
-        //public async Task<IActionResult> AtaEdit(Guid id, [Bind("Id,Name,DocumentCreationDate,MeetingDate,Status,Attachment,UserId,MandateId,MaterialId")] Document document, IFormFile? attachment, bool changeAttachment)
-        //{
-        //    if (id != document.Id)
-        //    {
-        //        return NotFound();
-        //    }
-        //    var mandates = SearchMandates();
-        //    ViewData["Mandates"] = new SelectList(mandates, "Id", "mandate");
-        //    if (ModelState.IsValid)
-        //    {
-
-        //        if (document.MeetingDate == null || document.MeetingDate == DateOnly.MinValue)
-        //        {
-        //            ModelState.AddModelError("MeetingDate", "O campo Data da Reunião é obrigatório");
-        //            return View(document);
-        //        }
-        //        if (!document.MandateId.HasValue || document.MandateId == Guid.Empty)
-        //        {
-        //            ModelState.AddModelError("MandateId", "O campo Mandato é obrigatório!");
-        //            return View(document);
-        //        }
-        //        if (changeAttachment == true)
-        //        {
-        //            if (attachment == null || attachment.Length == 0)
-        //            {
-        //                ModelState.AddModelError("Attachment", "O campo Anexo é obrigatório!");
-        //                return View(document);
-        //            }
-        //            var extension = Path.GetExtension(attachment.FileName);
-        //            if (string.IsNullOrEmpty(extension) || !extension.Equals(".pdf", StringComparison.OrdinalIgnoreCase))
-        //            {
-        //                ModelState.AddModelError("Attachment", "Somente arquivos PDF são permitidos.");
-        //                return View(document);
-        //            }
-
-        //        }
-        //        try
-        //        {
-        //            await _context.Documents.ReplaceOneAsync(m => m.Id == document.Id, document);
-        //        }
-        //        catch (DbUpdateConcurrencyException)
-        //        {
-        //            if (!DocumentExists(document.Id))
-        //            {
-        //                return NotFound();
-        //            }
-        //            else
-        //            {
-        //                throw;
-        //            }
-        //        }
-        //        if (changeAttachment == true)
-        //        {
-        //            var filePath = Path.Combine(Directory.GetCurrentDirectory(),
-        //                  "wwwroot", "docs", attachment.FileName);
-        //            using (var stream = new FileStream(filePath, FileMode.Create))
-        //            {
-        //                await attachment.CopyToAsync(stream);
-        //            }
-        //        }
-
-        //        return RedirectToAction(nameof(Index));
-        //    }
-        //    return View(document);
-        //}
-
         [Route("Documents/Course/Create")]
         public IActionResult CourseCreate()
         {
@@ -406,7 +319,7 @@ namespace CipaFatecJahu.Controllers
                 }
                 if (attachment == null || attachment.Length == 0)
                 {
-                    ModelState.AddModelError("Attachment", "O campo Anexo é obrigatório!");
+                    ModelState.AddModelError("Attachment", "O campo Anexar é obrigatório!");
                     return View(document);
                 }
                 var extension = Path.GetExtension(attachment.FileName);
@@ -458,15 +371,15 @@ namespace CipaFatecJahu.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Route("Documents/Election/Create")]
-        public async Task<IActionResult> ElectionCreate([Bind("Id,Name,DocumentCreationDate,MeetingDate,Status,Attachment,UserId,MandateId,MaterialId")] Document document, IFormFile? attachment)
+        public async Task<IActionResult> ElectionCreate([Bind("Id,Name,DocumentCreationDate,ScheduledDate,Status,Attachment,UserId,MandateId,MaterialId")] Document document, IFormFile? attachment)
         {
             var mandates = SearchMandates();
             ViewData["Mandates"] = new SelectList(mandates, "Id", "mandate");
             if (ModelState.IsValid)
             {
-                if (document.MeetingDate == null || document.MeetingDate == DateOnly.MinValue)
+                if (document.ScheduledDate == null || document.ScheduledDate == DateOnly.MinValue)
                 {
-                    ModelState.AddModelError("MeetingDate", "O campo Data da Reunião é obrigatório");
+                    ModelState.AddModelError("ScheduledDate", "O campo Data da Reunião é obrigatório");
                     return View(document);
                 }
                 if (!document.MandateId.HasValue || document.MandateId == Guid.Empty)
@@ -474,17 +387,17 @@ namespace CipaFatecJahu.Controllers
                     ModelState.AddModelError("MandateId", "O campo Mandato é obrigatório!");
                     return View(document);
                 }
-                if (document.MeetingDate > DateOnly.FromDateTime(DateTime.Now.AddHours(-3)))
+                if (document.ScheduledDate > DateOnly.FromDateTime(DateTime.Now.AddHours(-3)))
                 {
-                    ModelState.AddModelError("MeetingDate", "A data da reunião não pode ser futura.");
+                    ModelState.AddModelError("ScheduledDate", "A data da reunião não pode ser futura.");
                     return View(document);
                 }
                 var mandate = _context.Mandates.Find(m => m.Id == document.MandateId.Value).FirstOrDefault();
                 if (mandate != null)
                 {
-                    if (document.MeetingDate < mandate.StartYear || document.MeetingDate > mandate.TerminationYear)
+                    if (document.ScheduledDate < mandate.StartYear || document.ScheduledDate > mandate.TerminationYear)
                     {
-                        ModelState.AddModelError("MeetingDate", $"A data da reunião deve estar dentro do período do mandato selecionado. {mandate.StartYear} - {mandate.TerminationYear}");
+                        ModelState.AddModelError("ScheduledDate", $"A data da reunião deve estar dentro do período do mandato selecionado. {mandate.StartYear} - {mandate.TerminationYear}");
                         return View(document);
                     }
                 }
@@ -495,7 +408,7 @@ namespace CipaFatecJahu.Controllers
                 }
                 if (attachment == null || attachment.Length == 0)
                 {
-                    ModelState.AddModelError("Attachment", "O campo Anexo é obrigatório!");
+                    ModelState.AddModelError("Attachment", "O campo Anexar é obrigatório!");
                     return View(document);
                 }
                 var extension = Path.GetExtension(attachment.FileName);
@@ -553,7 +466,7 @@ namespace CipaFatecJahu.Controllers
             {
                 if (attachment == null || attachment.Length == 0)
                 {
-                    ModelState.AddModelError("Attachment", "O campo Anexo é obrigatório!");
+                    ModelState.AddModelError("Attachment", "O campo Anexar é obrigatório!");
                     return View(document);
                 }
                 var extension = Path.GetExtension(attachment.FileName);
@@ -623,7 +536,7 @@ namespace CipaFatecJahu.Controllers
                 }
                 if (attachment == null || attachment.Length == 0)
                 {
-                    ModelState.AddModelError("Attachment", "O campo Anexo é obrigatório!");
+                    ModelState.AddModelError("Attachment", "O campo Anexar é obrigatório!");
                     return View(document);
                 }
                 var extension = Path.GetExtension(attachment.FileName);
@@ -687,7 +600,7 @@ namespace CipaFatecJahu.Controllers
                 }
                 if (attachment == null || attachment.Length == 0)
                 {
-                    ModelState.AddModelError("Attachment", "O campo Anexo é obrigatório!");
+                    ModelState.AddModelError("Attachment", "O campo Anexar é obrigatório!");
                     return View(document);
                 }
                 var extension = Path.GetExtension(attachment.FileName);
@@ -706,12 +619,165 @@ namespace CipaFatecJahu.Controllers
                 string filePath;
                 do
                 {
-                    randomFileName = $"COURSE-{Guid.NewGuid()}.pdf";
+                    randomFileName = $"MAP-{Guid.NewGuid()}.pdf";
                     filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "docs", randomFileName);
                 } while (System.IO.File.Exists(filePath));
 
                 document.Attachment = Path.Combine("docs/", randomFileName);
 
+                await _context.Documents.InsertOneAsync(document); //Insert
+
+                var docsDirectory = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "docs");
+                if (!Directory.Exists(docsDirectory))
+                {
+                    Directory.CreateDirectory(docsDirectory);
+                }
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    await attachment.CopyToAsync(stream);
+                }
+                return RedirectToAction(nameof(History));
+            }
+            return View(document);
+        }
+
+        [Route("Documents/Other/Create")]
+        public IActionResult OtherCreate()
+        {
+            var mandates = SearchMandates();
+            ViewData["Mandates"] = new SelectList(mandates, "Id", "mandate");
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        [Route("Documents/Other/Create")]
+        public async Task<IActionResult> OtherCreate([Bind("Id,Name,DocumentCreationDate,Status,Attachment,UserId,MandateId,MaterialId")] Document document, IFormFile? attachment)
+        {
+            var mandates = SearchMandates();
+            ViewData["Mandates"] = new SelectList(mandates, "Id", "mandate");
+            if (ModelState.IsValid)
+            {
+                if (!document.MandateId.HasValue || document.MandateId == Guid.Empty)
+                {
+                    ModelState.AddModelError("MandateId", "O campo Mandato é obrigatório!");
+                    return View(document);
+                }
+                if (attachment == null || attachment.Length == 0)
+                {
+                    ModelState.AddModelError("Attachment", "O campo Anexar é obrigatório!");
+                    return View(document);
+                }
+                var extension = Path.GetExtension(attachment.FileName);
+                if (string.IsNullOrEmpty(extension) || !extension.Equals(".pdf", StringComparison.OrdinalIgnoreCase))
+                {
+                    ModelState.AddModelError("Attachment", "Somente arquivos PDF são permitidos.");
+                    return View(document);
+                }
+                document.Id = Guid.NewGuid();
+                document.MaterialId = new Guid("7e4c8f2d-9b4e-4b8d-8b7e-2c3d3a5f6d9c");
+                document.DocumentCreationDate = DateTime.Now.AddHours(-3);
+                document.Status = "Ativo";
+                document.UserId = new Guid(_userManager.GetUserId(User));
+
+                string randomFileName;
+                string filePath;
+                do
+                {
+                    randomFileName = $"OTHER-{Guid.NewGuid()}.pdf";
+                    filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "docs", randomFileName);
+                } while (System.IO.File.Exists(filePath));
+
+                document.Attachment = Path.Combine("docs/", randomFileName);
+
+                await _context.Documents.InsertOneAsync(document); //Insert
+
+                var docsDirectory = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "docs");
+                if (!Directory.Exists(docsDirectory))
+                {
+                    Directory.CreateDirectory(docsDirectory);
+                }
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    await attachment.CopyToAsync(stream);
+                }
+                return RedirectToAction(nameof(History));
+            }
+            return View(document);
+        }
+
+        [Route("Documents/SIPAT/Create")]
+        public IActionResult SipatCreate()
+        {
+            var mandates = SearchMandates();
+            ViewData["Mandates"] = new SelectList(mandates, "Id", "mandate");
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        [Route("Documents/SIPAT/Create")]
+        public async Task<IActionResult> SIPATCreate([Bind("Id,Name,DocumentCreationDate,ScheduledDate,Status,Attachment,UserId,MandateId,MaterialId")] Document document, IFormFile? attachment)
+        {
+            var mandates = SearchMandates();
+            ViewData["Mandates"] = new SelectList(mandates, "Id", "mandate");
+            if (ModelState.IsValid)
+            {
+                if (document.ScheduledDate == null || document.ScheduledDate == DateOnly.MinValue)
+                {
+                    ModelState.AddModelError("ScheduledDate", "O campo data do evento é obrigatório");
+                    return View(document);
+                }
+                if (!document.MandateId.HasValue || document.MandateId == Guid.Empty)
+                {
+                    ModelState.AddModelError("MandateId", "O campo mandato é obrigatório!");
+                    return View(document);
+                }
+                if (document.ScheduledDate > DateOnly.FromDateTime(DateTime.Now.AddHours(-3)))
+                {
+                    ModelState.AddModelError("ScheduledDate", "A data do evento não pode ser futura.");
+                    return View(document);
+                }
+                var mandate = _context.Mandates.Find(m => m.Id == document.MandateId.Value).FirstOrDefault();
+                if (mandate != null)
+                {
+                    if (document.ScheduledDate < mandate.StartYear || document.ScheduledDate > mandate.TerminationYear)
+                    {
+                        ModelState.AddModelError("ScheduledDate", $"A data do evento deve estar dentro do período do mandato selecionado. {mandate.StartYear} - {mandate.TerminationYear}");
+                        return View(document);
+                    }
+                }
+                else
+                {
+                    ModelState.AddModelError("MandateId", "Mandato não encontrado ou inválido.");
+                    return View(document);
+                }
+                if (attachment == null || attachment.Length == 0)
+                {
+                    ModelState.AddModelError("Attachment", "O campo Anexar é obrigatório!");
+                    return View(document);
+                }
+                var extension = Path.GetExtension(attachment.FileName);
+                if (string.IsNullOrEmpty(extension) || !extension.Equals(".pdf", StringComparison.OrdinalIgnoreCase))
+                {
+                    ModelState.AddModelError("Attachment", "Somente arquivos PDF são permitidos.");
+                    return View(document);
+                }
+                document.Id = Guid.NewGuid();
+                document.MaterialId = new Guid("9a4d3f2e-6b4e-4b8d-8b7e-2c3d3a5f6d9c");
+                document.DocumentCreationDate = DateTime.Now.AddHours(-3);
+                document.Status = "Ativo";
+                document.UserId = new Guid(_userManager.GetUserId(User));
+
+                string randomFileName;
+                string filePath;
+                do
+                {
+                    randomFileName = $"SIPAT-{Guid.NewGuid()}.pdf";
+                    filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "docs", randomFileName);
+                } while (System.IO.File.Exists(filePath));
+
+                document.Attachment = Path.Combine("docs/", randomFileName);
                 await _context.Documents.InsertOneAsync(document); //Insert
 
                 var docsDirectory = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "docs");

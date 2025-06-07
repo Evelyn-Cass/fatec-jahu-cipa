@@ -18,6 +18,7 @@ namespace CipaFatecJahu.Controllers
         }
 
         // GET: Mandates
+        [Route("History/Mandates")]
         public async Task<IActionResult> History()
         {
             var mandates = await _context.Mandates.Find(u => true).ToListAsync();
