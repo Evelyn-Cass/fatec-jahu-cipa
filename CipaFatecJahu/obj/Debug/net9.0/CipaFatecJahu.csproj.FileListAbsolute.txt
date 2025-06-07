@@ -1462,9 +1462,10 @@ C:\Projetos\Fatec\fatec-jahu-cipa\CipaFatecJahu\obj\Debug\net9.0\compressed\mx9o
 C:\Projetos\Fatec\fatec-jahu-cipa\CipaFatecJahu\obj\Debug\net9.0\compressed\6vg6x6h6bz-9vr69e8ynj.gz
 D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\obj\Debug\net9.0\compressed\87fl10075f-0z24wx7xx6.gz
 D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\obj\Debug\net9.0\compressed\qz0o8kx8kt-mobmkvq8ha.gz
-D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\obj\Debug\net9.0\compressed\64oovjuy3a-96ycm9z2lx.gz
 C:\Projetos\Fatec\fatec-jahu-cipa\CipaFatecJahu\obj\Debug\net9.0\compressed\87fl10075f-0z24wx7xx6.gz
 C:\Projetos\Fatec\fatec-jahu-cipa\CipaFatecJahu\obj\Debug\net9.0\compressed\qz0o8kx8kt-mobmkvq8ha.gz
 C:\Projetos\Fatec\fatec-jahu-cipa\CipaFatecJahu\obj\Debug\net9.0\compressed\6f9130q8kw-vbvsmohggq.gz
 C:\Projetos\Fatec\fatec-jahu-cipa\CipaFatecJahu\obj\Debug\net9.0\compressed\3va8h1rhzi-oct22dly18.gz
 C:\Projetos\Fatec\fatec-jahu-cipa\CipaFatecJahu\obj\Debug\net9.0\compressed\ingn1dqrkn-5gr833ketw.gz
+D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\obj\Debug\net9.0\compressed\3va8h1rhzi-oct22dly18.gz
+D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\obj\Debug\net9.0\compressed\ingn1dqrkn-5gr833ketw.gz

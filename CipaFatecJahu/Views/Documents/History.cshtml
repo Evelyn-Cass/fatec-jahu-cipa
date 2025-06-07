@@ -29,17 +29,17 @@
     <thead>
         <tr>
 
-            <th>
+            <th style="width:40%;">
                 Name
             </th>
             <th>
+                Secretário
+            </th>
+            <th style="width:100px;">
                 Material
             </th>
-            <th style="max-width:160px;">
+            <th style="width:165px;">
                 Adicionado
-            </th>
-            <th>
-                Secretário
             </th>
             <th style="width:50px;"></th>
             <th style="width:50px;"></th>
@@ -66,15 +66,16 @@
                         @item.Name
                     </td>
                     <td>
+                        @item.UserName
+                    </td>
+                    <td>
                         @item.Material
                     </td>
 
                     <td>
                         @item.DocumentCreationDate
                     </td>
-                    <td>
-                        @item.UserName
-                    </td>
+
                     <td>
                         <a asp-action="Details" class="details" asp-route-id="@item.Id"></a>
                     </td>
