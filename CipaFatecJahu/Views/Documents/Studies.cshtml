@@ -4,7 +4,7 @@
     ViewData["Title"] = "Estudos";
 }
 @section Styles {
-    <link rel="stylesheet" href="~/css/Documents/history.css" />
+    <link rel="stylesheet" href="~/css/history.css" />
     <link rel="stylesheet" href="~/css/table.css" />
 }
 <div class="container-title">
@@ -17,14 +17,11 @@
 <table class="table" style="width:60%">
     <thead>
         <tr>
-            <th style="width:50%;">
+            <th style="width:50px;"></th>
+            <th>
                 @Html.DisplayNameFor(model => model.Name)
             </th>
-            <th style="width:25%;">
-                @Html.DisplayNameFor(model => model.Attachment)
-            </th>
-
-            <th style="width:25%;">
+            <th style="width:200px;">
                 Adicionado
             </th>
         </tr>
@@ -34,10 +31,10 @@
         {
             <tr>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Name)
+                    <a href="~/@item.Attachment" class="document-view" target="_blank"></a>
                 </td>
                 <td>
-                    <a href="~/@item.Attachment" target="_blank">Visualizar PDF</a>
+                    @Html.DisplayFor(modelItem => item.Name)
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => (item.DocumentCreationDate))

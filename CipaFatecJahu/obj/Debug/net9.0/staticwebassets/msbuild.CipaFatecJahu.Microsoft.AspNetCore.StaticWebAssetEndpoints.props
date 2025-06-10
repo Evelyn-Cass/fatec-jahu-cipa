@@ -324,6 +324,18 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"veh93oxfa0"},{"Name":"integrity","Value":"sha256-mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E="},{"Name":"label","Value":"_content/CipaFatecJahu/docs/ELECTION-7ac6488f-c2c5-4487-9418-0783c5403539.pdf"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"168848"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E=\u0022"},{"Name":"Last-Modified","Value":"Thu, 05 Jun 2025 15:14:42 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/CipaFatecJahu/docs/LEGISLATION-22395279-75df-44f9-bf17-fcd409663fc6.pdf">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\docs\LEGISLATION-22395279-75df-44f9-bf17-fcd409663fc6.pdf'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"168848"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E=\u0022"},{"Name":"Last-Modified","Value":"Tue, 10 Jun 2025 15:19:21 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/CipaFatecJahu/docs/LEGISLATION-22395279-75df-44f9-bf17-fcd409663fc6.veh93oxfa0.pdf">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\docs\LEGISLATION-22395279-75df-44f9-bf17-fcd409663fc6.pdf'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"veh93oxfa0"},{"Name":"integrity","Value":"sha256-mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E="},{"Name":"label","Value":"_content/CipaFatecJahu/docs/LEGISLATION-22395279-75df-44f9-bf17-fcd409663fc6.pdf"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"168848"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E=\u0022"},{"Name":"Last-Modified","Value":"Tue, 10 Jun 2025 15:19:21 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/CipaFatecJahu/docs/LEGISLATION-579d8a71-c6d9-4a75-a159-66e46cd14952.pdf">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\docs\LEGISLATION-579d8a71-c6d9-4a75-a159-66e46cd14952.pdf'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -419,6 +431,18 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"veh93oxfa0"},{"Name":"integrity","Value":"sha256-mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E="},{"Name":"label","Value":"_content/CipaFatecJahu/docs/STUDIES-975b95ab-be96-4f31-892a-e0cdbdf99e6e.pdf"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"168848"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E=\u0022"},{"Name":"Last-Modified","Value":"Thu, 05 Jun 2025 15:15:00 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/CipaFatecJahu/docs/STUDIES-a11c018c-5529-4479-895e-480f87350a10.pdf">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\docs\STUDIES-a11c018c-5529-4479-895e-480f87350a10.pdf'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"168848"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E=\u0022"},{"Name":"Last-Modified","Value":"Tue, 10 Jun 2025 15:27:48 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/CipaFatecJahu/docs/STUDIES-a11c018c-5529-4479-895e-480f87350a10.veh93oxfa0.pdf">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\docs\STUDIES-a11c018c-5529-4479-895e-480f87350a10.pdf'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"veh93oxfa0"},{"Name":"integrity","Value":"sha256-mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E="},{"Name":"label","Value":"_content/CipaFatecJahu/docs/STUDIES-a11c018c-5529-4479-895e-480f87350a10.pdf"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"168848"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E=\u0022"},{"Name":"Last-Modified","Value":"Tue, 10 Jun 2025 15:27:48 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/CipaFatecJahu/docs/STUDIES-bc1a04ca-1fa3-4824-b564-54e747f5f98f.pdf">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\docs\STUDIES-bc1a04ca-1fa3-4824-b564-54e747f5f98f.pdf'))</AssetFile>

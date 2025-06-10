@@ -110,6 +110,7 @@ wwwroot\docs\COURSE-10d66243-0ea4-4d29-92d2-91097f54d39d.pdf
 wwwroot\docs\COURSE-79d9216a-22bb-4da6-8979-5ffa37beddc7.pdf
 wwwroot\docs\ELECTION-6cf8ae5e-d670-462e-b743-2bd28f9fc55d.pdf
 wwwroot\docs\ELECTION-7ac6488f-c2c5-4487-9418-0783c5403539.pdf
+wwwroot\docs\LEGISLATION-22395279-75df-44f9-bf17-fcd409663fc6.pdf
 wwwroot\docs\LEGISLATION-579d8a71-c6d9-4a75-a159-66e46cd14952.pdf
 wwwroot\docs\LEGISLATION-c9c98aff-b339-461f-91ef-9e84c414e80f.pdf
 wwwroot\docs\LEGISLATION-d91d30d3-d5fb-4e90-b295-b3a11bbee2a9.pdf
@@ -118,6 +119,7 @@ wwwroot\docs\SIPAT-88c244cd-7aac-41e1-bcf9-68a2ddd5da77.pdf
 wwwroot\docs\STUDIES-2e5bd812-1664-4176-af21-2c68af5781ce.pdf
 wwwroot\docs\STUDIES-56a9f1a3-3859-4a5b-94a8-47c2fc6d5d78.pdf
 wwwroot\docs\STUDIES-975b95ab-be96-4f31-892a-e0cdbdf99e6e.pdf
+wwwroot\docs\STUDIES-a11c018c-5529-4479-895e-480f87350a10.pdf
 wwwroot\docs\STUDIES-bc1a04ca-1fa3-4824-b564-54e747f5f98f.pdf
 wwwroot\docs\STUDIES-c9f17bbe-b3b6-4faa-809a-a57db0f714f4.pdf
 wwwroot\favicon.ico

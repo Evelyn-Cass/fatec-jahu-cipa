@@ -6321,6 +6321,88 @@
       ]
     },
     {
+      "Route": "docs/LEGISLATION-22395279-75df-44f9-bf17-fcd409663fc6.pdf",
+      "AssetFile": "docs/LEGISLATION-22395279-75df-44f9-bf17-fcd409663fc6.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "168848"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Jun 2025 15:19:21 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E="
+        }
+      ]
+    },
+    {
+      "Route": "docs/LEGISLATION-22395279-75df-44f9-bf17-fcd409663fc6.veh93oxfa0.pdf",
+      "AssetFile": "docs/LEGISLATION-22395279-75df-44f9-bf17-fcd409663fc6.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "168848"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Jun 2025 15:19:21 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "veh93oxfa0"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E="
+        },
+        {
+          "Name": "label",
+          "Value": "docs/LEGISLATION-22395279-75df-44f9-bf17-fcd409663fc6.pdf"
+        }
+      ]
+    },
+    {
       "Route": "docs/LEGISLATION-579d8a71-c6d9-4a75-a159-66e46cd14952.pdf",
       "AssetFile": "docs/LEGISLATION-579d8a71-c6d9-4a75-a159-66e46cd14952.pdf",
       "Selectors": [],
@@ -6973,6 +7055,88 @@
         {
           "Name": "label",
           "Value": "docs/STUDIES-975b95ab-be96-4f31-892a-e0cdbdf99e6e.pdf"
+        }
+      ]
+    },
+    {
+      "Route": "docs/STUDIES-a11c018c-5529-4479-895e-480f87350a10.pdf",
+      "AssetFile": "docs/STUDIES-a11c018c-5529-4479-895e-480f87350a10.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "168848"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Jun 2025 15:27:48 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E="
+        }
+      ]
+    },
+    {
+      "Route": "docs/STUDIES-a11c018c-5529-4479-895e-480f87350a10.veh93oxfa0.pdf",
+      "AssetFile": "docs/STUDIES-a11c018c-5529-4479-895e-480f87350a10.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "168848"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Jun 2025 15:27:48 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "veh93oxfa0"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E="
+        },
+        {
+          "Name": "label",
+          "Value": "docs/STUDIES-a11c018c-5529-4479-895e-480f87350a10.pdf"
         }
       ]
     },

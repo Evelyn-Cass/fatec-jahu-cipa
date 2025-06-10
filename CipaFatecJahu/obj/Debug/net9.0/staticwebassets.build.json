@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "rrpKrXlBDwGYQPGKS3x4phb5wPzdxTQPgEbXRhliuBQ=",
+  "Hash": "3jhA2lWeDeRJL3x6UmcJQEE/+ml13f8RpDfMwOC9rdA=",
   "Source": "CipaFatecJahu",
   "BasePath": "_content/CipaFatecJahu",
   "Mode": "Default",
@@ -2453,6 +2453,27 @@
       "OriginalItemSpec": "wwwroot\\docs\\ELECTION-7ac6488f-c2c5-4487-9418-0783c5403539.pdf"
     },
     {
+      "Identity": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\LEGISLATION-22395279-75df-44f9-bf17-fcd409663fc6.pdf",
+      "SourceId": "CipaFatecJahu",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\",
+      "BasePath": "_content/CipaFatecJahu",
+      "RelativePath": "docs/LEGISLATION-22395279-75df-44f9-bf17-fcd409663fc6#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "veh93oxfa0",
+      "Integrity": "mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\docs\\LEGISLATION-22395279-75df-44f9-bf17-fcd409663fc6.pdf"
+    },
+    {
       "Identity": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\LEGISLATION-579d8a71-c6d9-4a75-a159-66e46cd14952.pdf",
       "SourceId": "CipaFatecJahu",
       "SourceType": "Discovered",
@@ -2619,6 +2640,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\docs\\STUDIES-975b95ab-be96-4f31-892a-e0cdbdf99e6e.pdf"
+    },
+    {
+      "Identity": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\STUDIES-a11c018c-5529-4479-895e-480f87350a10.pdf",
+      "SourceId": "CipaFatecJahu",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\",
+      "BasePath": "_content/CipaFatecJahu",
+      "RelativePath": "docs/STUDIES-a11c018c-5529-4479-895e-480f87350a10#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "veh93oxfa0",
+      "Integrity": "mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\docs\\STUDIES-a11c018c-5529-4479-895e-480f87350a10.pdf"
     },
     {
       "Identity": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\STUDIES-bc1a04ca-1fa3-4824-b564-54e747f5f98f.pdf",
@@ -11507,6 +11549,88 @@
       ]
     },
     {
+      "Route": "docs/LEGISLATION-22395279-75df-44f9-bf17-fcd409663fc6.pdf",
+      "AssetFile": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\LEGISLATION-22395279-75df-44f9-bf17-fcd409663fc6.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "168848"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Jun 2025 15:19:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E="
+        }
+      ]
+    },
+    {
+      "Route": "docs/LEGISLATION-22395279-75df-44f9-bf17-fcd409663fc6.veh93oxfa0.pdf",
+      "AssetFile": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\LEGISLATION-22395279-75df-44f9-bf17-fcd409663fc6.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "168848"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Jun 2025 15:19:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "veh93oxfa0"
+        },
+        {
+          "Name": "label",
+          "Value": "docs/LEGISLATION-22395279-75df-44f9-bf17-fcd409663fc6.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E="
+        }
+      ]
+    },
+    {
       "Route": "docs/LEGISLATION-579d8a71-c6d9-4a75-a159-66e46cd14952.pdf",
       "AssetFile": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\LEGISLATION-579d8a71-c6d9-4a75-a159-66e46cd14952.pdf",
       "Selectors": [],
@@ -12155,6 +12279,88 @@
         {
           "Name": "label",
           "Value": "docs/STUDIES-975b95ab-be96-4f31-892a-e0cdbdf99e6e.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E="
+        }
+      ]
+    },
+    {
+      "Route": "docs/STUDIES-a11c018c-5529-4479-895e-480f87350a10.pdf",
+      "AssetFile": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\STUDIES-a11c018c-5529-4479-895e-480f87350a10.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "168848"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Jun 2025 15:27:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E="
+        }
+      ]
+    },
+    {
+      "Route": "docs/STUDIES-a11c018c-5529-4479-895e-480f87350a10.veh93oxfa0.pdf",
+      "AssetFile": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\STUDIES-a11c018c-5529-4479-895e-480f87350a10.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "168848"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Jun 2025 15:27:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "veh93oxfa0"
+        },
+        {
+          "Name": "label",
+          "Value": "docs/STUDIES-a11c018c-5529-4479-895e-480f87350a10.pdf"
         },
         {
           "Name": "integrity",
