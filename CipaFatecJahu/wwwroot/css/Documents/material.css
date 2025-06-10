@@ -16,6 +16,10 @@ h1{
     margin-bottom:24px;
 }
 
+.card-section a{
+    text-decoration:none;
+}
+
 .card {
     display: flex;
     flex-wrap: wrap;
@@ -37,9 +41,8 @@ h1{
         width:60px;
     }
 
-    .card a {
+    .card span {
         text-transform: uppercase;
-        text-decoration: none;
         font-size: 1.3rem;
         color: var(--base-red);
         padding: 8px;
