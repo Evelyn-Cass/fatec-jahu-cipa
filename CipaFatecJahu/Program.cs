@@ -33,11 +33,21 @@ if (!app.Environment.IsDevelopment())
 }
 else
 {
-    app.UseDeveloperExceptionPage(); // Add this line to enable detailed error pages in development mode.
-    var userManager = app.Services.CreateScope().ServiceProvider.GetRequiredService<UserManager<ApplicationUser>>();
-    var roleManager = app.Services.CreateScope().ServiceProvider.GetRequiredService<RoleManager<ApplicationRole>>();
-    DatabaseSeeder seeder = new DatabaseSeeder(userManager, roleManager);
-    await seeder.SeedAsync();
+    app.UseDeveloperExceptionPage();
+    using (var scope = app.Services.CreateScope())
+    {
+        try
+        {
+            var userManager = scope.ServiceProvider.GetRequiredService<UserManager<ApplicationUser>>();
+            var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<ApplicationRole>>();
+            DatabaseSeeder seeder = new DatabaseSeeder(userManager, roleManager);
+            await seeder.SeedAsync();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error during database seeding: {ex.Message}");
+        }
+    }
 }
 
 app.UseStaticFiles();
