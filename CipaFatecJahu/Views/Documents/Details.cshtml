@@ -3,58 +3,83 @@
 @{
     ViewData["Title"] = "Detalhes";
 }
-
-<h1>Detalhes</h1>
-
-<div>
-    <h4>Documento</h4>
-    <hr />
-    <div style="display:flex;flex-direction:column" >
-        <div style="display:flex;flex-direction:row">
-            @Html.DisplayNameFor(model => model.Name):
-            @Html.DisplayFor(model => model.Name)
+@section styles {
+    <link rel="stylesheet" href="~/css/Documents/details.css" />
+}
+<section class="mainbody">
+    <div class="details-base">
+        <div class="button-back">
+            <a asp-action="History"><img src="~/img/icon-cross-white.png" /></a>
         </div>
-        <div style="display:flex;flex-direction:row">
-            @Html.DisplayNameFor(model => model.DocumentCreationDate):
-            @Html.DisplayFor(model => model.DocumentCreationDate)
+        <div class="details-header">
+            <h1>Detalhes</h1>
         </div>
-        @if (Model.ScheduledDate != null){
-            <div style="display:flex;flex-direction:row">
-            @Html.DisplayNameFor(model => model.ScheduledDate):
-            @Html.DisplayFor(model => model.ScheduledDate)
+        <div class="details-body">
+            <div class="details-name">
+                <span>@Html.DisplayNameFor(model => model.Name):</span>
             </div>
-        }
-        @if (Model.LawPublication != null){ 
-            <div style="display:flex;flex-direction:row">
-            
-            @Html.DisplayNameFor(model => model.LawPublication):
-            @Html.DisplayFor(model => model.LawPublication)
+            <div class="details-content">
+                @Html.DisplayFor(model => model.Name)
             </div>
-        }
-        <div style="display:flex;flex-direction:row">
-            @Html.DisplayNameFor(model => model.Status):
-            @Html.DisplayFor(model => model.Status)
+            <div class="details-name">
+                <span>@Html.DisplayNameFor(model => model.Material):</span>
+            </div>
+            <div class="details-content">
+                @Html.DisplayFor(model => model.Material)
+            </div>
+            <div class="details-name">
+                <span>@Html.DisplayNameFor(model => model.DocumentCreationDate):</span>
+            </div>
+            <div class="details-content">
+                @Html.DisplayFor(model => model.DocumentCreationDate)
+            </div>
+            @if (Model.ScheduledDate != null)
+            {
+                <div class="details-name">
+                    <span>@Html.DisplayNameFor(model => model.ScheduledDate):</span>
+                </div>
+                <div class="details-content">
+                    @Html.DisplayFor(model => model.ScheduledDate)
+                </div>
+            }
+            @if (Model.LawPublication != null)
+            {
+                <div class="details-name">
+                    <span>@Html.DisplayNameFor(model => model.LawPublication):</span>
+                </div>
+                <div class="details-content">
+                    @Html.DisplayFor(model => model.LawPublication)
+                </div>
+            }
+            <div class="details-name">
+                <span>@Html.DisplayNameFor(model => model.Status):</span>
+            </div>
+            <div class="details-content">
+                @Html.DisplayFor(model => model.Status)
+            </div>
+            <div class="details-name">
+                <span>Anexo:</span>
+            </div>
+            <div class="details-content">
+                <a href="@Url.Content($"~/{Model.Attachment}")" target="_blank">Visualizar PDF</a>
+            </div>
+            <div class="details-name">
+                <span>@Html.DisplayNameFor(model => model.UserName):</span>
+            </div>
+            <div class="details-content">
+                @Html.DisplayFor(model => model.UserName)
+            </div>
+            @if (Model.Mandate != null)
+            {
+                <div class="details-name">
+                    <span>@Html.DisplayNameFor(model => model.Mandate):</span>
+                </div>
+                <div class="details-content">
+                    @Html.DisplayFor(model => model.Mandate)
+                </div>
+            }
+
         </div>
-        <div style="display:flex;flex-direction:row">
-            @Html.DisplayNameFor(model => model.Attachment): 
-            <a href="@Url.Content($"~/{Model.Attachment}")" target="_blank">Visualizar PDF</a>  
-        </div>
-        <div style="display:flex;flex-direction:row">
-			@Html.DisplayNameFor(model => model.UserName):
-            @Html.DisplayFor(model => model.UserName)
-        </div>
-        @if (Model.Mandate != null){
-            <div style="display:flex;flex-direction:row">
-            @Html.DisplayNameFor(model => model.Mandate):
-            @Html.DisplayFor(model => model.Mandate)
-        </div>
-        }
-        <div style="display:flex;flex-direction:row">
-            @Html.DisplayNameFor(model => model.Material):
-            @Html.DisplayFor(model => model.Material)
-        </div>
+
     </div>
-</div>
-<div>
-    <a asp-action="History">Voltar</a>
-</div>
+</section>
