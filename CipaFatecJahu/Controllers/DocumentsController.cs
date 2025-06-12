@@ -98,6 +98,81 @@ namespace CipaFatecJahu.Controllers
             return View(result);
         }
 
+        public async Task<IActionResult> Search(Guid MaterialId, Guid MandateId)
+        {
+            var pipeline = new[]
+            {
+               new BsonDocument("$lookup", new BsonDocument
+               {
+                   { "from", "Materials" },
+                   { "localField", "MaterialId" },
+                   { "foreignField", "_id" },
+                   { "as", "Material" }
+               }),
+               new BsonDocument("$unwind", "$Material"),
+               new BsonDocument("$match", new BsonDocument{
+                   { "Material._id", new BsonBinaryData(MaterialId, GuidRepresentation.Standard) }
+               }),
+               new BsonDocument("$lookup", new BsonDocument
+               {
+                   { "from", "Mandates" },
+                   { "localField", "MandateId" },
+                   { "foreignField", "_id" },
+                   { "as", "Mandate" }
+               }),
+               new BsonDocument("$unwind", new BsonDocument
+               {
+                   { "path", "$Mandate" },
+                   { "preserveNullAndEmptyArrays", true }
+               }),
+               new BsonDocument("$match", new BsonDocument{
+                  { "Mandate._id", new BsonBinaryData(MandateId, GuidRepresentation.Standard) }
+               }),
+               new BsonDocument("$addFields", new BsonDocument
+               {
+                   { "MandateStartYear", new BsonDocument("$year", new BsonDocument("$toDate", new BsonDocument("$dateFromString", new BsonDocument
+                       {
+                           { "dateString", new BsonDocument("$concat", new BsonArray {
+                               new BsonDocument("$toString", "$Mandate.StartYear.Year"),
+                               "-01-01"
+                           })}
+                       })))
+                   },
+                   { "MandateTerminationYear", new BsonDocument("$year", new BsonDocument("$toDate", new BsonDocument("$dateFromString", new BsonDocument
+                       {
+                           { "dateString", new BsonDocument("$concat", new BsonArray {
+                               new BsonDocument("$toString", "$Mandate.TerminationYear.Year"),
+                               "-01-01"
+                           })}
+                       })))
+                   }
+               }),
+               new BsonDocument("$project", new BsonDocument
+               {
+                   { "_id", "$_id" },
+                   { "Name", "$Name" },
+                   { "DocumentCreationDate", "$DocumentCreationDate" },
+                   { "Attachment", "$Attachment" },
+                   { "Status", "$Status" },
+                   { "Mandate", new BsonDocument("$concat", new BsonArray {
+                       new BsonDocument("$toString", "$MandateStartYear"),
+                       "/",
+                       new BsonDocument("$toString", "$MandateTerminationYear")
+                   })},
+                   { "Material", "$Material.Description" },
+                   { "UserId", "$UserId" },
+                   { "ScheduledDate", "$ScheduledDate" },
+                   { "LawPublication", "$LawPublication" }
+               }),
+               new BsonDocument("$sort", new BsonDocument("DocumentCreationDate", -1))
+            };
+
+            var result = await _context.Documents.Aggregate<DocumentWithUserMandateMaterialViewModel>(pipeline).ToListAsync();
+
+            return View(result);
+        }
+
+
         public IActionResult Material()
         {
             return View();

@@ -2,7 +2,7 @@
 <nav>
     <form class="nav-search" asp-controller="Documents" asp-action="Search">
         <div class="nav-selects">
-            <select class="nav-select" style="width: 45%" name="mandate" id="search-mandate">
+            <select class="nav-select" style="width: 45%" name="MandateId" id="search-mandate">
                 <option value="0" disabled selected>Gestão</option>
                 @{
                     foreach (var mandate in Model)
@@ -11,7 +11,7 @@
                     }
                 }
             </select>
-            <select class="nav-select" style="width: 45%" name="material" id="search-material">
+            <select class="nav-select" style="width: 45%" name="MaterialId" id="search-material">
                 <option value="0" disabled selected>Material</option>
                 <option value="9b927360-b531-4bb9-9e09-1a3093f8507a">ATAS</option>
                 <option value="d2f6b9f0-3b1a-4e4e-9b8e-1c3d2a4f7c8b">Curso CIPA</option>

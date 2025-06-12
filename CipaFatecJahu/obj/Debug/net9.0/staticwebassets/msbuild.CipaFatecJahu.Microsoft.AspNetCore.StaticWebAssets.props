@@ -66,8 +66,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>k08nffyryi</Fingerprint>
-      <Integrity>rIyEmXtZkCniDA9KId3BQy/0J9Lla1xxqgiZWGrnrvg=</Integrity>
+      <Fingerprint>mmu2gohazi</Fingerprint>
+      <Integrity>cvha24XodEKozBu8fb6bE/i0DNSEEEBfs+GK4Y7DTRk=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Documents\details.css'))</OriginalItemSpec>
@@ -360,95 +360,23 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\table.css'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\docs\ATA-f4cff9fc-a1b9-462b-b841-3fa03aef1f77.pdf'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\docs\ATA-8be26dd0-a12a-4651-8557-3be98086d547.pdf'))">
       <SourceType>Package</SourceType>
       <SourceId>CipaFatecJahu</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/CipaFatecJahu</BasePath>
-      <RelativePath>docs/ATA-f4cff9fc-a1b9-462b-b841-3fa03aef1f77.pdf</RelativePath>
+      <RelativePath>docs/ATA-8be26dd0-a12a-4651-8557-3be98086d547.pdf</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>6njcw88ts6</Fingerprint>
-      <Integrity>jhE0wbOi5yHth8i5hng95GE2z24F3KbLYwKWg4Vr12I=</Integrity>
+      <Fingerprint>veh93oxfa0</Fingerprint>
+      <Integrity>mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\docs\ATA-f4cff9fc-a1b9-462b-b841-3fa03aef1f77.pdf'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\docs\COURSE-871d4a5b-c08f-4954-bd99-e666048e8dac.pdf'))">
-      <SourceType>Package</SourceType>
-      <SourceId>CipaFatecJahu</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/CipaFatecJahu</BasePath>
-      <RelativePath>docs/COURSE-871d4a5b-c08f-4954-bd99-e666048e8dac.pdf</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>6njcw88ts6</Fingerprint>
-      <Integrity>jhE0wbOi5yHth8i5hng95GE2z24F3KbLYwKWg4Vr12I=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\docs\COURSE-871d4a5b-c08f-4954-bd99-e666048e8dac.pdf'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\docs\COURSE-e3de6056-9a41-455d-b254-a1b8e479bf7f.pdf'))">
-      <SourceType>Package</SourceType>
-      <SourceId>CipaFatecJahu</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/CipaFatecJahu</BasePath>
-      <RelativePath>docs/COURSE-e3de6056-9a41-455d-b254-a1b8e479bf7f.pdf</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>6njcw88ts6</Fingerprint>
-      <Integrity>jhE0wbOi5yHth8i5hng95GE2z24F3KbLYwKWg4Vr12I=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\docs\COURSE-e3de6056-9a41-455d-b254-a1b8e479bf7f.pdf'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\docs\OTHER-57352cf5-c006-43b9-9c6f-ec7a4e1258e3.pdf'))">
-      <SourceType>Package</SourceType>
-      <SourceId>CipaFatecJahu</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/CipaFatecJahu</BasePath>
-      <RelativePath>docs/OTHER-57352cf5-c006-43b9-9c6f-ec7a4e1258e3.pdf</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>6njcw88ts6</Fingerprint>
-      <Integrity>jhE0wbOi5yHth8i5hng95GE2z24F3KbLYwKWg4Vr12I=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\docs\OTHER-57352cf5-c006-43b9-9c6f-ec7a4e1258e3.pdf'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\docs\SIPAT-ca5885c0-ea38-4cb0-a9d3-84583aa1b43d.pdf'))">
-      <SourceType>Package</SourceType>
-      <SourceId>CipaFatecJahu</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/CipaFatecJahu</BasePath>
-      <RelativePath>docs/SIPAT-ca5885c0-ea38-4cb0-a9d3-84583aa1b43d.pdf</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>hepqllpkzb</Fingerprint>
-      <Integrity>58Mu+s5/a+LnuuEstvzeXktuG1f8iurwH/wHj+mUDi8=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\docs\SIPAT-ca5885c0-ea38-4cb0-a9d3-84583aa1b43d.pdf'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\docs\ATA-8be26dd0-a12a-4651-8557-3be98086d547.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))">
       <SourceType>Package</SourceType>
