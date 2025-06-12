@@ -36,7 +36,24 @@
             @if (Model.ScheduledDate != null)
             {
                 <div class="details-name">
-                    <span>@Html.DisplayNameFor(model => model.ScheduledDate):</span>
+                    @if (Model.Material == "ATAS")
+                    {
+                        <span>
+                            Data da Reunião:
+                        </span>
+                    }
+                    else if (Model.Material == "Eleição")
+                    {
+                        <span>
+                            Data da Eleição:
+                        </span>
+                    }
+                    else
+                    {
+                        <span>
+                            Data do Evento:
+                        </span>
+                    }
                 </div>
                 <div class="details-content">
                     @Html.DisplayFor(model => model.ScheduledDate)
