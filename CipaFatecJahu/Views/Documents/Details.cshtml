@@ -15,6 +15,15 @@
             <h1>Detalhes</h1>
         </div>
         <div class="details-body">
+            @if (Model.Mandate != null)
+            {
+                <div class="details-name">
+                    <span>@Html.DisplayNameFor(model => model.Mandate):</span>
+                </div>
+                <div class="details-content">
+                    @Html.DisplayFor(model => model.Mandate)
+                </div>
+            }
             <div class="details-name">
                 <span>@Html.DisplayNameFor(model => model.Name):</span>
             </div>
@@ -90,21 +99,11 @@
                 <a href="@Url.Content($"~/{Model.Attachment}")" target="_blank">Visualizar</a>
             </div>
             <div class="details-name">
-                <span>@Html.DisplayNameFor(model => model.UserName):</span>
+                <span>Adicionado por:</span>
             </div>
             <div class="details-content">
                 @Html.DisplayFor(model => model.UserName)
             </div>
-            @if (Model.Mandate != null)
-            {
-                <div class="details-name">
-                    <span>@Html.DisplayNameFor(model => model.Mandate):</span>
-                </div>
-                <div class="details-content">
-                    @Html.DisplayFor(model => model.Mandate)
-                </div>
-            }
-
         </div>
 
     </div>

@@ -81,6 +81,10 @@
       "PackagePath": "staticwebassets\\css\\table.css"
     },
     {
+      "Id": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\MEMBERS-53cfd43a-b038-4d6e-ae44-a16f011240dc.jpg",
+      "PackagePath": "staticwebassets\\docs\\MEMBERS-53cfd43a-b038-4d6e-ae44-a16f011240dc.jpg"
+    },
+    {
       "Id": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },

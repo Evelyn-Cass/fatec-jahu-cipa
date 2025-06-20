@@ -104,6 +104,7 @@ wwwroot\css\Shared\select.css
 wwwroot\css\Shared\theme.css
 wwwroot\css\switch.css
 wwwroot\css\table.css
+wwwroot\docs\MEMBERS-53cfd43a-b038-4d6e-ae44-a16f011240dc.jpg
 wwwroot\favicon.ico
 wwwroot\img\404.png
 wwwroot\img\500.png
