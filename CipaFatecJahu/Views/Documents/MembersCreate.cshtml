@@ -5,6 +5,7 @@
 }
 @section Styles {
     <link rel="stylesheet" href="~/css/form.css" />
+    <link rel="stylesheet" href="~/css/Documents/members.css" />
 }
 <section class="mainbody">
     <div class="form-geral">
@@ -16,42 +17,48 @@
                 <h1>Novo Membro</h1>
             </div>
             <div class="form-body">
-                <div asp-validation-summary="ModelOnly" class="control-danger"></div>
-                <div class="form-group">
-                    <label asp-for="Name" class="control-label"></label>
-                    <input asp-for="Name" class="form-control" />
-                    <span asp-validation-for="Name" class="control-danger"></span>
-                </div>
-                <div class="form-group">
-                    <label class="control-label">Cargo</label>
-                    <select asp-for="Position" class="form-control">
-                        <option value="" disabled selected>Selecione um cargo</option>
-                        <option value="Presidente Designado">Presidente Designado</option>
-                        <option value="Secretário">Secretário</option>
-                        <option value="Suplente Designado">Suplente Designado</option>
-                        <option value="Suplente Eleito">Suplente Eleito</option>
-                        <option value="Titular Designado">Titular Designado</option>
-                        <option value="Titular Eleito">Titular Eleito</option>
-                        <option value="Vice-Presidente Eleito">Vice-Presidente Eleito</option>
-                    </select>
-                    <span asp-validation-for="Position" class="control-danger"></span>
-                </div>
-                <div class="form-group">
-                    <label class="control-label">Mandatos</label>
-                    <select asp-for="MandateId" class="form-control" asp-items="@(new SelectList(ViewBag.Mandates, "Value", "Text", null))">
-                        <option value="" disabled selected>Selecione um mandato</option>
-                    </select>
-                    <span asp-validation-for="MandateId" class="control-danger"></span>
-                </div>
-                <div class="form-group">
-                    <div class="row">
-                        <label for="attachment-input" class="control-label attachment-label">Anexar</label>
-                        <input asp-for="Attachment" id="attachment-input" class="form-control attachment-input" type="file" accept="image/*" onchange="document.getElementById('attachment-input-text').value = this.files.length > 0 ? this.files[0].name : '';" hidden />
-                        <input disabled class="form-control" id="attachment-input-text" />
-                        <img src="~/img/icon-attachment.png" class="attachment-icon" alt="Attachment Icon" />
-
+                <div class="form-body-container">
+                    <div class="form-body-left">
+                        <img id="imagePreview" class="member-photo" src="~/img/icon-photo.png" />
                     </div>
-                    <span asp-validation-for="Attachment" class="control-danger"></span>
+                    <div class="form-body-right">
+                        <div asp-validation-summary="ModelOnly" class="control-danger"></div>
+                        <div class="form-group">
+                            <label asp-for="Name" class="control-label"></label>
+                            <input asp-for="Name" class="form-control" />
+                            <span asp-validation-for="Name" class="control-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Cargo</label>
+                            <select asp-for="Position" class="form-control">
+                                <option value="" disabled selected>Selecione um cargo</option>
+                                <option value="Presidente Designado">Presidente Designado</option>
+                                <option value="Secretário">Secretário</option>
+                                <option value="Suplente Designado">Suplente Designado</option>
+                                <option value="Suplente Eleito">Suplente Eleito</option>
+                                <option value="Titular Designado">Titular Designado</option>
+                                <option value="Titular Eleito">Titular Eleito</option>
+                                <option value="Vice-Presidente Eleito">Vice-Presidente Eleito</option>
+                            </select>
+                            <span asp-validation-for="Position" class="control-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Mandatos</label>
+                            <select asp-for="MandateId" class="form-control" asp-items="@(new SelectList(ViewBag.Mandates, "Value", "Text", null))">
+                                <option value="" disabled selected>Selecione um mandato</option>
+                            </select>
+                            <span asp-validation-for="MandateId" class="control-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <label for="attachment-input" class="control-label attachment-label">Anexar</label>
+                                <input asp-for="Attachment" id="attachment-input" class="form-control attachment-input" type="file" accept="image/*" hidden />
+                                <input disabled class="form-control" id="attachment-input-text" />
+                                <img src="~/img/icon-attachment.png" class="attachment-icon" alt="Attachment Icon" />
+                            </div>
+                            <span asp-validation-for="Attachment" class="control-danger"></span>
+                        </div>
+                    </div>
                 </div>
                 <div class="form-group">
                     <input type="submit" value="Create" class="button button-green button-create " />
@@ -60,7 +67,7 @@
         </form>
     </div>
 </section>
-@* @section Scripts { *@
-@*     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");} *@
+ @section Scripts {
+	<script src="~/js/Documents/members.js" defer></script>
+ } 
 
-@* } *@

@@ -22,6 +22,7 @@ D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\wwwroot\css\Account\login.css
 D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\wwwroot\lib\jquery\dist\jquery.slim.min.js
 D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\wwwroot\css\Shared\color.css
 D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.js
+D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\wwwroot\js\Documents\members.js
 D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
 D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
 D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\wwwroot\lib\jquery\dist\jquery.js
@@ -54,6 +55,7 @@ D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\wwwroot\lib\bootstrap\dist\js\bo
 D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\wwwroot\lib\jquery\dist\jquery.slim.min.map
 D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\wwwroot\js\Shared\form.js
 D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.min.js
+D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\wwwroot\css\Documents\members.css
 D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
 D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\wwwroot\lib\jquery\LICENSE.txt
 D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\wwwroot\lib\jquery\dist\jquery.min.js
@@ -89,6 +91,7 @@ wwwroot\css\Account\input-material.css
 wwwroot\css\Account\login.css
 wwwroot\css\Documents\details.css
 wwwroot\css\Documents\material.css
+wwwroot\css\Documents\members.css
 wwwroot\css\form.css
 wwwroot\css\history.css
 wwwroot\css\informationPages.css
@@ -134,6 +137,7 @@ wwwroot\img\icon-logout-gray-filled.png
 wwwroot\img\icon-map.png
 wwwroot\img\icon-menu.png
 wwwroot\img\icon-other.png
+wwwroot\img\icon-photo.png
 wwwroot\img\icon-quem-somos.png
 wwwroot\img\icon-search-green.png
 wwwroot\img\icon-search-white.png
@@ -147,6 +151,7 @@ wwwroot\img\logo-fatec-jahu-preto.png
 wwwroot\js\Account\login.js
 wwwroot\js\Account\materialize-inputs.jquery.js
 wwwroot\js\Documents\history.js
+wwwroot\js\Documents\members.js
 wwwroot\js\Secretaries\index.js
 wwwroot\js\Shared\form.js
 wwwroot\js\Shared\navigation.js

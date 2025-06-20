@@ -1,0 +1,43 @@
+﻿.form-geral{
+    width: 700px;
+}
+.form-body-container {
+    display: flex;
+    flex-direction: row;
+}
+.form-body-left {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+}
+
+.form-body-right {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-group {
+    width: 100%;
+}
+
+    .form-group .row, .control-label, .form-control {
+        width: 85%;
+    }
+
+
+.member-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid var(--base-green);
+    background-color: var(--base-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 4px;
+}

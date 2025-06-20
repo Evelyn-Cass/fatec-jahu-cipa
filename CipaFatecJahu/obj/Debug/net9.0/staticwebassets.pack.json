@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\css\\Documents\\material.css"
     },
     {
+      "Id": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\css\\Documents\\members.css",
+      "PackagePath": "staticwebassets\\css\\Documents\\members.css"
+    },
+    {
       "Id": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\css\\Secretaries\\Index.css",
       "PackagePath": "staticwebassets\\css\\Secretaries\\Index.css"
     },
@@ -201,6 +205,10 @@
       "PackagePath": "staticwebassets\\img\\icon-other.png"
     },
     {
+      "Id": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\img\\icon-photo.png",
+      "PackagePath": "staticwebassets\\img\\icon-photo.png"
+    },
+    {
       "Id": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\img\\icon-quem-somos.png",
       "PackagePath": "staticwebassets\\img\\icon-quem-somos.png"
     },
@@ -251,6 +259,10 @@
     {
       "Id": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\js\\Documents\\history.js",
       "PackagePath": "staticwebassets\\js\\Documents\\history.js"
+    },
+    {
+      "Id": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\js\\Documents\\members.js",
+      "PackagePath": "staticwebassets\\js\\Documents\\members.js"
     },
     {
       "Id": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\js\\Secretaries\\index.js",
