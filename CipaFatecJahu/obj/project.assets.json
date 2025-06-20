@@ -8522,23 +8522,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Avell\\.nuget\\packages\\": {},
+    "C:\\Users\\Evelyn - PC\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\CipaFatecJahu.csproj",
+      "projectUniqueName": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\CipaFatecJahu.csproj",
       "projectName": "CipaFatecJahu",
-      "projectPath": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\CipaFatecJahu.csproj",
-      "packagesPath": "C:\\Users\\Avell\\.nuget\\packages\\",
-      "outputPath": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\obj\\",
+      "projectPath": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\CipaFatecJahu.csproj",
+      "packagesPath": "C:\\Users\\Evelyn - PC\\.nuget\\packages\\",
+      "outputPath": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Avell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Evelyn - PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -8565,7 +8565,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.100"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net9.0": {
@@ -8617,7 +8617,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -27,6 +27,15 @@
             <div class="details-content">
                 @Html.DisplayFor(model => model.Material)
             </div>
+            @if (Model.Position != null)
+            {
+                <div class="details-name">
+                    <span>@Html.DisplayNameFor(model => model.Position):</span>
+                </div>
+                <div class="details-content">
+                    @Html.DisplayFor(model => model.Position)
+                </div>
+            }
             <div class="details-name">
                 <span>@Html.DisplayNameFor(model => model.DocumentCreationDate):</span>
             </div>
@@ -78,7 +87,7 @@
                 <span>Anexo:</span>
             </div>
             <div class="details-content">
-                <a href="@Url.Content($"~/{Model.Attachment}")" target="_blank">Visualizar PDF</a>
+                <a href="@Url.Content($"~/{Model.Attachment}")" target="_blank">Visualizar</a>
             </div>
             <div class="details-name">
                 <span>@Html.DisplayNameFor(model => model.UserName):</span>

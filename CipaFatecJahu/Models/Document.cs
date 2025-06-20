@@ -9,6 +9,10 @@ namespace CipaFatecJahu.Models
         [Display(Name = "Nome")]
         [Required(ErrorMessage = "O campo Nome é obrigatório")]
         public string? Name { get; set; }
+
+        [Display(Name = "Cargo")]
+        public string? Position { get; set; }
+
         [Display(Name = "Data de criação")]
         public DateTime? DocumentCreationDate { get; set; }
         public DateOnly? ScheduledDate { get; set; }

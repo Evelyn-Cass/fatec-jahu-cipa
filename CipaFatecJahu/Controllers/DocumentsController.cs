@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using MongoDB.Bson;
 using MongoDB.Driver;
 using MongoDB.Driver.Linq;
+using static MongoDB.Bson.Serialization.Serializers.SerializerHelper;
 
 namespace CipaFatecJahu.Controllers
 {
@@ -243,6 +244,7 @@ namespace CipaFatecJahu.Controllers
                    { "_id", "$_id" },
                    { "Name", "$Name" },
                    { "DocumentCreationDate", "$DocumentCreationDate" },
+                   { "Position", "$Position" },
                    { "Attachment", "$Attachment" },
                    { "Status", "$Status" },
                    { "Mandate", new BsonDocument("$concat", new BsonArray {
@@ -792,7 +794,7 @@ namespace CipaFatecJahu.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Route("Documents/SIPAT/Create")]
-        public async Task<IActionResult> SIPATCreate([Bind("Id,Name,DocumentCreationDate,ScheduledDate,Status,Attachment,UserId,MandateId,MaterialId")] Document document, IFormFile? attachment)
+        public async Task<IActionResult> SipatCreate([Bind("Id,Name,DocumentCreationDate,ScheduledDate,Status,Attachment,UserId,MandateId,MaterialId")] Document document, IFormFile? attachment)
         {
             var mandates = SearchMandates();
             ViewData["Mandates"] = new SelectList(mandates, "Id", "mandate");
@@ -849,6 +851,81 @@ namespace CipaFatecJahu.Controllers
                 do
                 {
                     randomFileName = $"SIPAT-{Guid.NewGuid()}.pdf";
+                    filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "docs", randomFileName);
+                } while (System.IO.File.Exists(filePath));
+
+                document.Attachment = Path.Combine("docs/", randomFileName);
+                await _context.Documents.InsertOneAsync(document); //Insert
+
+                var docsDirectory = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "docs");
+                if (!Directory.Exists(docsDirectory))
+                {
+                    Directory.CreateDirectory(docsDirectory);
+                }
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    await attachment.CopyToAsync(stream);
+                }
+                return RedirectToAction(nameof(History));
+            }
+            return View(document);
+        }
+
+        [Route("Members/Create")]
+        public IActionResult MembersCreate()
+        {
+            var mandates = SearchMandates();
+            ViewData["Mandates"] = new SelectList(mandates, "Id", "mandate");
+
+            return View();
+        }
+        [HttpPost]
+        [Route("Members/Create")]
+        public async Task<IActionResult> MembersCreate([Bind("Id,Name,Position,DocumentCreationDate,Status,Attachment,UserId,MandateId,MaterialId")] Document document, IFormFile? attachment)
+        {
+            var mandates = SearchMandates();
+            ViewData["Mandates"] = new SelectList(mandates, "Id", "mandate");
+            if (ModelState.IsValid)
+            {
+                if (document.Position == null)
+                {
+                    ModelState.AddModelError("Position", "O campo cargo é obrigatório");
+                    return View(document);
+                }
+                if (!document.MandateId.HasValue || document.MandateId == Guid.Empty)
+                {
+                    ModelState.AddModelError("MandateId", "O campo mandato é obrigatório!");
+                    return View(document);
+                }
+                var mandate = _context.Mandates.Find(m => m.Id == document.MandateId.Value).FirstOrDefault();
+                if (mandate == null)
+                {
+                    ModelState.AddModelError("MandateId", "Mandato não encontrado ou inválido.");
+                    return View(document);
+                }
+                if (attachment == null || attachment.Length == 0)
+                {
+                    ModelState.AddModelError("Attachment", "O campo Anexar é obrigatório!");
+                    return View(document);
+                }
+                var extension = Path.GetExtension(attachment.FileName);
+                var allowedImageExtensions = new[] { ".png", ".jpg", ".jpeg", ".gif", ".bmp" };
+                if (string.IsNullOrEmpty(extension) || !allowedImageExtensions.Contains(extension.ToLower()))
+                {
+                    ModelState.AddModelError("Attachment", "Somente arquivos de imagem (.png, .jpg, .jpeg, .gif, .bmp) são permitidos.");
+                    return View(document);
+                }
+                document.Id = Guid.NewGuid();
+                document.MaterialId = new Guid("8c5d3f2e-5b4e-4b8d-8b7e-2c3d3a5f6d9c");
+                document.DocumentCreationDate = DateTime.Now.AddHours(-3);
+                document.Status = "Ativo";
+                document.UserId = new Guid(_userManager.GetUserId(User));
+
+                string randomFileName;
+                string filePath;
+                do
+                {
+                    randomFileName = $"MEMBERS-{Guid.NewGuid()}{Path.GetExtension(attachment.FileName)}";
                     filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "docs", randomFileName);
                 } while (System.IO.File.Exists(filePath));
 

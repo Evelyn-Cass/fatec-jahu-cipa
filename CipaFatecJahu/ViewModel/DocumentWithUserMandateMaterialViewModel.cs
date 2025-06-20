@@ -7,6 +7,8 @@ namespace CipaFatecJahu.ViewModel
         public Guid Id { get; set; }
         [Display(Name = "Nome")]
         public string? Name { get; set; }
+        [Display(Name = "Cargo")]
+        public string? Position { get; set; }
         [Display(Name = "Data da Criação")]
         public DateTime? DocumentCreationDate { get; set; }
         [Display(Name = "Anexar")]
