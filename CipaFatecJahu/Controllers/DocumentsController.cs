@@ -171,6 +171,23 @@ namespace CipaFatecJahu.Controllers
 
             var result = await _context.Documents.Aggregate<DocumentWithUserMandateMaterialViewModel>(pipeline).ToListAsync();
 
+            foreach (var item in result)
+            {
+
+                if (!string.IsNullOrEmpty(item.Attachment))
+                {
+                    var filePath = Path.Combine("~/", item.Attachment);
+                    if (!System.IO.File.Exists(filePath))
+                    {
+                        item.Attachment = "img/icon-photo.png";
+                    }
+                }
+                else
+                {
+                    item.Attachment = "img/icon-photo.png";
+                }
+            }
+
             return View(result);
         }
 
