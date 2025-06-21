@@ -54,7 +54,7 @@
                                 <label for="attachment-input" class="control-label attachment-label">Anexar</label>
                                 <input asp-for="Attachment" id="attachment-input" class="form-control attachment-input" type="file" accept="image/*" hidden />
                                 <input disabled class="form-control" id="attachment-input-text" />
-                                <img src="~/img/icon-attachment.png" class="attachment-icon" alt="Attachment Icon" />
+                                <img src="~/img/icon-attachment.png" class="attachment-icon" alt="Attachment Icon" style="cursor:pointer;" onclick="document.getElementById('attachment-input').click();" />
                             </div>
                             <span asp-validation-for="Attachment" class="control-danger"></span>
                         </div>
