@@ -89,6 +89,10 @@
       "PackagePath": "staticwebassets\\docs\\MEMBERS-53cfd43a-b038-4d6e-ae44-a16f011240dc.jpg"
     },
     {
+      "Id": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\MEMBERS-cc209429-202d-462e-859a-5789bf55d7eb.jpg",
+      "PackagePath": "staticwebassets\\docs\\MEMBERS-cc209429-202d-462e-859a-5789bf55d7eb.jpg"
+    },
+    {
       "Id": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
@@ -195,6 +199,10 @@
     {
       "Id": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\img\\icon-map.png",
       "PackagePath": "staticwebassets\\img\\icon-map.png"
+    },
+    {
+      "Id": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\img\\icon-member.png",
+      "PackagePath": "staticwebassets\\img\\icon-member.png"
     },
     {
       "Id": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\img\\icon-menu.png",

@@ -108,6 +108,7 @@ wwwroot\css\Shared\theme.css
 wwwroot\css\switch.css
 wwwroot\css\table.css
 wwwroot\docs\MEMBERS-53cfd43a-b038-4d6e-ae44-a16f011240dc.jpg
+wwwroot\docs\MEMBERS-cc209429-202d-462e-859a-5789bf55d7eb.jpg
 wwwroot\favicon.ico
 wwwroot\img\404.png
 wwwroot\img\500.png
@@ -135,6 +136,7 @@ wwwroot\img\icon-legislation.png
 wwwroot\img\icon-logout-gray.png
 wwwroot\img\icon-logout-gray-filled.png
 wwwroot\img\icon-map.png
+wwwroot\img\icon-member.png
 wwwroot\img\icon-menu.png
 wwwroot\img\icon-other.png
 wwwroot\img\icon-photo.png

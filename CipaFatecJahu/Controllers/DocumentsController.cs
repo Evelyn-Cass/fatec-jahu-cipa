@@ -29,7 +29,7 @@ namespace CipaFatecJahu.Controllers
                new BsonDocument("$lookup", new BsonDocument
                {
                    { "from", "Materials" },
-                   { "localField", "MaterialId" },
+                   { "localField", "MaterialId" },                      
                    { "foreignField", "_id" },
                    { "as", "Material" }
                }),
