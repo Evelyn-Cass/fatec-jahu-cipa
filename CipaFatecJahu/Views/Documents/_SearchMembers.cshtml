@@ -1,0 +1,15 @@
+﻿@using CipaFatecJahu.ViewModel
+@model DocumentWithUserMandateMaterialViewModel
+
+
+    <div class="member-Model">
+        <div>
+            <img class="member-photo-smaller" src="~/@Model.Attachment" alt="Foto de @Model.Name" />
+        </div>
+        <div class="member-information">
+        <span>@Html.DisplayFor(_ => Model.Name)</span>
+
+        <span>@Html.DisplayFor(_ => Model.Position)</span>
+        </div>
+    </div>
+

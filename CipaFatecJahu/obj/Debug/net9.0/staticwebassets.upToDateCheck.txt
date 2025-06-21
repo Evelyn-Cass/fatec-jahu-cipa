@@ -108,6 +108,9 @@ wwwroot\css\Shared\theme.css
 wwwroot\css\switch.css
 wwwroot\css\table.css
 wwwroot\docs\MEMBERS-53cfd43a-b038-4d6e-ae44-a16f011240dc.jpg
+wwwroot\docs\MEMBERS-5b2798c8-7e19-45bd-bb7b-f3e990779f78.png
+wwwroot\docs\MEMBERS-974bb53f-9227-46ba-a18f-311bdc400741.jpg
+wwwroot\docs\MEMBERS-c3d9ee61-d711-4a07-83aa-c6aaff7bcf9f.png
 wwwroot\docs\MEMBERS-cc209429-202d-462e-859a-5789bf55d7eb.jpg
 wwwroot\favicon.ico
 wwwroot\img\404.png

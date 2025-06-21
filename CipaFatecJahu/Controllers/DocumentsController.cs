@@ -154,6 +154,7 @@ namespace CipaFatecJahu.Controllers
                    { "Name", "$Name" },
                    { "DocumentCreationDate", "$DocumentCreationDate" },
                    { "Attachment", "$Attachment" },
+                   { "Position", "$Position" },
                    { "Status", "$Status" },
                    { "Mandate", new BsonDocument("$concat", new BsonArray {
                        new BsonDocument("$toString", "$MandateStartYear"),

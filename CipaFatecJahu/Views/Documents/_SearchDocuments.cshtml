@@ -1,0 +1,35 @@
+﻿@using CipaFatecJahu.ViewModel
+@model List<DocumentWithUserMandateMaterialViewModel>
+<div class="container-title">
+    <h1 class="title">@Model[0].Material - @Model[0].Mandate</h1>
+</div>
+<br />
+<table class="table" style="width:60%">
+    <thead>
+        <tr>
+            <th style="width:50px;"></th>
+            <th>
+                Nome
+            </th>
+            <th style="width:200px;">
+                Adicionado
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    <a href="~/@item.Attachment" class="document-view" target="_blank"></a>
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => (item.DocumentCreationDate))
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

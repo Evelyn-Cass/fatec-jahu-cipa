@@ -6,48 +6,52 @@
 @section Styles {
     <link rel="stylesheet" href="~/css/history.css" />
     <link rel="stylesheet" href="~/css/table.css" />
+    <link rel="stylesheet" href="~/css/Documents/members.css" />
 }
-
 @if (Model.Count() == 0)
 {
     <div class="container-title">
         <h1 class="title">Não foram encontrados documentos!</h1>
     </div>
 }
-else
-{
+else if (Model[0].Material == "Membros")
+{   
     <div class="container-title">
         <h1 class="title">@Model[0].Material - @Model[0].Mandate</h1>
-
     </div>
     <br />
-    <table class="table" style="width:60%">
-        <thead>
-            <tr>
-                <th style="width:50px;"></th>
-                <th>
-                    Nome
-                </th>
-                <th style="width:200px;">
-                    Adicionado
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Model)
-            {
-                <tr>
-                    <td>
-                        <a href="~/@item.Attachment" class="document-view" target="_blank"></a>
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Name)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => (item.DocumentCreationDate))
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
+    <div class="members-container">
+        @foreach (var item in Model.Where(m => m.Position == "Presidente Designado"))
+        {
+            <partial name="_SearchMembers.cshtml" model="item" />
+        }
+        @foreach (var item in Model.Where(m => m.Position == "Vice-Presidente Eleito"))
+        {
+            <partial name="_SearchMembers.cshtml" model="item" />
+        }
+        @foreach (var item in Model.Where(m => m.Position == "Titular Eleito"))
+        {
+            <partial name="_SearchMembers.cshtml" model="item" />
+        }
+        @foreach (var item in Model.Where(m => m.Position == "Titular Designado"))
+        {
+            <partial name="_SearchMembers.cshtml" model="item" />
+        }
+        @foreach (var item in Model.Where(m => m.Position == "Suplente Eleito"))
+        {
+            <partial name="_SearchMembers.cshtml" model="item" />
+        }
+        @foreach (var item in Model.Where(m => m.Position == "Suplente Designado"))
+        {
+            <partial name="_SearchMembers.cshtml" model="item" />
+        }
+        @foreach (var item in Model.Where(m => m.Position == "Secretário"))
+        {
+            <partial name="_SearchMembers.cshtml" model="item" />
+        }
+    </div>
+}
+else
+{
+    <partial name="_SearchDocuments.cshtml" />
 }
