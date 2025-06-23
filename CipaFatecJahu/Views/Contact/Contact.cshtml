@@ -1,0 +1,48 @@
+﻿@model CipaFatecJahu.ViewModel.ContactViewModel
+@{
+    ViewData["Title"] = "Fale Conosco";
+}
+@section Styles {
+    <link rel="stylesheet" href="~/css/informationPages.css" />
+    <link rel="stylesheet" href="~/css/Contact/index.css" />
+}
+<article class="mainbody">
+    <div class="containers">
+        <div class="container-text">
+            <form class="form-base" method="post" asp-action="Contact" enctype="multipart/form-data">
+                <div class="form-header">
+                    <h1>Fale Conosco</h1>
+                </div>
+                <div class="form-body">
+                    <div asp-validation-summary="ModelOnly" class="control-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="Name" class="control-label"></label>
+                        <input asp-for="Name" class="input-control" />
+                    </div>
+                    <span asp-validation-for="Name" class="control-danger"></span>
+                    <div class="form-group">
+                        <label asp-for="Email" class="control-label"></label>
+                        <input asp-for="Email" class="input-control" />
+                    </div>
+                    <span asp-validation-for="Email" class="control-danger"></span>
+                    <div class="form-group">
+                        <label asp-for="Subject" class="control-label"></label>
+                        <input asp-for="Subject" class="input-control" />
+                    </div>
+                    <span asp-validation-for="Subject" class="control-danger"></span>
+                    <div class="form-group-textarea">
+                        <label asp-for="Text" class="control-label"></label>
+                        <textarea asp-for="Text" class="textarea-control"></textarea>
+                    </div>
+                    <span asp-validation-for="Text" class="control-danger"></span>
+                    <div>
+                        <input type="submit" value="Enviar" class="button button-green button-create " />
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="background-image">
+            <img src="~/img/logo-cipa.png" alt="Logotipo da CIPA no fundo">
+        </div>
+    </div>
+</article>

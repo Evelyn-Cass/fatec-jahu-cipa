@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "OrN7oh2X4k6D8TWhbBpS6+zPDiZgSwCkFlqfo9upA3o=",
+  "Hash": "RjTbhRBZPQZmykZT4ijXyRWMk8BYtqwMyNhnzk2sYnM=",
   "Source": "CipaFatecJahu",
   "BasePath": "_content/CipaFatecJahu",
   "Mode": "Default",
@@ -1361,6 +1361,27 @@
       "OriginalItemSpec": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
+      "Identity": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\obj\\Debug\\net9.0\\compressed\\ntq3cybpqo-rflbjqxydf.gz",
+      "SourceId": "CipaFatecJahu",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/CipaFatecJahu",
+      "RelativePath": "css/Contact/index#[.{fingerprint=rflbjqxydf}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\css\\Contact\\index.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "tdlxiijspt",
+      "Integrity": "fwtRUjSKBbrK8jf/hnlwDhy2EhPfVvKUtOkCKUGlTVY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\css\\Contact\\index.css"
+    },
+    {
       "Identity": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\obj\\Debug\\net9.0\\compressed\\o41t1vm2xs-8qtacn6i4g.gz",
       "SourceId": "CipaFatecJahu",
       "SourceType": "Discovered",
@@ -2010,6 +2031,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\Account\\login.css"
+    },
+    {
+      "Identity": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\css\\Contact\\index.css",
+      "SourceId": "CipaFatecJahu",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\",
+      "BasePath": "_content/CipaFatecJahu",
+      "RelativePath": "css/Contact/index#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "rflbjqxydf",
+      "Integrity": "R2wyHOkHg0x//ctCcs4CzCUqvkhCjju+v2/1CEULt6E=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Contact\\index.css"
     },
     {
       "Identity": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\css\\Documents\\details.css",
@@ -5890,6 +5932,304 @@
         {
           "Name": "integrity",
           "Value": "sha256-AB/cXCkwcpEoHdqwK5FMUgv6WLI2+a7XN6G8h37r7pI="
+        }
+      ]
+    },
+    {
+      "Route": "css/Contact/index.css",
+      "AssetFile": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\obj\\Debug\\net9.0\\compressed\\ntq3cybpqo-rflbjqxydf.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001814882033"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "550"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fwtRUjSKBbrK8jf/hnlwDhy2EhPfVvKUtOkCKUGlTVY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Jun 2025 19:57:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"R2wyHOkHg0x//ctCcs4CzCUqvkhCjju+v2/1CEULt6E=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-R2wyHOkHg0x//ctCcs4CzCUqvkhCjju+v2/1CEULt6E="
+        }
+      ]
+    },
+    {
+      "Route": "css/Contact/index.css",
+      "AssetFile": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\css\\Contact\\index.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1757"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"R2wyHOkHg0x//ctCcs4CzCUqvkhCjju+v2/1CEULt6E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Jun 2025 19:57:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-R2wyHOkHg0x//ctCcs4CzCUqvkhCjju+v2/1CEULt6E="
+        }
+      ]
+    },
+    {
+      "Route": "css/Contact/index.css.gz",
+      "AssetFile": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\obj\\Debug\\net9.0\\compressed\\ntq3cybpqo-rflbjqxydf.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "550"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fwtRUjSKBbrK8jf/hnlwDhy2EhPfVvKUtOkCKUGlTVY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Jun 2025 19:57:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fwtRUjSKBbrK8jf/hnlwDhy2EhPfVvKUtOkCKUGlTVY="
+        }
+      ]
+    },
+    {
+      "Route": "css/Contact/index.rflbjqxydf.css",
+      "AssetFile": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\obj\\Debug\\net9.0\\compressed\\ntq3cybpqo-rflbjqxydf.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001814882033"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "550"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fwtRUjSKBbrK8jf/hnlwDhy2EhPfVvKUtOkCKUGlTVY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Jun 2025 19:57:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"R2wyHOkHg0x//ctCcs4CzCUqvkhCjju+v2/1CEULt6E=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rflbjqxydf"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Contact/index.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-R2wyHOkHg0x//ctCcs4CzCUqvkhCjju+v2/1CEULt6E="
+        }
+      ]
+    },
+    {
+      "Route": "css/Contact/index.rflbjqxydf.css",
+      "AssetFile": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\css\\Contact\\index.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1757"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"R2wyHOkHg0x//ctCcs4CzCUqvkhCjju+v2/1CEULt6E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Jun 2025 19:57:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rflbjqxydf"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Contact/index.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-R2wyHOkHg0x//ctCcs4CzCUqvkhCjju+v2/1CEULt6E="
+        }
+      ]
+    },
+    {
+      "Route": "css/Contact/index.rflbjqxydf.css.gz",
+      "AssetFile": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\obj\\Debug\\net9.0\\compressed\\ntq3cybpqo-rflbjqxydf.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "550"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fwtRUjSKBbrK8jf/hnlwDhy2EhPfVvKUtOkCKUGlTVY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 23 Jun 2025 19:57:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rflbjqxydf"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Contact/index.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fwtRUjSKBbrK8jf/hnlwDhy2EhPfVvKUtOkCKUGlTVY="
         }
       ]
     },

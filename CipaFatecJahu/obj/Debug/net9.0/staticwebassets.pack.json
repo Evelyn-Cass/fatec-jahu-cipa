@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\css\\Account\\login.css"
     },
     {
+      "Id": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\css\\Contact\\index.css",
+      "PackagePath": "staticwebassets\\css\\Contact\\index.css"
+    },
+    {
       "Id": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\css\\Documents\\details.css",
       "PackagePath": "staticwebassets\\css\\Documents\\details.css"
     },

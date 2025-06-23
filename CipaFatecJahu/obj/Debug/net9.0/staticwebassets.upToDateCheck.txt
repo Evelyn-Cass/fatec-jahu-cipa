@@ -61,6 +61,7 @@ D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\wwwroot\lib\jquery\LICENSE.txt
 D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\wwwroot\lib\jquery\dist\jquery.min.js
 D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
 D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\wwwroot\css\Contact\index.css
 D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\wwwroot\css\Shared\animation.css
 D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\wwwroot\lib\jquery-validation\dist\additional-methods.js
 D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
@@ -89,6 +90,7 @@ D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\wwwroot\lib\bootstrap\dist\js\bo
 D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\wwwroot\js\Documents\history.js
 wwwroot\css\Account\input-material.css
 wwwroot\css\Account\login.css
+wwwroot\css\Contact\index.css
 wwwroot\css\Documents\details.css
 wwwroot\css\Documents\material.css
 wwwroot\css\Documents\members.css
