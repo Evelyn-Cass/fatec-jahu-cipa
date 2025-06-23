@@ -9,6 +9,15 @@
 <article class="mainbody">
     <div class="containers">
         <div class="container-text">
+            @{
+				if (ViewBag.success != null && ViewBag.success == true)
+				{
+					<div class="alert alert-success">
+						Sua mensagem foi enviada com sucesso!
+					</div>
+				}
+            }
+           
             <form class="form-base" method="post" asp-action="Contact" enctype="multipart/form-data">
                 <div class="form-header">
                     <h1>Fale Conosco</h1>

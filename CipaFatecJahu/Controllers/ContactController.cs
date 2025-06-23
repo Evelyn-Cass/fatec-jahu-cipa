@@ -1,45 +1,54 @@
-using System.Diagnostics;
 using CipaFatecJahu.Models;
+using CipaFatecJahu.Services;
 using CipaFatecJahu.ViewModel;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CipaFatecJahu.Controllers
 {
     public class ContactController : Controller
     {
-        private readonly ILogger<AboutController> _logger;
+        private readonly EmailService _emailService;
+        private readonly UserManager<ApplicationUser> _userManager;
 
-        public ContactController(ILogger<AboutController> logger)
+        public ContactController(EmailService emailService, UserManager<ApplicationUser> userManager)
         {
-            _logger = logger;
+            _emailService = emailService;
+            _userManager = userManager;
         }
 
         [Route("Contact")]
-        public IActionResult Contact()
+        public IActionResult Contact(bool success)
         {
+            ViewBag.Success = success;
             return View();
         }
 
         [HttpPost]
         [Route("Contact")]
-        public IActionResult Contact(ContactViewModel model)
+        public async Task<IActionResult> Contact(ContactViewModel model)
         {
             if (ModelState.IsValid)
             {
+                var body = $@"
+                              <!DOCTYPE html>
+                                <html>
+                                    <head>
+                                        <meta charset=""utf-8"">
+                                    </head>
+                                    <body>
+                                        <p><strong>Nome:</strong> {model.Name}</p>
+                                        <p><strong>Email:</strong> {model.Email}</p>
+                                        <pre><strong>Mensagem:</strong> {model.Text}</pre>
+                                    </body>
+                                </html>";
 
-                Console.WriteLine("contact sucefull");
-               
+                await _emailService.SendEmailAsync("ADDEMAIL",model.Subject,body);
                 return RedirectToAction("Contact", new { success = true });
             }
             return View(model);
         }
 
 
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
     }
 }

@@ -1,6 +1,8 @@
 using CipaFatecJahu.Data;
 using CipaFatecJahu.Models;
 using CipaFatecJahu.Seeder;
+using CipaFatecJahu.Services;
+using CipaFatecJahu.Settings;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -23,6 +25,9 @@ builder.Services.AddIdentity<ApplicationUser, ApplicationRole>(options =>
    ContextMongodb.ConnectionString, ContextMongodb.Database)
 .AddDefaultTokenProviders().AddErrorDescriber<PortugueseIdentityErrorDescriber>();
 
+
+builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));
+builder.Services.AddTransient<EmailService>();
 
 var app = builder.Build();
 
