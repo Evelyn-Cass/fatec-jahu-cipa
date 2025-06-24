@@ -21,7 +21,7 @@ namespace CipaFatecJahu.Controllers
             this._userManager = userManager;
         }
         [Route("History/Documents")]
-        public async Task<IActionResult> History(string? material)
+        public async Task<IActionResult> History(string? material, string? userId)
         {
             var pipeline = new[]
             {
@@ -82,7 +82,7 @@ namespace CipaFatecJahu.Controllers
                    { "LawPublication", "$LawPublication" }
                }),
                new BsonDocument("$sort", new BsonDocument("DocumentCreationDate", -1))
-            };
+           };
 
             var result = await _context.Documents.Aggregate<DocumentWithUserMandateMaterialViewModel>(pipeline).ToListAsync();
 
@@ -91,8 +91,6 @@ namespace CipaFatecJahu.Controllers
                 result = result.Where(u => u.Material == material).ToList();
                 ViewBag.MaterialSelected = material;
             }
-
-
             foreach (var item in result)
             {
                 var user = _userManager.Users.FirstOrDefault(u => u.Id == item.UserId);
@@ -102,8 +100,17 @@ namespace CipaFatecJahu.Controllers
                 }
             }
 
-            var materials = await _context.Materials.Find(_ => true).ToListAsync();
-            ViewData["Materials"] = new SelectList(materials, "Description", "Description");
+            if (userId != null && Guid.TryParse(userId, out Guid parsedUserId))
+            {
+                result = result.Where(u => u.UserId == parsedUserId).ToList();
+                ViewBag.UserNameSelected = userId;
+            }
+
+            var materials = (await _context.Materials.Find(_ => true).ToListAsync()).OrderBy(u => u.Description).ToList();
+            ViewBag.Materials = new SelectList(materials, "Description", "Description");
+
+            var users = _userManager.Users.ToList();
+            ViewBag.UserName = new SelectList(users, "Id", "Name");
 
             return View(result);
         }
@@ -1001,7 +1008,8 @@ namespace CipaFatecJahu.Controllers
                     throw;
                 }
             }
-            return RedirectToAction("History");
+
+            return Redirect(Request.Headers["Referer"].ToString());
         }
 
         private bool DocumentExists(Guid id)

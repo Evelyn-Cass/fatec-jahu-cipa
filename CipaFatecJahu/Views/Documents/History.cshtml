@@ -28,7 +28,12 @@
 <form class="form-base" method="get" asp-action="History">
     <div class="form-group">
         <select class="form-control" name="material" asp-items="@(new SelectList(ViewBag.Materials, "Value", "Text", ViewBag.MaterialSelected))" onchange="this.form.submit()">
-           <option value="" disabled selected>Selecione um Material</option>
+           <option value="" selected>Todos</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <select class="form-control" name="userId" asp-items="@(new SelectList(ViewBag.UserName, "Value", "Text", ViewBag.UserNameSelected))" onchange="this.form.submit()">
+            <option value="" selected>Todos</option>
         </select>
     </div>
 </form>
