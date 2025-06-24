@@ -21,7 +21,7 @@ namespace CipaFatecJahu.Controllers
             this._userManager = userManager;
         }
         [Route("History/Documents")]
-        public async Task<IActionResult> History(string? material, string? userId)
+        public async Task<IActionResult> History(string? material, string? userId, string? date)
         {
             var pipeline = new[]
             {
@@ -91,6 +91,33 @@ namespace CipaFatecJahu.Controllers
                 result = result.Where(u => u.Material == material).ToList();
                 ViewBag.MaterialSelected = material;
             }
+
+            if (date == "last_month" || date == null)
+            {
+                var dateNow = DateTime.Now;
+                result = result.Where(u => u.DocumentCreationDate.HasValue && (dateNow - u.DocumentCreationDate.Value).Days < 30).ToList();
+                ViewBag.DateSelected = "last_month";
+            }
+
+
+            if (date == "last_6_months")
+            {
+                var sixMonthsAgo = DateTime.Now.AddMonths(-6);
+                result = result.Where(u => u.DocumentCreationDate.HasValue && u.DocumentCreationDate.Value >= sixMonthsAgo).ToList();
+                ViewBag.DateSelected = date;
+            }
+
+
+            if (date == "last_year")
+            {
+                var dateNow = DateTime.Now;
+                result = result.Where(u => u.DocumentCreationDate.HasValue && (dateNow - u.DocumentCreationDate.Value).Days < 365).ToList();
+                ViewBag.DateSelected = date;
+            }
+
+
+
+
             foreach (var item in result)
             {
                 var user = _userManager.Users.FirstOrDefault(u => u.Id == item.UserId);
@@ -233,7 +260,7 @@ namespace CipaFatecJahu.Controllers
             }
 
             var pipeline = new[]
-{              new BsonDocument("$match", new BsonDocument("_id", id)),
+        {              new BsonDocument("$match", new BsonDocument("_id", id)),
                new BsonDocument("$lookup", new BsonDocument
                {
                    { "from", "Materials" },

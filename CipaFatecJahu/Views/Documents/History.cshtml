@@ -36,6 +36,14 @@
             <option value="" selected>Todos</option>
         </select>
     </div>
+        <div class="form-group">
+        <select class="form-control" name="date" onchange="this.form.submit()">
+           <option value="">Qualquer período</option>  
+           <option value="last_month" selected="@(ViewBag.DateSelected == "last_month" ? "selected" : null)">Últimos 30 dias</option>  
+           <option value="last_6_months" selected="@(ViewBag.DateSelected == "last_6_months" ? "selected" : null)">Últimos 6 meses</option>  
+           <option value="last_year" selected="@(ViewBag.DateSelected == "last_year" ? "selected" : null)">Último ano</option>
+        </select>
+    </div>
 </form>
 <table class="table" style="width:90%">
     <thead>
