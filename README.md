@@ -24,7 +24,7 @@ O Projeto Interdisciplinar é uma iniciativa avaliativa do do curso de Desenvolv
 
 A documentação completa do projeto, incluindo detalhes sobre o processo de desenvolvimento, funcionalidades, tecnologias utilizadas e instruções de uso, está disponível no link abaixo:
 
-[Documentação do Projeto]()
+[Documentação do Projeto](https://github.com/Evelyn-Cass/fatec-jahu-cipa/tree/main/Documenta%C3%A7%C3%A3o)
 
 ## Aplicação
 
@@ -58,7 +58,7 @@ The Interdisciplinary Project serves as an evaluative initiative within the Mult
 ## Documentation
 The complete project documentation, including details on the development process, features, technologies used, and instructions for use, can be accessed through the link below:
 
- - [Project Documentation]()
+ - [Project Documentation](https://github.com/Evelyn-Cass/fatec-jahu-cipa/tree/main/Documenta%C3%A7%C3%A3o)
 
 ## Application
 The development of the web application followed a structured process to ensure efficiency and effectiveness. The application can be accessed through the following links:
