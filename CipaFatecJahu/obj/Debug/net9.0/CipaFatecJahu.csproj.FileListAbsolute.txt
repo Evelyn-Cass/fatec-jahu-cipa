@@ -1453,12 +1453,10 @@ C:\Projetos\Fatec\fatec-jahu-cipa\CipaFatecJahu\obj\Debug\net9.0\compressed\cmj5
 C:\Projetos\Fatec\fatec-jahu-cipa\CipaFatecJahu\obj\Debug\net9.0\compressed\mx9ojknkkk-m9qm4tazc0.gz
 C:\Projetos\Fatec\fatec-jahu-cipa\CipaFatecJahu\obj\Debug\net9.0\compressed\6vg6x6h6bz-9vr69e8ynj.gz
 D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\obj\Debug\net9.0\compressed\87fl10075f-0z24wx7xx6.gz
-D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\obj\Debug\net9.0\compressed\qz0o8kx8kt-mobmkvq8ha.gz
 C:\Projetos\Fatec\fatec-jahu-cipa\CipaFatecJahu\obj\Debug\net9.0\compressed\87fl10075f-0z24wx7xx6.gz
 C:\Projetos\Fatec\fatec-jahu-cipa\CipaFatecJahu\obj\Debug\net9.0\compressed\qz0o8kx8kt-mobmkvq8ha.gz
 C:\Projetos\Fatec\fatec-jahu-cipa\CipaFatecJahu\obj\Debug\net9.0\compressed\6f9130q8kw-vbvsmohggq.gz
 C:\Projetos\Fatec\fatec-jahu-cipa\CipaFatecJahu\obj\Debug\net9.0\compressed\ingn1dqrkn-5gr833ketw.gz
-D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\obj\Debug\net9.0\compressed\ingn1dqrkn-5gr833ketw.gz
 C:\Projetos\Fatec\fatec-jahu-cipa\CipaFatecJahu\obj\Debug\net9.0\compressed\3va8h1rhzi-gzov0rbur4.gz
 D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\obj\Debug\net9.0\compressed\3va8h1rhzi-gzov0rbur4.gz
 D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\obj\Debug\net9.0\compressed\51b1r5j526-hdxpmy0kmd.gz
@@ -1467,7 +1465,6 @@ C:\Projetos\Fatec\fatec-jahu-cipa\CipaFatecJahu\obj\Debug\net9.0\compressed\51b1
 D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\obj\Debug\net9.0\compressed\ux0in85c2c-mmu2gohazi.gz
 D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\obj\Debug\net9.0\compressed\7dl44i7awy-4u6fiwbnj0.gz
 D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\obj\Debug\net9.0\compressed\m23ft5gndl-eckesm4fv8.gz
-D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\obj\Debug\net9.0\compressed\zuik5088dm-na8wz1455f.gz
 D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\obj\Debug\net9.0\compressed\4laxnpy3e2-pjmlpnxn1f.gz
 D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\bin\Debug\net9.0\BouncyCastle.Cryptography.dll
 D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\bin\Debug\net9.0\MailKit.dll
@@ -1481,3 +1478,6 @@ C:\Projetos\Fatec\fatec-jahu-cipa\CipaFatecJahu\obj\Debug\net9.0\compressed\m23f
 C:\Projetos\Fatec\fatec-jahu-cipa\CipaFatecJahu\obj\Debug\net9.0\compressed\zuik5088dm-na8wz1455f.gz
 C:\Projetos\Fatec\fatec-jahu-cipa\CipaFatecJahu\obj\Debug\net9.0\compressed\7dl44i7awy-4u6fiwbnj0.gz
 C:\Projetos\Fatec\fatec-jahu-cipa\CipaFatecJahu\obj\Debug\net9.0\compressed\4laxnpy3e2-pjmlpnxn1f.gz
+D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\obj\Debug\net9.0\compressed\zuik5088dm-f2prf2swmk.gz
+D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\obj\Debug\net9.0\compressed\ingn1dqrkn-sdkuajtgvl.gz
+D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\obj\Debug\net9.0\compressed\qz0o8kx8kt-zaci2zhqor.gz

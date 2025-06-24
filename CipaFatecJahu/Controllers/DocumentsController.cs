@@ -83,7 +83,6 @@ namespace CipaFatecJahu.Controllers
                }),
                new BsonDocument("$sort", new BsonDocument("DocumentCreationDate", -1))
            };
-
             var result = await _context.Documents.Aggregate<DocumentWithUserMandateMaterialViewModel>(pipeline).ToListAsync();
 
             if (material != null)
@@ -91,33 +90,24 @@ namespace CipaFatecJahu.Controllers
                 result = result.Where(u => u.Material == material).ToList();
                 ViewBag.MaterialSelected = material;
             }
-
             if (date == "last_month" || date == null)
             {
                 var dateNow = DateTime.Now;
                 result = result.Where(u => u.DocumentCreationDate.HasValue && (dateNow - u.DocumentCreationDate.Value).Days < 30).ToList();
                 ViewBag.DateSelected = "last_month";
             }
-
-
             if (date == "last_6_months")
             {
                 var sixMonthsAgo = DateTime.Now.AddMonths(-6);
                 result = result.Where(u => u.DocumentCreationDate.HasValue && u.DocumentCreationDate.Value >= sixMonthsAgo).ToList();
                 ViewBag.DateSelected = date;
             }
-
-
             if (date == "last_year")
             {
                 var dateNow = DateTime.Now;
                 result = result.Where(u => u.DocumentCreationDate.HasValue && (dateNow - u.DocumentCreationDate.Value).Days < 365).ToList();
                 ViewBag.DateSelected = date;
             }
-
-
-
-
             foreach (var item in result)
             {
                 var user = _userManager.Users.FirstOrDefault(u => u.Id == item.UserId);
@@ -126,7 +116,6 @@ namespace CipaFatecJahu.Controllers
                     item.UserName = user.Name;
                 }
             }
-
             if (userId != null && Guid.TryParse(userId, out Guid parsedUserId))
             {
                 result = result.Where(u => u.UserId == parsedUserId).ToList();

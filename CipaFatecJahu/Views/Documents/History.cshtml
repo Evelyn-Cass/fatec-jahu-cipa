@@ -25,23 +25,22 @@
         <a asp-action="Create" class="btn-create">🞢</a>
     </div>
 </div>
-<form class="form-base" method="get" asp-action="History">
-    <div class="form-group">
-        <select class="form-control" name="material" asp-items="@(new SelectList(ViewBag.Materials, "Value", "Text", ViewBag.MaterialSelected))" onchange="this.form.submit()">
-           <option value="" selected>Todos</option>
+<form class="filter-base" id="history-search" method="get" asp-action="History">
+    <div class="filter-group">
+        <select class="nav-select" style="width: 150px" id="history-material" name="material" asp-items="@(new SelectList(ViewBag.Materials, "Value", "Text", ViewBag.MaterialSelected))" onchange="this.filter.submit()">
+            <option value="" selected>Todos Materiais</option>
         </select>
-    </div>
-    <div class="form-group">
-        <select class="form-control" name="userId" asp-items="@(new SelectList(ViewBag.UserName, "Value", "Text", ViewBag.UserNameSelected))" onchange="this.form.submit()">
-            <option value="" selected>Todos</option>
+
+        <select class="nav-select" id="history-user" style="width: 180px" name="userId" asp-items="@(new SelectList(ViewBag.UserName, "Value", "Text", ViewBag.UserNameSelected))" ontimeupdate="this.filter.submit()">
+            <option value="" selected>Todos os Secretários</option>
         </select>
-    </div>
-        <div class="form-group">
-        <select class="form-control" name="date" onchange="this.form.submit()">
-           <option value="">Qualquer período</option>  
-           <option value="last_month" selected="@(ViewBag.DateSelected == "last_month" ? "selected" : null)">Últimos 30 dias</option>  
-           <option value="last_6_months" selected="@(ViewBag.DateSelected == "last_6_months" ? "selected" : null)">Últimos 6 meses</option>  
-           <option value="last_year" selected="@(ViewBag.DateSelected == "last_year" ? "selected" : null)">Último ano</option>
+
+
+        <select class="nav-select" id="history-date" style="width: 150px" name="date" onchange="this.filter.submit()">
+            <option value="">Qualquer período</option>
+            <option value="last_month" selected="@(ViewBag.DateSelected == "last_month" ? "selected" : null)">Últimos 30 dias</option>
+            <option value="last_6_months" selected="@(ViewBag.DateSelected == "last_6_months" ? "selected" : null)">Últimos 6 meses</option>
+            <option value="last_year" selected="@(ViewBag.DateSelected == "last_year" ? "selected" : null)">Último ano</option>
         </select>
     </div>
 </form>
@@ -72,58 +71,66 @@
         </tr>
     </thead>
     <tbody>
-        @if (Model.Count == 0)
+
+        @foreach (var item in Model)
         {
-            <tr> 0 itens encontrados </tr>
+            <tr>
+
+                <td>
+                    @item.Name
+                </td>
+                <td>
+                    @item.UserName
+                </td>
+                <td>
+                    @item.Material
+                </td>
+
+                <td>
+                    @item.DocumentCreationDate
+                </td>
+
+                <td>
+                    <a asp-action="Details" class="details" asp-route-id="@item.Id"></a>
+                </td>
+                <td>
+                    <a href="~/@item.Attachment" class="document-view" target="_blank"></a>
+
+                </td>
+                @if (User.IsInRole("Administrador"))
+                {
+                    <td>
+                        <label class="switch">
+                            <input type="checkbox"
+                                   data-id="@item.Id"
+                                   data-status="@item.Status"
+                            @if (item.Status == "Ativo")
+                            {
+                                <text>checked</text>
+                            }
+                            onchange="onStatusChange(this)" />
+                            <span class="slider round"></span>
+                        </label>
+                    </td>
+                }
+            </tr>
         }
-        else
-        {
-            @foreach (var item in Model)
-            {
-                <tr>
-
-                    <td>
-                        @item.Name
-                    </td>
-                    <td>
-                        @item.UserName
-                    </td>
-                    <td>
-                        @item.Material
-                    </td>
-
-                    <td>
-                        @item.DocumentCreationDate
-                    </td>
-
-                    <td>
-                        <a asp-action="Details" class="details" asp-route-id="@item.Id"></a>
-                    </td>
-                    <td>
-                        <a href="~/@item.Attachment" class="document-view" target="_blank"></a>
-
-                    </td>
-                    @if (User.IsInRole("Administrador"))
-                    {
-                        <td>
-                            <label class="switch">
-                                <input type="checkbox"
-                                       data-id="@item.Id"
-                                       data-status="@item.Status"
-                                @if (item.Status == "Ativo")
-                                {
-                                    <text>checked</text>
-                                }
-                                onchange="onStatusChange(this)" />
-                                <span class="slider round"></span>
-                            </label>
-                        </td>
-                    }
-                </tr>
-            }}
     </tbody>
 </table>
+<script>
+        $(document).ready(function () {
+        $('#history-material').change(function () {
+            $('#history-search').submit();
+        });
+        $('#history-user').change(function () {
+            $('#history-search').submit();
+        });
+        $('#history-date').change(function () {
+            $('#history-search').submit();
+        });
+    });
+</script>
 @section Scripts {
     <script src="~/js/Documents/history.js" defer></script>
- 
+
 }
