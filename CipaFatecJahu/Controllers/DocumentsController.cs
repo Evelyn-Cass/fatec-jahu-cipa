@@ -8,7 +8,6 @@ using Microsoft.EntityFrameworkCore;
 using MongoDB.Bson;
 using MongoDB.Driver;
 using MongoDB.Driver.Linq;
-using static MongoDB.Bson.Serialization.Serializers.SerializerHelper;
 
 namespace CipaFatecJahu.Controllers
 {
@@ -22,14 +21,14 @@ namespace CipaFatecJahu.Controllers
             this._userManager = userManager;
         }
         [Route("History/Documents")]
-        public async Task<IActionResult> History()
+        public async Task<IActionResult> History(string? material)
         {
             var pipeline = new[]
             {
                new BsonDocument("$lookup", new BsonDocument
                {
                    { "from", "Materials" },
-                   { "localField", "MaterialId" },                      
+                   { "localField", "MaterialId" },
                    { "foreignField", "_id" },
                    { "as", "Material" }
                }),
@@ -87,6 +86,13 @@ namespace CipaFatecJahu.Controllers
 
             var result = await _context.Documents.Aggregate<DocumentWithUserMandateMaterialViewModel>(pipeline).ToListAsync();
 
+            if (material != null)
+            {
+                result = result.Where(u => u.Material == material).ToList();
+                ViewBag.MaterialSelected = material;
+            }
+
+
             foreach (var item in result)
             {
                 var user = _userManager.Users.FirstOrDefault(u => u.Id == item.UserId);
@@ -95,6 +101,9 @@ namespace CipaFatecJahu.Controllers
                     item.UserName = user.Name;
                 }
             }
+
+            var materials = await _context.Materials.Find(_ => true).ToListAsync();
+            ViewData["Materials"] = new SelectList(materials, "Description", "Description");
 
             return View(result);
         }
@@ -1004,5 +1013,6 @@ namespace CipaFatecJahu.Controllers
         {
             return _context.Mandates.AsQueryable().OrderByDescending(m => m.StartYear).ToList().Select(m => new { m.Id, mandate = $"{m.StartYear.Year}/{m.TerminationYear.Year}" }).ToList<dynamic>();
         }
+
     }
 }

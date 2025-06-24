@@ -25,6 +25,13 @@
         <a asp-action="Create" class="btn-create">🞢</a>
     </div>
 </div>
+<form class="form-base" method="get" asp-action="History">
+    <div class="form-group">
+        <select class="form-control" name="material" asp-items="@(new SelectList(ViewBag.Materials, "Value", "Text", ViewBag.MaterialSelected))" onchange="this.form.submit()">
+           <option value="" disabled selected>Selecione um Material</option>
+        </select>
+    </div>
+</form>
 <table class="table" style="width:90%">
     <thead>
         <tr>
