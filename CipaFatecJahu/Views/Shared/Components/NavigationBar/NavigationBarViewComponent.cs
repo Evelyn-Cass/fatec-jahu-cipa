@@ -11,10 +11,12 @@ namespace CipaFatecJahu.Views.Shared.Components.NavigationBar
     {
         private readonly ContextMongodb _context = new ContextMongodb();
         private readonly UserManager<ApplicationUser> _userManager;
+        private SignInManager<ApplicationUser>? _signInManager;
 
-        public NavigationBarViewComponent(UserManager<ApplicationUser> userManager)
+        public NavigationBarViewComponent(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager)
         {
             _userManager = userManager;
+            this._signInManager = signInManager;
         }
 
         public async Task<IViewComponentResult> InvokeAsync()
@@ -22,12 +24,18 @@ namespace CipaFatecJahu.Views.Shared.Components.NavigationBar
             var mandates = await _context.Mandates.Find(_ => true)
                 .SortByDescending(m => m.StartYear)
                 .ToListAsync();
-
-            if (User?.Identity?.IsAuthenticated == true)
+            try
             {
-                var user = (ClaimsPrincipal)User;
-                var claims = await _userManager.GetClaimsAsync(await _userManager.GetUserAsync(user));
-                ViewBag.FirstName = claims.FirstOrDefault(c => c.Type == "firstName")?.Value;
+                if (User?.Identity?.IsAuthenticated == true)
+                {
+                    var user = (ClaimsPrincipal)User;
+                    var claims = await _userManager.GetClaimsAsync(await _userManager.GetUserAsync(user));
+                    ViewBag.FirstName = claims.FirstOrDefault(c => c.Type == "firstName")?.Value;
+                }
+            }
+            catch
+            {
+                await _signInManager.SignOutAsync();
             }
 
             return View(mandates);
