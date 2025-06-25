@@ -89,6 +89,10 @@
       "PackagePath": "staticwebassets\\css\\table.css"
     },
     {
+      "Id": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\ATA-c667bbfd-23b0-4109-8f3b-e732cdd3e009.pdf",
+      "PackagePath": "staticwebassets\\docs\\ATA-c667bbfd-23b0-4109-8f3b-e732cdd3e009.pdf"
+    },
+    {
       "Id": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\COURSE-a391ef5d-24c8-4a5a-a685-463cf978ab6b.pdf",
       "PackagePath": "staticwebassets\\docs\\COURSE-a391ef5d-24c8-4a5a-a685-463cf978ab6b.pdf"
     },

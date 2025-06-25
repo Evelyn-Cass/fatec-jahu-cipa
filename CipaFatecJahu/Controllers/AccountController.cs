@@ -49,21 +49,6 @@ namespace CipaFatecJahu.Controllers
 
                     if (result.Succeeded)
                     {
-                          //var claims = new List<Claim>
-                        //{
-                        //    new Claim(ClaimTypes.Name, firstName)
-                        //};
-                        //var userRoles = await _userManager.GetRolesAsync(user);
-                        //foreach (var role in userRoles)
-                        //{
-                        //    claims.Add(new Claim(ClaimTypes.Role, role));
-                        //}
-                        
-
-                        //var claimsIdentity = new ClaimsIdentity(claims, "Identity.Application");
-                        //var claimsPrincipal = new ClaimsPrincipal(claimsIdentity);
-                        //await HttpContext.SignInAsync("Identity.Application", claimsPrincipal);
-
                         return RedirectToAction("Index", "Home");
                     }
                     else

@@ -74,32 +74,6 @@ namespace CipaFatecJahu.Controllers
             }
             return View();
         }
-        //[Authorize(Roles = "Administrador")]
-        //public IActionResult CreateRole()
-        //{
-        //    return View();
-        //}
-        //[HttpPost]
-        //[Authorize(Roles = "Administrador")]
-        //public async Task<IActionResult> CreateRole(UserRole userRole)
-        //{
-        //    if (ModelState.IsValid)
-        //    {
-        //        IdentityResult result = await _roleManager.CreateAsync(new ApplicationRole() { Name = userRole.RoleName });
-        //        if (result.Succeeded)
-        //        {
-        //            ViewBag.Message = "Perfil Cadastrado com sucesso";
-        //        }
-        //        else
-        //        {
-        //            foreach (IdentityError error in result.Errors)
-        //            {
-        //                ModelState.AddModelError("", error.Description);
-        //            }
-        //        }
-        //    }
-        //    return View();
-        //}
         public async Task<IActionResult> ChangeStatus(string email, string status)
         {
             if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(status))
@@ -137,21 +111,16 @@ namespace CipaFatecJahu.Controllers
             {
                 return NotFound();
             }
-
-            // Corrigido para buscar o usuário de forma síncrona, pois _userManager.Users não suporta operações assíncronas
             var appuser = _userManager.Users.FirstOrDefault(u => u.Email == email);
-
             if (appuser == null)
             {
                 return NotFound();
             }
-
             var user = new User
             {
                 Name = appuser.Name,
                 Email = appuser.Email
             };
-
             return View(user);
         }
         [HttpPost]
@@ -165,7 +134,6 @@ namespace CipaFatecJahu.Controllers
                     return View(user);
                 }
 
-                // Buscar usuário pelo e-mail
                 var appuser = await _userManager.FindByEmailAsync(user.Email);
                 if (appuser == null)
                 {
@@ -173,9 +141,7 @@ namespace CipaFatecJahu.Controllers
                     return View(user);
                 }
 
-                // Gerar token de redefinição de senha
                 var resetToken = await _userManager.GeneratePasswordResetTokenAsync(appuser);
-                // Alterar a senha
                 var result = await _userManager.ResetPasswordAsync(appuser, resetToken, user.Password);
 
                 if (result.Succeeded)

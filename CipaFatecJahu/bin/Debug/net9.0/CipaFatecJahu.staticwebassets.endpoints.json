@@ -6559,6 +6559,88 @@
       ]
     },
     {
+      "Route": "docs/ATA-c667bbfd-23b0-4109-8f3b-e732cdd3e009.8wjfvemr4r.pdf",
+      "AssetFile": "docs/ATA-c667bbfd-23b0-4109-8f3b-e732cdd3e009.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11729162"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eKmGrBXQp0dolyJw0e+cVtjzZwp1plhsnz0cgp90UPw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Jun 2025 13:20:13 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8wjfvemr4r"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-eKmGrBXQp0dolyJw0e+cVtjzZwp1plhsnz0cgp90UPw="
+        },
+        {
+          "Name": "label",
+          "Value": "docs/ATA-c667bbfd-23b0-4109-8f3b-e732cdd3e009.pdf"
+        }
+      ]
+    },
+    {
+      "Route": "docs/ATA-c667bbfd-23b0-4109-8f3b-e732cdd3e009.pdf",
+      "AssetFile": "docs/ATA-c667bbfd-23b0-4109-8f3b-e732cdd3e009.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11729162"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eKmGrBXQp0dolyJw0e+cVtjzZwp1plhsnz0cgp90UPw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Jun 2025 13:20:13 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-eKmGrBXQp0dolyJw0e+cVtjzZwp1plhsnz0cgp90UPw="
+        }
+      ]
+    },
+    {
       "Route": "docs/COURSE-a391ef5d-24c8-4a5a-a685-463cf978ab6b.8wjfvemr4r.pdf",
       "AssetFile": "docs/COURSE-a391ef5d-24c8-4a5a-a685-463cf978ab6b.pdf",
       "Selectors": [],
