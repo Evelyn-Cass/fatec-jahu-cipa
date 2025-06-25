@@ -24,6 +24,11 @@
                     <span asp-validation-for="Name" class="control-danger"></span>
                 </div>
                 <div class="form-group">
+                    <label for="ScheduledDate" class="control-label">Data do Evento</label>
+                    <input asp-for="ScheduledDate" id="ScheduledDate" class="form-control" type="date" />
+                    <span asp-validation-for="ScheduledDate" class="control-danger"></span>
+                </div>
+                <div class="form-group">
                     <label class="control-label">Mandatos</label>
                     <select asp-for="MandateId" class="form-control" asp-items="@(new SelectList(ViewBag.Mandates, "Value", "Text", null))">
                        <option value="" disabled selected>Selecione um mandato</option>

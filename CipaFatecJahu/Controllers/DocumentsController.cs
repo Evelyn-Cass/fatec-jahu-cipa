@@ -433,15 +433,39 @@ namespace CipaFatecJahu.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Route("Documents/Course/Create")]
-        public async Task<IActionResult> CourseCreate([Bind("Id,Name,DocumentCreationDate,Status,Attachment,UserId,MandateId,MaterialId")] Document document, IFormFile? attachment)
+        public async Task<IActionResult> CourseCreate([Bind("Id,Name,DocumentCreationDate,ScheduledDate,Status,Attachment,UserId,MandateId,MaterialId")] Document document, IFormFile? attachment)
         {
             var mandates = SearchMandates();
             ViewData["Mandates"] = new SelectList(mandates, "Id", "mandate");
             if (ModelState.IsValid)
             {
+                if (document.ScheduledDate == null || document.ScheduledDate == DateOnly.MinValue)
+                {
+                    ModelState.AddModelError("ScheduledDate", "O campo Data do evento é obrigatório");
+                    return View(document);
+                }
                 if (!document.MandateId.HasValue || document.MandateId == Guid.Empty)
                 {
                     ModelState.AddModelError("MandateId", "O campo Mandato é obrigatório!");
+                    return View(document);
+                }
+                if (document.ScheduledDate > DateOnly.FromDateTime(DateTime.Now.AddHours(-3)))
+                {
+                    ModelState.AddModelError("ScheduledDate", "A data do evento não pode ser futura.");
+                    return View(document);
+                }
+                var mandate = _context.Mandates.Find(m => m.Id == document.MandateId.Value).FirstOrDefault();
+                if (mandate != null)
+                {
+                    if (document.ScheduledDate < mandate.StartYear || document.ScheduledDate > mandate.TerminationYear)
+                    {
+                        ModelState.AddModelError("ScheduledDate", $"A data do evento deve estar dentro do período do mandato selecionado. {mandate.StartYear} - {mandate.TerminationYear}");
+                        return View(document);
+                    }
+                }
+                else
+                {
+                    ModelState.AddModelError("MandateId", "Mandato não encontrado ou inválido.");
                     return View(document);
                 }
                 if (attachment == null || attachment.Length == 0)

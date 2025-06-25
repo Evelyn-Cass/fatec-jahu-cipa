@@ -21,7 +21,10 @@ namespace CipaFatecJahu.Controllers
         [Route("History/Mandates")]
         public async Task<IActionResult> History()
         {
-            var mandates = await _context.Mandates.Find(u => true).ToListAsync();
+            var mandates = await _context.Mandates
+                    .Find(u => true)
+                    .SortByDescending(u => u.DocumentCreationDate)
+                    .ToListAsync();
             var mandatesWithUsers = mandates.Select(m =>
             {
                 var user = _userManager.Users.FirstOrDefault(u => u.Id == m.UserId);
