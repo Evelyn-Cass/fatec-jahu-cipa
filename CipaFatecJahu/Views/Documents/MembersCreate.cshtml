@@ -9,7 +9,7 @@
 }
 <section class="mainbody">
     <div class="form-geral">
-        <form class="form-base" method="post" asp-action="MembersCreate" enctype="multipart/form-data">
+        <form class="form-base" method="post" asp-action="MembersCreate" enctype="multipart/form-data" id="create-form">
             <div class="button-back">
                 <a asp-action="History"><img src="~/img/icon-cross-white.png" /></a>
             </div>
@@ -25,12 +25,12 @@
                         <div asp-validation-summary="ModelOnly" class="control-danger"></div>
                         <div class="form-group">
                             <label asp-for="Name" class="control-label"></label>
-                            <input asp-for="Name" class="form-control" />
+                            <input asp-for="Name" class="form-control" required/>
                             <span asp-validation-for="Name" class="control-danger"></span>
                         </div>
                         <div class="form-group">
                             <label class="control-label">Cargo</label>
-                            <select asp-for="Position" class="form-control">
+                            <select asp-for="Position" class="form-control" required>
                                 <option value="" disabled selected>Selecione um cargo</option>
                                 <option value="Presidente Designado">Presidente Designado</option>
                                 <option value="Secretário">Secretário</option>
@@ -44,7 +44,7 @@
                         </div>
                         <div class="form-group">
                             <label class="control-label">Mandatos</label>
-                            <select asp-for="MandateId" class="form-control" asp-items="@(new SelectList(ViewBag.Mandates, "Value", "Text", null))">
+                            <select asp-for="MandateId" class="form-control" asp-items="@(new SelectList(ViewBag.Mandates, "Value", "Text", null))" required>
                                 <option value="" disabled selected>Selecione um mandato</option>
                             </select>
                             <span asp-validation-for="MandateId" class="control-danger"></span>
@@ -69,5 +69,6 @@
 </section>
  @section Scripts {
 	<script src="~/js/Documents/members.js" defer></script>
+    <script src="~/js/form.js" defer></script>
  } 
 

@@ -8,7 +8,7 @@
 }
 <section class="mainbody">
     <div class="form-geral">
-        <form class="form-base" method="post" asp-action="Create">
+        <form class="form-base" method="post" asp-action="Create" id="create-form">
             <div class="button-back">
                 <a asp-action="History" ><img src="~/img/icon-cross-white.png" /></a>
             </div>
@@ -19,12 +19,12 @@
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <div class="form-group">
                     <label asp-for="StartYear" class="control-label"></label>
-                    <input asp-for="StartYear" class="form-control" type="date" />
+                    <input asp-for="StartYear" class="form-control" type="date" required />
                     <span asp-validation-for="StartYear" class="control-danger"></span>
                 </div>
                 <div class="form-group">
                     <label asp-for="TerminationYear" class="control-label"></label>
-                    <input asp-for="TerminationYear" class="form-control" type="date"/>
+                    <input asp-for="TerminationYear" class="form-control" type="date" required/>
                     <span asp-validation-for="TerminationYear" class="control-danger"></span>
                 </div>
                 <div class="btn-container">
@@ -36,7 +36,5 @@
 
 </section>
 @section Scripts {
-    @{
-        await Html.RenderPartialAsync("_ValidationScriptsPartial");
-    }
+    <script src="~/js/form.js" defer></script>
 }

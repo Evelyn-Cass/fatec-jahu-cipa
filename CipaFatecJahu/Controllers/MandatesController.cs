@@ -53,6 +53,16 @@ namespace CipaFatecJahu.Controllers
         {
             if (ModelState.IsValid)
             {
+                if (mandate.StartYear == default)
+                {
+                    ModelState.AddModelError("StarYear", "O campo início é obrigatórios.");
+                    return View(mandate);
+                }
+                if (mandate.TerminationYear == default)
+                {
+                    ModelState.AddModelError("TerminationYear", "O campo término é obrigatórios.");
+                    return View(mandate);
+                }
                 if (mandate.StartYear > mandate.TerminationYear)
                 {
                     ModelState.AddModelError(string.Empty, "O ano de início não pode ser maior que o ano de término.");

@@ -101,6 +101,10 @@
       "PackagePath": "staticwebassets\\docs\\MEMBERS-77331d79-7649-419c-88d0-eba46ba4b43c.jpg"
     },
     {
+      "Id": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\OTHER-c2f6991d-b94c-4dd7-9bc8-2c71c2748083.pdf",
+      "PackagePath": "staticwebassets\\docs\\OTHER-c2f6991d-b94c-4dd7-9bc8-2c71c2748083.pdf"
+    },
+    {
       "Id": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
@@ -295,6 +299,10 @@
     {
       "Id": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\js\\Shared\\select2.js",
       "PackagePath": "staticwebassets\\js\\Shared\\select2.js"
+    },
+    {
+      "Id": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\js\\form.js",
+      "PackagePath": "staticwebassets\\js\\form.js"
     },
     {
       "Id": "D:\\Projetos\\FATEC\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\js\\site.js",

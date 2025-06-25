@@ -65,6 +65,7 @@ D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\wwwroot\css\Contact\index.css
 D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\wwwroot\css\Shared\animation.css
 D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\wwwroot\lib\jquery-validation\dist\additional-methods.js
 D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
+D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\wwwroot\js\form.js
 D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\wwwroot\css\switch.css
 D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\wwwroot\css\table.css
 D:\Projetos\FATEC\fatec-jahu-cipa\CipaFatecJahu\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
@@ -112,6 +113,7 @@ wwwroot\css\table.css
 wwwroot\docs\ATA-c667bbfd-23b0-4109-8f3b-e732cdd3e009.pdf
 wwwroot\docs\COURSE-a391ef5d-24c8-4a5a-a685-463cf978ab6b.pdf
 wwwroot\docs\MEMBERS-77331d79-7649-419c-88d0-eba46ba4b43c.jpg
+wwwroot\docs\OTHER-c2f6991d-b94c-4dd7-9bc8-2c71c2748083.pdf
 wwwroot\favicon.ico
 wwwroot\img\404.png
 wwwroot\img\500.png
@@ -157,6 +159,7 @@ wwwroot\js\Account\login.js
 wwwroot\js\Account\materialize-inputs.jquery.js
 wwwroot\js\Documents\history.js
 wwwroot\js\Documents\members.js
+wwwroot\js\form.js
 wwwroot\js\Secretaries\index.js
 wwwroot\js\Shared\form.js
 wwwroot\js\Shared\navigation.js

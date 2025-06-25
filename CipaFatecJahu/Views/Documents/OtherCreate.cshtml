@@ -9,7 +9,7 @@
 }
 <section class="mainbody">
     <div class="form-geral">
-        <form class="form-base" method="post" asp-action="OtherCreate" enctype="multipart/form-data">
+        <form class="form-base" method="post" asp-action="OtherCreate" enctype="multipart/form-data" id="create-form">
             <div class="button-back">
                 <a asp-action="Material"><img src="~/img/icon-cross-white.png" /></a>
             </div>
@@ -20,12 +20,12 @@
                 <div asp-validation-summary="ModelOnly" class="control-danger"></div>
                 <div class="form-group">
                     <label asp-for="Name" class="control-label"></label>
-                    <input asp-for="Name" class="form-control" />
+                    <input asp-for="Name" class="form-control" required/>
                     <span asp-validation-for="Name" class="control-danger"></span>
                 </div>
                 <div class="form-group">
                     <label class="control-label">Mandatos</label>
-                    <select asp-for="MandateId" class="form-control" asp-items="@(new SelectList(ViewBag.Mandates, "Value", "Text", null))">
+                    <select asp-for="MandateId" class="form-control" asp-items="@(new SelectList(ViewBag.Mandates, "Value", "Text", null))" required>
                        <option value="" disabled selected>Selecione um mandato</option>
                     </select>
                     <span asp-validation-for="MandateId" class="control-danger"></span>
@@ -46,8 +46,6 @@
         </form>
     </div>
 </section>
-
-@* @section Scripts { *@
-@*     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");} *@
-
-@* } *@
+@section Scripts {
+    <script src="~/js/form.js" defer></script>
+}
