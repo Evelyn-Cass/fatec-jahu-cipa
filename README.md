@@ -5,7 +5,7 @@
 
 ---
 
-[Português](#cipa---fatec-jahu) | [English](#cipa---fatec-jahu-1)
+[Português](#cipa---fatec-jahu) | [English](https://github.com/Evelyn-Cass/fatec-jahu-cipa/tree/main/English)
 
 # 📌 CIPA - FATEC JAHU
 
