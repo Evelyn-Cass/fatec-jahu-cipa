@@ -5,7 +5,7 @@
 
 ---
 
-[Portuguese](https://github.com/Evelyn-Cass/fatec-jahu-cipa/tree/main?tab=readme-ov-file#cipa---fatec-jahu) | [English](#cipa---fatec-jahu)
+[Portuguese](https://github.com/Evelyn-Cass/fatec-jahu-cipa/tree/main?tab=readme-ov-file#cipa---fatec-jahu) | [English](https://github.com/Evelyn-Cass/fatec-jahu-cipa/tree/main/English)
 
 # 📌 CIPA - FATEC JAHU
 
