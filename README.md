@@ -1,72 +1,109 @@
+
 <div align="center">
-  
-![Logotipo da CIPA](https://github.com/Evelyn-Cass/fatec-jahu-cipa/blob/main/images/cipa-fatec-jahu.png)
+  <img src="https://github.com/Evelyn-Cass/fatec-jahu-cipa/blob/main/images/cipa-fatec-jahu.png" alt="Logotipo da CIPA" width="250"/>
 </div>
 
-- - -
-[Portuguese](https://github.com/Evelyn-Cass/fatec-jahu-cipa?tab=readme-ov-file#cipa---fatec-jahu) - [English](https://github.com/Evelyn-Cass/fatec-jahu-cipa?tab=readme-ov-file#cipa---fatec-jahu-1)<br>
-# CIPA - FATEC JAHU
+---
 
-O Projeto CIPA - FATEC JAHU foi criado como objetivo do Projeto interdisciplinar, no qual foi desenvolvido uma aplicação web para a Comissão Interna de Prevenção de Acidentes (CIPA) da Fatec Jahu, visando a digitalização, organização e disponibilização eficiente das atas de reuniões e demais documentos relacionados às atividades da comissão. Essa iniciativa busca substituir os métodos tradicionais de armazenamento físico, proporcionando um acesso mais ágil, seguro e sustentável às informações.
+[Português](#cipa---fatec-jahu) | [English](#cipa---fatec-jahu-1)
 
+# 📌 CIPA - FATEC JAHU
 
-## Projeto Interdisciplinar
+O projeto **CIPA - FATEC Jahu** foi desenvolvido como parte do **Projeto Interdisciplinar** do curso de **Desenvolvimento de Software Multiplataforma** da FATEC Jahu. A aplicação web tem como finalidade a **digitalização, organização e disponibilização eficiente** das atas de reuniões e demais documentos da **Comissão Interna de Prevenção de Acidentes (CIPA)**.
 
-O Projeto Interdisciplinar é uma iniciativa avaliativa do do curso de Desenvolvimento de Software Multiplataforma na FATEC - JAHU. No terceiro semestre este projeto abrangiu três disciplinas: Desenvolvimento Web II, Gestão Ágil de Projetos de Software e Banco de Dados Não relacional. Os principais objetivos são:
+## 🎓 Projeto Interdisciplinar
 
-- **Integração de Conhecimentos:** Promover a conexão entre os conceitos teóricos e práticos das disciplinas envolvidas.
-- **Aplicação Prática:** Permitir aos alunos aplicar os conceitos aprendidos em sala de aula em projetos reais.
-- **Trabalho em Equipe:** Incentivar a colaboração e a comunicação entre os alunos, desenvolvendo habilidades essenciais para o mercado de trabalho.
-- **Soluções Inovadoras:** Estimular a criatividade e a inovação na busca de soluções práticas e eficientes.
-- **Preparação para o Mercado:** Proporcionar uma experiência prática que prepare os alunos para os desafios profissionais no desenvolvimento de software.
+O Projeto Interdisciplinar é uma atividade avaliativa que envolve a integração de múltiplas disciplinas. No 3º semestre do curso, participaram as disciplinas:
 
-## Documentação
+- **Desenvolvimento Web II**
+- **Gestão Ágil de Projetos de Software**
+- **Banco de Dados Não Relacional**
 
-A documentação completa do projeto, incluindo detalhes sobre o processo de desenvolvimento, funcionalidades, tecnologias utilizadas e instruções de uso, está disponível no link abaixo:
+### Objetivos do projeto:
 
-[Documentação do Projeto](https://github.com/Evelyn-Cass/fatec-jahu-cipa/tree/main/Documentation)
+- **Integração de conhecimentos:** Relacionar teoria e prática por meio de uma aplicação real.
+- **Aplicação prática:** Permitir aos alunos resolver problemas reais com tecnologia.
+- **Colaboração:** Estimular o trabalho em equipe e o uso de metodologias ágeis.
+- **Inovação:** Desenvolver soluções digitais funcionais, modernas e úteis.
+- **Preparação profissional:** Proporcionar uma experiência prática próxima à realidade do mercado.
 
-## Aplicação
+## 📚 Documentação
 
-O processo de criação da aplicação web envolveu várias etapas para assegurar um desenvolvimento eficiente e eficaz.
-A aplicação web pode ser acessada através dos seguintes links:
+A documentação completa do projeto, contendo detalhes técnicos, funcionalidades e orientações de uso, está disponível em:
 
-- [Website](),
-- [Repositório do projeto](https://github.com/Evelyn-Cass/cipa-fatec-jahu).
+🔗 [Acessar Documentação](https://github.com/Evelyn-Cass/fatec-jahu-cipa/tree/main/Documentation)
 
-## Fale conosco
+## 🌐 Aplicação
 
-Se tiver alguma dúvida, sugestão ou feedback sobre a aplicação, não hesite em nos contatar. 
-Estamos aqui para ajudar e ouvir suas opiniões para melhorar continuamente o projeto.
+A aplicação web foi construída utilizando tecnologias modernas para garantir desempenho, usabilidade e segurança.
 
-[Evelyn Cassinotte](mailto:evelyn.cassinotte@fatec.sp.gov.br)
+- **[Acessar o site da aplicação](#)** *(link será atualizado quando publicado)*
+- **[Repositório do Projeto](https://github.com/Evelyn-Cass/cipa-fatec-jahu)**
 
+## ⚙️ Pré-requisitos
 
-- - -
-# CIPA - FATEC JAHU
-The CIPA - FATEC JAHU Project is part of an interdisciplinary initiative aimed at developing a web application for the Internal Commission for Accident Prevention (CIPA) at Fatec Jahu. The project focuses on digitizing, organizing, and providing efficient access to meeting minutes and other important documents related to the commission’s activities. By replacing traditional physical storage methods, this initiative ensures faster, more secure, and environmentally friendly access to information.
+Para executar a aplicação localmente, você precisará ter instalado:
 
-## Interdisciplinary Project
-The Interdisciplinary Project serves as an evaluative initiative within the Multiplatform Software Development course at FATEC - JAHU. In the third semester, it covered three key subjects: Web Development II, Agile Software Project Management, and Non-Relational Databases. The main objectives include:
+- [.NET 6 SDK ou superior](https://dotnet.microsoft.com/download)
+- [MongoDB Community Server](https://www.mongodb.com/try/download/community)
+- [Visual Studio 2022 ou superior](https://visualstudio.microsoft.com/)
+- Git (opcional, para clonar o repositório)
 
-- **Knowledge Integration**: Bridging theoretical concepts with practical applications across multiple disciplines.
-- **Practical Application**: Enabling students to apply classroom learning to real-world projects.
-- **Teamwork**: Promoting collaboration and communication among students to develop essential job market skills.
-- **Innovative Solutions**: Encouraging creativity and innovation in solving real challenges.
-- **Market Preparation**: Providing hands-on experience to better prepare students for careers in software development.
+## 🔧 Configuração do Ambiente
 
-## Documentation
-The complete project documentation, including details on the development process, features, technologies used, and instructions for use, can be accessed through the link below:
+### 1. Clone o repositório
+```bash
+git clone https://github.com/Evelyn-Cass/cipa-fatec-jahu.git
+cd cipa-fatec-jahu
+```
 
- - [Project Documentation](https://github.com/Evelyn-Cass/fatec-jahu-cipa/tree/main/Documentation)
+### 2. Configure a string de conexão com o MongoDB  
+Edite o arquivo `appsettings.json`:
+```json
+"MongoDB": {
+  "ConnectionString": "mongodb://localhost:27017",
+  "Database": "CipaFatecJahu"
+}
+```
 
-## Application
-The development of the web application followed a structured process to ensure efficiency and effectiveness. The application can be accessed through the following links:
+### 3. Configure o serviço de e-mail
+Ainda em `appsettings.json`, atualize os dados do remetente:
+```json
+"EmailSettings": {
+  "SmtpServer": "smtp.gmail.com",
+  "SmtpPort": 587,
+  "SenderName": "CIPA - FATEC JAHU",
+  "SenderEmail": "SEU_EMAIL@gmail.com",
+  "Username": "SEU_EMAIL@gmail.com",
+  "Password": "SUA_SENHA_DE_APP"
+}
+```
 
-- [Website]()
-- [Project Repository](https://github.com/Evelyn-Cass/cipa-fatec-jahu).
+### 4. Atualize o endereço de envio manual  
+No arquivo `Controllers/ContactController.cs`, edite a linha:
+```csharp
+await _emailService.SendEmailAsync("SEU_EMAIL@gmail.com", model.Subject, body);
+```
 
-## Contact Us
-If you have any questions, suggestions, or feedback about the application, feel free to reach out. We’re here to help and value your input in improving the project!
+### 5. Execute a aplicação  
+Abra o projeto no Visual Studio e pressione `F5` ou, via terminal:
+```bash
+dotnet restore
+dotnet run
+```
 
-[Evelyn Cassinotte](mailto:evelyn.cassinotte@fatec.sp.gov.br)
+## 🔐 Credenciais de Acesso Inicial
+
+A aplicação inclui um **usuário administrador padrão**, para fins de teste:
+
+- **E-mail:** adm@adm.com  
+- **Senha:** Administrador@1
+
+> Recomenda-se alterar essas credenciais em ambiente de produção.
+
+## 📬 Fale Conosco
+
+Para dúvidas, sugestões ou contribuições, entre em contato:
+
+**Evelyn Cassinotte**  
+[evelyn.cassinotte@fatec.sp.gov.br](mailto:evelyn.cassinotte@fatec.sp.gov.br)
