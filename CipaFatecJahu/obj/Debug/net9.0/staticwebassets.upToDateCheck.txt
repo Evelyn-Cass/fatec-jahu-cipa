@@ -111,6 +111,7 @@ wwwroot\css\switch.css
 wwwroot\css\table.css
 wwwroot\docs\ATA-c667bbfd-23b0-4109-8f3b-e732cdd3e009.pdf
 wwwroot\docs\COURSE-a391ef5d-24c8-4a5a-a685-463cf978ab6b.pdf
+wwwroot\docs\MEMBERS-77331d79-7649-419c-88d0-eba46ba4b43c.jpg
 wwwroot\favicon.ico
 wwwroot\img\404.png
 wwwroot\img\500.png

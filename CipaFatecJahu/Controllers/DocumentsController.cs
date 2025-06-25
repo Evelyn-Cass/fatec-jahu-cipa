@@ -135,6 +135,9 @@ namespace CipaFatecJahu.Controllers
         {
             var pipeline = new[]
             {
+               new BsonDocument("$match", new BsonDocument{
+                    { "Status", "Ativo" }
+               }),
                new BsonDocument("$lookup", new BsonDocument
                {
                    { "from", "Materials" },

@@ -154,3 +154,6 @@
     align-items: center;
     justify-content: space-around;
 }
+.inactive{
+    color: var(--base-red);
+}

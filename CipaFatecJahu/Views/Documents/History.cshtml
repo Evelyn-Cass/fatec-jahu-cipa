@@ -4,9 +4,9 @@
     ViewData["Title"] = "Histórico de Documentos";
 }
 @section Styles {
-    <link rel="stylesheet" href="~/css/history.css" />
-    <link rel="stylesheet" href="~/css/table.css" />
-    <link rel="stylesheet" href="~/css/switch.css" />
+<link rel="stylesheet" href="~/css/history.css" />
+<link rel="stylesheet" href="~/css/table.css" />
+<link rel="stylesheet" href="~/css/switch.css" />
 }
 
 <div class="container-title">
@@ -77,6 +77,10 @@
             <tr>
 
                 <td>
+                    @if (item.Status == "Inativo")
+                    {
+						<span class="inactive">[Desativado]</span>
+                    }
                     @item.Name
                 </td>
                 <td>
