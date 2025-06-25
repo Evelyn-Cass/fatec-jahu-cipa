@@ -211,7 +211,7 @@ namespace CipaFatecJahu.Controllers
 
                 if (!string.IsNullOrEmpty(item.Attachment))
                 {
-                    var filePath = Path.Combine("~/", item.Attachment);
+                    var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", item.Attachment);
                     if (!System.IO.File.Exists(filePath))
                     {
                         item.Attachment = "img/icon-photo.png";
