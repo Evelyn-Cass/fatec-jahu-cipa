@@ -1,6 +1,6 @@
 
 <div align="center">
-  <img src="https://github.com/Evelyn-Cass/fatec-jahu-cipa/blob/main/images/cipa-fatec-jahu.png" alt="CIPA Logo" width="250"/>
+  <img src="https://github.com/Evelyn-Cass/fatec-jahu-cipa/blob/main/images/cipa-fatec-jahu.png" alt="CIPA Logo"/>
 </div>
 
 ---
