@@ -1,6 +1,6 @@
 ﻿@model IEnumerable<CipaFatecJahu.Models.Mandate>
 <nav>
-    <form class="nav-search" asp-controller="Documents" asp-action="Search">
+    <form class="nav-search" method="get" asp-controller="Documents" asp-action="Search">
         <div class="nav-selects">
             <select class="nav-select" style="width: 45%" name="MandateId" id="search-mandate">
                 <option value="0" disabled selected>Gestão</option>

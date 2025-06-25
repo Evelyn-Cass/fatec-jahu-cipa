@@ -11,9 +11,31 @@
             <th>
                 Nome
             </th>
+            @if (Model[0].ScheduledDate != null)
+            {
+                @if (Model[0].Material == "ATAS")
+                {
+                    <th>
+                        Data da Reunião
+                    </th>
+                }
+                else if (Model[0].Material == "Eleição")
+                {
+                    <th>
+                        Data da Eleição
+                    </th>
+                }
+                else
+                {
+                    <th>
+                        Data do Evento
+                    </th>
+                }
+            }
             <th style="width:200px;">
                 Adicionado
             </th>
+
         </tr>
     </thead>
     <tbody>
@@ -26,9 +48,16 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.Name)
                 </td>
+                @if (item.ScheduledDate != null)
+                {
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ScheduledDate)
+                    </td>
+                }
                 <td>
                     @Html.DisplayFor(modelItem => (item.DocumentCreationDate))
                 </td>
+
             </tr>
         }
     </tbody>
