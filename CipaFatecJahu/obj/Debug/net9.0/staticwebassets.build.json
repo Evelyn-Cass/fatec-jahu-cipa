@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Xd95IJGAyenOh9UDMGlwWuU8j/I5g51znIZaQL/g8Jk=",
+  "Hash": "HNjeSoU5l4SqFXnkj7RSqVfcKOcstdRac3KSx8asPSY=",
   "Source": "CipaFatecJahu",
   "BasePath": "_content/CipaFatecJahu",
   "Mode": "Default",
@@ -2579,6 +2579,48 @@
       "OriginalItemSpec": "wwwroot\\docs\\ELECTION-ffe845fc-ed8a-401b-880c-1af7927ec208.pdf"
     },
     {
+      "Identity": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\LEGISLATION-0a7edbb5-e392-41d3-942f-d88549dd6b0e.pdf",
+      "SourceId": "CipaFatecJahu",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\",
+      "BasePath": "_content/CipaFatecJahu",
+      "RelativePath": "docs/LEGISLATION-0a7edbb5-e392-41d3-942f-d88549dd6b0e#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "veh93oxfa0",
+      "Integrity": "mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\docs\\LEGISLATION-0a7edbb5-e392-41d3-942f-d88549dd6b0e.pdf"
+    },
+    {
+      "Identity": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\LEGISLATION-24ee1874-0860-4547-80bb-bc659adc0224.pdf",
+      "SourceId": "CipaFatecJahu",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\",
+      "BasePath": "_content/CipaFatecJahu",
+      "RelativePath": "docs/LEGISLATION-24ee1874-0860-4547-80bb-bc659adc0224#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "veh93oxfa0",
+      "Integrity": "mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\docs\\LEGISLATION-24ee1874-0860-4547-80bb-bc659adc0224.pdf"
+    },
+    {
       "Identity": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\LEGISLATION-fe7a4a7d-e4a9-4392-a097-d7b1df97e951.pdf",
       "SourceId": "CipaFatecJahu",
       "SourceType": "Discovered",
@@ -2621,6 +2663,48 @@
       "OriginalItemSpec": "wwwroot\\docs\\MAP-4f1ffe66-ce86-4432-b22a-a7f1161a04dc.pdf"
     },
     {
+      "Identity": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\MAP-e033893a-9e86-499d-be0c-25c3261f567b.pdf",
+      "SourceId": "CipaFatecJahu",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\",
+      "BasePath": "_content/CipaFatecJahu",
+      "RelativePath": "docs/MAP-e033893a-9e86-499d-be0c-25c3261f567b#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "veh93oxfa0",
+      "Integrity": "mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\docs\\MAP-e033893a-9e86-499d-be0c-25c3261f567b.pdf"
+    },
+    {
+      "Identity": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\MEMBERS-0ed04ecf-cf0c-42f7-8e7a-18b1b01c9a00.jpg",
+      "SourceId": "CipaFatecJahu",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\",
+      "BasePath": "_content/CipaFatecJahu",
+      "RelativePath": "docs/MEMBERS-0ed04ecf-cf0c-42f7-8e7a-18b1b01c9a00#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "y6efv3i6ao",
+      "Integrity": "Zv97G0lUbE3qJSKGhgZS35mkISnyy32aa2sE1m8d+sw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\docs\\MEMBERS-0ed04ecf-cf0c-42f7-8e7a-18b1b01c9a00.jpg"
+    },
+    {
       "Identity": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\MEMBERS-29d307d2-0b40-44dd-aec0-b4aecff34f9f.png",
       "SourceId": "CipaFatecJahu",
       "SourceType": "Discovered",
@@ -2642,12 +2726,12 @@
       "OriginalItemSpec": "wwwroot\\docs\\MEMBERS-29d307d2-0b40-44dd-aec0-b4aecff34f9f.png"
     },
     {
-      "Identity": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\MEMBERS-6b04de85-801b-49ab-9cd0-6f73c39dfc7d.jpg",
+      "Identity": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\MEMBERS-57c2b3d1-7257-4781-b72c-53262222762e.jpg",
       "SourceId": "CipaFatecJahu",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\",
       "BasePath": "_content/CipaFatecJahu",
-      "RelativePath": "docs/MEMBERS-6b04de85-801b-49ab-9cd0-6f73c39dfc7d#[.{fingerprint}]?.jpg",
+      "RelativePath": "docs/MEMBERS-57c2b3d1-7257-4781-b72c-53262222762e#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2656,11 +2740,137 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "mjvf135vl2",
-      "Integrity": "cuqGIeEtZndFfa+phS50coriobq7O5pCWiVg8icRxcs=",
+      "Fingerprint": "2ps2x8aesd",
+      "Integrity": "xv4iCG2aj59HBxVmC6RiVhLCgQt9uYz/9e6pXIGqmgQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\docs\\MEMBERS-6b04de85-801b-49ab-9cd0-6f73c39dfc7d.jpg"
+      "OriginalItemSpec": "wwwroot\\docs\\MEMBERS-57c2b3d1-7257-4781-b72c-53262222762e.jpg"
+    },
+    {
+      "Identity": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\MEMBERS-8c79d6da-94be-440b-998a-1485d33e4235.jpg",
+      "SourceId": "CipaFatecJahu",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\",
+      "BasePath": "_content/CipaFatecJahu",
+      "RelativePath": "docs/MEMBERS-8c79d6da-94be-440b-998a-1485d33e4235#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "jy6slkmu7q",
+      "Integrity": "O/c41rbJ5Wp74izHiJhV8iZRT07pGMiSNuTcPhcjHRE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\docs\\MEMBERS-8c79d6da-94be-440b-998a-1485d33e4235.jpg"
+    },
+    {
+      "Identity": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\MEMBERS-97db362a-7b31-417e-b6bf-af544d0ba16b.jpg",
+      "SourceId": "CipaFatecJahu",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\",
+      "BasePath": "_content/CipaFatecJahu",
+      "RelativePath": "docs/MEMBERS-97db362a-7b31-417e-b6bf-af544d0ba16b#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "v9wz4iylxt",
+      "Integrity": "3QUQYPdWpoeoZdaDzvetavzFZ/NXqzC0CqQKhAu+Lt0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\docs\\MEMBERS-97db362a-7b31-417e-b6bf-af544d0ba16b.jpg"
+    },
+    {
+      "Identity": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\MEMBERS-a4fbdcda-123b-4a57-9c24-8e50f5492cc0.jpg",
+      "SourceId": "CipaFatecJahu",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\",
+      "BasePath": "_content/CipaFatecJahu",
+      "RelativePath": "docs/MEMBERS-a4fbdcda-123b-4a57-9c24-8e50f5492cc0#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "jgjbev6xgr",
+      "Integrity": "Q4GV08QJ+3UtcmKLMZ/6Q/3vaXnDt8eo7ri7HGO/7Y4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\docs\\MEMBERS-a4fbdcda-123b-4a57-9c24-8e50f5492cc0.jpg"
+    },
+    {
+      "Identity": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\MEMBERS-ccc9a4b3-8b5c-4616-9646-870ef19b5947.jpg",
+      "SourceId": "CipaFatecJahu",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\",
+      "BasePath": "_content/CipaFatecJahu",
+      "RelativePath": "docs/MEMBERS-ccc9a4b3-8b5c-4616-9646-870ef19b5947#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4qscnaremv",
+      "Integrity": "lNSu3nJmQDX/f59/q2leH+o+8P85KVON3lc+EyVB+Zs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\docs\\MEMBERS-ccc9a4b3-8b5c-4616-9646-870ef19b5947.jpg"
+    },
+    {
+      "Identity": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\MEMBERS-d4b3ae12-b6e8-498a-814e-171307eb41ac.jpg",
+      "SourceId": "CipaFatecJahu",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\",
+      "BasePath": "_content/CipaFatecJahu",
+      "RelativePath": "docs/MEMBERS-d4b3ae12-b6e8-498a-814e-171307eb41ac#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "yckldkfick",
+      "Integrity": "UsdfDrDCNeB9KGvGQAEiTRQ+9aUCqXDquaZbFcefDmQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\docs\\MEMBERS-d4b3ae12-b6e8-498a-814e-171307eb41ac.jpg"
+    },
+    {
+      "Identity": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\OTHER-dff2eddd-ccd3-4384-83d3-bffc7b91b7f8.pdf",
+      "SourceId": "CipaFatecJahu",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\",
+      "BasePath": "_content/CipaFatecJahu",
+      "RelativePath": "docs/OTHER-dff2eddd-ccd3-4384-83d3-bffc7b91b7f8#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "veh93oxfa0",
+      "Integrity": "mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\docs\\OTHER-dff2eddd-ccd3-4384-83d3-bffc7b91b7f8.pdf"
     },
     {
       "Identity": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\OTHER-f45a11ed-f06b-41a1-b27c-f5fc71e76c78.pdf",
@@ -2684,6 +2894,27 @@
       "OriginalItemSpec": "wwwroot\\docs\\OTHER-f45a11ed-f06b-41a1-b27c-f5fc71e76c78.pdf"
     },
     {
+      "Identity": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\SIPAT-0a735d3d-23e7-455f-a547-83eef03519ec.pdf",
+      "SourceId": "CipaFatecJahu",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\",
+      "BasePath": "_content/CipaFatecJahu",
+      "RelativePath": "docs/SIPAT-0a735d3d-23e7-455f-a547-83eef03519ec#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "veh93oxfa0",
+      "Integrity": "mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\docs\\SIPAT-0a735d3d-23e7-455f-a547-83eef03519ec.pdf"
+    },
+    {
       "Identity": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\SIPAT-fb4dda6d-e7b0-46d1-bb35-04deda669c14.pdf",
       "SourceId": "CipaFatecJahu",
       "SourceType": "Discovered",
@@ -2705,6 +2936,27 @@
       "OriginalItemSpec": "wwwroot\\docs\\SIPAT-fb4dda6d-e7b0-46d1-bb35-04deda669c14.pdf"
     },
     {
+      "Identity": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\STUDIES-971251b0-b6e2-4823-80d8-2ef939a6770d.pdf",
+      "SourceId": "CipaFatecJahu",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\",
+      "BasePath": "_content/CipaFatecJahu",
+      "RelativePath": "docs/STUDIES-971251b0-b6e2-4823-80d8-2ef939a6770d#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "veh93oxfa0",
+      "Integrity": "mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\docs\\STUDIES-971251b0-b6e2-4823-80d8-2ef939a6770d.pdf"
+    },
+    {
       "Identity": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\STUDIES-b6b6d46b-cf86-4a97-8a97-d27448288ae9.pdf",
       "SourceId": "CipaFatecJahu",
       "SourceType": "Discovered",
@@ -2724,6 +2976,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\docs\\STUDIES-b6b6d46b-cf86-4a97-8a97-d27448288ae9.pdf"
+    },
+    {
+      "Identity": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\STUDIES-c1b54020-84ce-4498-8476-513e9bfb16f6.pdf",
+      "SourceId": "CipaFatecJahu",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\",
+      "BasePath": "_content/CipaFatecJahu",
+      "RelativePath": "docs/STUDIES-c1b54020-84ce-4498-8476-513e9bfb16f6#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "veh93oxfa0",
+      "Integrity": "mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\docs\\STUDIES-c1b54020-84ce-4498-8476-513e9bfb16f6.pdf"
     },
     {
       "Identity": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\favicon.ico",
@@ -12405,6 +12678,170 @@
       ]
     },
     {
+      "Route": "docs/LEGISLATION-0a7edbb5-e392-41d3-942f-d88549dd6b0e.pdf",
+      "AssetFile": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\LEGISLATION-0a7edbb5-e392-41d3-942f-d88549dd6b0e.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "168848"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Jun 2025 15:42:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E="
+        }
+      ]
+    },
+    {
+      "Route": "docs/LEGISLATION-0a7edbb5-e392-41d3-942f-d88549dd6b0e.veh93oxfa0.pdf",
+      "AssetFile": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\LEGISLATION-0a7edbb5-e392-41d3-942f-d88549dd6b0e.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "168848"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Jun 2025 15:42:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "veh93oxfa0"
+        },
+        {
+          "Name": "label",
+          "Value": "docs/LEGISLATION-0a7edbb5-e392-41d3-942f-d88549dd6b0e.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E="
+        }
+      ]
+    },
+    {
+      "Route": "docs/LEGISLATION-24ee1874-0860-4547-80bb-bc659adc0224.pdf",
+      "AssetFile": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\LEGISLATION-24ee1874-0860-4547-80bb-bc659adc0224.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "168848"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Jun 2025 15:26:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E="
+        }
+      ]
+    },
+    {
+      "Route": "docs/LEGISLATION-24ee1874-0860-4547-80bb-bc659adc0224.veh93oxfa0.pdf",
+      "AssetFile": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\LEGISLATION-24ee1874-0860-4547-80bb-bc659adc0224.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "168848"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Jun 2025 15:26:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "veh93oxfa0"
+        },
+        {
+          "Name": "label",
+          "Value": "docs/LEGISLATION-24ee1874-0860-4547-80bb-bc659adc0224.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E="
+        }
+      ]
+    },
+    {
       "Route": "docs/LEGISLATION-fe7a4a7d-e4a9-4392-a097-d7b1df97e951.pdf",
       "AssetFile": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\LEGISLATION-fe7a4a7d-e4a9-4392-a097-d7b1df97e951.pdf",
       "Selectors": [],
@@ -12569,6 +13006,170 @@
       ]
     },
     {
+      "Route": "docs/MAP-e033893a-9e86-499d-be0c-25c3261f567b.pdf",
+      "AssetFile": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\MAP-e033893a-9e86-499d-be0c-25c3261f567b.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "168848"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Jun 2025 15:27:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E="
+        }
+      ]
+    },
+    {
+      "Route": "docs/MAP-e033893a-9e86-499d-be0c-25c3261f567b.veh93oxfa0.pdf",
+      "AssetFile": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\MAP-e033893a-9e86-499d-be0c-25c3261f567b.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "168848"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Jun 2025 15:27:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "veh93oxfa0"
+        },
+        {
+          "Name": "label",
+          "Value": "docs/MAP-e033893a-9e86-499d-be0c-25c3261f567b.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E="
+        }
+      ]
+    },
+    {
+      "Route": "docs/MEMBERS-0ed04ecf-cf0c-42f7-8e7a-18b1b01c9a00.jpg",
+      "AssetFile": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\MEMBERS-0ed04ecf-cf0c-42f7-8e7a-18b1b01c9a00.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16968726"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Zv97G0lUbE3qJSKGhgZS35mkISnyy32aa2sE1m8d+sw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Jun 2025 15:38:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Zv97G0lUbE3qJSKGhgZS35mkISnyy32aa2sE1m8d+sw="
+        }
+      ]
+    },
+    {
+      "Route": "docs/MEMBERS-0ed04ecf-cf0c-42f7-8e7a-18b1b01c9a00.y6efv3i6ao.jpg",
+      "AssetFile": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\MEMBERS-0ed04ecf-cf0c-42f7-8e7a-18b1b01c9a00.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16968726"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Zv97G0lUbE3qJSKGhgZS35mkISnyy32aa2sE1m8d+sw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Jun 2025 15:38:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "y6efv3i6ao"
+        },
+        {
+          "Name": "label",
+          "Value": "docs/MEMBERS-0ed04ecf-cf0c-42f7-8e7a-18b1b01c9a00.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Zv97G0lUbE3qJSKGhgZS35mkISnyy32aa2sE1m8d+sw="
+        }
+      ]
+    },
+    {
       "Route": "docs/MEMBERS-29d307d2-0b40-44dd-aec0-b4aecff34f9f.9mg7dase7u.png",
       "AssetFile": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\MEMBERS-29d307d2-0b40-44dd-aec0-b4aecff34f9f.png",
       "Selectors": [],
@@ -12651,8 +13252,8 @@
       ]
     },
     {
-      "Route": "docs/MEMBERS-6b04de85-801b-49ab-9cd0-6f73c39dfc7d.jpg",
-      "AssetFile": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\MEMBERS-6b04de85-801b-49ab-9cd0-6f73c39dfc7d.jpg",
+      "Route": "docs/MEMBERS-57c2b3d1-7257-4781-b72c-53262222762e.2ps2x8aesd.jpg",
+      "AssetFile": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\MEMBERS-57c2b3d1-7257-4781-b72c-53262222762e.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -12661,7 +13262,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "25321508"
+          "Value": "13878284"
         },
         {
           "Name": "Content-Type",
@@ -12669,48 +13270,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"cuqGIeEtZndFfa+phS50coriobq7O5pCWiVg8icRxcs=\""
+          "Value": "\"xv4iCG2aj59HBxVmC6RiVhLCgQt9uYz/9e6pXIGqmgQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 25 Jun 2025 15:20:39 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-cuqGIeEtZndFfa+phS50coriobq7O5pCWiVg8icRxcs="
-        }
-      ]
-    },
-    {
-      "Route": "docs/MEMBERS-6b04de85-801b-49ab-9cd0-6f73c39dfc7d.mjvf135vl2.jpg",
-      "AssetFile": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\MEMBERS-6b04de85-801b-49ab-9cd0-6f73c39dfc7d.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "25321508"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"cuqGIeEtZndFfa+phS50coriobq7O5pCWiVg8icRxcs=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 25 Jun 2025 15:20:39 GMT"
+          "Value": "Wed, 25 Jun 2025 15:36:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12720,15 +13284,544 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "mjvf135vl2"
+          "Value": "2ps2x8aesd"
         },
         {
           "Name": "label",
-          "Value": "docs/MEMBERS-6b04de85-801b-49ab-9cd0-6f73c39dfc7d.jpg"
+          "Value": "docs/MEMBERS-57c2b3d1-7257-4781-b72c-53262222762e.jpg"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-cuqGIeEtZndFfa+phS50coriobq7O5pCWiVg8icRxcs="
+          "Value": "sha256-xv4iCG2aj59HBxVmC6RiVhLCgQt9uYz/9e6pXIGqmgQ="
+        }
+      ]
+    },
+    {
+      "Route": "docs/MEMBERS-57c2b3d1-7257-4781-b72c-53262222762e.jpg",
+      "AssetFile": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\MEMBERS-57c2b3d1-7257-4781-b72c-53262222762e.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13878284"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xv4iCG2aj59HBxVmC6RiVhLCgQt9uYz/9e6pXIGqmgQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Jun 2025 15:36:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xv4iCG2aj59HBxVmC6RiVhLCgQt9uYz/9e6pXIGqmgQ="
+        }
+      ]
+    },
+    {
+      "Route": "docs/MEMBERS-8c79d6da-94be-440b-998a-1485d33e4235.jpg",
+      "AssetFile": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\MEMBERS-8c79d6da-94be-440b-998a-1485d33e4235.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9657199"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"O/c41rbJ5Wp74izHiJhV8iZRT07pGMiSNuTcPhcjHRE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Jun 2025 15:38:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-O/c41rbJ5Wp74izHiJhV8iZRT07pGMiSNuTcPhcjHRE="
+        }
+      ]
+    },
+    {
+      "Route": "docs/MEMBERS-8c79d6da-94be-440b-998a-1485d33e4235.jy6slkmu7q.jpg",
+      "AssetFile": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\MEMBERS-8c79d6da-94be-440b-998a-1485d33e4235.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9657199"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"O/c41rbJ5Wp74izHiJhV8iZRT07pGMiSNuTcPhcjHRE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Jun 2025 15:38:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jy6slkmu7q"
+        },
+        {
+          "Name": "label",
+          "Value": "docs/MEMBERS-8c79d6da-94be-440b-998a-1485d33e4235.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-O/c41rbJ5Wp74izHiJhV8iZRT07pGMiSNuTcPhcjHRE="
+        }
+      ]
+    },
+    {
+      "Route": "docs/MEMBERS-97db362a-7b31-417e-b6bf-af544d0ba16b.jpg",
+      "AssetFile": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\MEMBERS-97db362a-7b31-417e-b6bf-af544d0ba16b.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11169305"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3QUQYPdWpoeoZdaDzvetavzFZ/NXqzC0CqQKhAu+Lt0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Jun 2025 15:35:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3QUQYPdWpoeoZdaDzvetavzFZ/NXqzC0CqQKhAu+Lt0="
+        }
+      ]
+    },
+    {
+      "Route": "docs/MEMBERS-97db362a-7b31-417e-b6bf-af544d0ba16b.v9wz4iylxt.jpg",
+      "AssetFile": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\MEMBERS-97db362a-7b31-417e-b6bf-af544d0ba16b.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11169305"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3QUQYPdWpoeoZdaDzvetavzFZ/NXqzC0CqQKhAu+Lt0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Jun 2025 15:35:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "v9wz4iylxt"
+        },
+        {
+          "Name": "label",
+          "Value": "docs/MEMBERS-97db362a-7b31-417e-b6bf-af544d0ba16b.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3QUQYPdWpoeoZdaDzvetavzFZ/NXqzC0CqQKhAu+Lt0="
+        }
+      ]
+    },
+    {
+      "Route": "docs/MEMBERS-a4fbdcda-123b-4a57-9c24-8e50f5492cc0.jgjbev6xgr.jpg",
+      "AssetFile": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\MEMBERS-a4fbdcda-123b-4a57-9c24-8e50f5492cc0.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5691166"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Q4GV08QJ+3UtcmKLMZ/6Q/3vaXnDt8eo7ri7HGO/7Y4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Jun 2025 15:39:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jgjbev6xgr"
+        },
+        {
+          "Name": "label",
+          "Value": "docs/MEMBERS-a4fbdcda-123b-4a57-9c24-8e50f5492cc0.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Q4GV08QJ+3UtcmKLMZ/6Q/3vaXnDt8eo7ri7HGO/7Y4="
+        }
+      ]
+    },
+    {
+      "Route": "docs/MEMBERS-a4fbdcda-123b-4a57-9c24-8e50f5492cc0.jpg",
+      "AssetFile": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\MEMBERS-a4fbdcda-123b-4a57-9c24-8e50f5492cc0.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5691166"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Q4GV08QJ+3UtcmKLMZ/6Q/3vaXnDt8eo7ri7HGO/7Y4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Jun 2025 15:39:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Q4GV08QJ+3UtcmKLMZ/6Q/3vaXnDt8eo7ri7HGO/7Y4="
+        }
+      ]
+    },
+    {
+      "Route": "docs/MEMBERS-ccc9a4b3-8b5c-4616-9646-870ef19b5947.4qscnaremv.jpg",
+      "AssetFile": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\MEMBERS-ccc9a4b3-8b5c-4616-9646-870ef19b5947.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1353220"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lNSu3nJmQDX/f59/q2leH+o+8P85KVON3lc+EyVB+Zs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Jun 2025 15:35:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4qscnaremv"
+        },
+        {
+          "Name": "label",
+          "Value": "docs/MEMBERS-ccc9a4b3-8b5c-4616-9646-870ef19b5947.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lNSu3nJmQDX/f59/q2leH+o+8P85KVON3lc+EyVB+Zs="
+        }
+      ]
+    },
+    {
+      "Route": "docs/MEMBERS-ccc9a4b3-8b5c-4616-9646-870ef19b5947.jpg",
+      "AssetFile": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\MEMBERS-ccc9a4b3-8b5c-4616-9646-870ef19b5947.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1353220"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lNSu3nJmQDX/f59/q2leH+o+8P85KVON3lc+EyVB+Zs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Jun 2025 15:35:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lNSu3nJmQDX/f59/q2leH+o+8P85KVON3lc+EyVB+Zs="
+        }
+      ]
+    },
+    {
+      "Route": "docs/MEMBERS-d4b3ae12-b6e8-498a-814e-171307eb41ac.jpg",
+      "AssetFile": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\MEMBERS-d4b3ae12-b6e8-498a-814e-171307eb41ac.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5856709"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UsdfDrDCNeB9KGvGQAEiTRQ+9aUCqXDquaZbFcefDmQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Jun 2025 15:40:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-UsdfDrDCNeB9KGvGQAEiTRQ+9aUCqXDquaZbFcefDmQ="
+        }
+      ]
+    },
+    {
+      "Route": "docs/MEMBERS-d4b3ae12-b6e8-498a-814e-171307eb41ac.yckldkfick.jpg",
+      "AssetFile": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\MEMBERS-d4b3ae12-b6e8-498a-814e-171307eb41ac.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5856709"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UsdfDrDCNeB9KGvGQAEiTRQ+9aUCqXDquaZbFcefDmQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Jun 2025 15:40:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yckldkfick"
+        },
+        {
+          "Name": "label",
+          "Value": "docs/MEMBERS-d4b3ae12-b6e8-498a-814e-171307eb41ac.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-UsdfDrDCNeB9KGvGQAEiTRQ+9aUCqXDquaZbFcefDmQ="
+        }
+      ]
+    },
+    {
+      "Route": "docs/OTHER-dff2eddd-ccd3-4384-83d3-bffc7b91b7f8.pdf",
+      "AssetFile": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\OTHER-dff2eddd-ccd3-4384-83d3-bffc7b91b7f8.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "168848"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Jun 2025 15:28:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E="
+        }
+      ]
+    },
+    {
+      "Route": "docs/OTHER-dff2eddd-ccd3-4384-83d3-bffc7b91b7f8.veh93oxfa0.pdf",
+      "AssetFile": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\OTHER-dff2eddd-ccd3-4384-83d3-bffc7b91b7f8.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "168848"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Jun 2025 15:28:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "veh93oxfa0"
+        },
+        {
+          "Name": "label",
+          "Value": "docs/OTHER-dff2eddd-ccd3-4384-83d3-bffc7b91b7f8.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E="
         }
       ]
     },
@@ -12807,6 +13900,88 @@
         {
           "Name": "label",
           "Value": "docs/OTHER-f45a11ed-f06b-41a1-b27c-f5fc71e76c78.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E="
+        }
+      ]
+    },
+    {
+      "Route": "docs/SIPAT-0a735d3d-23e7-455f-a547-83eef03519ec.pdf",
+      "AssetFile": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\SIPAT-0a735d3d-23e7-455f-a547-83eef03519ec.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "168848"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Jun 2025 15:27:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E="
+        }
+      ]
+    },
+    {
+      "Route": "docs/SIPAT-0a735d3d-23e7-455f-a547-83eef03519ec.veh93oxfa0.pdf",
+      "AssetFile": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\SIPAT-0a735d3d-23e7-455f-a547-83eef03519ec.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "168848"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Jun 2025 15:27:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "veh93oxfa0"
+        },
+        {
+          "Name": "label",
+          "Value": "docs/SIPAT-0a735d3d-23e7-455f-a547-83eef03519ec.pdf"
         },
         {
           "Name": "integrity",
@@ -12897,6 +14072,88 @@
       ]
     },
     {
+      "Route": "docs/STUDIES-971251b0-b6e2-4823-80d8-2ef939a6770d.pdf",
+      "AssetFile": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\STUDIES-971251b0-b6e2-4823-80d8-2ef939a6770d.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "168848"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Jun 2025 15:41:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E="
+        }
+      ]
+    },
+    {
+      "Route": "docs/STUDIES-971251b0-b6e2-4823-80d8-2ef939a6770d.veh93oxfa0.pdf",
+      "AssetFile": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\STUDIES-971251b0-b6e2-4823-80d8-2ef939a6770d.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "168848"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Jun 2025 15:41:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "veh93oxfa0"
+        },
+        {
+          "Name": "label",
+          "Value": "docs/STUDIES-971251b0-b6e2-4823-80d8-2ef939a6770d.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E="
+        }
+      ]
+    },
+    {
       "Route": "docs/STUDIES-b6b6d46b-cf86-4a97-8a97-d27448288ae9.pdf",
       "AssetFile": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\STUDIES-b6b6d46b-cf86-4a97-8a97-d27448288ae9.pdf",
       "Selectors": [],
@@ -12971,6 +14228,88 @@
         {
           "Name": "label",
           "Value": "docs/STUDIES-b6b6d46b-cf86-4a97-8a97-d27448288ae9.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E="
+        }
+      ]
+    },
+    {
+      "Route": "docs/STUDIES-c1b54020-84ce-4498-8476-513e9bfb16f6.pdf",
+      "AssetFile": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\STUDIES-c1b54020-84ce-4498-8476-513e9bfb16f6.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "168848"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Jun 2025 15:24:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E="
+        }
+      ]
+    },
+    {
+      "Route": "docs/STUDIES-c1b54020-84ce-4498-8476-513e9bfb16f6.veh93oxfa0.pdf",
+      "AssetFile": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\STUDIES-c1b54020-84ce-4498-8476-513e9bfb16f6.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "168848"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mSycJOfJXmf1UitA/P620WCkUg6KahgYMawo2m7Ch7E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Jun 2025 15:24:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "veh93oxfa0"
+        },
+        {
+          "Name": "label",
+          "Value": "docs/STUDIES-c1b54020-84ce-4498-8476-513e9bfb16f6.pdf"
         },
         {
           "Name": "integrity",

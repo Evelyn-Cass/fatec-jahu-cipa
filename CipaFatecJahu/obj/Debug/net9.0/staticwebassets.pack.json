@@ -113,6 +113,14 @@
       "PackagePath": "staticwebassets\\docs\\ELECTION-ffe845fc-ed8a-401b-880c-1af7927ec208.pdf"
     },
     {
+      "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\LEGISLATION-0a7edbb5-e392-41d3-942f-d88549dd6b0e.pdf",
+      "PackagePath": "staticwebassets\\docs\\LEGISLATION-0a7edbb5-e392-41d3-942f-d88549dd6b0e.pdf"
+    },
+    {
+      "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\LEGISLATION-24ee1874-0860-4547-80bb-bc659adc0224.pdf",
+      "PackagePath": "staticwebassets\\docs\\LEGISLATION-24ee1874-0860-4547-80bb-bc659adc0224.pdf"
+    },
+    {
       "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\LEGISLATION-fe7a4a7d-e4a9-4392-a097-d7b1df97e951.pdf",
       "PackagePath": "staticwebassets\\docs\\LEGISLATION-fe7a4a7d-e4a9-4392-a097-d7b1df97e951.pdf"
     },
@@ -121,24 +129,68 @@
       "PackagePath": "staticwebassets\\docs\\MAP-4f1ffe66-ce86-4432-b22a-a7f1161a04dc.pdf"
     },
     {
+      "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\MAP-e033893a-9e86-499d-be0c-25c3261f567b.pdf",
+      "PackagePath": "staticwebassets\\docs\\MAP-e033893a-9e86-499d-be0c-25c3261f567b.pdf"
+    },
+    {
+      "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\MEMBERS-0ed04ecf-cf0c-42f7-8e7a-18b1b01c9a00.jpg",
+      "PackagePath": "staticwebassets\\docs\\MEMBERS-0ed04ecf-cf0c-42f7-8e7a-18b1b01c9a00.jpg"
+    },
+    {
       "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\MEMBERS-29d307d2-0b40-44dd-aec0-b4aecff34f9f.png",
       "PackagePath": "staticwebassets\\docs\\MEMBERS-29d307d2-0b40-44dd-aec0-b4aecff34f9f.png"
     },
     {
-      "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\MEMBERS-6b04de85-801b-49ab-9cd0-6f73c39dfc7d.jpg",
-      "PackagePath": "staticwebassets\\docs\\MEMBERS-6b04de85-801b-49ab-9cd0-6f73c39dfc7d.jpg"
+      "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\MEMBERS-57c2b3d1-7257-4781-b72c-53262222762e.jpg",
+      "PackagePath": "staticwebassets\\docs\\MEMBERS-57c2b3d1-7257-4781-b72c-53262222762e.jpg"
+    },
+    {
+      "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\MEMBERS-8c79d6da-94be-440b-998a-1485d33e4235.jpg",
+      "PackagePath": "staticwebassets\\docs\\MEMBERS-8c79d6da-94be-440b-998a-1485d33e4235.jpg"
+    },
+    {
+      "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\MEMBERS-97db362a-7b31-417e-b6bf-af544d0ba16b.jpg",
+      "PackagePath": "staticwebassets\\docs\\MEMBERS-97db362a-7b31-417e-b6bf-af544d0ba16b.jpg"
+    },
+    {
+      "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\MEMBERS-a4fbdcda-123b-4a57-9c24-8e50f5492cc0.jpg",
+      "PackagePath": "staticwebassets\\docs\\MEMBERS-a4fbdcda-123b-4a57-9c24-8e50f5492cc0.jpg"
+    },
+    {
+      "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\MEMBERS-ccc9a4b3-8b5c-4616-9646-870ef19b5947.jpg",
+      "PackagePath": "staticwebassets\\docs\\MEMBERS-ccc9a4b3-8b5c-4616-9646-870ef19b5947.jpg"
+    },
+    {
+      "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\MEMBERS-d4b3ae12-b6e8-498a-814e-171307eb41ac.jpg",
+      "PackagePath": "staticwebassets\\docs\\MEMBERS-d4b3ae12-b6e8-498a-814e-171307eb41ac.jpg"
+    },
+    {
+      "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\OTHER-dff2eddd-ccd3-4384-83d3-bffc7b91b7f8.pdf",
+      "PackagePath": "staticwebassets\\docs\\OTHER-dff2eddd-ccd3-4384-83d3-bffc7b91b7f8.pdf"
     },
     {
       "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\OTHER-f45a11ed-f06b-41a1-b27c-f5fc71e76c78.pdf",
       "PackagePath": "staticwebassets\\docs\\OTHER-f45a11ed-f06b-41a1-b27c-f5fc71e76c78.pdf"
     },
     {
+      "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\SIPAT-0a735d3d-23e7-455f-a547-83eef03519ec.pdf",
+      "PackagePath": "staticwebassets\\docs\\SIPAT-0a735d3d-23e7-455f-a547-83eef03519ec.pdf"
+    },
+    {
       "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\SIPAT-fb4dda6d-e7b0-46d1-bb35-04deda669c14.pdf",
       "PackagePath": "staticwebassets\\docs\\SIPAT-fb4dda6d-e7b0-46d1-bb35-04deda669c14.pdf"
     },
     {
+      "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\STUDIES-971251b0-b6e2-4823-80d8-2ef939a6770d.pdf",
+      "PackagePath": "staticwebassets\\docs\\STUDIES-971251b0-b6e2-4823-80d8-2ef939a6770d.pdf"
+    },
+    {
       "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\STUDIES-b6b6d46b-cf86-4a97-8a97-d27448288ae9.pdf",
       "PackagePath": "staticwebassets\\docs\\STUDIES-b6b6d46b-cf86-4a97-8a97-d27448288ae9.pdf"
+    },
+    {
+      "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\docs\\STUDIES-c1b54020-84ce-4498-8476-513e9bfb16f6.pdf",
+      "PackagePath": "staticwebassets\\docs\\STUDIES-c1b54020-84ce-4498-8476-513e9bfb16f6.pdf"
     },
     {
       "Id": "C:\\Projetos\\Fatec\\fatec-jahu-cipa\\CipaFatecJahu\\wwwroot\\favicon.ico",
