@@ -130,7 +130,7 @@ namespace CipaFatecJahu.Controllers
 
             return View(result);
         }
-
+        [AllowAnonymous]
         public async Task<IActionResult> Search(Guid MaterialId, Guid MandateId)
         {
             var pipeline = new[]
