@@ -27,11 +27,23 @@ tr {
         background-color: var(--base-lightgray);
     }
 
-
-
-
-
 th {
     font-weight: 500;
     color: var(--base-white);
    }
+
+
+@media (max-width: 800px) {
+    .table {
+        width: 100% !important;
+    }
+
+    th, td {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    tr {
+        height: auto;
+    }
+}
