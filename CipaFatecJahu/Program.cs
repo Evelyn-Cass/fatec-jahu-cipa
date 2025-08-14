@@ -39,19 +39,19 @@ if (!app.Environment.IsDevelopment())
 else
 {
     app.UseDeveloperExceptionPage();
-    using (var scope = app.Services.CreateScope())
+}
+using (var scope = app.Services.CreateScope())
+{
+    try
     {
-        try
-        {
-            var userManager = scope.ServiceProvider.GetRequiredService<UserManager<ApplicationUser>>();
-            var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<ApplicationRole>>();
-            DatabaseSeeder seeder = new DatabaseSeeder(userManager, roleManager);
-            await seeder.SeedAsync();
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine($"Error during database seeding: {ex.Message}");
-        }
+        var userManager = scope.ServiceProvider.GetRequiredService<UserManager<ApplicationUser>>();
+        var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<ApplicationRole>>();
+        DatabaseSeeder seeder = new DatabaseSeeder(userManager, roleManager);
+        await seeder.SeedAsync();
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"Error during database seeding: {ex.Message}");
     }
 }
 
